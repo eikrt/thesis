@@ -1,0 +1,23 @@
+\chapter{Further research} \label{further}
+
+One big limitation of NixOS is the fact that it mainly supports only x86\_64, i686 and arm64 platforms \cite{nixosNixOSManual}. This is not generally enough, as many different architectures are used in embedded, thus limiting the use-cases of NixOS. \cite{fysarakis2014embedded}.
+
+Buildroot and Yocto are toolchains aiming to produce bootable Linux environments. In other words, these toolchains can be used to create own Linux distributions. A base system and set of tooling could be used as a cross-compiled platform, where a custom package manager, which would either have cross-compiled binaries within its reach, would configure the user space.
+
+Building custom images for is usually done with either Buildroot or Yocto. Both have their strengths and weaknessess, but in depth analysis of embedded Linux toolchains is outside of this thesis' scope. Instead, this chapter focuses on theoretical setup, where root filesystem and base systems can be created. In practice, both Buildroot and Yocto could perform this task. \cite{vasquez2021mastering}
+
+\section{Further research questions}
+
+This chapter aims to answer research question 4, listed in chapter \ref{resquest}. Definitely, a declarative approach could be used with other processor architectures. This would require work on a declarative package manager, which would be used in conjunction with base systems created with Buildroot or Yocto.
+
+Questions for further research include:
+\begin{enumerate}
+    \item What set of tools would be optimal in creating a true cross-platform declarative package manager (e.g programming languages, possible serialization languages etc.)
+
+    \item How could the new system handle common system security and administration problems better?
+
+    \item What kind of ecosystem would be possible to create with a declarative embedded fleet regarding client/server or publish/subscribe models?
+\end{enumerate}
+
+
+These questions provide base for further research, which would be needed, as currently no such system exists. A true cross-platform, purely functional, declarative system with atomic rollbacks would be a fresh newcomer into the world of embedded Linux.

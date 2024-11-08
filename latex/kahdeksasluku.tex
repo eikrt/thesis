@@ -1,0 +1,115 @@
+Defender transition probabilities:
+
+\begin{itemize}
+\item P(S0|S3, D4) = 1.0
+
+Recovering from Weston hasn't been necessary, since on the test setup it has worked faultlessly. Recovering would be restarting SystemD services, investigating logs and rebooting the device.
+\item P(S0|S4, D4) = 1.0
+
+Displaying media has the same traits: display faults could be traced to either Weston, Feh, XWayland, or e.g. device drivers. Faults could be found in device logs.
+\item P(S1|S0, D0) = 0.8
+
+MQTT can be troubleshooted using SystemD logs, and logging the messages we could directly compare it with the server send messages. Note that the MQTT client setup is not purely functional, so system rebuilds or root privileges wouldn't be needed. The messages are TLS-certified, so most of the man-in-the-middle type attacks are mitigated. The system was inspected through 
+\begin{itemize}
+
+\item injecting unusual imagery
+\item replacing the physical server with another
+\end{itemize}
+
+\item P(S4|S0, D0) = 1.0
+
+From Weston logs, dmesg and other logs we could always see if the system went from displaying media to idle state.
+
+\item P(S2|S1, D2) = 1.0
+
+Updating system was successful every test run.
+
+\item P(S4|S1, D2) = 1.0
+
+In setting up the compositor, feh and other, there's a window where compromised Github account could pose a threat. This could happen also if the domain of https://github.com would be compromised, but this didn't happen during tests. The username of the author can be traced from the open source configuration.nix files, but access is harder to obtain.
+
+\item P(S3|S2, D3) = 1.0
+
+Setting up Weston didn't once fail in our test runs when updating.
+
+\item P(S4|S2, D3) = 1.0
+
+Displaying media didn't fail once in our test runs. This partially due to to the fact that displaying media doesn't need an active connection, so it doesn't depend on MQTT protocol; the latest image received is always displayed.
+
+\end{itemize}
+
+We can see that the blue team setup is very successful. This is partly due the test setup being very stable as there's no environmental changes or vandalism targeted towards devices and it's functional in every state. An error state wasn't triggered, so that wasn't in the POMDP. In the observation chain, we can see varying results.
+
+Observation probabilities:
+
+\begin{itemize}
+\item P(O0|S0, D0) = 1.0
+Monitoring the system in idle state was always successful in normal operation
+\item P(O1|S5, D0) = 1.0
+Monitoring the system with suspicious activity was always successful with root privileges
+\item P(O0|S5, D0) = 1.0
+Monitoring of displaying media in normal operation was always successful
+\item P(O2|S4, D0) = 1.0
+Monitoring of starting Weston was always successful
+\item P(O3|S3, D3) = 0.6
+Unusual media display was not successfully retained where the system was compromised with following steps
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+In other cases, it was successful
+\item P(O0|S3, D3) = 1.0
+Starting Weston to display media was always successful in normal operation
+\item P(O4|S5, D1) = 0.7
+When unauthorised access was simulated, monitoring was successful in all cases, except when root privileges were elevated and relevant logging modified
+\item P(O0|S5, D1) = 0.0
+Monitoring failed, when an error state was simulated.
+\end{itemize}
+
+Attacker transition probabilities:
+
+\begin{itemize}
+\item P(S5|S1, A0) = 0.3
+
+In error state, it was not successful to transition to idle state in any case.
+\item P(S4|S1, A0) = 0.9
+
+From error state, a transition to setting up SystemD services was successful when root privileges were gained
+\item P(S5|S2, A1) = 0.0
+
+Gaining access to the Github repository wasn't successful
+\item P(S4|S2, A1) = 0.6
+
+Gaining access to the Github repository wasn't successful
+\item P(S5|S2, A2) = 1.0
+
+From an error state, via gaining physical access, anything could be done.
+\item P(S4|S2, A2) = 1.0
+
+From an error state, via gaining physical access, anything could be done.
+\item P(S5|S3, A3) = 0.6
+
+From partial loss for the system, Weston could be launched with arbitrary config file, thus gaining full control of the display
+\item P(S4|S3, A3) = 0.0
+
+Vulnerabilities of Wayland protocol or Weston could not be found
+
+\item P(S6|S5, A4) = 0.7
+As the keys reside in the user directory, with user privileges they could be modified/deleted, thus provoking a kind of error state.
+\item P(S4|S5, A4) = 0.3
+SSH can not modify the state of the display.
+\end{itemize}
+Rewards:
+\begin{itemize}
+
+
+\item R(S,D/A)
+\item R(S0, D0) = 0
+\item R(S1, D0) = 10
+\item R(S2, D2) = 20
+\item R(S3, D3) = 30
+\item R(S4, D4) = -50
+\item R(S5, D0) = -100
+\item R(S6, D0) = -200
+\end{itemize}
