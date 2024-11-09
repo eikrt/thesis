@@ -645,6 +645,14 @@
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{N}ix{O}{S} {M}anual --- nixos.org}
     \endentry
+    \entry{nixosUserEnvironment}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://nixos.wiki/wiki/User_Environment}}
+      \field{note}{[Accessed 09-11-2024]}
+      \field{title}{{U}ser {E}nvironment - {N}ix{O}{S} {W}iki --- nixos.wiki}
+    \endentry
     \entry{dolstra2013charon}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
@@ -709,8 +717,8 @@
       \strng{authorbibnamehash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authornamehash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authorfullhash}{e94601a3d5f3025f11604a2085a0bcb1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Functional Programming}
@@ -753,6 +761,40 @@
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{N}ix channels - {N}ix{O}{S} {W}iki --- nixos.wiki}
     \endentry
+    \entry{serpanos2013security}{article}{}
+      \name{author}{2}{}{%
+        {{hash=66c902d10e4fb99e4c04778a8b718988}{%
+           family={Serpanos},
+           familyi={S\bibinitperiod},
+           given={Dimitrios\bibnamedelima N},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=cbec079e80b69f60deb2e4f40b1ec0a6}{%
+           family={Voyiatzis},
+           familyi={V\bibinitperiod},
+           given={Artemios\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{a4ff22bfecfcb67dccfebebbd2fabd0e}
+      \strng{fullhash}{a4ff22bfecfcb67dccfebebbd2fabd0e}
+      \strng{bibnamehash}{a4ff22bfecfcb67dccfebebbd2fabd0e}
+      \strng{authorbibnamehash}{a4ff22bfecfcb67dccfebebbd2fabd0e}
+      \strng{authornamehash}{a4ff22bfecfcb67dccfebebbd2fabd0e}
+      \strng{authorfullhash}{a4ff22bfecfcb67dccfebebbd2fabd0e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on embedded computing systems (TECS)}
+      \field{number}{1s}
+      \field{title}{Security challenges in embedded systems}
+      \field{volume}{12}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+    \endentry
     \entry{secopsolutionHistorySecOps}{misc}{}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
@@ -793,6 +835,43 @@
       \field{title}{Secure medical internet of things framework based on parkerian hexad model}
       \field{volume}{10}
       \field{year}{2019}
+    \endentry
+    \entry{dolstra2004nix}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
+           family={Dolstra},
+           familyi={D\bibinitperiod},
+           given={Eelco},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9d00fdfaa90141fbd55d29c1384767cf}{%
+           family={De\bibnamedelima Jonge},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Merijn},
+           giveni={M\bibinitperiod}}}%
+        {{hash=05c571c161af3b68085a0f3a9cb29efa}{%
+           family={Visser},
+           familyi={V\bibinitperiod},
+           given={Eelco},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{fullhash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{bibnamehash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{authorbibnamehash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{authornamehash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{authorfullhash}{eb41b57c9692b02d52ec682552d16f68}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{LISA}
+      \field{title}{Nix: A Safe and Policy-Free System for Software Deployment.}
+      \field{volume}{4}
+      \field{year}{2004}
+      \field{pages}{79\bibrangedash 92}
+      \range{pages}{14}
     \endentry
     \entry{kemmerer2003cybersecurity}{inproceedings}{}
       \name{author}{1}{}{%
@@ -835,8 +914,8 @@
       \strng{authorbibnamehash}{90fb5b4c5b28e275e4aea03dd7f01c6c}
       \strng{authornamehash}{90fb5b4c5b28e275e4aea03dd7f01c6c}
       \strng{authorfullhash}{90fb5b4c5b28e275e4aea03dd7f01c6c}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Information Security Program at Lewis University}
@@ -881,8 +960,8 @@
       \field{title}{{S}ecurity - {N}ix{O}{S} {W}iki --- nixos.wiki}
     \endentry
     \entry{oasisopenMQTTVersion}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html}}
       \field{note}{[Accessed 22-05-2024]}
@@ -897,8 +976,8 @@
       \field{title}{{W}ayland --- wayland.freedesktop.org}
     \endentry
     \entry{githubGitHubNixcommunitynixosanywhere}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/nix-community/nixos-anywhere}}
       \field{note}{[Accessed 01-10-2024]}
@@ -952,8 +1031,8 @@
       \strng{authorbibnamehash}{768b813e562f41d9a0455501ef277c97}
       \strng{authornamehash}{768b813e562f41d9a0455501ef277c97}
       \strng{authorfullhash}{768b813e562f41d9a0455501ef277c97}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{NATO Science and Technology Organization (STO)}
@@ -976,8 +1055,8 @@
       \strng{authorbibnamehash}{02cd6b82c8ebcc6597f2dce26ecae23a}
       \strng{authornamehash}{02cd6b82c8ebcc6597f2dce26ecae23a}
       \strng{authorfullhash}{02cd6b82c8ebcc6597f2dce26ecae23a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SANS Institute Information Security Reading Room}
@@ -1016,8 +1095,8 @@
       \strng{authorbibnamehash}{a1ce8b8a22338aa61f9d4b66b30fdec3}
       \strng{authornamehash}{661bf643f0ece1276e0fe9bc76abaf3e}
       \strng{authorfullhash}{a1ce8b8a22338aa61f9d4b66b30fdec3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Computing Surveys (CSUR)}
@@ -1055,8 +1134,8 @@
       \strng{authorbibnamehash}{59099a5ea252a6e8484de2392cb07aa1}
       \strng{authornamehash}{59099a5ea252a6e8484de2392cb07aa1}
       \strng{authorfullhash}{59099a5ea252a6e8484de2392cb07aa1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2009 Ninth International Conference on Quality Software}
@@ -1097,8 +1176,8 @@
       \strng{authorbibnamehash}{02f11c5a1510785e91eab1fe002a4c3d}
       \strng{authornamehash}{106bcb491ff4b8d4970d932d6a76568e}
       \strng{authorfullhash}{02f11c5a1510785e91eab1fe002a4c3d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2010 Second International Conference on COMmunication Systems and NETworks (COMSNETS 2010)}

@@ -14,9 +14,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Probabilities of each state transition occurring in a 7 state Markov chain, where s represents state, c count and p probability of the transition succeeding. \(C_t\) represents total count. Given action is ''Monitor state''.}}{46}{table.6.1}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Probabilities of observation across states.}}{46}{table.6.2}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Different states, defensive measures, observations and attack measures for the system.}}{47}{table.6.3}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Probabilities of each state transition occurring in a 7 state Markov chain, where s represents state, c count and p probability of the transition succeeding. \(C_t\) represents total count. Given action is ''Monitor state''.}}{45}{table.6.1}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Probabilities of observation across states.}}{45}{table.6.2}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Different states, defensive measures, observations and attack measures for the system.}}{46}{table.6.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 

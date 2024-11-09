@@ -9,14 +9,13 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Distribution of Linux distributions. From top left to bottom: Slackware, Debian, Red Hat, Jurix and smaller distributions, including NixOS (https://en.wikipedia.org/wiki/List\_of\_Linux\_distributions####/media/File:Linux\_Distribution\_Timeline.svg)}}{3}{figure.1.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Relations between different user environments and installed programs (https://nixos.wiki/wiki/File:NixManual-User-environments.png)}}{14}{figure.2.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Relations between different user environments and installed programs \blx@tocontentsinit {0}\cite {nixosUserEnvironment}.}}{13}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The CIA-triad, a way to demonstrate conflicting security measures \blx@tocontentsinit {0}\cite {hughes2013quantitative}. (https://en.wikipedia.org/wiki/Information_security####/media/File:CIAJMK1209-en.svg)}}{22}{figure.3.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The CIA-triad, a way to demonstrate conflicting security measures \blx@tocontentsinit {0}\cite {hughes2013quantitative}.}}{22}{figure.3.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Working example of a NixOS client displaying image with Wayland and Feh.}}{31}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Architectural graph of the test setup.}}{32}{figure.4.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Working example of a NixOS client displaying image with Wayland and Feh.}}{29}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architectural graph of the test setup.}}{30}{figure.4.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The QuERIES methodology is used as a reference flowchart for evaluation of security. \blx@tocontentsinit {0}\cite {hughes2013quantitative}}}{41}{figure.5.1}%
 \addvspace {10\p@ }

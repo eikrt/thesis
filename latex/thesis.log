@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  8 NOV 2024 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  9 NOV 2024 18:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1142,6 +1142,9 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (./thesis.aux
 
+LaTeX Warning: Label `parchitecture' multiply defined.
+
+
 LaTeX Warning: Label `probtable' multiply defined.
 
 )
@@ -1261,104 +1264,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout9 = `thesis.toc'.
 
  [3]
-(./thesis.lof
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...iki/List\_of\_Linux\_distributions##
-                                                  ######/media/File:Linux\_D...
-l.12 ...stribution\_Timeline.svg)}}{3}{figure.1.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...i/List\_of\_Linux\_distributions####
-                                                  ####/media/File:Linux\_Dis...
-l.12 ...stribution\_Timeline.svg)}}{3}{figure.1.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...List\_of\_Linux\_distributions######
-                                                  ##/media/File:Linux\_Distr...
-l.12 ...stribution\_Timeline.svg)}}{3}{figure.1.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...st\_of\_Linux\_distributions########
-                                                  /media/File:Linux\_Distrib...
-l.12 ...stribution\_Timeline.svg)}}{3}{figure.1.1}
-                                                  %
-? 
-
-Overfull \hbox (231.12949pt too wide) in paragraph at lines 12--12
- \T1/cmr/m/n/12 NixOS (https://en.wikipedia.org/wiki/List_of_Linux_distribution
-s/media/File:Linux_Distribution_Timeline.svg)[] [][]  
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in math mode.
-<argument> ...edia.org/wiki/Information_security##
-                                                  ######/media/File:CIAJMK12...
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in math mode.
-<argument> ...ia.org/wiki/Information_security####
-                                                  ####/media/File:CIAJMK1209...
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in math mode.
-<argument> ....org/wiki/Information_security######
-                                                  ##/media/File:CIAJMK1209-e...
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! You can't use `macro parameter character #' in math mode.
-<argument> ...rg/wiki/Information_security########
-                                                  /media/File:CIAJMK1209-en....
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! Extra }, or forgotten $.
-<argument> ...#####/media/File:CIAJMK1209-en.svg)}
-                                                  }\Hy@toclinkend 
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! Extra }, or forgotten $.
-<argument> ...####/media/File:CIAJMK1209-en.svg)}}
-                                                  \Hy@toclinkend 
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.16 .../File:CIAJMK1209-en.svg)}}{22}{figure.3.1}
-                                                  %
-? 
-
-Overfull \hbox (11.8434pt too wide) in paragraph at lines 16--16
- \T1/cmr/m/n/12 [[]32[]]. (https://en.wikipedia.org/wiki/Information$[]\OML/cmm
-/m/it/12 ecurity=media=File \OT1/cmr/m/n/12 : 
- []
-
-)
+(./thesis.lof)
 \tf@lof=\write10
 \openout10 = `thesis.lof'.
 
@@ -1388,15 +1294,13 @@ ine 1.
 <to be read again> 
                    x
 l.4 ...ts called packages \cite{gnuPackagesx2014}.
-                                                   A package manager is an i...
-
+                                                   A package
 ? 
 ! Illegal parameter number in definition of \abx@field@title.
 <to be read again> 
                    x
-l.4 ... user environments \cite{gnuPackagesx2014}.
-                                                   Every Linux device must h...
-
+l.8 ... user environments \cite{gnuPackagesx2014}.
+                                                   Every Linux
 ? 
 [1
 
@@ -1405,100 +1309,54 @@ l.4 ... user environments \cite{gnuPackagesx2014}.
 ! Illegal parameter number in definition of \abx@field@title.
 <to be read again> 
                    x
-l.12 ...r 28 000 packages \cite{gnuPackagesx2014}.
-                                                   Guix has some improvement...
-
+l.46 ...r 28 000 packages \cite{gnuPackagesx2014}.
+                                                   Guix has
 ? 
-<latex/kuvat/timeline.png, id=348, 321.2pt x 1210.5225pt>
-File: latex/kuvat/timeline.png Graphic file (type png)
-<use latex/kuvat/timeline.png>
-Package pdftex.def Info: latex/kuvat/timeline.png  used on input line 17.
-(pdftex.def)             Requested size: 128.47772pt x 484.20042pt.
-! Illegal parameter number in definition of \GetTitleStringResult.
-<to be read again> 
-                   /
-l.18 ...a/File:Linux\_Distribution\_Timeline.svg)}
-                                                  
-? 
-! Illegal parameter number in definition of \GTS@GlobalString.
-<to be read again> 
-                   /
-l.18 ...a/File:Linux\_Distribution\_Timeline.svg)}
-                                                  
-? 
-! Illegal parameter number in definition of \reserved@a.
-<to be read again> 
-                   /
-l.18 ...a/File:Linux\_Distribution\_Timeline.svg)}
-                                                  
-? 
-! You can't use `macro parameter character #' in restricted horizontal mode.
-<argument> ...iki/List\_of\_Linux\_distributions##
-                                                  /media/File:Linux\_Distrib...
-l.18 ...a/File:Linux\_Distribution\_Timeline.svg)}
-                                                  
-? 
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...iki/List\_of\_Linux\_distributions##
-                                                  /media/File:Linux\_Distrib...
-l.18 ...a/File:Linux\_Distribution\_Timeline.svg)}
-                                                  
-? 
-
-Overfull \hbox (131.74113pt too wide) in paragraph at lines 18--18
-\T1/cmr/m/n/12 (https://en.wikipedia.org/wiki/List_of_Linux_distributions/media
-/File:Linux_Distribution_Timeline.svg) 
- []
-
-[2] [3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.24 \section
-             {Research methodologies and questions} <./latex/kuvat/timeline.png
->] [4] [5] [6]) (./research.tex) (./imperative.tex [7]
+[2] [3] [4] [5]) (./research.tex) (./imperative.tex [6]
 \relax  2.
-[8
+[7
 
-] [9]
+] [8]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 4.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<latex/kuvat/cropped_apt_output.jpg, id=444, 182.1204pt x 105.2733pt>
+<latex/kuvat/cropped_apt_output.jpg, id=432, 182.1204pt x 21.681pt>
 File: latex/kuvat/cropped_apt_output.jpg Graphic file (type jpg)
 <use latex/kuvat/cropped_apt_output.jpg>
 Package pdftex.def Info: latex/kuvat/cropped_apt_output.jpg  used on input line
  46.
-(pdftex.def)             Requested size: 364.2399pt x 210.54608pt.
- [10]
+(pdftex.def)             Requested size: 364.2399pt x 43.36188pt.
+ [9 <./latex/kuvat/cropped_apt_output.jpg>]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [11 <./latex/kuvat/cropped_apt_output.jpg>] [12{/usr/share/texmf/fonts/enc/dv
-ips/cm-super/cm-super-ts1.enc}]
-<latex/kuvat/user-environments.png, id=491, 425.01643pt x 245.48857pt>
-File: latex/kuvat/user-environments.png Graphic file (type png)
-<use latex/kuvat/user-environments.png>
-Package pdftex.def Info: latex/kuvat/user-environments.png  used on input line 
-87.
-(pdftex.def)             Requested size: 425.01538pt x 245.48796pt.
- [13] [14
+) [10{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [11]
+
+LaTeX Warning: Reference `userenv' on page 12 undefined on input line 96.
+
+<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=478, 594.72188pt x 324.46219pt>
+
+File: ./svg-inkscape/symlinks.drawio_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/symlinks.drawio_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/symlinks.drawio_svg-raw.pdf  used on in
+put line 99.
+(pdftex.def)             Requested size: 594.72043pt x 324.46138pt.
+[12] [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.101         " 
-                arbitrary vim config <./latex/kuvat/user-environments.png>]
-[15] [16]) (./embedded.tex [17]
+l.124 
+       <./svg-inkscape/symlinks.drawio_svg-raw.pdf>] [14] [15]) (./embedded.tex
+[16]
 \relax  3.
-[18
+[17
 
-] [19] [20]
+] [18] [19] [20]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1508,71 +1366,16 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
 [21]
-<latex/kuvat/ciatriad.png, id=588, 1027.84pt x 1027.84pt>
-File: latex/kuvat/ciatriad.png Graphic file (type png)
-<use latex/kuvat/ciatriad.png>
-Package pdftex.def Info: latex/kuvat/ciatriad.png  used on input line 52.
-(pdftex.def)             Requested size: 205.56436pt x 205.56436pt.
+<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=656, 258.11884pt x 220.56555pt>
 
-! Illegal parameter number in definition of \GetTitleStringResult.
-<to be read again> 
-                   /
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! Illegal parameter number in definition of \GTS@GlobalString.
-<to be read again> 
-                   /
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! Illegal parameter number in definition of \reserved@a.
-<to be read again> 
-                   /
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! You can't use `macro parameter character #' in math mode.
-<argument> ...edia.org/wiki/Information_security##
-                                                  /media/File:CIAJMK1209-en....
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! You can't use `macro parameter character #' in math mode.
-<argument> ...edia.org/wiki/Information_security##
-                                                  /media/File:CIAJMK1209-en....
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.53 ...n_security#/media/File:CIAJMK1209-en.svg)}
-                                                  
-? 
+File: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ciatriad.drawio_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf  used on in
+put line 194.
+(pdftex.def)             Requested size: 258.1182pt x 220.565pt.
 
-Underfull \hbox (badness 2538) in paragraph at lines 53--53
-\T1/cmr/m/n/12 sures [[]32[]]. (https://en.wikipedia.org/wiki/Information$[]\OM
-L/cmm/m/it/12 ecurity=media=File \OT1/cmr/m/n/12 :
- []
+
+LaTeX Warning: Reference `timeline' on page 22 undefined on input line 202.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1587,8 +1390,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.59 
-      <./latex/kuvat/ciatriad.png>]) (./architecture.tex
+l.215 
+       <./svg-inkscape/ciatriad.drawio_svg-raw.pdf>]) (./architecture.tex
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1601,67 +1404,83 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 \relax  4.
 [24
 
-] [25] [26] [27] [28] [29]
-<latex/kuvat/testimage.jpeg, id=709, 1599.9775pt x 1080.035pt>
+] [25] [26] [27] [28]
+<latex/kuvat/testimage.jpeg, id=762, 1599.9775pt x 1080.035pt>
 File: latex/kuvat/testimage.jpeg Graphic file (type jpg)
 <use latex/kuvat/testimage.jpeg>
-Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 139.
+Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 202.
 (pdftex.def)             Requested size: 319.98984pt x 216.00317pt.
-<latex/kuvat/architecture.drawio.png, id=710, 492.84125pt x 611.28375pt>
-File: latex/kuvat/architecture.drawio.png Graphic file (type png)
-<use latex/kuvat/architecture.drawio.png>
-Package pdftex.def Info: latex/kuvat/architecture.drawio.png  used on input lin
-e 161.
-(pdftex.def)             Requested size: 394.27351pt x 489.02766pt.
- [30] [31
+ [29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 \end{lstlisting}
-                       <./latex/kuvat/testimage.jpeg>] [32
+l.212 \begin{lstlisting}
+                         <./latex/kuvat/testimage.jpeg>]
+
+! Package svg Error: File `thesismain.drawio.svg' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 ...idth]{latex/kuvat/thesismain.drawio.svg}}
+                                                  
+? 
+<./svg-inkscape/architect_svg-raw.pdf, id=776, 445.28859pt x 530.54462pt>
+File: ./svg-inkscape/architect_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/architect_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/architect_svg-raw.pdf  used on input li
+ne 223.
+(pdftex.def)             Requested size: 445.2875pt x 530.54332pt.
+
+Overfull \hbox (18.49615pt too wide) in paragraph at lines 223--224
+[][] 
+ []
+
+[30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 \end{lstlisting}
-                       <./latex/kuvat/architecture.drawio.png>]
-Overfull \hbox (54.58112pt too wide) in paragraph at lines 188--190
+l.269 
+      ] [31 <./svg-inkscape/architect_svg-raw.pdf>]
+Overfull \hbox (54.58112pt too wide) in paragraph at lines 286--290
 []\T1/cmr/m/n/12 Run ''curl -L https://github.com/nix-community/nixos-images/re
 leases/download/nixos-
  []
 
-[33]
 ! You can't use `macro parameter character #' in horizontal mode.
-l.192 ...where -- --flake <path to configuration>#
-                                                  <configuration name> root@...
-
+l.295     configuration>#
+                         <configuration name> root@<ip address>''
 ? 
 
-Overfull \hbox (23.64857pt too wide) in paragraph at lines 192--193
+Overfull \hbox (23.64857pt too wide) in paragraph at lines 293--296
 []\T1/cmr/m/n/12 Upload the flake from the server to the de-vice ''nix run gith
 ub:nix-community/nixos-
  []
 
-) (./securitystandpoints.tex [34]
+[32]) (./securitystandpoints.tex [33]
 \relax  5.
-[35
+[34
 
-] [36] [37] [38] [39] [40]
-<latex/kuvat/queries.png, id=826, 434.62375pt x 477.785pt>
-File: latex/kuvat/queries.png Graphic file (type png)
-<use latex/kuvat/queries.png>
-Package pdftex.def Info: latex/kuvat/queries.png  used on input line 92.
-(pdftex.def)             Requested size: 217.31134pt x 238.8919pt.
- [41
+] [35] [36] [37] [38] [39]
+<./svg-inkscape/queries.drawio_svg-raw.pdf, id=924, 202.88297pt x 279.29344pt>
+File: ./svg-inkscape/queries.drawio_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/queries.drawio_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/queries.drawio_svg-raw.pdf  used on inp
+ut line 91.
+(pdftex.def)             Requested size: 202.88246pt x 279.29276pt.
+ [40] [41
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.100 
-       <./latex/kuvat/queries.png>] [42]) (./analysis.tex [43]
+l.113     \item D
+                 efine the observation probabilities of the system <./svg-inksc
+ape/queries.drawio_svg-raw.pdf>]) (./analysis.tex [42]
 \relax  6.
-[44
+[43
 
 ]
 ! Missing $ inserted.
@@ -2408,7 +2227,7 @@ l.63  O_4&
 l.63  O_4&
           &&&&&&&& \\
 ? 
-[45] [46
+[44] [45
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2529,24 +2348,24 @@ l.108  & & & &
 l.110  & & & &
               
 ? 
-[47
+[46
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.3}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.117 \end{landscape}
-                     ]) (./further.tex [48
+                     ]) (./further.tex [47
 
 
 ]
 \relax  7.
-[49
+[48
 
-]) (./conclusion.tex [50]
+]) (./conclusion.tex [49]
 \relax  8.
-[51
+[50
 
-]) [52]
+]) [51]
 ! Illegal parameter number in definition of \abx@field@title.
 <to be read again> 
                    x
@@ -2571,7 +2390,7 @@ Overfull \hbox (23.62286pt too wide) in paragraph at lines 82--82
 avec gnu guix^^Q, \T1/cmr/m/it/12 GNU/Linux
  []
 
-[53
+[52
 
 ]
 
@@ -2582,13 +2401,21 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
-[54]
+[53]
 Overfull \hbox (32.40901pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/n/12 Canonical, \T1/cmr/m/it/12 Ubuntu Man-page: Apt - command-line
  in-ter-face --- man-pages.ubuntu.com\T1/cmr/m/n/12 ,
  []
 
 
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.04742pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.04742pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
+
+[54]
 Overfull \hbox (5.67918pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/it/12 Home Man-ager Man-ual --- nix-community.github.io\T1/cmr/m/n/
 12 , []$\T1/cmtt/m/n/12 https : / / nix -[] community .
@@ -2626,15 +2453,6 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
 [57]
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
-
-[58]
 Appendix A.
 
 Overfull \hbox (764.69269pt too wide) in paragraph at lines 99--99
@@ -3056,35 +2874,33 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  37193 strings out of 476182
- 672846 string characters out of 5795596
- 2091975 words of memory out of 5000000
- 58279 multiletter control sequences out of 15000+600000
+ 673884 string characters out of 5795596
+ 2092975 words of memory out of 5000000
+ 58301 multiletter control sequences out of 15000+600000
  575878 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 125i,12n,121p,1293b,3970s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,12n,121p,1413b,3970s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{\\relax\040} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sftt1200.pfb>
-Output written on thesis.pdf (72 pages, 1144753 bytes).
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (71 pages, 788767 bytes).
 PDF statistics:
- 1146 PDF objects out of 1200 (max. 8388607)
- 1007 compressed objects within 11 object streams
- 311 named destinations out of 1000 (max. 500000)
- 428 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1256 PDF objects out of 1440 (max. 8388607)
+ 1062 compressed objects within 11 object streams
+ 289 named destinations out of 1000 (max. 500000)
+ 423 words of extra memory for PDF output out of 10000 (max. 10000000)
 

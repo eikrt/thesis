@@ -1,31 +1,82 @@
 \chapter{Declarative vs. Imperative systems} \label{imperative}
 
-There have been different approaches to declarative modeling of systems design. Endres et al. compares declarative and imperative systems from a cloud computing standpoint, and collects systematic information on what are the strengths and weaknesses of TOSCA, IBM Bluemix, Chef, Juju, and OpenTOSCA \cite{endres2017declarative}. Van der Burg and Eelco Dostra use NixOS as a solution for declaratively distributing into cloud and executing integration and system tests \cite{van2010declarative}. Most approaches researched through literature review focus on distributing to cloud, and distributing to embedded clearly remains as a niche.
+There have been different approaches to declarative modeling of
+systems design. Endres et al. compares declarative and imperative
+systems from a cloud computing standpoint, and collects systematic
+information on what are the strengths and weaknesses of TOSCA, IBM
+Bluemix, Chef, Juju, and OpenTOSCA \cite{endres2017declarative}. Van
+der Burg and Eelco Dostra use NixOS as a solution for declaratively
+distributing into cloud and executing integration and system tests
+\cite{van2010declarative}. Most approaches researched through
+literature review focus on distributing to cloud, and distributing to
+embedded clearly remains as a niche.
 
-Breitenbücher et al. focus on deploying into embedded and discusses the challenges an IoT user face when deploying a system. It's proven that setting up devices with mandatory scripts and other actions is a challenging task, when a number of devices should be setup. Cloud is something that is useful to be used in tandem with IoT but this thesis focuses on an \textit{in-premises} reference solution. \cite{breitenbucher2017declarative}
+Breitenbücher et al. focus on deploying into embedded and discusses
+the challenges an IoT user face when deploying a system. It's proven
+that setting up devices with mandatory scripts and other actions is a
+challenging task, when a number of devices should be set up. Cloud is
+something that is useful to be used in tandem with IoT but this thesis
+focuses on an \textit{in-premises} reference
+solution. \cite{breitenbucher2017declarative}
 
-In this chapter, we focus on comparing different declarative approaches to the more traditional imperative models, highlighting the strengths and weaknesses of both. Specifically, examples are provided to illustrate the limitations often observed in imperative systems, particularly in terms of reproducibility, scalability and administration standpoints. In contrast, cloud-oriented approaches serve as a prime reference point for how declarative systems can be effectively distributed and automated.
+In this chapter, we focus on comparing different declarative
+approaches to the more traditional imperative models, highlighting the
+strengths and weaknesses of both. Specifically, examples are provided
+to illustrate the limitations often observed in imperative systems,
+particularly in terms of reproducibility, scalability and
+administration standpoints. Cloud-oriented approaches serve as a prime
+reference point for how declarative systems can be effectively
+distributed and automated.
 
 \section{Imperative systems}
 
-Imperative deployment models base their functionalities through a process in which the order of events have a critical significance to the output \cite{breitenbucher2017declarative}. In context of virtualization, imperative tooling can be used to form a all activities to be executed, the control flow, their execution order, and the data flow between them \cite{endres2017declarative}. This kind of process is best to be used in conjunction with a formalized workflow or standard such as BPEL \cite{endres2017declarative}. In contrast, declarative models don't have such specific requirements, as these models formalize the processes in the configuration files \cite{endres2017declarative}.
+Imperative deployment models base their functionalities through a
+process in which the order of events have a critical significance to
+the output \cite{breitenbucher2017declarative}. In context of
+virtualization, imperative tooling can be used to form a all
+activities to be executed, the control flow, their execution order,
+and the data flow between them \cite{endres2017declarative}. This kind
+of process is best to be used in conjunction with a formalized
+workflow or standard such as BPEL \cite{endres2017declarative}. In
+contrast, declarative models don't have such specific requirements, as
+these models formalize the processes in the configuration files
+\cite{endres2017declarative}.
 
-An imperative system provides updatability and modification through a destructive instrument. Popular imperative package managers, e.g can remove and overwrite existing files, which leaves the system in an inconsistent state \cite{dolstra2008nixos}. Different installs have by nature different states, which causes many problems discussed in this thesis.
+An imperative system provides updatability and modification through a
+destructive instrument. Popular imperative package managers, e.g can
+remove and overwrite existing files, which leaves the system in an
+inconsistent state \cite{dolstra2008nixos}. Different installs have by
+nature different states, which causes many problems discussed in this
+thesis.
 
-Imperative systems, while popular, have inherent problems regarding administrative traits, contributing to a framework, where the underlying system has \textbf{no traceability}: the implication that reproducibility is impossible, as changes to a system are not traced. NixOS provides a solution for this problem with it's Nix generation system. The second point contributes to the fact that with imperative systems, upgrading is more error-prone than installing from scratch. This is due to the fact that imperative systems have \textbf{unpredictable} state, from where the system should migrate to a predictable state. This causes major issues regarding upgradability. \cite{dolstra2007purely}
+Imperative systems, while popular, have inherent problems regarding
+administrative traits contributing to a framework where the underlying
+system has \textbf{no traceability}: the implication that
+reproducibility is impossible, as changes to a system are not
+traced. Nix provides a solution for this problem with its Nix
+generation system. The second point contributes to the fact that with
+imperative systems, upgrading is more error-prone than installing from
+scratch. This is due to the fact that imperative systems have
+\textbf{unpredictable} state, from where the system should migrate to
+a predictable state. This causes major issues regarding
+upgradability. \cite{dolstra2007purely}
 
-\textbf{The inability to run multiple configurations side-by-side} is an inherent side effect of a \textit{stateful} system. Declarative systems don't have this problem: an arbitrary number of configurations can exist side by side, as the system is defined only by the configuration, not with the state as a component. \cite{dolstra2007purely}
-
-
+\textbf{The inability to run multiple configurations side-by-side} is
+an inherent side effect of a \textit{stateful} system. Declarative
+systems don't have this problem: an arbitrary number of configurations
+can exist side by side, as the system is defined only by the
+configuration, not with the state as a
+component. \cite{dolstra2007purely}
 
 \subsection{Debian/Apt}
 
-An example of imperative systems' problematic nature is provided with the following demonstration. Executing shell command
+An example of imperative systems' problematic nature is provided with
+the following demonstration. Executing shell command
 \begin{lstlisting}
     apt install emacs
 \end{lstlisting}
-installs a text editor wrapped as a Linux package.
-The package emacs has a dependency, emacs-gtk, which can be removed with command
+installs a text editor wrapped as a Linux package.  The package emacs
+has a dependency, emacs-gtk, which can be removed with command
 \begin{lstlisting}
     apt remove emacs-gtk
 \end{lstlisting}
@@ -34,8 +85,14 @@ Another dependency, emacs-lucid can be removed with command
     apt remove emacs-lucid
 \end{lstlisting}
 
-we can see that after removing, apt automatically installs emacs-gtk to avoid breaking the application. The package manager warns: "emacs-lucid has dependency problems, but removing anyway as you requested" as shown in figure \ref{deb_remove}. It's also noteworthy, that the manual page for apt, doesn't say anything about a possible installation side-effect of a package removal command \cite{ubuntuUbuntuManpage}.
-We could forcibly remove the package by invoking
+we can see that after removing, apt automatically installs emacs-gtk
+to avoid breaking the application. The package manager warns:
+"emacs-lucid has dependency problems, but removing anyway as you
+requested" as shown in figure \ref{deb_remove}. It's also noteworthy,
+that the manual page for apt, doesn't say anything about a possible
+installation side-effect of a package removal command
+\cite{ubuntuUbuntuManpage}.  We could forcibly remove the package by
+invoking
 \begin{figure}[H]\label{dpkgsnippet}
 \begin{lstlisting} 
     dpkg --remove --force-depends emacs-lucid
@@ -46,84 +103,218 @@ We could forcibly remove the package by invoking
 \includegraphics[scale=2.0]{latex/kuvat/cropped_apt_output.jpg}
 \label{Terminal output from a Debian system when installing an Emacs package.}
 \end{figure}
-thus leaving the system in an unreliable state. Dpkg is a low-level tool associated with apt, and doesn't automatically handle dependency resolutions or further package relations \cite{thiruvathukal2004gentoo}. What happens if we had a large number of devices, in-premises or cloud where all system commands are done imperatively? We would have a large number of devices that differ from each other, because as shown, the order of commands affect the state of the system. Time is also a factor that causes systems to diverge, as packages are not up-to-date by default. Invoking \begin{lstlisting}
-    apt update
+thus leaving the system in an unreliable state. Dpkg is a low-level
+tool associated with apt, and doesn't automatically handle dependency
+resolutions or further package relations
+\cite{thiruvathukal2004gentoo}. What happens if we had a large number
+of devices, in-premises or cloud where all system commands are done
+imperatively? We would have a large number of devices that differ from
+each other, because as shown, the order of commands affect the state
+of the system and the other way around. Time is also a factor that
+causes systems to diverge, as packages are not up-to-date by
+default. Invoking \begin{lstlisting} apt update
 \end{lstlisting}
-updates the local repositories to match the download mirrors. If, by technical reasons or possible user error this command is conducted in the wrong order, the result will be divergent systems.
+updates the local repositories to match the download mirrors. If by
+technical reasons or possible user error this command is conducted in
+the wrong order there will be divergent systems.
 
-Implementing a deployment model with only Debian would be a gruesome task, as the order of events which occur during the setup phase is critical. As presented by Endres et al. a formalized workflow graph would be needed to set up a reliable system. However, a Debian could be used as a host to user-space application deployment, such as Bluemix or Chef, where common DevOps practices can be used \cite{endres2017declarative}.
+Implementing a deployment model with only Debian would be a gruesome
+task, as the order of events which occur during the setup phase is
+critical. As presented by Endres et al. a formalized workflow graph
+would be needed to set up a reliable system. However, a Debian could
+be used as a host to user-space application deployment, such as
+Bluemix or Chef, where common DevOps practices can be used
+\cite{endres2017declarative}.
 
 \subsection{Gentoo/Portage} \label{gentoo}
 
-Gentoo Linux is bundled with the package manager Portage, which consists of two components: ebuild and emerge, which have similar relation as dpkg and apt. Portage is primarily source-based package manager; ebuild builds and installs packages from source and emerge resolves dependencies and handles other related issues. Portage's flagship feature is its ''USE-flags'', a mechanism that enables compiling source files with or without specific features. For example, a make.conf file in /etc/portage could have USE-flags specified as:
+Gentoo Linux is bundled with the package manager Portage, which
+consists of two components: ebuild and emerge, which have similar
+relation as dpkg and apt. Portage is primarily source-based package
+manager; ebuild builds and installs packages from source and emerge
+resolves dependencies and handles other related issues. Portage's
+flagship feature is its ''USE-flags'', a mechanism that enables
+compiling source files with or without specific features. For example,
+a make.conf file in /etc/portage could have USE-flags specified as:
 \begin{figure}[H] \label {gentoosnippet1}
 \begin{lstlisting}
 USE=''-X wayland''
 \end{lstlisting}
 \end{figure}
-and the sources wouldn't, if possible, compile with X11 support, but would with Wayland. This results in smaller binary sizes, increased performance and enhanced security through package minimalism. When there's less dependencies and installed programs, there's also less attack surface. \cite{wang2017network}
+and the sources wouldn't, if possible, compile with X11 support, but
+would with Wayland. This results in smaller binary sizes, increased
+performance and enhanced security through package minimalism. When
+there's less dependencies and installed programs, there's also less
+attack surface \cite{wang2017network}.
 
-Gentoo's portage system allows sharing binaries and sources with rsync, which would be a useful feature in a server-client model, similar in chapter \ref{architecture}, where updates are centralised \cite{thiruvathukal2004gentoo}. A architecture with imperative components isn't proposed in this thesis, but if it would be, a suitable candidate would be something that uses Gentoo Linux as it's foundation.
+Gentoo's portage system allows sharing binaries and sources with
+rsync, which would be a useful feature in a server-client model,
+similar in chapter \ref{architecture}, where updates are centralised
+\cite{thiruvathukal2004gentoo}. An architecture with imperative
+components isn't proposed in this thesis, but if it would be, a
+suitable candidate would be something that uses Gentoo Linux as it's
+foundation.
 
-One benefit from NixOS is its lightweight tendency to enable system tests. Integrating system tests with a Gentoo system would require a considerable amount of work, as setting up such system needs a lot of configuration and executing commands in a correct order \cite{van2010automating}. Gentoo definitely fit in an imperative deployment strategy, but the need for explicit detail of every step would be error prone even for a seasoned administrator \cite{breitenbucher2017declarative}.
+One benefit from NixOS is its lightweight tendency to enable system
+tests. Integrating system tests with a Gentoo system would require a
+considerable amount of work, as setting up such system needs a lot of
+configuration and executing commands in a correct order
+\cite{van2010automating}. Gentoo definitely fits in an imperative
+deployment strategy but the requirement for explicit detail of every
+step would be error prone even for a seasoned administrator
+\cite{breitenbucher2017declarative}.
 
 \section{Declarative systems} \label{declarativesystems}
 
-Presented problems in chapter \ref{imperative} can be solved using package manager that is \textit{reproducible, reliable, and atomic}. Package installs in Nix are in isolation from each other, so that they don't have conflicting effects. This results packages being predictable and assures they work coherently, even if underlying install is different. Because the packages are declared in a single set of configuration files, it's trivial to reproduce the system in a different environment. The demonstrated effect in snippet \ref{dpkgsnippet} was a problem due to lack of isolation. When dependencies are scattered in the system instead of declared explicitly in a installed package a faulty state could be achieved. Nix assures, that these kind of problems are out of the question. A result of this is that in a Nix system, installs of same program can reside side-by-side with varying versions \cite{dolstra2008nixos}.
+Presented problems in chapter \ref{imperative} can be solved using
+package manager that is reproducible, reliable and atomic. Package
+installs in Nix are in isolation from each other so that they don't
+have conflicting effects. This results packages being predictable and
+assures they work coherently even if underlying install is
+different. Because the packages are declared in a single set of
+configuration files it's trivial to reproduce the system in a
+different environment. The demonstrated effect in snippet
+\ref{dpkgsnippet} was a problem due to lack of isolation. When
+dependencies are scattered in the system instead of declared
+explicitly in a installed package, a faulty state could be
+achieved. Nix assures, that these kind of problems are out of the
+question. A result of this is that in a Nix system installs of same
+program can reside side-by-side with varying versions
+\cite{dolstra2008nixos}.
 
-As presented by Endres et al, systems can be declared, even if the underlying infrastructure is imperative by nature. \cite{endres2017declarative} This thesis focuses on purely functional methods for addressing complex problems that arise with imperative models. Tools such as Chef focus on deploying on a imperative system, which causes an inherent problem with cohesion in a system that should work regardless of the underlying machine or network. Alternative deployment tools are discussed in section \ref{nondeclarative}.
+As presented by Endres et al, systems can be declared, even if the
+underlying infrastructure is imperative by nature
+\cite{endres2017declarative}. This thesis focuses on purely functional
+methodologies which fix the most prevalent issues compared with
+imperative models. Tools such as Chef focus on deploying on a
+imperative system, which causes an inherent problem with cohesion in a
+system that should work regardless of the underlying machine or
+network. Alternative deployment tools are discussed in section
+\ref{nondeclarative}.
 
-It's also noteworthy that many imperative package mangers don't support rollback mechanisms. If the Nix configuration file is changed and the system is rebuilt with command
+It's also noteworthy that many imperative package mangers don't
+support rollback mechanisms. If the Nix configuration file is changed
+and the system is rebuilt with command
 \begin{lstlisting}
 nixos-rebuild switch
 \end{lstlisting}
-the previous state could be recovered by \begin{lstlisting}
-nix profile rollback
+the previous state could be recovered by \begin{lstlisting} nix
+  profile rollback
 \end{lstlisting}
-This is an important feature because the Nix configuration files control the whole system, they can also leave the system in an undesired state. Nix switches between \textit{profiles}, which is a way to provide different configurations for different user environments as shown in figure \ref{userenv} and provide atomic upgrades and rollbacks. \cite{nixosNixOSManual}
+This is an important feature as the Nix configuration files control
+the whole system, they can also leave the system in an undesired
+state. Nix switches between \textit{profiles}, which is a way to
+provide different configurations for different user environments as
+shown in figure \ref{userenv} and provide atomic upgrades and
+rollbacks. \cite{nixosNixOSManual}
 
-\begin{figure} \label{userenv}
-    \centering
-    \includegraphics{latex/kuvat/user-environments.png}
-    \caption{Relations between different user environments and installed programs (https://nixos.wiki/wiki/File:NixManual-User-environments.png)}
-    \label{userenvs}
+\begin{figure}[t!]
+\centerline{\includesvg[width=1.0\columnwidth]{latex/kuvat/symlinks.drawio.svg}}
+\caption{Relations between different user environments and installed
+  programs \cite{nixosUserEnvironment}.}
+\label{userenvs}
 \end{figure}
 
-A definitive part of the ecosystem is the configuration language Nix which is a domain-specific language for configurations and it's purely functional and lazily evaluated. Purity means that values can't change during computation and every function provides the same output depending on the input \cite{dolstra2013charon}.
+A fundamental component of the ecosystem is Nix, a domain-specific
+language designed for configurations, distinguished by its functional
+nature and lazy evaluation. The concept of purity is central to Nix,
+where values remain unchanged throughout computation, and every
+function consistently yields the same output regardless of input
+\cite{dolstra2013charon}. The security implications of using Nix
+vs. an imperative system is discussed in chapter \ref{embedded}.
 
 \subsection{Non-declarative components} \label{nondeclarative}
 
-Declarative distributions such as Nix can't do everything in the system in stateless manner. Some components of the system, such as databases must have a distinct state, which can't be practically declared with package manager apart from initial configurations \cite{van2013reference}. Home directories can vary as much as the system administrator desires. For example, a configuration file for text editor vim is usually declared in the file /home/<user>/.vimrc. Nix provides multiple ways to perform the whole configuration process from the Nix configuration files. One way is declaring the desired .vimrc in the Nix configuration, as in the following snippet: \begin{lstlisting}
-{
-  environment.systemPackages = [
-    (pkgs.vim_configurable.customize {
-      vimrcConfig.customRc = ''
-        " arbitrary vim config
-      '';
-    })
-  ];
-}
+Declarative distributions such as Nix can't do everything in the
+system in stateless manner. Some components of the system, such as
+databases must have a distinct state, which can't be practically
+declared with package manager apart from initial configurations
+\cite{van2013reference}. Home directories can vary as much as the
+system administrator desires. For example, a configuration file for
+text editor vim is usually declared in the file
+/home/<user>/.vimrc. Nix provides multiple ways to perform the whole
+configuration process from the Nix configuration files. One way is
+declaring the desired .vimrc in the Nix configuration, as in the
+following snippet: \begin{lstlisting} { environment.systemPackages = [
+      (pkgs.vim_configurable.customize { vimrcConfig.customRc = '' "
+        arbitrary vim config ''; }) ]; }
 \end{lstlisting}
-Nix provides also provides ways to fetch content to the system from remote URLs, and if the administrator doesn't want the system to remain ''pure'', they can build the system by \begin{lstlisting}
-nixos-rebuild switch --impure
+Nix provides also provides ways to fetch content to the system from
+remote URLs, and if the administrator doesn't want the system to
+remain ''pure'', they can build the system by \begin{lstlisting}
+  nixos-rebuild switch --impure
 \end{lstlisting}
-This results the system having mutable components, which can be desirable from an accessibility point of view, but can result in unpredictable behaviour if the impure components are modified. In this context this means, that the built pure components are read-only and immutable \cite{dolstra2010nixos}.
+This results the system having mutable components, which can be
+desirable from an accessibility point of view, but can result in
+unpredictable behaviour if the impure components are modified. In this
+context this means, that the built pure components are read-only and
+immutable \cite{dolstra2010nixos}.
 
-User environments (Nix profiles) can be used so that for different needs, or for different users there are multiple environments in which the user can operate as shown in figure \ref{userenvs}. User environments are a successor to the concept, where installed programs either reside in /usr/bin, /usr/sbin etc. or have a symbolic link to the said directories. They can be figured as trees of symbolic links that reside also in the Nix store hence referred packages are called ''activated packages''. Remember, that the traditional Unix directory structure, where files are separated to /bin/ /sbin/ etc. doesn't completely apply. Instead, the installed programs reside usually in /nix/store. \cite{dolstra2008nixos}
+User environments (Nix profiles) can be used so that for different
+needs, or for different users there are multiple environments in which
+the user can operate as shown in figure \ref{userenvs}. User
+environments are a successor to the concept, where installed programs
+either reside in /usr/bin, /usr/sbin etc. or have a symbolic link to
+the said directories. They can be figured as trees of symbolic links
+that reside also in the Nix store hence referred packages are called
+''activated packages''. Remember, that the traditional Unix directory
+structure, where files are separated to /bin/ /sbin/ etc. doesn't
+completely apply. Instead, the installed programs reside usually in
+/nix/store. \cite{dolstra2008nixos}
 
-There are continuous build and integration services, such as Hydra, which include Nix-compatible support for handling runtime configuration and tools, such as Disnix and Charon \footnote{Charon is now called NixOps \cite{githubNixNixpkgsNixOS}}, which focus on setting up complementary infrastructure. Van Der Burg presents these new tools to replace Cfengine, Puppet and Chef, which execute operations in convergent manner, meaning that they capture what changes should be done to the machines in a specified network. \cite{van2013reference}
+There are continuous build and integration services, such as Hydra,
+which include Nix-compatible support for handling runtime
+configuration and tools, such as Disnix and Charon \footnote{Charon is
+now called NixOps \cite{githubNixNixpkgsNixOS}}, which focus on
+setting up complementary infrastructure. Van Der Burg presents these
+new tools to replace Cfengine, Puppet and Chef, which execute
+operations in convergent manner, meaning that they capture what
+changes should be done to the machines in a specified
+network. \cite{van2013reference}
 
-These approaches have two central problems: imperative nature of handling environment difference, and inability to guarantee configuration compatibility with a machine. Disnix is a Nix derivative that can overcome these challenges by separating logical properties from physical, and by capturing the essential aspects which form a system. The result with Disnix is a system that can be reproduced anywhere initially, and upgrading it is a trivial task. \cite{van2013reference}
+These approaches have two central problems: imperative nature of
+handling environment difference, and inability to guarantee
+configuration compatibility with a machine. Disnix is a Nix derivative
+that can overcome these challenges by separating logical properties
+from physical, and by capturing the essential aspects which form a
+system. The result with Disnix is a system that can be reproduced
+anywhere initially, and upgrading it is a trivial
+task. \cite{van2013reference}
 
 \subsection{Home manager and flakes}
 
-NixOS environments can be build from a single configuration.nix file, but there are two significant configuration tools for managing NixOS systems: home manager and flakes. Home manager is an extension for managing user profiles with a declarative Nix syntax  \cite{nixcommunityHomeManager}. Home manager has problems with atomic rollbacks and for this reason they are not used in this thesis' examples \cite{nixcommunityHomeManager}.
+NixOS environments can be build from a single configuration.nix file,
+but there are two significant configuration tools for managing NixOS
+systems: home manager and flakes. Home manager is an extension for
+managing user profiles with a declarative Nix syntax
+\cite{nixcommunityHomeManager}. Home manager has problems with atomic
+rollbacks and for this reason they are not used in this thesis'
+examples \cite{nixcommunityHomeManager}.
 
-Flakes are experimental feature of Nix, providing environments, where dependencies are pinned in a lock file, further improving reproducibility of Nix systems. A flake is defined as: ''... a file-system tree whose root directory contains the Nix file specification called flake.nix''. The usage of flakes is a good method for organising different environments within a Nix system, where it can consist of multiple flakes. Flakes, however are a experimental feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
+Flakes are experimental feature of Nix, providing environments, where
+dependencies are pinned in a lock file, further improving
+reproducibility of Nix systems. A flake is defined as: ''... a
+file-system tree whose root directory contains the Nix file
+specification called flake.nix''. The usage of flakes is a good method
+for organising different environments within a Nix system, where it
+can consist of multiple flakes. Flakes, however are a experimental
+feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
 % referoi manuaalia
 \subsection{Ease of updates}
 
-Updating is easy and riskless with NixOS due to atomic rollbacks. NixOS handles software providing through something called "channels". Channel is a set of latest Git commits in a Nixpkgs repository, where they are divided to stable/unstable  and large/small. channels. Unstable channels (large and small) have the latest commits on a rolling basis, but include less conservatively checked functionalities. Stable channels are submitted through a version number (e.g. 23.11), where a new release is published every six months. Large channels on the other hand contain a full set of Nixpkgs binaries, when small include a subset. If a system administrator decides to submit to small channel, they have more recent updates at their disposal, but have to resort to compiling some needed packages from source. \cite{nixosChannelsNixOS}
+Updating is easy and riskless with NixOS due to atomic
+rollbacks. NixOS handles software providing through something called
+"channels". Channel is a set of latest Git commits in a Nixpkgs
+repository, where they are divided to stable/unstable and
+large/small. channels. Unstable channels (large and small) have the
+latest commits on a rolling basis, but include less conservatively
+checked functionalities. Stable channels are submitted through a
+version number (e.g. 23.11), where a new release is published every
+six months. Large channels on the other hand contain a full set of
+Nixpkgs binaries, when small include a subset. If a system
+administrator decides to submit to small channel, they have more
+recent updates at their disposal, but have to resort to compiling some
+needed packages from source. \cite{nixosChannelsNixOS}
 
 Updating a NixOS system is just a manner of invoking command
 
@@ -131,11 +322,8 @@ Updating a NixOS system is just a manner of invoking command
     sudo nix-channel --update
 \end{lstlisting}
 
-and, if stable release is chosen, updating the system.stateVersion from the configuration.nix file \cite{nixosNixOSManual}. Nixpkgs is a repository of working Nix packages using a continuous integration service called Hydra. Hydra evaluates the needed Nix expression of a package, and ensures its functionality. \cite{nixosNixOSManual}
-
-
-
-% tähän voisi jonkun vertailukuvan laittaa
-
-
-
+and, if stable release is chosen, updating the system.stateVersion
+from the configuration.nix file \cite{nixosNixOSManual}. Nixpkgs is a
+repository of working Nix packages using a continuous integration
+service called Hydra. Hydra evaluates the needed Nix expression of a
+package, and ensures its functionality. \cite{nixosNixOSManual}
