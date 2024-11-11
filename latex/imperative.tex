@@ -6,9 +6,9 @@ systems from a cloud computing standpoint, and collects systematic
 information on what are the strengths and weaknesses of TOSCA, IBM
 Bluemix, Chef, Juju, and OpenTOSCA \cite{endres2017declarative}. Van
 der Burg and Eelco Dostra use NixOS as a solution for declaratively
-distributing into cloud and executing integration and system tests
+distributing into cloud, executing integration and system tests
 \cite{van2010declarative}. Most approaches researched through
-literature review focus on distributing to cloud, and distributing to
+literature review focus on distributing to cloud. Distributing to
 embedded clearly remains as a niche.
 
 Breitenbücher et al. focus on deploying into embedded and discusses
@@ -102,7 +102,7 @@ invoking
 % kuva distribuutioiden distribuutioista
 \begin{figure}\label{deb_remove}
 \includegraphics[scale=2.0]{latex/kuvat/cropped_apt_output.jpg}
-\label{Terminal output from a Debian system when installing an Emacs package.}
+\caption{Terminal output from a Debian system when installing an Emacs package.}
 \end{figure}
 thus leaving the system in an unreliable state. Dpkg is a low-level
 tool associated with apt, and doesn't automatically handle dependency
@@ -111,7 +111,7 @@ resolutions or further package relations
 of devices, in-premises or cloud where all system commands are done
 imperatively? We would have a large number of devices that differ from
 each other, because as shown, the order of commands affect the state
-of the system and the other way around. Time is also a factor that
+of the system. Time is also a factor that
 causes systems to diverge, as packages are not up-to-date by
 default. Invoking \begin{lstlisting} apt update
 \end{lstlisting}

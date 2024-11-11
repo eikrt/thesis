@@ -59,17 +59,17 @@ with an usual organisational strategy. \cite{papazov2019cybersecurity}
 
 A more appropriate tool for this task would be SMART - a set of inputs
 to evaluate meter systems' suitability. These inputs describe how
-specific, measurable, attainable, relevant, timely the methodology
-is.\cite{payne2006guide}
+specific, measurable, attainable, relevant and timely the methodology
+is. \cite{payne2006guide}
 
 In cyber security, being specific is very important and a common issue
 with security meters is that they either cover too many topics and are
 without precise definitions, or they are too specific to be
-generalized to broader scope of
-situations. \cite{wang2005information}. This thesis' results are
-important to be measurable, as the research orbits around system
-states, and the research aims to measure with what outputs do the
-state transitions resolve to.
+generalized to broader scope of situations
+\cite{wang2005information}. This thesis' results are important to be
+measurable, as the research orbits around system states, and the
+research aims to measure with what outputs do the state transitions
+resolve to.
 
 To be attainable is relevant to this context for the reason that a
 thesis has different scope than e.g a huge organization, and the
@@ -78,7 +78,7 @@ achievable. Relevance has to do with risk assessment: how important
 it's to measure something related to it's value. Risk assessment is
 gone through thoroughly in \ref{analysis} section
 \ref{modprob}. Time-bounding signifies the importance of time as a
-meter; a system that can be penetrated in a minute definitely can be
+meter; a system that can be penetrated in a minute can definitely be
 seen as weaker than a system that takes years to be compromised.
 
 \section{Measuring security}
@@ -115,14 +115,14 @@ botnet. For measuring defence, the reaction time is essential, and
 most importantly, the gained meter to measure preventive
 defense. Blacklisting can also be used as preventive and proactive
 measure, as a pre-filled blacklist can be used with desired
-parameters. \cite{pendleton2016survey} \cite{ramos2017model}
+parameters. \cite{pendleton2016survey, ramos2017model}
 
 Overall defenses can be measured with the combination of all defensive
 measures and with the use of penetration testing in a red–blue team
 setup. Penetration testing aims to gain a result, also known as
 penetration resistance, which is a meter, indicating cost or time that
 the red team must spend in case of a successful system
-compromisal. \cite{pendleton2016survey} \cite{ramos2017model}
+compromisal. \cite{pendleton2016survey, ramos2017model}
 
 \textbf{Threats}: zero-day vulnerabilities can be measured from two
 perspectives: lifetime of zero-day vulnerability and the number of
@@ -132,7 +132,7 @@ node per a time unit. Attack evasion is measured using either
 obfuscation prevalence metric, or structural complexity metric which
 provide information on obfuscating gained samples e.g by encrypting,
 or the target system's complexity measured by
-runtime. \cite{pendleton2016survey} \cite{ramos2017model}
+runtime. \cite{pendleton2016survey, ramos2017model}
 
 \textbf{Situations}, which can relate to security state, security
 incidents and security investments. Security state has multiple
@@ -163,13 +163,13 @@ UML-graphs is adequate in many contexts, but as stated in the paper:
 "This measurement is a comparative one. It can be used to compare
 various alternative designs of the same class with respect to their
 security properties". As it has been stated, this thesis focus isn't
-comparative, and all the critical comparison has already done in
+comparative, as all the critical comparison has already done in
 chapter \ref{imperative}.
 
 Hidden Markov models presented by Wang et al. are close what is the
 end goal of the research is in this thesis
 \cite{wang2010framework}. The \textbf{time-related} aspect would be
-satisfactory, as the hidden Markov process deals with a time
+satisfactory, as the hidden Markov procests deals with a time
 parameter. The problem, however is regarding the generality of the
 methodology, and something more \textbf{specific} would be a better
 fit for this thesis. \textbf{Relevance} also is an issue, as using
@@ -222,8 +222,8 @@ First, risks are assessed of the attack surface due as a blue team
 task. It's very important for blue team to know what are the most
 critical points of the attack surface, and it's also used as the base
 for quantitative analysis. Value of the intrusion can also be used for
-the reward model for analysis. As seen in figure \ref{queries},
-the methodology is applied \textit{iteratively}, i.e the steps are
+the reward model for analysis. As seen in figure \ref{queries}, the
+methodology is applied \textit{iteratively}, i.e the steps are
 repeated as many times as needed for the system to be secure.
 
 Modeling the possible attacks is a task for the red team – by
@@ -264,17 +264,21 @@ more complex settings \cite{carin2008cybersecurity}. This thesis
 follows similar steps: first the QuERIES methodology is used to assess
 risks and then they are generalized with strict constraints in mind.
 
-As stated by Hughes and Cybenko the result of QuERIES is binary: the
-attacker either breaches or gives up trying
-\cite{hughes2013quantitative}. The strategy uses \textbf{open} and 
-\textbf{closed} loop decision algorithm for deciding when to stop
-trying. Closed loop decision algorithm constantly evaluates when is
-the optimal time to stop trying and open loop means that the system
-has pre-defined goals for evaluation
-\cite{carin2008cybersecurity}. What we are measuring here is that how
-much time is optimal for the attacker to either give up or continue
-trying. As as positive side-effect by gaining the probabilities
-through red-team evaluation the system is thoroughly tested and improved.
+As stated by Hughes and Cybenko the result of QuERIES isn't binary:
+the attacker must think about the most optimal timeframe to stop the
+operation \cite{hughes2013quantitative}. The strategy uses
+\textbf{open} and \textbf{closed} loop decision algorithm for deciding
+when to stop trying. Closed loop decision algorithm constantly
+evaluates when is the optimal time to stop trying and open loop means
+that the system has pre-defined goals for evaluation
+\cite{carin2008cybersecurity}.As as positive side-effect by gaining
+the probabilities through red-team evaluation, the system is
+thoroughly tested and improved. This is a valuable metric, providing
+insight on how does the value of the system transition in the worth of
+breaching it in certain time, thus reflecting the true cost of the
+attack. As stated by Hughes and Cybenko, if the value is high enough
+related to the value of the gained value, the will less probably
+perform the attacks \cite{hughes2013quantitative}.
 
 \subsection{Partially observable Markov decision process}
 
@@ -298,8 +302,8 @@ decision process (POMDP) which contains these seven steps:
 A POMDP is used widely in this kind of applications, as both blue and
 red team have only partial observations related to the system
 \cite{mcabeeMarkov}. The blue team can't be completely certain that
-the system is secure and the red team cannot perform fully reliably as systems and
-environments differ from each other. As mentioned in the previous
-section, the focus of the QuERIES analysis
-is the time to reverse-engineer the system, thus emphasizing the
-importance of only partial observations.
+the system is secure and the red team cannot perform fully reliably as
+systems and environments differ from each other. As mentioned in the
+previous section, the focus of the QuERIES analysis is the time to
+reverse-engineer the system, thus emphasizing the importance of only
+partial observations.

@@ -20,24 +20,22 @@ managers can remove and overwrite existing files which leaves the
 system in an inconsistent state. Different installs have by nature
 different states which causes many problems discussed in this
 thesis. As files are cross-modified through packages with package
-managers such as apt, upgrading can be disastrous and such systems
+managers such as apt, upgrading can be disastrous as such systems
 don't support atomic rollback capabilities \footnote{Some Linux
 distributions using btrfs filesystem can perform a snapshot and
 rollback \cite{opensuseSystemRecovery}}. Due to the unpredictability,
 often the result can be a partially or completely broken system
 \cite{dolstra2008nixos}.
 
-The reference imperative system in this thesis is Debian with it's
-default package manager apt due to it's popularity and relative
-simplicity. The reference declarative system on the other hand is
-NixOS with it's partial namesake package manager Nix. NixOS is a Linux
-distribution that is based on Nix and provides declarative
+The reference imperative system in this thesis is Debian with its
+default package manager apt, due to it's popularity and relative
+simplicity. The reference declarative system is
+NixOS with it's partial namesake package manager Nix which provides declarative
 configuration of the whole system including the Linux
 kernel\footnote{There exists an experimental project that has
 succeeded with BSD interoperability \cite{githubGitHubNixosbsdnixbsd}}. Nix is configured by the Nix
 programming language which is inspired by purely functional languages
-such as Haskell. The Nix programming language is referred as Nix
-language in this thesis. \cite{van2013reference}
+such as Haskell. \cite{van2013reference}
 
 The reference architecture depicted in chapter \ref{architecture} is
 based on NixOS as it is the most popular purely functional,
@@ -52,9 +50,8 @@ general support is found to be better.
 
 This thesis focuses on the systems and information security of a
 reference architecture created with NixOS. Chapter \ref{architecture}
-goes through a whole reference architecture of a solution that handles
-securely the most critical functionalities of a reference embedded
-server and fleet.
+goes through a reference architecture of a solution that handles
+securely the most critical functionalities of an image displaying system.
 
 This thesis discusses how declarative systems can be used as an
 improvement over imperative systems in a public information screen
@@ -120,7 +117,7 @@ approaches to support the action research.
 
 Central literature revolves around Nix and multiple texts by Eelco
 Dostra are cited for illustrating the nuances of a Nix
-ecosystem. Other declarative approaches are discussed, i.e by Endres
+ecosystem. Other declarative approaches are discussed, by Endres
 et. al and Van der Burg \cite{van2010declarative,
   endres2017declarative}. These approaches also contains comparison to
 imperative systems, which is the central approach in chapter
@@ -128,8 +125,7 @@ imperative systems, which is the central approach in chapter
 were discussed by Specht et. al and Kandoi and Artke
 \cite{specht2007analysis, kandoi2021operating}.
 
-Material discussing embedded security and security standpoints in
-general are adequately discussed by Ravi et. al and Fysarakis et. al
+Discussion from Ravi et. al and Fysarakis et. al on embedded security is discussed by
 \cite{ravi2004security, fysarakis2014embedded}. The concepts, however
 are generally too broad for this thesis' scope, so only the most
 fitting approaches were selected for use.
@@ -142,7 +138,7 @@ OR (compare* AND declarative AND imperative AND system*) OR security.
 
 The search statement was prepared to provide as relevant results as
 possible for this thesis. The main goal was to include the hypernyms
-''embedded linux'', ''linux'' witch other terms separated using the
+''embedded linux'', ''linux'' with other terms separated using the
 "OR" operator. The subterm (compare* AND declarative AND imperative
 AND system*) was chosen to broaden the search to include articles
 which compare declarative and interactive systems.
@@ -153,7 +149,7 @@ was handpicked, such as NixOS manuals and wiki pages. Systems security
 and cyber security material is also included in the bibliography using
 search statement systems security OR cyber security. Separate search
 ''cia-triad'' and ''partial observable Markov chain'' AND
-''cybersecurity'' were used to provide more tangible meters for
+''cybersecurity'' were used to provide tangible meters for
 measuring cyber security. To further back up the research for
 comparing different metrics, term ''cyber security metric
 methodology'' was searched.
