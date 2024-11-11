@@ -1,12 +1,42 @@
 \chapter{Conclusion} \label{conclusion}
 
-NixOS can be a useful base for issuing a purely functional, declarable systems while providing an advanced rollback mechanism. Configuring it, depending on the system administrator may be gruesome, but it can dodge the usual pitfalls of more popular systems. While the usage of NixOS and Nix language demands proficiency, it is a solution to distribute, update and administrate more secure systems. On the other hand, NixOS handles exceptionally easily features such as Wayland and audio driver setup. In the end, NixOS is very predictable and the statement "if it works on one machine, it works on another" proves to be true.
+Nix can be a useful base for issuing a purely functional, declarable
+systems while providing an advanced rollback mechanism. Configuring
+it depending on the system administrator may be gruesome, but it can
+dodge the usual pitfalls of more popular systems. While the usage of
+Nix language demands proficiency, it is a solution to
+distribute, update and administrate more secure systems. NixOS handles
+exceptionally easily features such as Wayland and audio driver
+setup. In the end, NixOS is very predictable and the statement "if it
+works on one machine, it works on another" proves to be true.
 
-This thesis' problems could be solved with many different solutions, but the NixOS approach is rather unique as it makes reproducible systems very straight forward. As the system is defined in the configuration.nix file, there's little that could go wrong even when changing hardware. The same couldn't be said of mentioned Gentoo or Debian Linux distributions.
+This thesis' problems could be solved with many different solutions,
+but the Nix approach is rather unique as it makes reproducible
+systems very straight forward. As the system is defined in the
+configuration.nix file, there's little that could go wrong even when
+changing hardware. The same couldn't be said of mentioned Gentoo or
+Debian Linux distributions.
 
 % security implications closing
-As far as security implications are concerned, NixOS is a good tool for asserting compliance. In purely functional environment, anything that needs compliance can be checked from the configuration files. As disk encryption is trivial and read-only Nix store provides increased integrity, a more secure system can be achieved also through the actions of a system administrator. A system administrator must adhere at to Nix philosophy with the Nix language and as all the configured parts can be viewed quickly. For example, a question ''what ports are open in each client devices'' can be answered very quickly and in precise manner by just viewing the configuration files.
+As far as security implications are concerned, Nix is a good tool
+for asserting compliance. In purely functional environment, anything
+that needs compliance can be checked from the configuration files. As
+disk encryption is trivial and read-only Nix store provides increased
+integrity, a more secure system can be achieved also through the
+actions of a system administrator. A system administrator must adhere
+at to Nix philosophy with the Nix language and as all the configured
+parts can be viewed quickly. For example, a question ''what ports are in
+use in each client device'' can be answered very quickly and in
+precise manner by just viewing the configuration files.
 
-As mentioned, popular embedded Linux distribution creating tools, Buildroot and especially Yocto have also steep learning curves. They also lack the ease of updatability provided by NixOS, which is a significant problem regarding security. These problems would be solved with solutions presented in chapter \ref{further}.
+As mentioned, popular embedded Linux distribution creating tools,
+Buildroot and especially Yocto have also steep learning curves. They
+also lack the ease of updatability provided by Nix, which is a
+significant problem regarding security.
 
-The research proved that a purely functional NixOS can be a time-consuming task to configure correctly. While NixOS is a niche Linux distribution, and probably remains as such, the concepts, however I assume will live on in future. A purely functional declarative system with atomic rollbacks is something I'll await to be iterated in the future with further user availability in mind. 
+The research proved that a purely functional Nix can be a
+time-consuming task to configure correctly. While NixOS is a niche
+Linux distribution, and probably remains as such, the concepts,
+however I assume will live on in future. A purely functional
+declarative system with atomic rollbacks is something I'll await to be
+iterated in the future with further user availability in mind.

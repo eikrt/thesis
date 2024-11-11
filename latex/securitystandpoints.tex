@@ -185,7 +185,6 @@ axes are a near-perfect match for our goals as the model itself is
 relatively simple and provides shifting probabilities from states,
 which serves this thesis' study design well.
 
-
 \section{Quantitative metrics}
 
 Selecting carefully a metrics system includes asserting our goals and
@@ -223,12 +222,12 @@ First, risks are assessed of the attack surface due as a blue team
 task. It's very important for blue team to know what are the most
 critical points of the attack surface, and it's also used as the base
 for quantitative analysis. Value of the intrusion can also be used for
-the reward model for analysis. As seen in figure \ref{parchitecture},
+the reward model for analysis. As seen in figure \ref{queries},
 the methodology is applied \textit{iteratively}, i.e the steps are
 repeated as many times as needed for the system to be secure.
 
 Modeling the possible attacks is a task for the red team – by
-constructing an attack graph the opposing forces have a plan, which
+constructing an attack graph, the opposing forces have a plan, which
 can be used as a template for analysis. By documenting all steps, we
 gain academical ground for conducting a thorough analysis.
 
@@ -246,7 +245,7 @@ that can be used which is the same for all tasks.
 \centerline{\includesvg[width=0.50\columnwidth]{latex/kuvat/queries.drawio.svg}}
 \caption{The QuERIES methodology is used as a reference flowchart for
   evaluation of security. \cite{hughes2013quantitative}}
-\label{parchitecture}
+\label{queries}
 \end{figure}
 \subsection{QuERIES as a central methodology}
 
@@ -265,25 +264,26 @@ more complex settings \cite{carin2008cybersecurity}. This thesis
 follows similar steps: first the QuERIES methodology is used to assess
 risks and then they are generalized with strict constraints in mind.
 
-As stated by Hughes and Cybenko the result of QuERIES is binary: the attacker either
-breaches or gives up trying \cite{hughes2013quantitative}. The
-strategy uses \textbf{open} or \textbf{closed} loop decision algorithm
-for deciding when to stop trying. Closed loop decision algorithm
-constantly evaluates when is the optimal time to stop trying and open
-loop means that the system has pre-defined goals for evaluation
+As stated by Hughes and Cybenko the result of QuERIES is binary: the
+attacker either breaches or gives up trying
+\cite{hughes2013quantitative}. The strategy uses \textbf{open} and 
+\textbf{closed} loop decision algorithm for deciding when to stop
+trying. Closed loop decision algorithm constantly evaluates when is
+the optimal time to stop trying and open loop means that the system
+has pre-defined goals for evaluation
 \cite{carin2008cybersecurity}. What we are measuring here is that how
 much time is optimal for the attacker to either give up or continue
-trying. As as positive side-effect while gaining the probabilities,
-the system is thoroughly tested and improved.
+trying. As as positive side-effect by gaining the probabilities
+through red-team evaluation the system is thoroughly tested and improved.
 
 \subsection{Partially observable Markov decision process}
 
 Lastly, using the results of the POMDP can be used to increase the
 protection against the discovered problems. POMDP provides us data on
 two things: found security breaches and their security implications
-through the reward function \cite{carin2008cybersecurity}. 
-The models and attacks are quantified through a partially observable
-Markov decision process (POMDP) which contains these seven steps:
+through the reward function \cite{carin2008cybersecurity}.  The models
+and attacks are quantified through a partially observable Markov
+decision process (POMDP) which contains these seven steps:
 
 \begin{enumerate}
     \item Define possible states the system can be in
@@ -296,7 +296,10 @@ Markov decision process (POMDP) which contains these seven steps:
 \end{enumerate} \cite{hughes2013quantitative}
 
 A POMDP is used widely in this kind of applications, as both blue and
-red team have only partial observations related to the system. While
-the blue team can't be completely certain that the system is secure,
-the red team cannot perform fully reliably, as systems and
-environments differ from each other. \cite{mcabeeMarkov}
+red team have only partial observations related to the system
+\cite{mcabeeMarkov}. The blue team can't be completely certain that
+the system is secure and the red team cannot perform fully reliably as systems and
+environments differ from each other. As mentioned in the previous
+section, the focus of the QuERIES analysis
+is the time to reverse-engineer the system, thus emphasizing the
+importance of only partial observations.

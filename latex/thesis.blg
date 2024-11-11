@@ -1,21 +1,21 @@
-[1] Config.pm:307> INFO - This is Biber 2.19
-[2] Config.pm:310> INFO - Logfile is 'thesis.blg'
-[175] biber:340> INFO - === Sat Nov  9, 2024, 18:46:00
-[215] Biber.pm:419> INFO - Reading 'thesis.bcf'
-[323] Biber.pm:979> INFO - Found 48 citekeys in bib section 0
-[340] Biber.pm:4419> INFO - Processing section 0
-[358] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliografia.bib' for section 0
-[361] bibtex.pm:1713> INFO - LaTeX decoding ...
-[451] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliografia.bib'
-[751] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[751] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[751] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[751] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[789] bbl.pm:660> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[840] bbl.pm:763> INFO - Output to thesis.bbl
-[841] Biber.pm:131> WARN - Duplicate entry key: 'van2010declarative' in file 'Bibliografia.bib', skipping ...
-[841] Biber.pm:131> WARN - Duplicate entry key: 'van2010automating' in file 'Bibliografia.bib', skipping ...
-[841] Biber.pm:131> WARN - Duplicate entry key: 'zhou2013declarative' in file 'Bibliografia.bib', skipping ...
-[841] Biber.pm:131> WARN - Duplicate entry key: 'pendleton2016survey' in file 'Bibliografia.bib', skipping ...
-[841] Biber.pm:131> WARN - Duplicate entry key: 'pendleton2016survey' in file 'Bibliografia.bib', skipping ...
-[841] Biber.pm:133> INFO - WARNINGS: 5
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'thesis.blg'
+[186] biber:340> INFO - === Mon Nov 11, 2024, 12:17:18
+[234] Biber.pm:419> INFO - Reading 'thesis.bcf'
+[330] Biber.pm:979> INFO - Found 49 citekeys in bib section 0
+[347] Biber.pm:4419> INFO - Processing section 0
+[367] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliografia.bib' for section 0
+[370] bibtex.pm:1713> INFO - LaTeX decoding ...
+[494] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliografia.bib'
+[1125] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1125] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1126] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1126] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1160] bbl.pm:660> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[1186] bbl.pm:763> INFO - Output to thesis.bbl
+[1186] Biber.pm:131> WARN - Duplicate entry key: 'van2010declarative' in file 'Bibliografia.bib', skipping ...
+[1187] Biber.pm:131> WARN - Duplicate entry key: 'van2010automating' in file 'Bibliografia.bib', skipping ...
+[1187] Biber.pm:131> WARN - Duplicate entry key: 'zhou2013declarative' in file 'Bibliografia.bib', skipping ...
+[1187] Biber.pm:131> WARN - Duplicate entry key: 'pendleton2016survey' in file 'Bibliografia.bib', skipping ...
+[1187] Biber.pm:131> WARN - Duplicate entry key: 'pendleton2016survey' in file 'Bibliografia.bib', skipping ...
+[1188] Biber.pm:133> INFO - WARNINGS: 5

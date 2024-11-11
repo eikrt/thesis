@@ -220,6 +220,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
 INPUT /usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
 INPUT /usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex

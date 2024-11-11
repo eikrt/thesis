@@ -26,7 +26,8 @@ to illustrate the limitations often observed in imperative systems,
 particularly in terms of reproducibility, scalability and
 administration standpoints. Cloud-oriented approaches serve as a prime
 reference point for how declarative systems can be effectively
-distributed and automated.
+distributed and automated. I argue that similiar approaches as those
+taken in cloud should be taken in embedded and IoT to increase security.
 
 \section{Imperative systems}
 
@@ -149,13 +150,13 @@ attack surface \cite{wang2017network}.
 
 Gentoo's portage system allows sharing binaries and sources with
 rsync, which would be a useful feature in a server-client model,
-similar in chapter \ref{architecture}, where updates are centralised
+similar to architecture proposed in chapter \ref{architecture}, where updates are centralised
 \cite{thiruvathukal2004gentoo}. An architecture with imperative
 components isn't proposed in this thesis, but if it would be, a
 suitable candidate would be something that uses Gentoo Linux as it's
 foundation.
 
-One benefit from NixOS is its lightweight tendency to enable system
+One benefit from Nix is its lightweight tendency to enable system
 tests. Integrating system tests with a Gentoo system would require a
 considerable amount of work, as setting up such system needs a lot of
 configuration and executing commands in a correct order
@@ -205,7 +206,7 @@ This is an important feature as the Nix configuration files control
 the whole system, they can also leave the system in an undesired
 state. Nix switches between \textit{profiles}, which is a way to
 provide different configurations for different user environments as
-shown in figure \ref{userenv} and provide atomic upgrades and
+shown in figure \ref{userenvs} and provide atomic upgrades and
 rollbacks. \cite{nixosNixOSManual}
 
 \begin{figure}[t!]
@@ -235,9 +236,18 @@ text editor vim is usually declared in the file
 /home/<user>/.vimrc. Nix provides multiple ways to perform the whole
 configuration process from the Nix configuration files. One way is
 declaring the desired .vimrc in the Nix configuration, as in the
-following snippet: \begin{lstlisting} { environment.systemPackages = [
-      (pkgs.vim_configurable.customize { vimrcConfig.customRc = '' "
-        arbitrary vim config ''; }) ]; }
+following snippet:
+
+\begin{lstlisting}
+{
+  environment.systemPackages = [
+    (pkgs.vimConfigurable.customize {
+      vimrcConfig.customRC = ''
+        " arbitrary vim config
+      '';
+    })
+  ];
+}
 \end{lstlisting}
 Nix provides also provides ways to fetch content to the system from
 remote URLs, and if the administrator doesn't want the system to
@@ -303,7 +313,7 @@ feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
 \subsection{Ease of updates}
 
 Updating is easy and riskless with NixOS due to atomic
-rollbacks. NixOS handles software providing through something called
+rollbacks. Nix handles software providing through something called
 "channels". Channel is a set of latest Git commits in a Nixpkgs
 repository, where they are divided to stable/unstable and
 large/small. channels. Unstable channels (large and small) have the
@@ -316,7 +326,7 @@ administrator decides to submit to small channel, they have more
 recent updates at their disposal, but have to resort to compiling some
 needed packages from source. \cite{nixosChannelsNixOS}
 
-Updating a NixOS system is just a manner of invoking command
+Updating a Nix system is just a manner of invoking command
 
 \begin{lstlisting}
     sudo nix-channel --update

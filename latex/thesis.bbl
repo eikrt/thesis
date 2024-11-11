@@ -78,6 +78,14 @@
       \field{note}{[Accessed 16-09-2024]}
       \field{title}{{S}ystem {R}ecovery and {S}napshot {M}anagement with {S}napper | {R}eference | open{S}{U}{S}{E} {L}eap 15.0 --- doc.opensuse.org}
     \endentry
+    \entry{githubGitHubNixosbsdnixbsd}{misc}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/nixos-bsd/nixbsd}}
+      \field{note}{[Accessed 09-11-2024]}
+      \field{title}{{G}it{H}ub - nixos-bsd/nixbsd: {A}n unofficial {N}ix{O}{S} fork with a {F}ree{B}{S}{D} kernel --- github.com}
+    \endentry
     \entry{van2013reference}{book}{}
       \name{author}{1}{}{%
         {{hash=c4f37b199c66c33cf623be8d21e97c5f}{%
@@ -97,16 +105,16 @@
       \strng{authorbibnamehash}{c4f37b199c66c33cf623be8d21e97c5f}
       \strng{authornamehash}{c4f37b199c66c33cf623be8d21e97c5f}
       \strng{authorfullhash}{c4f37b199c66c33cf623be8d21e97c5f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Reference Architecture for Distributed Software Deployment.}
       \field{year}{2013}
     \endentry
     \entry{nixosNixOSSearch}{misc}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://search.nixos.org/packages}}
       \field{note}{[Accessed 24-09-2024]}
@@ -598,8 +606,8 @@
       \strng{authorbibnamehash}{1c79e5fe891b8ea04f240c4b82321d53}
       \strng{authornamehash}{1c79e5fe891b8ea04f240c4b82321d53}
       \strng{authorfullhash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Network security metrics}

@@ -26,9 +26,6 @@
 \contentsline {section}{\numberline {3.1}Common embedded pitfalls}{19}{section.3.1}%
 \contentsline {section}{\numberline {3.2}NixOS as an embedded solution}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Imperative and declarative systems from CIA-triad approach}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Security by obscurity}{22}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Multi-user installations}{23}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Data integrity}{23}{subsection.3.3.3}%
 \contentsline {chapter}{\numberline {4}Proposed architecture solution}{24}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Server}{24}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Client}{26}{section.4.2}%

@@ -62,14 +62,16 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
    <dc:format>application/pdf</dc:format> 
-   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Baking through the ages</rdf:li></rdf:Alt></dc:title>
-   <dc:creator><rdf:Seq><rdf:li>A. Baker</rdf:li>
-     <rdf:li>C. Kneader</rdf:li></rdf:Seq></dc:creator>
+   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Nix as a declarative and synchronised solution to embedded security challenges and system administration problems for multiple embedded devices</rdf:li></rdf:Alt></dc:title>
+   <dc:creator><rdf:Seq><rdf:li>Eino Korte</rdf:li></rdf:Seq></dc:creator>
    <dc:publisher><rdf:Bag><rdf:li>University of Turku</rdf:li></rdf:Bag></dc:publisher>
    <dc:language><rdf:Bag><rdf:li>en-GB</rdf:li></rdf:Bag></dc:language>
-   <dc:subject><rdf:Bag><rdf:li>cookies</rdf:li>
-     <rdf:li>muffins</rdf:li>
-     <rdf:li>cakes</rdf:li></rdf:Bag></dc:subject>
+   <dc:subject><rdf:Bag><rdf:li>nix</rdf:li>
+     <rdf:li>nixos</rdf:li>
+     <rdf:li>declarative</rdf:li>
+     <rdf:li>security</rdf:li>
+     <rdf:li>pomdp</rdf:li>
+     <rdf:li>queries</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
   </rdf:Description> 
@@ -81,15 +83,15 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2024-11-09T18:46:01+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2024-11-09T18:46:01+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2024-11-09T18:46:01+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2024-11-11T12:17:19+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2024-11-11T12:17:19+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2024-11-11T12:17:19+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:C8CFC28F-88E1-7995-E9AD-F6D12EAD346B</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:1B02FFBB-B461-48B8-AC74-243EEE4A6A9D</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:2A31468D-9F83-ADCB-9797-D15AE824B7EB</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

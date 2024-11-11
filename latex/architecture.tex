@@ -169,7 +169,7 @@ scripts are declared usually. Most SystemD distributions have SystemD
 files in /lib/systemd/system directly or via symbolic link.
 
 In the beginning of the configuration, variables are defined and
-program locations are expanded from NixOS package paths. Then, in the
+program locations are expanded from Nix package paths. Then, in the
 ''serviceconfig'' part of the configuration, the strings are forwarded
 to shell, which in part compiles sources and executes scripts. After
 the ''ExecStartPre'' section, in the ''ExecStart'', Weston is launched
