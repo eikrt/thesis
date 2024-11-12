@@ -127,43 +127,36 @@ be used as a host to user-space application deployment, such as
 Bluemix or Chef, where common DevOps practices can be used
 \cite{endres2017declarative}.
 
-\subsection{Gentoo/Portage} \label{gentoo}
 
-Gentoo Linux is bundled with the package manager Portage, which
-consists of two components: ebuild and emerge, which have similar
-relation as dpkg and apt. Portage is primarily source-based package
-manager; ebuild builds and installs packages from source and emerge
-resolves dependencies and handles other related issues. Portage's
-flagship feature is its ''USE-flags'', a mechanism that enables
-compiling source files with or without specific features. For example,
-a make.conf file in /etc/portage could have USE-flags specified as:
-\begin{figure}[H] \label {gentoosnippet1}
-\begin{lstlisting}
-USE=''-X wayland''
-\end{lstlisting}
-\end{figure}
-and the sources wouldn't, if possible, compile with X11 support, but
-would with Wayland. This results in smaller binary sizes, increased
-performance and enhanced security through package minimalism. When
-there's less dependencies and installed programs, there's also less
-attack surface \cite{wang2017network}.
+%% \subsection{Gentoo/Portage} \label{gentoo}
 
-Gentoo's portage system allows sharing binaries and sources with
-rsync, which would be a useful feature in a server-client model,
-similar to architecture proposed in chapter \ref{architecture}, where updates are centralised
-\cite{thiruvathukal2004gentoo}. An architecture with imperative
-components isn't proposed in this thesis, but if it would be, a
-suitable candidate would be something that uses Gentoo Linux as it's
-foundation.
+%% Gentoo Linux is bundled with the package manager Portage, which
+%% consists of two components: ebuild and emerge, which have similar
+%% relation as dpkg and apt. Portage is primarily source-based package
+%% manager; ebuild builds and installs packages from source and emerge
+%% resolves dependencies and handles other related issues. Portage's
+%% flagship feature is its ''USE-flags'', a mechanism that enables
+%% compiling source files with or without specific features. For example,
+%% a make.conf file in /etc/portage could have USE-flags specified as:
+%% \begin{figure}[H] \label {gentoosnippet1}
+%% \begin{lstlisting}
+%% USE=''-X wayland''
+%% \end{lstlisting}
+%% \end{figure}
+%% and the sources wouldn't, if possible, compile with X11 support, but
+%% would with Wayland. This results in smaller binary sizes, increased
+%% performance and enhanced security through package minimalism. When
+%% there's less dependencies and installed programs, there's also less
+%% attack surface \cite{wang2017network}.
 
-One benefit from Nix is its lightweight tendency to enable system
-tests. Integrating system tests with a Gentoo system would require a
-considerable amount of work, as setting up such system needs a lot of
-configuration and executing commands in a correct order
-\cite{van2010automating}. Gentoo definitely fits in an imperative
-deployment strategy but the requirement for explicit detail of every
-step would be error prone even for a seasoned administrator
-\cite{breitenbucher2017declarative}.
+%% Gentoo's portage system allows sharing binaries and sources with
+%% rsync, which would be a useful feature in a server-client model,
+%% similar to architecture proposed in chapter \ref{architecture}, where updates are centralised
+%% \cite{thiruvathukal2004gentoo}. An architecture with imperative
+%% components isn't proposed in this thesis, but if it would be, a
+%% suitable candidate would be something that uses Gentoo Linux as it's
+%% foundation.
+
 
 \section{Declarative systems} \label{declarativesystems}
 
@@ -172,8 +165,8 @@ package manager that is reproducible, reliable and atomic. Package
 installs in Nix are in isolation from each other so that they don't
 have conflicting effects. This results packages being predictable and
 assures they work coherently even if underlying install is
-different. Because the packages are declared in a single set of
-configuration files it's trivial to reproduce the system in a
+different. As the packages are declared in a single set of
+configuration files, it's trivial to reproduce the system in a
 different environment. The demonstrated effect in snippet
 \ref{dpkgsnippet} was a problem due to lack of isolation. When
 dependencies are scattered in the system instead of declared
@@ -192,6 +185,16 @@ imperative system, which causes an inherent problem with cohesion in a
 system that should work regardless of the underlying machine or
 network. Alternative deployment tools are discussed in section
 \ref{nondeclarative}.
+
+One benefit from Nix is its lightweight tendency to enable system
+tests. Integrating system tests with a Debian system would require a
+considerable amount of work, as setting up such system needs a lot of
+configuration and executing commands in a correct order
+\cite{van2010automating}. The mentioned Linux distribution in the
+previous subsection, Debian, definitely fits in an imperative
+deployment strategy but the requirement for explicit detail of every
+step would be error prone even for a seasoned administrator
+\cite{breitenbucher2017declarative}.
 
 It's also noteworthy that many imperative package mangers don't
 support rollback mechanisms. If the Nix configuration file is changed
@@ -337,3 +340,23 @@ from the configuration.nix file \cite{nixosNixOSManual}. Nixpkgs is a
 repository of working Nix packages using a continuous integration
 service called Hydra. Hydra evaluates the needed Nix expression of a
 package, and ensures its functionality. \cite{nixosNixOSManual}
+
+It's apparent that purely functional declarative approaches aren't as popular
+as imperative systems due to the need of steep learning curves and
+obscure syntax. This can be seen as historical payload: imperative
+models have been in use a much longer time than purely functional
+approaches, such as Nix.
+
+In this chapter we revealed, that declarative systems have inherent
+strengths in both deployment strategies and system upgrading. The next
+section brings up the security viewpoint of declarative systems
+specifically in an embedded Linux setting.
+
+% lisää sidosteisuutta tähän chapteriin; spesifisti siten, että
+% imperatiiviset systeemit (debian) takaisinkytketään deklaratiivisiin
+% poista gentoo sektio% johdata kappaleisiin!!!
+% kandoi and hartke! liitä låähdeviitteet enemmään tekstiin
+% kappaleiden välille johdatusta
+% differnetiation between terms
+% kerro mikä on arkkitehtuuri
+% paljon perustellaan miksi subsetti queriestat

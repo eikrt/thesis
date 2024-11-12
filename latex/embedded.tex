@@ -1,5 +1,11 @@
 \chapter{Embedded system security} \label{embedded}
 
+In the previous chapter, the core differences between imperative and
+declarative approaches were gone through. This chapter first discusses
+the embedded security field in general, following up on how Nix can be
+used to improve embedded security, reflecting the CIA-triad in section
+\ref{nixossassolution}.
+
 According to Serpanos et al. the use of embedded devices can be
 divided into four fields: industrial systems, nomadic environments,
 private spaces and public infrastructure
@@ -16,16 +22,17 @@ varying nature ranging from programmable logic controllers (PLC) to
 larger systems, such as servers or
 routers. \cite{fysarakis2014embedded}. An usual embedded device
 conducts a specific task and possibly demands networking
-capabilities. Working with embedded is typically working with a limited set of
-resources, demanding careful design when a multitude of features
-are needed. Maintaining and upgrading devices to meet the continuous need
-of security updates. Even services such as SSH have had history of
-vulnerabilities, which prove that upgradability is a fundamental base
-of a secure system \cite{secopsolutionHistorySecOps}. I argue that the
-security aspect of embedded devices could be improved significantly
-with the use of declarative systems as seen in chapter
-\ref{imperative} section \ref{declarativesystems} and in the following
-section \ref{nixosassolution}.
+capabilities. Working with embedded is typically working with a
+limited set of resources, demanding careful design when a multitude of
+features are needed. Maintaining and upgrading devices to meet the
+continuous need of security updates. Even services such as SSH have
+had history of vulnerabilities, which prove that upgradability is a
+fundamental base of a secure system
+\cite{secopsolutionHistorySecOps}. I argue that the security aspect of
+embedded devices could be improved significantly with the use of
+declarative systems as seen in chapter \ref{imperative} section
+\ref{declarativesystems} and in the following section
+\ref{nixosassolution}.
 
 Embedded devices demand precision and security, as their function may
 be very critical for variety of safety reasons, e.g in automotive
@@ -209,9 +216,18 @@ surface. NixOS provides a way for multiple users installing their
 programs through the use of user environments, hence mitigating the
 need for root access. This both lessens the availability aspect, as
 well as mitigates the programs root access. When file changes are made
-in user-specific scope, a thin layer of isolation is
-achieved \cite{nixosNixOSManual}. \textbf{Data integrity} is achieved
-both by installed programs residing in the read-only Nix store, but
-also them having been checked against SHA256 checksums. Moreover, the
-core installation resources for NixOS are GPG-signed by an
-administrative Nix team \cite{nixosSecurityNixOS}.
+in user-specific scope, a thin layer of isolation is achieved
+\cite{nixosNixOSManual}. \textbf{Data integrity} is achieved both by
+installed programs residing in the read-only Nix store, but also them
+having been checked against SHA256 checksums. Moreover, the core
+installation resources for NixOS are GPG-signed by an administrative
+Nix team \cite{nixosSecurityNixOS}.
+
+It's apparent that Nix can be used to improve embedded device security
+with some hardware constraints. A purely functional declarative
+solution can improve the rollout/rollback capabilities, testing
+pipelines and provides features such as read-only Nix store. The next
+chapter proposes an architecture solution which works as an example of
+a Nix ecosystem. The main purpose of the architecture solutions is to
+demonstrate the security implications of declarative systems, provided
+in chapter \ref{analysis}. 

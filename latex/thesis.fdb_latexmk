@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber thesis"] 1731356541.74307 "thesis.bcf" "thesis.bbl" "thesis" 1731356548.96286 0
+["biber thesis"] 1731407101.60844 "thesis.bcf" "thesis.bbl" "thesis" 1731407109.69954 0
   "Bibliografia.bib" 1731189386.621 20829 9bdf5eb4a8653ff5aed4aa5aca5e5cef ""
-  "thesis.bcf" 1731356548.61105 116951 9912171c8efbdd16d9fbbe305f7e4eae "pdflatex"
+  "thesis.bcf" 1731407109.36488 116951 9912171c8efbdd16d9fbbe305f7e4eae "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["cusdep nlo nls thesis"] 1731356541.67965 "thesis.nlo" "thesis.nls" "thesis" 1731356548.95864 0
-  "thesis.nlo" 1731356544.20798 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep nlo nls thesis"] 1731407101.48576 "thesis.nlo" "thesis.nls" "thesis" 1731407109.69501 0
+  "thesis.nlo" 1731407105.17785 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "thesis.nls"
   (rewritten before read)
-["pdflatex"] 1731356542.94782 "thesis.tex" "thesis.pdf" "thesis" 1731356548.95873 2
+["pdflatex"] 1731407103.4015 "thesis.tex" "thesis.pdf" "thesis" 1731407109.69513 2
   "/etc/texmf/web2c/texmf.cnf" 1721910959.87586 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -258,7 +258,7 @@
   "conclusion.tex" 1731321181.15518 2326 a36fda3aeb47b126104a26f5c4f0f394 ""
   "embedded.tex" 1731356323.79395 11836 8f386fdd6ccad61016f2b5b4aa4b8bd0 ""
   "further.tex" 1731070322 2201 e976e4965388459f9165567c2852ac60 ""
-  "imperative.tex" 1731356100.37266 16841 cfcff0841ae05c7939a564acf886bce0 ""
+  "imperative.tex" 1731398828.77579 17241 06f425c3eb1ea49a77745987ca2b8e7a ""
   "johdanto.tex" 1731355637.38472 10545 876896e1f54f4b94345f4cb3ad34bea8 ""
   "latex/kuvat/architect.svg" 1731070322 224067 4b1fd4b4b5122fe8a2e8c567e9ec55c6 ""
   "latex/kuvat/ciatriad.drawio.svg" 1731156890.83071 4647 d44c5e92e68a135b9393f89b66322742 ""
@@ -266,7 +266,7 @@
   "latex/kuvat/queries.drawio.svg" 1731155653.95058 58185 976b471043505f0742f1e9a5471bd7f0 ""
   "latex/kuvat/symlinks.drawio.svg" 1731158632.49145 155402 b65303c83b955994f0e4d82349cef21e ""
   "latex/kuvat/testimage.jpeg" 1731070322 144793 cc529b23c6821e8651f6e9ebfbe0c896 ""
-  "pdfa.xmpi" 1731356543.98197 5721 4dd9bb853d2902ac436262e8efc848c2 "pdflatex"
+  "pdfa.xmpi" 1731407104.95785 5721 023a22564d39da44cb04bafc9c426c54 "pdflatex"
   "puenc-greek.def" 0 -1 0 ""
   "research.tex" 1731070322 0 d41d8cd98f00b204e9800998ecf8427e ""
   "securitystandpoints.tex" 1731354268.13499 15805 5548c92dd00e72159812ecb570b25410 ""
@@ -274,15 +274,15 @@
   "svg-inkscape/ciatriad.drawio_svg-raw.pdf" 1731156934.25877 12989 bf755ffc9068a05edf24888c250aff2c ""
   "svg-inkscape/queries.drawio_svg-raw.pdf" 1731155697.7685 19338 eb7a860fce6129b8596b10fcce75778a ""
   "svg-inkscape/symlinks.drawio_svg-raw.pdf" 1731158817.70754 49738 d242cf07d55a10c4455584ecabe9ee05 ""
-  "thesis.aux" 1731356548.55805 26980 b8519da4726cc1c2dbe6cbf2ac1797ad "pdflatex"
-  "thesis.bbl" 1731356542.87596 54571 dcef4cd94c36c25b248aae029b8d66b9 "biber thesis"
-  "thesis.lof" 1731356548.61405 1518 9e5e455fa9fffed0015830e81c30e0c9 "pdflatex"
-  "thesis.lot" 1731356548.61405 1082 7e4f8e659661ff491de43c61d21d86e6 "pdflatex"
-  "thesis.nls" 1731356541.74094 0 d41d8cd98f00b204e9800998ecf8427e "cusdep nlo nls thesis"
-  "thesis.out" 1731356548.60405 3299 2e31dd20581cacffcbb436360668a164 "pdflatex"
-  "thesis.run.xml" 1731356548.61405 2418 58e128a2e67a8768efc4f05ac4b62763 "pdflatex"
-  "thesis.tex" 1731078503.84152 10943 604c11584c80821b810f988301256e44 ""
-  "thesis.toc" 1731356548.61405 4206 3b5027adcd5d20e178c1ef4a61af2d5e "pdflatex"
+  "thesis.aux" 1731407109.30988 26980 b8519da4726cc1c2dbe6cbf2ac1797ad "pdflatex"
+  "thesis.bbl" 1731407103.33083 54571 dcef4cd94c36c25b248aae029b8d66b9 "biber thesis"
+  "thesis.lof" 1731407109.36688 1518 9e5e455fa9fffed0015830e81c30e0c9 "pdflatex"
+  "thesis.lot" 1731407109.36688 1082 7e4f8e659661ff491de43c61d21d86e6 "pdflatex"
+  "thesis.nls" 1731407101.60382 0 d41d8cd98f00b204e9800998ecf8427e "cusdep nlo nls thesis"
+  "thesis.out" 1731407109.35688 3299 2e31dd20581cacffcbb436360668a164 "pdflatex"
+  "thesis.run.xml" 1731407109.36688 2418 58e128a2e67a8768efc4f05ac4b62763 "pdflatex"
+  "thesis.tex" 1731407040.42531 10941 30c1654c69e9abf4a6bbe510f0849d30 ""
+  "thesis.toc" 1731407109.36688 4206 3b5027adcd5d20e178c1ef4a61af2d5e "pdflatex"
   "thesis.xmpdata" 1731179674.75174 298 89ddddeb631769d8b3697d1c5ea5096d ""
   "utuftthesis.cls" 1731078553.52624 22179 ad40101b21907dd46b7b1fd81cf3c4cf ""
   (generated)

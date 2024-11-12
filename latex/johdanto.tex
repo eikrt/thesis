@@ -38,15 +38,18 @@ programming language which is inspired by purely functional languages
 such as Haskell. \cite{van2013reference}
 
 The reference architecture depicted in chapter \ref{architecture} is
-based on NixOS as it is the most popular purely functional,
-declarative Linux distribution with over 100 000 packages
-\cite{nixosNixOSSearch}. Another good alternative would have been
-Guix, which has over 28 000 packages \cite{gnuPackagesx2014}. Guix has
-some improvements over Nix, including richer and more extensible
-programming environment with a Lisp-dialect configuration language,
-Scheme \cite{courtes2021deploiements}. NixOS remains as the
-distribution of choice, as the number of packages is greater, and
-general support is found to be better.
+based on Nix as it is the most popular purely functional, declarative
+Linux distribution with over 100 000 packages
+\cite{nixosNixOSSearch}. Architecture in this context refers to the
+set containing clients and server, and the used hardware. Another good
+base for the architecture would have been Guix, which has over 28 000
+packages \cite{gnuPackagesx2014}. Guix has some improvements over Nix,
+including richer and more extensible programming environment with a
+Lisp-dialect configuration language, Scheme
+\cite{courtes2021deploiements}. NixOS remains as the distribution of
+choice, as the number of packages is greater, and general support is
+found to be better.
+
 
 This thesis focuses on the systems and information security of a
 reference architecture created with NixOS. Chapter \ref{architecture}
@@ -75,7 +78,8 @@ Research methodologies used in this thesis are:
 \item a quantitative research process using QuERIES methodology
 \end{enumerate}
 
-Literature review will be addressed in the next section. As this
+Literature review will be addressed mostly in the next section and in chapter
+\ref{embedded}. As this
 thesis' main research methodology is quantitative, the gathered data
 points will be addressed as variables that are compared with
 mathematical methods. Quantitative methods are broken down in chapter
@@ -173,21 +177,25 @@ The research questions for this thesis are:
   distribution securely and seamlessly?
 \end{enumerate}
 
-Research question 1 is perhaps the most important and it traverses
+Research question 1 is the most important and it traverses
 through themes of the whole thesis. The hypothesis is that traditional
 imperative embedded device fleets have problems that can be solved
 with the use of modern declarative systems. First, we aim to gain
 information from a specific scenario, presented in chapter
 \ref{architecture}, then in chapter \ref{analysis} the gained
-information is analyzed and generalized as suitably as possible.
+information is analyzed and generalized as suitably as possible. 
 
 Research question 2 brings up the human element; how can a system
 administrator use a new palette of features adequately to provide more
 secure system and research question 3 handles a situation where
 existing system should be replaced with a NixOS system. How this
 could be done securely without risks and preferably easily with
-existing or new tooling is answered in chapter \ref{architecture}
-section \ref{instnewdevices}.
+existing tooling is answered in chapter \ref{architecture}
+section \ref{instnewdevices}. The next chapter compares imperative
+approaches to declarative approaches and provides insight for
+understanding the central differences. The emphasis is on how
+declarative systems can be used to improve problems found in
+imperative systems. 
 
 \subsection{Data collection and analysis}
 
