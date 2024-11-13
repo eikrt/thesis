@@ -69,6 +69,7 @@
    <dc:subject><rdf:Bag><rdf:li>nix</rdf:li>
      <rdf:li>nixos</rdf:li>
      <rdf:li>declarative</rdf:li>
+     <rdf:li>embedded</rdf:li>
      <rdf:li>security</rdf:li>
      <rdf:li>pomdp</rdf:li>
      <rdf:li>queries</rdf:li></rdf:Bag></dc:subject>
@@ -83,15 +84,15 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2024-11-12T12:25:03+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2024-11-12T12:25:03+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2024-11-12T12:25:03+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2024-11-13T19:57:48+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2024-11-13T19:57:48+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2024-11-13T19:57:48+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:C8CFC28F-88E1-7995-E9AD-F6D12EAD346B</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:9FD87492-7B78-D0CF-4EA9-C269D82B3D6A</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:2A3C4DB2-3755-E228-92FB-B8B84BA481A7</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

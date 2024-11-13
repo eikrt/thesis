@@ -87,7 +87,7 @@ gone through thoroughly in \ref{analysis} section
 meter; a system that can be penetrated in a minute can definitely be
 seen as weaker than a system that takes years to be compromised.
 
-\section{Measuring security}
+\section{Measuring security} \label{measuringsecurity}
 
 In this section, different methodologies and perspectives gained
 through literature review for cybersecurity are discussed, and
@@ -253,7 +253,7 @@ that can be used which is the same for all tasks.
   evaluation of security. \cite{hughes2013quantitative}}
 \label{queries}
 \end{figure}
-\subsection{QuERIES as a central methodology}
+\subsection{QuERIES as a central methodology} \label{queriesasmethodology}
 
 QuERIES draws inspiration from computer science, game theory, control
 theory, and economics, thus is a complex answer to a complex
@@ -286,6 +286,17 @@ attack. As stated by Hughes and Cybenko, if the value is high enough
 related to the value of the gained value, the will less probably
 perform the attacks \cite{hughes2013quantitative}.
 
+In this thesis, the value of the whole system architecture is
+signified by symbol α, constituting a value of holded intellectual
+property (IP). Costs are defined as fractions of the value, propulsing
+0.01α every hour. This is contrary to the original paper, where the
+value of the intellectual property has a certain value of 30 000\$ and
+the value for the possible intruder is defined as 60\$ per hour
+\cite{carin2008cybersecurity}. This divergency is due to the fact
+that it's impossible to define a certain value for our system,
+and it also provides clarity, as it's ergonomic to see how attack
+estimates relate to the value of the intellectual property. 
+
 \subsection{Partially observable Markov decision process}
 
 Lastly, using the results of the POMDP can be used to increase the
@@ -306,7 +317,7 @@ decision process (POMDP) which contains these seven steps:
 \end{enumerate} \cite{hughes2013quantitative}
 
 A POMDP is used widely in this kind of applications, as both blue and
-red team have only partial observations related to the system
+red team have only partial observations in relation to the system
 \cite{mcabeeMarkov}. The blue team can't be completely certain that
 the system is secure and the red team cannot perform fully reliably as
 systems and environments differ from each other. As mentioned in the
@@ -315,8 +326,8 @@ reverse-engineer the system, thus emphasizing the importance of only
 partial observations.
 
 In the next section the architecture presented in chapter
-\ref{architecture} is improved using the QuERIES methodology. An
+\ref{architecture} is improved using the applied QuERIES methodology. An
 attack graph is constructed and POMDPs are utilized. The result will
 provide information about the architectures security, and it will
 undergo several iterations of the QuERIES pipeline with each improving
-the overall security of the system. 
+the overall security of the system.

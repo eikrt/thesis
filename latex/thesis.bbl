@@ -579,40 +579,6 @@
       \field{pages}{66\bibrangedash 74}
       \range{pages}{9}
     \endentry
-    \entry{wang2017network}{book}{}
-      \name{author}{3}{}{%
-        {{hash=d109359382de3d1a09bcbf4b791d9d39}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Lingyu},
-           giveni={L\bibinitperiod}}}%
-        {{hash=f21aa520ad69374e7b6d40b5c0891da7}{%
-           family={Jajodia},
-           familyi={J\bibinitperiod},
-           given={Sushil},
-           giveni={S\bibinitperiod}}}%
-        {{hash=be68bdccd8d20ba63b87fd0fde09fcd2}{%
-           family={Singhal},
-           familyi={S\bibinitperiod},
-           given={Anoop},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \strng{fullhash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \strng{bibnamehash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \strng{authorbibnamehash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \strng{authornamehash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \strng{authorfullhash}{1c79e5fe891b8ea04f240c4b82321d53}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Network security metrics}
-      \field{year}{2017}
-    \endentry
     \entry{van2010automating}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=18688af473f8ab5eabc8763754a5fd4f}{%
@@ -725,8 +691,8 @@
       \strng{authorbibnamehash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authornamehash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authorfullhash}{e94601a3d5f3025f11604a2085a0bcb1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Functional Programming}
@@ -1039,8 +1005,8 @@
       \strng{authorbibnamehash}{768b813e562f41d9a0455501ef277c97}
       \strng{authornamehash}{768b813e562f41d9a0455501ef277c97}
       \strng{authorfullhash}{768b813e562f41d9a0455501ef277c97}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{NATO Science and Technology Organization (STO)}
@@ -1142,8 +1108,8 @@
       \strng{authorbibnamehash}{59099a5ea252a6e8484de2392cb07aa1}
       \strng{authornamehash}{59099a5ea252a6e8484de2392cb07aa1}
       \strng{authorfullhash}{59099a5ea252a6e8484de2392cb07aa1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2009 Ninth International Conference on Quality Software}

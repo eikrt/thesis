@@ -1,14 +1,15 @@
+
 \chapter{Analysis} \label{analysis}
 
-As mentioned in the previous chapter section
-\ref{queries}, the QuERIES inspired methodology is used in this
-chapters analysis. Tables \ref{pomdbtable} and \ref{probtable} show
-relevant information about the calculations. In table \ref{pomdbtable}
-is listed all the possible states (S), defender actions (D), attacker
-actions (A) and observations (O). Then, every transition from state to
-another state was calculated as a probability, shown in table
-\ref{probtable}. The test counts are seen from the table cells, with
-their corresponding probability. Note that every row adds up to 1.0.
+As mentioned in the previous chapter section \ref{queries}, the
+QuERIES inspired methodology is used in this chapters analysis. Tables
+\ref{pomdbtable} and \ref{probtable} show relevant information about
+the calculations. In table \ref{pomdbtable} is listed all the possible
+states (S), defender actions (D), attacker actions (A) and
+observations (O). Then, every transition from state to another state
+was calculated as a probability, shown in table \ref{probtable}. The
+test counts are seen from the table cells, with their corresponding
+probability. Note that every row adds up to 1.0.
 
 \section{Modeling the problem and quantifying the models} \label{modprob}
 
@@ -24,8 +25,7 @@ organisation displaying media want to remain credible among users.
 
 The attack surface of the example project focuses on physical access
 and vulnerabilities in remote connections. With MQTT-messaging, SSH
-and display protocols, internal and external messaging
-happens.
+and display protocols, internal and external messaging takes place.
 
 If a unauthorised access would happen, the results would probably
 affect a part of the society, as the arbitrary content could gain
@@ -36,7 +36,27 @@ false information, or possibly bringing up societal issues via
 activism. Either way, this would be unwanted from the perspective of
 the service provider, customer and users.
 
+As mentioned in chapter \ref{securitystandpoints} section
+\ref{measuringsecurity} subsection \ref{queriesasmethodology}, the
+value of intellectual property is defined as α, for which other
+parameters refer to as fractions of it. If this was applied to a real
+setting, the intellectual property would be calculated appropriately
+for the scenario.
+
 \section{Modeling the possible attacks}
+
+In this section, the possible attacks are modeled using a attack
+chart, depicted as a POMDP, a modeling tool presented earlier. In the
+original paper where QuERIES is presented, an important parameter is
+the time to reverse-engineer the system without prior information
+about the protection scheme \cite{carin2008cybersecurity}. Our
+approach is different; the attacks are considered as successful, if
+they gain further leverage in the attack graph, e.g transitioning
+state ''idle'' to ''partial loss of system''. This is to maintain
+cohesion in the study, as we don't need to define what it means to
+''reverse engineer'' the system. In this case, information of the
+system is publicly available as an open source project, thus the
+information of the system being available also to the attacker.
 
 In table \ref{pomdbtable}, the first column describes states the
 system can be in. The second and the third column state defensive
@@ -45,8 +65,9 @@ template of the attacks that could be conducted. After defining the
 starting layout, probabilities are calculated based on gathered
 empirical evidence.
 
-The research setup is a simulated targeted red–blue scenario. For calculating the reward values R script with library
-''pomdp'' was used.
+The research setup is a simulated targeted red–blue scenario. For
+calculating the reward values R script with library ''pomdp'' was
+used.
 \begin{table}
 \centering
 \begin{tabular}{ |c|c|c|c|c|c|c|c|c|c| }
@@ -87,9 +108,9 @@ O_4&&&&&&&&& \\ \hline
  device \\ & & & & \hline & & & & Start Weston & Isolate device &
  Detected unusual media display & Exploit vulnerabilities in display
  \\ & & & & \hline & & & & Display media & & & Exploit vulnerabilities
- in SSH connections \\ & & & & \hline & & & & Error state & \ & \ & \\ & & & &
- \hline & & & & Partial loss of system & & & \\ & & & & \hline & & & &
- Complete loss of system & & & \\ & & & & \hline
+ in SSH connections \\ & & & & \hline & & & & Error state & \ & \ &
+ \\ & & & & \hline & & & & Partial loss of system & & & \\ & & & &
+ \hline & & & & Complete loss of system & & & \\ & & & & \hline
 
 \end{tabular}
 \caption{Different states, defensive measures, observations and attack
@@ -98,37 +119,90 @@ O_4&&&&&&&&& \\ \hline
 \end{table}
 \end{landscape}
 
-A reward function was calculated using the mentioned R program, and the
-output was x. A weight of 10 was used for positive results, and -100,
-if something was to be compromised. This weight distribution is due to
-the fact that even if blue team succeeds most of time, the results of
-failure are much worse than a succeeding result from the blue team
-\cite{carin2008cybersecurity}. The discount constant is used in
-calculations as shown in \ref{pomdpappenix}, where it influences the
-priority of immediate versus future rewards \cite{mcabeeMarkov}. Our
-case signifies the importance of both, so value of 0.75 was used.
+A reward function was calculated using the mentioned R program, and
+the output was x. A weight of 1 was used for positive results, and
+-100, if something was to be compromised. This weight distribution is
+due to the fact that even if blue team succeeds most of time, the
+results of failure are much worse than a succeeding result from the
+blue team \cite{carin2008cybersecurity}. The discount constant is used
+in calculations as shown in \ref{pomdpappenix}, where it influences
+the priority of immediate versus future rewards
+\cite{mcabeeMarkov}. Our case signifies the importance of both, so
+value of 0.75 was used.
 
 \section{Using the results}
 
 The results are investigated through the probabilities, which are
 represented in the table \ref{probtable}. The reward score is taken in
 to account on how successful/unsuccessful the setup is from a security
-perspective.
+perspective. 
+
+As stated by Hughes and Cybenko, using the results means evaluating
+the gained results to decide if proposed protections are adequate for
+our means \cite{hughes2013quantitative}. The QuERIES model was
+iterated 4 times, and the results were placed in the following table. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+  \hline
+  Iteration & Reward function & Proposed protections \\
+  \hline
+  1 & -200 & Disabling USB ports \\
+  \hline
+  2 & -100 & Doing sum stuff \\
+  \hline
+  3 & 0 & Moar stuff \\
+  \hline
+  4 & 100 & No protections \\
+  \hline
+\end{tabular}
+\caption{Protections applied in each iteration}
+\label{iterationtable}
+\end{table}
+
+As seen, the reward function is growing as the proposed protections
+are applied in each iteration. In the following figure we can see that
+the time to breach peaks at time x. This highlights the fact that
+.... It's similiar to results seen in...
+
+\begin{figure}[t!]
+\centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
+\caption{Probabilities to breach into the system.}
+\label{timetobreach}
+\end{figure}
 
 \subsection{Red team implications}
+
+The time distribution of breaches are depicted in the graph
+\ref{timetobreach}. It's apparent, that ... The chart is used to
+decide, when is the optimal time to stop the attacks from the attacker
+perspective. Identical approach is taken with blue team in the
+next subsection. Following the methodology in referred papers by Hughes and Cybenko,
+the optimal time to stop the attacks is seen in the following graph
+using open and closed loop strategies.
+
+\begin{figure}[t!]
+\centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
+\caption{The most optimal time to stop the attack.}
+\label{openandclosed}
+\end{figure}
 
 %The result, -30 is negative and that proves that the system has definitive security problems. From the table \ref{probtable} it can be seen that multiple attack vectors succeed in penetrating through the system. The worst probabilities occur when physical access is gained, due to the test device having exposed USB-ports. This weakness could be mitigated, if the production device would have closed USB-ports and a sufficient casing against physical breakthrough. On the other hand, replacing the whole device with a malicious one can't be prevented without the use of external security measures.
 
 \subsection{Blue team implications}
+
+\begin{figure}[t!]
+\centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
+\caption{The most optimal time to stop the attack.}
+\label{openandclosed}
+\end{figure}
 
 %The blue team tests proved, that the system is very reliable in every state. For example, monitoring the system always worked, and logging could be obtained. Recovering from simulated errors was simple, as the system is very straight forward. A more complex system would perhaps have more issues.
 
 %It's worth noticing that even partial loss of system can be catastrophic, as display servers such as Weston don't need root privileges to operate. This is due security reasons, but comes with the feature that anyone with the user access might display arbitrary content. This is an easy fix, however, because the use of Weston can be denied for all, except for the SystemD user.
 
 % A predefined topology could be used to mitigate device attacks based on device replacing.\cite{fysarakis2014embedded}
-
-
-
 %% \begin{table}
 %% \centering
 %% \begin{tabular}{ |c|c|c|c|c|c|c|c|c| }

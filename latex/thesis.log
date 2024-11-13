@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  12 NOV 2024 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  13 NOV 2024 19:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1150,6 +1150,9 @@ LaTeX Warning: Label `queries' multiply defined.
 
 LaTeX Warning: Label `probtable' multiply defined.
 
+
+LaTeX Warning: Label `openandclosed' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -1312,8 +1315,8 @@ l.8 ... user environments \cite{gnuPackagesx2014}.
 ! Illegal parameter number in definition of \abx@field@title.
 <to be read again> 
                    x
-l.44 ...r 28 000 packages \cite{gnuPackagesx2014}.
-                                                   Guix has
+l.46 packages \cite{gnuPackagesx2014}.
+                                       Guix has some improvements over Nix,
 ? 
 [2] [3] [4] [5]) (./research.tex) (./imperative.tex [6]
 \relax  2.
@@ -1325,7 +1328,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<latex/kuvat/cropped_apt_output.jpg, id=422, 182.1204pt x 21.681pt>
+<latex/kuvat/cropped_apt_output.jpg, id=426, 182.1204pt x 21.681pt>
 File: latex/kuvat/cropped_apt_output.jpg Graphic file (type jpg)
 <use latex/kuvat/cropped_apt_output.jpg>
 Package pdftex.def Info: latex/kuvat/cropped_apt_output.jpg  used on input line
@@ -1346,34 +1349,40 @@ nput line 116.
 Package Listings Warning: Text dropped after begin of listing on input line 116
 .
 
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-142.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [10{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [11]
+[10]
 
-Package Listings Warning: Text dropped after begin of listing on input line 202
+Package Listings Warning: Text dropped after begin of listing on input line 205
 .
 
-<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=468, 594.72188pt x 324.46219pt>
+<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=458, 594.72188pt x 324.46219pt>
 
 File: ./svg-inkscape/symlinks.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/symlinks.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/symlinks.drawio_svg-raw.pdf  used on in
-put line 213.
+put line 216.
 (pdftex.def)             Requested size: 594.72043pt x 324.46138pt.
-[12] [13
+[11] [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.250 }
-        <./svg-inkscape/symlinks.drawio_svg-raw.pdf>] [14] [15])
-(./embedded.tex [16]
-\relax  3.
-[17
+l.244 \begin{lstlisting}
+                         <./svg-inkscape/symlinks.drawio_svg-raw.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+248.
 
-] [18] [19] [20]
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [13{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [14]) (./emb
+edded.tex [15]
+\relax  3.
+
+LaTeX Warning: Reference `nixossassolution' on page 16 undefined on input line 
+7.
+
+[16
+
+] [17] [18] [19]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1382,15 +1391,15 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
-[21]
-<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=647, 258.11884pt x 220.56555pt>
+[20]
+<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=640, 258.11884pt x 220.56555pt>
 
 File: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ciatriad.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf  used on in
-put line 196.
+put line 203.
 (pdftex.def)             Requested size: 258.1182pt x 220.565pt.
-) (./architecture.tex
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1399,14 +1408,13 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
-[22
+[21
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1 \chapter
-            {Proposed architecture solution} \label{architecture} <./svg-inksca
-pe/ciatriad.drawio_svg-raw.pdf>]
+l.225 
+       <./svg-inkscape/ciatriad.drawio_svg-raw.pdf>]) (./architecture.tex
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1415,24 +1423,24 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
-[23]
+[22]
 \relax  4.
-[24
+[23
 
-] [25] [26] [27] [28]
-<latex/kuvat/testimage.jpeg, id=753, 1599.9775pt x 1080.035pt>
+] [24] [25] [26] [27]
+<latex/kuvat/testimage.jpeg, id=748, 1599.9775pt x 1080.035pt>
 File: latex/kuvat/testimage.jpeg Graphic file (type jpg)
 <use latex/kuvat/testimage.jpeg>
 Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 202.
 (pdftex.def)             Requested size: 319.98984pt x 216.00317pt.
- [29
+ [28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.212 \begin{lstlisting}
                          <./latex/kuvat/testimage.jpeg>]
-<./svg-inkscape/architect_svg-raw.pdf, id=767, 445.28859pt x 530.54462pt>
+<./svg-inkscape/architect_svg-raw.pdf, id=761, 445.28859pt x 530.54462pt>
 File: ./svg-inkscape/architect_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/architect_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/architect_svg-raw.pdf  used on input li
@@ -1443,7 +1451,7 @@ Overfull \hbox (18.49615pt too wide) in paragraph at lines 223--224
 [][]
  []
 
-[30] [31
+[29] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1465,897 +1473,930 @@ Overfull \hbox (23.64857pt too wide) in paragraph at lines 295--298
 ub:nix-community/nixos-
  []
 
-[32]) (./securitystandpoints.tex [33]
+[31]) (./securitystandpoints.tex [32]
 \relax  5.
-[34
+[33
 
-] [35] [36] [37] [38] [39]
-<./svg-inkscape/queries.drawio_svg-raw.pdf, id=916, 202.88297pt x 279.29344pt>
+] [34] [35] [36] [37] [38]
+<./svg-inkscape/queries.drawio_svg-raw.pdf, id=911, 202.88297pt x 279.29344pt>
 File: ./svg-inkscape/queries.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/queries.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/queries.drawio_svg-raw.pdf  used on inp
-ut line 245.
+ut line 251.
 (pdftex.def)             Requested size: 202.88246pt x 279.29276pt.
- [40] [41
+ [39] [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.291 
-       <./svg-inkscape/queries.drawio_svg-raw.pdf>]) (./analysis.tex [42]
+l.288 
+       <./svg-inkscape/queries.drawio_svg-raw.pdf>]
+
+! LaTeX Error: Unicode character α (U+03B1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 signified by symbol α
+                            , constituting a value of holded intellectual
+? 
+
+! LaTeX Error: Unicode character α (U+03B1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 0.01α
+             every hour. This is contrary to the original paper, where the
+? 
+[41]) (./analysis.tex [42]
 \relax  6.
 [43
 
 ]
+
+! LaTeX Error: Unicode character α (U+03B1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 ... of intellectual property is defined as α
+                                                  , for which other
+? 
+[44]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_
+l.74 \hline s&c_
                 t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&
+l.74 \hline s&c_t&
                   s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&
+l.74 \hline s&c_t&
                   s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&
+l.74 \hline s&c_t&
                   s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_
+l.74 \hline s&c_t&s_
                     0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&
+l.74 \hline s&c_t&s_0&
                       s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&
+l.74 \hline s&c_t&s_0&
                       s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&
+l.74 \hline s&c_t&s_0&
                       s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_
+l.74 \hline s&c_t&s_0&s_
                         1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&s_1&
+l.74 \hline s&c_t&s_0&s_1&
                           s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&
+l.74 \hline s&c_t&s_0&s_1&
                           s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&s_1&
+l.74 \hline s&c_t&s_0&s_1&
                           s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_
+l.74 \hline s&c_t&s_0&s_1&s_
                             2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&s_1&s_2&
+l.74 \hline s&c_t&s_0&s_1&s_2&
                               s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&
+l.74 \hline s&c_t&s_0&s_1&s_2&
                               s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&s_1&s_2&
+l.74 \hline s&c_t&s_0&s_1&s_2&
                               s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_
+l.74 \hline s&c_t&s_0&s_1&s_2&s_
                                 3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&
                                   s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&
                                   s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&
                                   s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_
                                     4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&
                                       s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&
                                       s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&
                                       s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_
                                         5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
                                           s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
                                           s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
                                           s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_
                                             6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
                                               s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
                                               s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
                                               s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_
+l.74 \hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_
                                                 7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.54 \\ &
+l.75 \\ &
          &c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.54 \\ &
+l.75 \\ &
          &c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.54 \\ &
+l.75 \\ &
          &c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.54 ...p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_
+l.75 ...p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_
                                                   0&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.54 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&
+l.75 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.54 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&
+l.75 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.54 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&
+l.75 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 s_
+l.76 s_
        1&&&&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.55 s_1&
+l.76 s_1&
          &&&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 s_1&
+l.76 s_1&
          &&&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.55 s_1&
+l.76 s_1&
          &&&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 s_1&&&&&&&&& \\ \hline s_
+l.76 s_1&&&&&&&&& \\ \hline s_
                               2&&&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.55 s_1&&&&&&&&& \\ \hline s_2&
+l.76 s_1&&&&&&&&& \\ \hline s_2&
                                 &&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 s_1&&&&&&&&& \\ \hline s_2&
+l.76 s_1&&&&&&&&& \\ \hline s_2&
                                 &&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.55 s_1&&&&&&&&& \\ \hline s_2&
+l.76 s_1&&&&&&&&& \\ \hline s_2&
                                 &&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 ...&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_
+l.76 ...&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_
                                                   3&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.55 ...&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&
+l.76 ...&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 ...&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&
+l.76 ...&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.55 ...&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&
+l.76 ...&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 s_
+l.77 s_
        4&&&&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.56 s_4&
+l.77 s_4&
          &&&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 s_4&
+l.77 s_4&
          &&&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.56 s_4&
+l.77 s_4&
          &&&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 s_4&&&&&&&&& \\ \hline s_
+l.77 s_4&&&&&&&&& \\ \hline s_
                               5&&&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.56 s_4&&&&&&&&& \\ \hline s_5&
+l.77 s_4&&&&&&&&& \\ \hline s_5&
                                 &&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 s_4&&&&&&&&& \\ \hline s_5&
+l.77 s_4&&&&&&&&& \\ \hline s_5&
                                 &&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.56 s_4&&&&&&&&& \\ \hline s_5&
+l.77 s_4&&&&&&&&& \\ \hline s_5&
                                 &&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 ...&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_
+l.77 ...&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_
                                                   6&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.56 ...&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&
+l.77 ...&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 ...&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&
+l.77 ...&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.56 ...&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&
+l.77 ...&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.57 s_
+l.78 s_
        7&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.57 s_7&
+l.78 s_7&
          &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.57 s_7&
+l.78 s_7&
          &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.57 s_7&
+l.78 s_7&
          &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_
+l.89 \hline o&c_
                 t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&
+l.89 \hline o&c_t&
                   s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&
+l.89 \hline o&c_t&
                   s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&
+l.89 \hline o&c_t&
                   s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_
+l.89 \hline o&c_t&s_
                     0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&
+l.89 \hline o&c_t&s_0&
                       s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&
+l.89 \hline o&c_t&s_0&
                       s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&
+l.89 \hline o&c_t&s_0&
                       s_1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_
+l.89 \hline o&c_t&s_0&s_
                         1&s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&s_1&
+l.89 \hline o&c_t&s_0&s_1&
                           s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&
+l.89 \hline o&c_t&s_0&s_1&
                           s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&s_1&
+l.89 \hline o&c_t&s_0&s_1&
                           s_2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_
+l.89 \hline o&c_t&s_0&s_1&s_
                             2&s_3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&s_1&s_2&
+l.89 \hline o&c_t&s_0&s_1&s_2&
                               s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&
+l.89 \hline o&c_t&s_0&s_1&s_2&
                               s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&s_1&s_2&
+l.89 \hline o&c_t&s_0&s_1&s_2&
                               s_3&s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_
+l.89 \hline o&c_t&s_0&s_1&s_2&s_
                                 3&s_4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&
                                   s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&
                                   s_4&s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&
                                   s_4&s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_
                                     4&s_5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&
                                       s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&
                                       s_5&s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&
                                       s_5&s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_
                                         5&s_6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
                                           s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
                                           s_6&s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&
                                           s_6&s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_
                                             6&s_7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
                                               s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
                                               s_7
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&
                                               s_7
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.68 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_
+l.89 \hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_
                                                 7
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.69 \\ &
+l.90 \\ &
          &c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69 \\ &
+l.90 \\ &
          &c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.69 \\ &
+l.90 \\ &
          &c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69 ...p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_
+l.90 ...p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_
                                                   0&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.69 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&
+l.90 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&
+l.90 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.69 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&
+l.90 ...c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 O_
+l.91 O_
        1&&&&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.70 O_1&
+l.91 O_1&
          &&&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 O_1&
+l.91 O_1&
          &&&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.70 O_1&
+l.91 O_1&
          &&&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 O_1&&&&&&&&& \\ \hline O_
+l.91 O_1&&&&&&&&& \\ \hline O_
                               2&&&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.70 O_1&&&&&&&&& \\ \hline O_2&
+l.91 O_1&&&&&&&&& \\ \hline O_2&
                                 &&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 O_1&&&&&&&&& \\ \hline O_2&
+l.91 O_1&&&&&&&&& \\ \hline O_2&
                                 &&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.70 O_1&&&&&&&&& \\ \hline O_2&
+l.91 O_1&&&&&&&&& \\ \hline O_2&
                                 &&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 ...&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_
+l.91 ...&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_
                                                   3&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.70 ...&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&
+l.91 ...&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70 ...&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&
+l.91 ...&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.70 ...&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&
+l.91 ...&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&
                                                   &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 O_
+l.92 O_
        4&&&&&&&&& \\ \hline
 ? 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.71 O_4&
+l.92 O_4&
          &&&&&&&& \\ \hline
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 O_4&
+l.92 O_4&
          &&&&&&&& \\ \hline
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.71 O_4&
+l.92 O_4&
          &&&&&&&& \\ \hline
 ? 
-[44
+[45
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.77 \begin{landscape}
-                      ] [45
+l.98 \begin{landscape}
+                      
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.77 \begin{landscape}
+l.98 \begin{landscape}
                       ]
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.81  \hline & & & &
-                     S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & & \hline \hline
+l.102  \hline & & & &
+                      S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & & \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.81 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
+l.102 ... S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
                                                    \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  & & & &
-              Idle & Monitor system & Normal operation & Intercept MQTT
+l.103  & & & &
+               Idle & Monitor system & Normal operation & Intercept MQTT
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.83  messaging \\ & & & &
-                           \hline & & & & Receive media through MQTT &
+l.104  messaging \\ & & & &
+                            \hline & & & & Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.83  messaging \\ & & & & \hline & & & &
-                                          Receive media through MQTT &
+l.104  messaging \\ & & & & \hline & & & &
+                                           Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.85  repository \\ & & & &
-                            \hline & & & & Set up SystemD services &
+l.106  repository \\ & & & &
+                             \hline & & & & Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.85  repository \\ & & & & \hline & & & &
-                                           Set up SystemD services &
+l.106  repository \\ & & & & \hline & & & &
+                                            Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  device \\ & & & &
-                        \hline & & & & Start Weston & Isolate device &
+l.108  device \\ & & & &
+                         \hline & & & & Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  device \\ & & & & \hline & & & &
-                                       Start Weston & Isolate device &
+l.108  device \\ & & & & \hline & & & &
+                                        Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.89  \\ & & & &
-                 \hline & & & & Display media & & & Exploit vulnerabilities
+l.110  \\ & & & &
+                  \hline & & & & Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.89  \\ & & & & \hline & & & &
-                                Display media & & & Exploit vulnerabilities
+l.110  \\ & & & & \hline & & & &
+                                 Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.90  in SSH connections \\ & & & &
-                                    \hline & & & & Error state & \ & \ & \\ ...
-
+l.111  in SSH connections \\ & & & &
+                                     \hline & & & & Error state & \ & \ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.90  in SSH connections \\ & & & & \hline & & & &
-                                                   Error state & \ & \ & \\ ...
-
+l.111 ...SSH connections \\ & & & & \hline & & & &
+                                                   Error state & \ & \ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.90 ...e & & & & Error state & \ & \ & \\ & & & &
+l.112  \\ & & & &
+                  \hline & & & & Partial loss of system & & & \\ & & & &
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.112  \\ & & & & \hline & & & &
+                                 Partial loss of system & & & \\ & & & &
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.112 ...& Partial loss of system & & & \\ & & & &
                                                   
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.91  \hline & & & &
-                     Partial loss of system & & & \\ & & & & \hline & & & &
+l.113  \hline & & & &
+                      Complete loss of system & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.91 ... & Partial loss of system & & & \\ & & & &
-                                                   \hline & & & &
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.91 ... of system & & & \\ & & & & \hline & & & &
-                                                  
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.92  Complete loss of system & & & \\ & & & &
-                                               \hline
+l.113 ... Complete loss of system & & & \\ & & & &
+                                                   \hline
 ? 
 
-Overfull \hbox (21.94543pt too wide) in paragraph at lines 80--96
+Overfull \hbox (21.94543pt too wide) in paragraph at lines 101--117
  [][] 
  []
 
@@ -2364,19 +2405,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.3}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.99 \end{landscape}
-                    ]) (./further.tex [47
+l.120 \end{landscape}
+                     ]
+<./svg-inkscape/barchart_svg-raw.pdf, id=1005, 385.44pt x 385.44pt>
+File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/barchart_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
+e 169.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+ [47
 
 
-]
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.4}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.183 
+      ]
+File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/barchart_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
+e 186.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/barchart_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
+e 195.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+ [48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.198 \end{figure}
+                   <./svg-inkscape/barchart_svg-raw.pdf>]) (./further.tex
+[49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Further research} \label{further}] [50
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Further research} \label{further}]
 \relax  7.
-[48
+[51
 
-]) (./conclusion.tex [49]
+]) (./conclusion.tex [52]
 \relax  8.
-[50
+[53
 
-]) [51]
+]) [54]
 ! Illegal parameter number in definition of \abx@field@title.
 <to be read again> 
                    x
@@ -2401,7 +2485,7 @@ Overfull \hbox (23.62286pt too wide) in paragraph at lines 82--82
 avec gnu guix^^Q, \T1/cmr/m/it/12 GNU/Linux
  []
 
-[52
+[55
 
 ]
 
@@ -2412,21 +2496,13 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
-[53]
+[56]
 Overfull \hbox (32.40901pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/n/12 Canonical, \T1/cmr/m/it/12 Ubuntu Man-page: Apt - command-line
  in-ter-face --- man-pages.ubuntu.com\T1/cmr/m/n/12 ,
  []
 
 
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
-
-[54]
 Overfull \hbox (5.67918pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/it/12 Home Man-ager Man-ual --- nix-community.github.io\T1/cmr/m/n/
 12 , []$\T1/cmtt/m/n/12 https : / / nix -[] community .
@@ -2440,7 +2516,16 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
-[55]
+[57]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 15.04742pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.04742pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
+
+[58]
 Overfull \hbox (10.51329pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/it/12 GitHub - nix-community/nixos-anywhere: In-stall nixos ev-ery-
 where via ssh [main-
@@ -2454,7 +2539,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
-[56]
+[59]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 15.04742pt, for example:
@@ -2463,7 +2548,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
-[57]
+[60]
 Appendix A.
 
 Overfull \hbox (764.69269pt too wide) in paragraph at lines 99--99
@@ -2874,8 +2959,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: F301CD81305818B5746525A87BB4B75F;3246
-(rerunfilecheck)             After:  2E31DD20581CACFFCBB436360668A164;3299.
+(rerunfilecheck)             Before: D8EDE5CC1312CFA4DC517E63C72F2BA9;3178
+(rerunfilecheck)             After:  E2CDA780BA5E018DD8CD0FFB5C7D99C4;3231.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -2884,10 +2969,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37192 strings out of 476182
- 673980 string characters out of 5795596
+ 37206 strings out of 476182
+ 674300 string characters out of 5795596
  2092975 words of memory out of 5000000
- 58300 multiletter control sequences out of 15000+600000
+ 58311 multiletter control sequences out of 15000+600000
  575878 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  125i,12n,121p,1413b,3970s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2908,10 +2993,10 @@ sr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts
 er/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (71 pages, 791105 bytes).
+Output written on thesis.pdf (74 pages, 804032 bytes).
 PDF statistics:
- 1251 PDF objects out of 1440 (max. 8388607)
- 1057 compressed objects within 11 object streams
- 287 named destinations out of 1000 (max. 500000)
- 399 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1282 PDF objects out of 1440 (max. 8388607)
+ 1082 compressed objects within 11 object streams
+ 290 named destinations out of 1000 (max. 500000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 

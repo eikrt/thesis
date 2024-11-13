@@ -9,49 +9,48 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Research methodologies and questions}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Literature review}{3}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.1}Research methodologies and questions}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Literature review}{4}{subsection.1.1.1}%
 \contentsline {subsubsection}{Search statement}{4}{section*.4}%
 \contentsline {subsection}{\numberline {1.1.2}Research questions}{5}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Data collection and analysis}{6}{subsection.1.1.3}%
 \contentsline {chapter}{\numberline {2}Declarative vs. Imperative systems}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Imperative systems}{8}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Debian/Apt}{9}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Gentoo/Portage}{10}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Declarative systems}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Non-declarative components}{13}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Home manager and flakes}{15}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.2}Declarative systems}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Non-declarative components}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Home manager and flakes}{14}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Ease of updates}{15}{subsection.2.2.3}%
-\contentsline {chapter}{\numberline {3}Embedded system security}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Common embedded pitfalls}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}NixOS as an embedded solution}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Imperative and declarative systems from CIA-triad approach}{21}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Proposed architecture solution}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Server}{24}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Client}{26}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}MQTT-client}{26}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Weston/XWayland}{27}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Test device}{30}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Installing new devices}{30}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Security standpoints}{34}{chapter.5}%
-\contentsline {section}{\numberline {5.1}A brief history of security metrics}{34}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Choosing security metrics}{35}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Measuring security}{36}{section.5.3}%
+\contentsline {chapter}{\numberline {3}Embedded system security}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Common embedded pitfalls}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}NixOS as an embedded solution}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Imperative and declarative systems from CIA-triad approach}{20}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Proposed architecture solution}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Server}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Client}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}MQTT-client}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Weston/XWayland}{26}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Test device}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Installing new devices}{29}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Security standpoints}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}A brief history of security metrics}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Choosing security metrics}{34}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Measuring security}{35}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Methodologies in comparison}{37}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Quantitative metrics}{39}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}QuERIES}{39}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}QuERIES as a central methodology}{40}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Partially observable Markov decision process}{42}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.5}Quantitative metrics}{38}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}QuERIES}{38}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}QuERIES as a central methodology}{39}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Partially observable Markov decision process}{41}{subsection.5.5.3}%
 \contentsline {chapter}{\numberline {6}Analysis}{43}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Modeling the problem and quantifying the models}{43}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Modeling the possible attacks}{44}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Using the results}{47}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Red team implications}{47}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Blue team implications}{47}{subsection.6.3.2}%
-\contentsline {chapter}{\numberline {7}Further research}{48}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Further research questions}{48}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Conclusion}{50}{chapter.8}%
-\contentsline {chapter}{Lähdeluettelo}{52}{chapter*.5}%
+\contentsline {subsection}{\numberline {6.3.1}Red team implications}{48}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Blue team implications}{49}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {7}Further research}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Further research questions}{51}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Conclusion}{53}{chapter.8}%
+\contentsline {chapter}{Lähdeluettelo}{55}{chapter*.5}%
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Liitteet}{}\relax 
 \contentsline {chapter}{\numberline {A}Partially observable Markov decision process with R}{A-1}{appendix.A}%
