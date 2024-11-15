@@ -1,4 +1,3 @@
-
 \chapter{Analysis} \label{analysis}
 
 As mentioned in the previous chapter section \ref{queries}, the
@@ -7,9 +6,7 @@ QuERIES inspired methodology is used in this chapters analysis. Tables
 the calculations. In table \ref{pomdbtable} is listed all the possible
 states (S), defender actions (D), attacker actions (A) and
 observations (O). Then, every transition from state to another state
-was calculated as a probability, shown in table \ref{probtable}. The
-test counts are seen from the table cells, with their corresponding
-probability. Note that every row adds up to 1.0.
+is calculated as a probability. 
 
 \section{Modeling the problem and quantifying the models} \label{modprob}
 
@@ -38,15 +35,15 @@ the service provider, customer and users.
 
 As mentioned in chapter \ref{securitystandpoints} section
 \ref{measuringsecurity} subsection \ref{queriesasmethodology}, the
-value of intellectual property is defined as α, for which other
+value of intellectual property is defined as $\alpha$, for which other
 parameters refer to as fractions of it. If this was applied to a real
-setting, the intellectual property would be calculated appropriately
+setting, the value of intellectual property would be calculated appropriately
 for the scenario.
 
 \section{Modeling the possible attacks}
 
-In this section, the possible attacks are modeled using a attack
-chart, depicted as a POMDP, a modeling tool presented earlier. In the
+In this section, the possible attacks are modeled using an attack
+chart, depicted as a POMDP, which is a modeling tool presented earlier. In the
 original paper where QuERIES is presented, an important parameter is
 the time to reverse-engineer the system without prior information
 about the protection scheme \cite{carin2008cybersecurity}. Our
@@ -61,40 +58,17 @@ information of the system being available also to the attacker.
 In table \ref{pomdbtable}, the first column describes states the
 system can be in. The second and the third column state defensive
 actions, and observations of the system. The fourth column contains
-template of the attacks that could be conducted. After defining the
-starting layout, probabilities are calculated based on gathered
-empirical evidence.
+template of the attacks that could be conducted. After forming the
+attack graph depicted in the table, the attacker tries to breach the
+system, leveraging through the A0-A4 column. The probabilities are
+then calculated with the model presented in chapter
+\ref{securitystandpoints} section \ref{quantitativemetrics} subsection
+\ref{queries}.
 
-The research setup is a simulated targeted red–blue scenario. For
-calculating the reward values R script with library ''pomdp'' was
-used.
-\begin{table}
-\centering
-\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c| }
-\hline s&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
-\\ &&c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline s_0&&&&&&&&& \\ \hline
-s_1&&&&&&&&& \\ \hline s_2&&&&&&&&& \\ \hline s_3&&&&&&&&& \\ \hline
-s_4&&&&&&&&& \\ \hline s_5&&&&&&&&& \\ \hline s_6&&&&&&&&& \\ \hline
-s_7&&&&&&&&& \\ \hline
-\end{tabular}
-\caption{Probabilities of each state transition occurring in a 7 state
-  Markov chain, where s represents state, c count and p probability of
-  the transition succeeding. \(C_t\) represents total count. Given
-  action is ''Monitor state''.}
-\label{probtable}
-\end{table}
-\begin{table}
-\centering
-\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c| }
-\hline o&c_t&s_0&s_1&s_2&s_3&s_4&s_5&s_6&s_7
-\\ &&c,p&c,p&c,p&c,p&c,p&c,p&c,p&c,p \\ \hline O_0&&&&&&&&& \\ \hline
-O_1&&&&&&&&& \\ \hline O_2&&&&&&&&& \\ \hline O_3&&&&&&&&& \\ \hline
-O_4&&&&&&&&& \\ \hline
+The algorithm produces a reward value for each QuERIES iteration,
+which is used to improve the setup. For calculating reward values, R
+script with library ''pomdp'' was used.
 
-\end{tabular}
-\caption{Probabilities of observation across states.}
-\label{probtable}
-\end{table}
 \begin{landscape}
 \begin{table}
 \centering
@@ -102,15 +76,15 @@ O_4&&&&&&&&& \\ \hline
  \hline & & & & S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & & \hline \hline
  & & & & Idle & Monitor system & Normal operation & Intercept MQTT
  messaging \\ & & & & \hline & & & & Receive media through MQTT &
- Patch system & Detected suspicious activity & Compromise Github
+ Isolate system & Detected suspicious activity & Compromise Github
  repository \\ & & & & \hline & & & & Set up SystemD services &
- Shutdown system & Detected system error & Gain physical access to
+ Shutdown system & Detected unauthorised access & Gain physical access to
  device \\ & & & & \hline & & & & Start Weston & Isolate device &
  Detected unusual media display & Exploit vulnerabilities in display
  \\ & & & & \hline & & & & Display media & & & Exploit vulnerabilities
- in SSH connections \\ & & & & \hline & & & & Error state & \ & \ &
- \\ & & & & \hline & & & & Partial loss of system & & & \\ & & & &
- \hline & & & & Complete loss of system & & & \\ & & & & \hline
+ in SSH connections \\ & & & & \hline & & & & Partial loss of system & \ & \ &
+ \\ & & & & \hline & & & & Complete loss of system & & & \\ & & & &
+ \hline & & & & & & & \\ & & & & \hline
 
 \end{tabular}
 \caption{Different states, defensive measures, observations and attack
@@ -119,52 +93,48 @@ O_4&&&&&&&&& \\ \hline
 \end{table}
 \end{landscape}
 
-A reward function was calculated using the mentioned R program, and
-the output was x. A weight of 1 was used for positive results, and
--100, if something was to be compromised. This weight distribution is
-due to the fact that even if blue team succeeds most of time, the
-results of failure are much worse than a succeeding result from the
-blue team \cite{carin2008cybersecurity}. The discount constant is used
-in calculations as shown in \ref{pomdpappenix}, where it influences
-the priority of immediate versus future rewards
-\cite{mcabeeMarkov}. Our case signifies the importance of both, so
-value of 0.75 was used.
+A weight of 1 was used for positive results, and -100, if something
+was to be compromised. This weight distribution is due to the fact
+that even if blue team succeeds most of time, the results of failure
+are much worse than a succeeding result from the blue team. The
+discount constant is used in calculations as shown in
+\ref{pomdpappenix}, where it influences the priority of immediate
+versus future rewards \cite{mcabeeMarkov}. Our case signifies the
+importance of both, so value of 0.75 was used. Note that the maximum
+reward value is 4, and the minimum is -400.
 
-\section{Using the results}
+\section{Using the results} \label{usingtheresults}
 
 The results are investigated through the probabilities, which are
-represented in the table \ref{probtable}. The reward score is taken in
-to account on how successful/unsuccessful the setup is from a security
-perspective. 
+represented in the table. The reward score is taken in account on how
+successful/unsuccessful the setup is from a security perspective.
 
 As stated by Hughes and Cybenko, using the results means evaluating
 the gained results to decide if proposed protections are adequate for
 our means \cite{hughes2013quantitative}. The QuERIES model was
-iterated 4 times, and the results were placed in the following table. 
+iterated 2 times, and the results were placed in the following table.
 
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|c|}
-  \hline
-  Iteration & Reward function & Proposed protections \\
-  \hline
-  1 & -200 & Disabling USB ports \\
-  \hline
-  2 & -100 & Doing sum stuff \\
-  \hline
-  3 & 0 & Moar stuff \\
-  \hline
-  4 & 100 & No protections \\
-  \hline
+  \hline Iteration & Reward function & Proposed protections \\ \hline
+  1 & -25 & Multiple \\ \hline
+  2 & 4 & None
+  \\ \hline
 \end{tabular}
 \caption{Protections applied in each iteration}
 \label{iterationtable}
 \end{table}
 
+The reward function in the first iteration is calculated with the
+script in appendix \ref{pomdpappendix}. The second value is calculated
+with as the maximum accumulated points; the highest value is 4 points
+without any discount, as the red team failed to provide any results
+for the second iteration.
+
 As seen, the reward function is growing as the proposed protections
 are applied in each iteration. In the following figure we can see that
-the time to breach peaks at time x. This highlights the fact that
-.... It's similiar to results seen in...
+the time to breach peaks in the first hour.
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
@@ -172,59 +142,92 @@ the time to breach peaks at time x. This highlights the fact that
 \label{timetobreach}
 \end{figure}
 
-\subsection{Red team implications}
-
 The time distribution of breaches are depicted in the graph
-\ref{timetobreach}. It's apparent, that ... The chart is used to
-decide, when is the optimal time to stop the attacks from the attacker
-perspective. Identical approach is taken with blue team in the
-next subsection. Following the methodology in referred papers by Hughes and Cybenko,
-the optimal time to stop the attacks is seen in the following graph
-using open and closed loop strategies.
+\ref{timetobreach}. The chart has similar shape as the chart in
+\cite{carin2008cybersecurity}, meaning that attacks in their initial
+phase usually succeed more frequently.
+
+The following chart is used to decide, when is the optimal time to
+stop the attacks from the attacker perspective. We use this also to
+reflect the cost estimate of the blue team. Following the methodology
+in referred papers by Hughes and Cybenko, the optimal time to stop the
+attacks is seen in the following graph using open and closed loop
+strategies \cite{hughes2013quantitative}.
 
 \begin{figure}[t!]
-\centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
-\caption{The most optimal time to stop the attack.}
+\centerline{\includesvg[width=1.0\columnwidth]{../graph/cost_graph.svg}}
+\caption{The most optimal time to stop the attack using open and
+  closed loop algorithms.}
 \label{openandclosed}
 \end{figure}
 
-%The result, -30 is negative and that proves that the system has definitive security problems. From the table \ref{probtable} it can be seen that multiple attack vectors succeed in penetrating through the system. The worst probabilities occur when physical access is gained, due to the test device having exposed USB-ports. This weakness could be mitigated, if the production device would have closed USB-ports and a sufficient casing against physical breakthrough. On the other hand, replacing the whole device with a malicious one can't be prevented without the use of external security measures.
+\subsection{Improving the system using Nix}
 
-\subsection{Blue team implications}
+The following measures were taken in the first iteration: disable
+USB ports, change MQTT password to token based authentication and change
+SSH to key based authentication. As we can see, the QuERIES output
+provided concrete results on what are the weak points of the
+system. The reward function gives overall insight on how
+secure/insecure the system is. This generalization is one of the
+issues found in POMDP, as the reward function itself is too general to
+taken seriously. 
 
-\begin{figure}[t!]
-\centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
-\caption{The most optimal time to stop the attack.}
-\label{openandclosed}
+As an example, the exposed USB-ports of the system were found to be a
+problem, due to the possibility of infecting the system with direct
+control to the system. This can be mitigated easily by modifying the
+client devices configuration.nix, with the following changes:
+
+\begin{figure}[H]
+\begin{lstlisting} 
+{ boot.kernelPackages = pkgs.linuxPackages_latest; boot.kernelParams =
+  [ "nousb" # Disables USB at the kernel level ]; boot.kernelModules =
+  [ ]; boot.extraModulePackages = [ ]; services.udev.extraRules = ''
+  SUBSYSTEM=="usb", ACTION=="add", OPTIONS+="ignore_device" ''; }
+\end{lstlisting}
+\label{kernelsnippet}
 \end{figure}
 
-%The blue team tests proved, that the system is very reliable in every state. For example, monitoring the system always worked, and logging could be obtained. Recovering from simulated errors was simple, as the system is very straight forward. A more complex system would perhaps have more issues.
+The configuration could be applied to any number of clients, proving that Nix could
+be used to rapidly address arising security issues. This supports the
+argument presented in chapter \ref{imperative}, that through
+updatability the security could be improved. The configuration is only an example to mitigate hardware access attack
+vectors, as there are many more ways for the attacker to leverage the
+access, e.g by replacing the whole device, depending on the resources
+of the attacker. This highlight the scalability of Nix systems; it
+doesn't matter if we have one or thousands of devices, updating them
+is equally simple. A huge contrast between imperative and
+declarative systems is found, as imperative systems would need linear
+administration time in relation with the number of devices. This is a
+great benefit for system administrators.
 
-%It's worth noticing that even partial loss of system can be catastrophic, as display servers such as Weston don't need root privileges to operate. This is due security reasons, but comes with the feature that anyone with the user access might display arbitrary content. This is an easy fix, however, because the use of Weston can be denied for all, except for the SystemD user.
+\subsection{Issues with QuERIES} \label{issues}
 
-% A predefined topology could be used to mitigate device attacks based on device replacing.\cite{fysarakis2014embedded}
-%% \begin{table}
-%% \centering
-%% \begin{tabular}{ |c|c|c|c|c|c|c|c|c| }
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%%   \hline
-%%   &&&&&&&&& \\
-%% \hline
-%% \end{tabular}
-%% \caption{Different outcomes of various results gained via QuERIES}
-%% \label{probtable}
-%% \end{table}
-%\cite{papazov2019cybersecurity}
+One issue found using QuERIES with POMDP was that applying the
+reward functions is in our case rather arbitrary. We assumed, that for
+positive results, the reward function is defined as 1, and for the
+negative outcomes -100. This is due to the negative results deemed as
+catastrophic and the positive results being slightly positive. The
+choice for both parameters could have been any integer, but the issue
+is that it demands ''gut-feeling'' of the authors to select the
+appropriate parameters. This could be mitigated with some study on
+selecting the paramers, but it's definitely a challenge to provide
+good foundation on such arbitrary numbers.
+
+One remark using POMDP is that it produces very generalized
+output. This is why we use methodologies such as QuERIES to improve
+the system and the POMDP being just one component. Other benefit from
+using POMDP is that it provides us concise attack graph, and I argue
+that using POMDP may even be redundant. In POMDP, negative rewards
+signify that the system has issues, and positive meaning that the
+system is more secure \cite{mcabeeMarkov}. More ergonomic approach would
+be calculating rewards without positive outcomes, due to them
+overshadowing the most critical issues. Developing a pessimistic
+model that highlights explicitly the weak points of a system would be
+a topic for further research. 
+
+\section{Generalizing the results}
+
+
+
+The next chapter handles the topic for further research, inspired by
+the applied usage of QuERIES.
