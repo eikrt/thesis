@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  15 NOV 2024 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  15 NOV 2024 16:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1147,9 +1147,6 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 LaTeX Warning: Label `queries' multiply defined.
 
-
-LaTeX Warning: Label `openandclosed' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -1325,7 +1322,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<latex/kuvat/cropped_apt_output.jpg, id=433, 182.1204pt x 21.681pt>
+<latex/kuvat/cropped_apt_output.jpg, id=422, 182.1204pt x 21.681pt>
 File: latex/kuvat/cropped_apt_output.jpg Graphic file (type jpg)
 <use latex/kuvat/cropped_apt_output.jpg>
 Package pdftex.def Info: latex/kuvat/cropped_apt_output.jpg  used on input line
@@ -1351,7 +1348,7 @@ Package Listings Warning: Text dropped after begin of listing on input line 116
 Package Listings Warning: Text dropped after begin of listing on input line 205
 .
 
-<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=466, 594.72188pt x 324.46219pt>
+<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=454, 594.72188pt x 324.46219pt>
 
 File: ./svg-inkscape/symlinks.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/symlinks.drawio_svg-raw.pdf>
@@ -1389,7 +1386,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
 [20]
-<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=647, 258.11884pt x 220.56555pt>
+<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=636, 258.11884pt x 220.56555pt>
 
 File: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ciatriad.drawio_svg-raw.pdf>
@@ -1425,7 +1422,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [23
 
 ] [24] [25] [26] [27]
-<latex/kuvat/testimage.jpeg, id=755, 1599.9775pt x 1080.035pt>
+<latex/kuvat/testimage.jpeg, id=744, 1599.9775pt x 1080.035pt>
 File: latex/kuvat/testimage.jpeg Graphic file (type jpg)
 <use latex/kuvat/testimage.jpeg>
 Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 202.
@@ -1437,7 +1434,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.212 \begin{lstlisting}
                          <./latex/kuvat/testimage.jpeg>]
-<./svg-inkscape/architect_svg-raw.pdf, id=768, 445.28859pt x 530.54462pt>
+<./svg-inkscape/architect_svg-raw.pdf, id=757, 445.28859pt x 530.54462pt>
 File: ./svg-inkscape/architect_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/architect_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/architect_svg-raw.pdf  used on input li
@@ -1475,7 +1472,7 @@ ub:nix-community/nixos-
 [33
 
 ] [34] [35] [36] [37] [38]
-<./svg-inkscape/queries.drawio_svg-raw.pdf, id=918, 202.88297pt x 279.29344pt>
+<./svg-inkscape/queries.drawio_svg-raw.pdf, id=907, 202.88297pt x 279.29344pt>
 File: ./svg-inkscape/queries.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/queries.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/queries.drawio_svg-raw.pdf  used on inp
@@ -1521,115 +1518,113 @@ LaTeX Warning: Reference `probtable' on page 43 undefined on input line 5.
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.76  \hline & & & &
+l.77  \hline & & & &
                      S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & & \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.76 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
+l.77 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
                                                    \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.77  & & & &
+l.78  & & & &
               Idle & Monitor system & Normal operation & Intercept MQTT
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.78  messaging \\ & & & &
+l.79  messaging \\ & & & &
                            \hline & & & & Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.78  messaging \\ & & & & \hline & & & &
+l.79  messaging \\ & & & & \hline & & & &
                                           Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.80  repository \\ & & & &
+l.81  repository \\ & & & &
                             \hline & & & & Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.80  repository \\ & & & & \hline & & & &
+l.81  repository \\ & & & & \hline & & & &
                                            Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  device \\ & & & &
-                        \hline & & & & Start Weston & Isolate device &
+l.83  to device \\ & & & &
+                           \hline & & & & Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  device \\ & & & & \hline & & & &
-                                       Start Weston & Isolate device &
+l.83  to device \\ & & & & \hline & & & &
+                                          Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.84  \\ & & & &
+l.85  \\ & & & &
                  \hline & & & & Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.84  \\ & & & & \hline & & & &
+l.85  \\ & & & & \hline & & & &
                                 Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.85  in SSH connections \\ & & & &
-                                    \hline & & & & Partial loss of system & ...
-
+l.86  in SSH connections \\ & & & &
+                                    \hline & & & & Partial loss of system &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.85  in SSH connections \\ & & & & \hline & & & &
-                                                   Partial loss of system & ...
-
+l.86  in SSH connections \\ & & & & \hline & & & &
+                                                   Partial loss of system &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86  \\ & & & &
-                 \hline & & & & Complete loss of system & & & \\ & & & &
+l.87  \ & \ & \\ & & & &
+                         \hline & & & & Complete loss of system & & & \\ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86  \\ & & & & \hline & & & &
-                                Complete loss of system & & & \\ & & & &
+l.87  \ & \ & \\ & & & & \hline & & & &
+                                        Complete loss of system & & & \\ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86 ...& Complete loss of system & & & \\ & & & &
-                                                  
+l.88  & & &
+            \hline & & & & & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  \hline & & & &
-                     & & & \\ & & & & \hline
+l.88  & & & \hline & & & &
+                           & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  \hline & & & & & & & \\ & & & &
-                                      \hline
+l.88  & & & \hline & & & & & & & \\ & & & &
+                                            \hline
 ? 
 
-Overfull \hbox (21.94543pt too wide) in paragraph at lines 75--91
+Overfull \hbox (21.94543pt too wide) in paragraph at lines 76--92
  [][] 
  []
 
@@ -1638,17 +1633,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.94 \end{landscape}
+l.95 \end{landscape}
                     ]
 
-LaTeX Warning: Reference `pomdpappendix' on page 47 undefined on input line 130
+LaTeX Warning: Reference `pomdpappendix' on page 47 undefined on input line 129
 .
 
-<./svg-inkscape/barchart_svg-raw.pdf, id=1012, 385.44pt x 385.44pt>
+<./svg-inkscape/barchart_svg-raw.pdf, id=1001, 385.44pt x 385.44pt>
 File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/barchart_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
-e 141.
+e 139.
 (pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
 [47
 
@@ -1658,39 +1653,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.152 
-      ] [48
+l.148 
+      ]
+<./svg-inkscape/cost_graph_svg-raw.pdf, id=1010, 385.44pt x 385.44pt>
+File: ./svg-inkscape/cost_graph_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/cost_graph_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/cost_graph_svg-raw.pdf  used on input l
+ine 157.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+ [48
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.159 
-       <./svg-inkscape/barchart_svg-raw.pdf>]
-<./svg-inkscape/cost_graph_svg-raw.pdf, id=1033, 385.44pt x 385.44pt>
-File: ./svg-inkscape/cost_graph_svg-raw.pdf Graphic file (type pdf)
-<use ./svg-inkscape/cost_graph_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/cost_graph_svg-raw.pdf  used on input l
-ine 161.
-(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
-File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
-<use ./svg-inkscape/barchart_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
-e 170.
-(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
- [49
+l.174 
+       <./svg-inkscape/barchart_svg-raw.pdf>] [49
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.184 
-       <./svg-inkscape/cost_graph_svg-raw.pdf>] [50
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.185 A
-       s an example, the exposed USB-ports of the system were found to be a]
-[51]) (./further.tex [52]
+l.179 
+       <./svg-inkscape/cost_graph_svg-raw.pdf>] [50]) (./further.tex [51]
+[52]
 \relax  7.
 [53
 
@@ -2197,8 +2181,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 4151CE5C92EDD76923DCED91FA0377AA;3431
-(rerunfilecheck)             After:  4977DEF351D88760D03439FD02974766;3484.
+(rerunfilecheck)             Before: 0D82818CE4ACCBE87090BC04A23C21EE;3278
+(rerunfilecheck)             After:  97A2025219A4870C7867AC73EF4A07D5;3331.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -2207,10 +2191,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37232 strings out of 476182
- 674965 string characters out of 5795596
+ 37223 strings out of 476182
+ 674702 string characters out of 5795596
  2092975 words of memory out of 5000000
- 58329 multiletter control sequences out of 15000+600000
+ 58324 multiletter control sequences out of 15000+600000
  575878 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  125i,12n,121p,1413b,3970s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2230,10 +2214,10 @@ mf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (76 pages, 808297 bytes).
+Output written on thesis.pdf (76 pages, 808631 bytes).
 PDF statistics:
- 1314 PDF objects out of 1440 (max. 8388607)
- 1110 compressed objects within 12 object streams
- 298 named destinations out of 1000 (max. 500000)
- 425 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1301 PDF objects out of 1440 (max. 8388607)
+ 1098 compressed objects within 11 object streams
+ 294 named destinations out of 1000 (max. 500000)
+ 409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

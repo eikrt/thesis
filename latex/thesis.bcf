@@ -2493,9 +2493,10 @@
     <bcf:citekey order="120" intorder="1">hughes2013quantitative</bcf:citekey>
     <bcf:citekey order="121" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="122" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">fysarakis2014embedded</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">vasquez2021mastering</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">nixosNixOSManual</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">fysarakis2014embedded</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

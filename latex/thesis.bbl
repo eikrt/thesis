@@ -1223,35 +1223,6 @@
       \field{note}{[Accessed 23-05-2024]}
       \field{title}{{T}he use of partially observable {M}arkov decision processes to optimally implement moving target defense}
     \endentry
-    \entry{vasquez2021mastering}{book}{}
-      \name{author}{2}{}{%
-        {{hash=6bfe08c2a1f53a9a670c78a4c1fbf3a2}{%
-           family={Vasquez},
-           familyi={V\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-        {{hash=0bd3ecd8a859fcfe63408bf08eba31c5}{%
-           family={Simmonds},
-           familyi={S\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Packt Publishing Ltd}%
-      }
-      \strng{namehash}{d95319603108f3553c640a36e31260d0}
-      \strng{fullhash}{d95319603108f3553c640a36e31260d0}
-      \strng{bibnamehash}{d95319603108f3553c640a36e31260d0}
-      \strng{authorbibnamehash}{d95319603108f3553c640a36e31260d0}
-      \strng{authornamehash}{d95319603108f3553c640a36e31260d0}
-      \strng{authorfullhash}{d95319603108f3553c640a36e31260d0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Mastering Embedded Linux Programming: Create Fast and Reliable Embedded Solutions with Linux 5.4 and the Yocto Project 3.1 (Dunfell)}
-      \field{year}{2021}
-    \endentry
   \enddatalist
 \endrefsection
 \endinput

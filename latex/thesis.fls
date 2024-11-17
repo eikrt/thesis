@@ -596,13 +596,6 @@ INPUT ./svg-inkscape/cost_graph_svg-raw.pdf
 INPUT ./svg-inkscape/cost_graph_svg-raw.pdf
 INPUT ./svg-inkscape/cost_graph_svg-raw.pdf
 INPUT ./svg-inkscape/cost_graph_svg-raw.pdf
-INPUT ../graph/barchart.svg
-INPUT ../graph/barchart.svg
-INPUT ../graph/barchart.svg
-INPUT ./svg-inkscape/barchart_svg-raw.pdf
-INPUT ./svg-inkscape/barchart_svg-raw.pdf
-INPUT ./svg-inkscape/barchart_svg-raw.pdf
-INPUT ./svg-inkscape/barchart_svg-raw.pdf
 INPUT ./further.tex
 INPUT ./further.tex
 INPUT ./further.tex

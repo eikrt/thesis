@@ -27,13 +27,14 @@ rollback \cite{opensuseSystemRecovery}}. Due to the unpredictability,
 often the result can be a partially or completely broken system
 \cite{dolstra2008nixos}.
 
-The reference imperative system in this thesis is Debian with its
-default package manager apt, due to it's popularity and relative
-simplicity. The reference declarative system is
-NixOS with it's partial namesake package manager Nix which provides declarative
-configuration of the whole system including the Linux
+The reference imperative Linux distribution in this thesis is Debian
+with its default package manager apt, due to it's popularity and
+relative simplicity. The reference declarative distribution is NixOS
+with it's partial namesake package manager Nix which provides
+declarative configuration of the whole system including the Linux
 kernel\footnote{There exists an experimental project that has
-succeeded with BSD interoperability \cite{githubGitHubNixosbsdnixbsd}}. Nix is configured by the Nix
+succeeded with BSD interoperability
+\cite{githubGitHubNixosbsdnixbsd}}. Nix is configured by the Nix
 programming language which is inspired by purely functional languages
 such as Haskell. \cite{van2013reference}
 
@@ -41,32 +42,32 @@ The reference architecture depicted in chapter \ref{architecture} is
 based on Nix as it is the most popular purely functional, declarative
 Linux distribution with over 100 000 packages
 \cite{nixosNixOSSearch}. Architecture in this context refers to the
-set containing clients and server, and the used hardware. Another good
-base for the architecture would have been Guix, which has over 28 000
-packages \cite{gnuPackagesx2014}. Guix has some improvements over Nix,
-including richer and more extensible programming environment with a
-Lisp-dialect configuration language, Scheme
+set containing clients and server and the used hardware. Another good
+distribution for the architecture would have been Guix, which has over
+28 000 packages \cite{gnuPackagesx2014}. Guix has some improvements
+over Nix, including richer and more extensible programming environment
+with a Lisp-dialect configuration language, Scheme
 \cite{courtes2021deploiements}. NixOS remains as the distribution of
 choice, as the number of packages is greater, and general support is
 found to be better.
 
-
 This thesis focuses on the systems and information security of a
 reference architecture created with NixOS. Chapter \ref{architecture}
-goes through a reference architecture of a solution that handles
-securely the most critical functionalities of an image displaying system.
+goes through a reference architecture of a solution that handles the
+most critical functionalities of an image displaying system.
 
 This thesis discusses how declarative systems can be used as an
 improvement over imperative systems in a public information screen
 setting. In chapter \ref{imperative} both approaches to package
-management is compared, and in chapters \ref{architecture} and
-\ref{analysis} a quantitative research is carried out revealing
-strengths and weaknesses of the reference Nix environment
-setup. Selected methodologies provide quantitative results which can
-be used to improve the security of similar declarative
-systems. Propositions for further research are gone through in chapter
-\ref{further} and finally, chapter \ref{conclusion} concludes the
-thesis.
+management is compared, which is followed by an introduction to
+embedded security in chapter \ref{securitystandpoints}. In chapters
+\ref{architecture} and \ref{analysis} a quantitative research is
+carried out revealing strengths and weaknesses of the reference Nix
+environment setup. The selected methodology, QuERIES provide
+quantitative results which can be used to improve the security of
+similar declarative systems. Propositions for further research are
+gone through in chapter \ref{further} and finally, chapter
+\ref{conclusion} concludes the thesis.
 
 \section{Research methodologies and questions}
 
@@ -78,16 +79,15 @@ Research methodologies used in this thesis are:
 \item a quantitative research process using QuERIES methodology
 \end{enumerate}
 
-Literature review will be addressed mostly in the next section and in chapter
-\ref{embedded}. As this
-thesis' main research methodology is quantitative, the gathered data
-points will be addressed as variables that are compared with
-mathematical methods. Quantitative methods are broken down in chapter
-\ref{securitystandpoints} and \ref{analysis}. The central methodology
-is derived from QuERIES, and the information security aspect is
-investigated with CIA-triad. In chapter \ref{analysis} section
-\ref{whyqueries} QuERIES is compared with other metrics which are
-explained in subsection \ref{resquest}.
+Literature review will be addressed mostly in the next section and in
+chapter \ref{embedded}. As this thesis' main research methodology is
+quantitative, the gathered data points will be addressed as variables
+that are compared with mathematical methods. Quantitative methods are
+broken down in chapter \ref{securitystandpoints} and
+\ref{analysis}. The central methodology is derived from QuERIES, and
+the information security aspect is investigated with CIA-triad. In
+chapter \ref{analysis} section \ref{whyqueries} QuERIES is compared
+with other metrics which are explained in subsection \ref{resquest}.
 
 Quantitative methodologies are oftentimes used in conjunction with
 qualitative methodologies, both approaches having their strengths and
@@ -107,7 +107,7 @@ state transitions without quantitative methodologies would be absurd
 
 \subsection{Literature review}\label{litrev}
 
-This thesis has bibliography from x sources, most of it gathered with
+This thesis has bibliography from 48 sources, most of it gathered with
 a carefully prepared search statement. Other sources include manuals,
 material for research methods and other relevant material. The search
 statement's results, presented in next subsection, provide good base
@@ -129,10 +129,15 @@ imperative systems, which is the central approach in chapter
 were discussed by Specht et. al and Kandoi and Artke
 \cite{specht2007analysis, kandoi2021operating}.
 
-Discussion from Ravi et. al and Fysarakis et. al on embedded security is discussed by
-\cite{ravi2004security, fysarakis2014embedded}. The concepts, however
-are generally too broad for this thesis' scope, so only the most
-fitting approaches were selected for use.
+Discussion from Ravi et. al and Fysarakis et. al on embedded security
+is discussed by \cite{ravi2004security, fysarakis2014embedded}. The
+concepts, however are generally too broad for this thesis' scope, so
+only the most fitting approaches were selected for use.
+
+The most important literature to measure the security of a system is
+by Carin et al. and Hughes and Cybenko \cite{carin2008cybersecurity,
+  hughes2013quantitative}. The topics from these papers revolve around
+QuERIES, an original approach for measuraly improve security. 
 
 \subsubsection{Search statement} \label{searchstatement}
 
@@ -153,10 +158,10 @@ was handpicked, such as NixOS manuals and wiki pages. Systems security
 and cyber security material is also included in the bibliography using
 search statement systems security OR cyber security. Separate search
 ''cia-triad'' and ''partial observable Markov chain'' AND
-''cybersecurity'' were used to provide tangible meters for
-measuring cyber security. To further back up the research for
-comparing different metrics, term ''cyber security metric
-methodology'' was searched.
+''cybersecurity'' were used to provide tangible meters for measuring
+cyber security. To further back up the research for comparing
+different metrics, term ''cyber security metric methodology'' was
+searched.
 
 For searching specific material about embedded systems, the search
 statement ''embedded AND security'' was used. As the need for embedded
@@ -168,32 +173,32 @@ searched. All searches were done on Google Scholar platform.
 The research questions for this thesis are:
 
 \begin{enumerate}
-\item How can a declarative system be used to measurably improve the security of an embedded system used for displaying public media?
+\item How can a declarative system be used to measurably improve the
+  security of an embedded system used for displaying public media?
 \item What are the advantages and/or disadvantages of such system from
- a system administrator standpoint?
+  a system administrator standpoint?
 \item How can a declarative system be updated from different Linux
   distribution securely and seamlessly?
 \end{enumerate}
 
-Research question 1 is the most important and it traverses
-through themes of the whole thesis. The hypothesis is that traditional
+Research question 1 is the most important and it traverses through
+themes of the whole thesis. The hypothesis is that traditional
 imperative embedded device fleets have problems that can be solved
 with the use of modern declarative systems. First, we aim to gain
 information from a specific scenario, presented in chapter
 \ref{architecture}, then in chapter \ref{analysis} the gained
-information is analyzed and generalized as suitably as possible. 
+information is analyzed and generalized as suitably as possible.
 
 Research question 2 brings up the human element; how can a system
 administrator use a new palette of features adequately to provide more
 secure system and research question 3 handles a situation where
-existing system should be replaced with a NixOS system. How this
-could be done securely without risks and preferably easily with
-existing tooling is answered in chapter \ref{architecture}
-section \ref{instnewdevices}. The next chapter compares imperative
-approaches to declarative approaches and provides insight for
-understanding the central differences. The emphasis is on how
-declarative systems can be used to improve problems found in
-imperative systems. 
+existing system should be replaced with a NixOS system. How this could
+be done securely without risks and preferably easily with existing
+tooling is answered in chapter \ref{architecture} section
+\ref{instnewdevices}. The next chapter compares imperative approaches
+to declarative approaches and provides insight for understanding the
+central differences. The emphasis is on how declarative systems can be
+used to improve problems better than with imperative systems.
 
 \subsection{Data collection and analysis}
 

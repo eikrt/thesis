@@ -21,8 +21,7 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The QuERIES methodology is used as a reference flowchart for evaluation of security. \blx@tocontentsinit {0}\cite {hughes2013quantitative}}}{40}{figure.5.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Probabilities to breach into the system.}}{48}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The most optimal time to stop the attack using open and closed loop algorithms.}}{49}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The most optimal time to stop the attack.}}{50}{figure.6.3}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The most optimal time to stop the attack using open and closed loop algorithms. The black dots indicate the most optimal times to stop the attack.}}{49}{figure.6.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 
