@@ -4,7 +4,7 @@ One big limitation of Nix is the fact that it mainly supports only
 x86\_64, i686 and arm64 platforms \cite{nixosNixOSManual}. This is not
 generally enough, as many different architectures are used in
 embedded, thus limiting the use-cases of
-NixOS. \cite{fysarakis2014embedded}.
+NixOS \cite{fysarakis2014embedded}.
 
 A declarative approach could be used with other processor
 architectures. This would require work on a declarative package
@@ -12,29 +12,23 @@ manager, which would be used in conjunction with base systems created
 with Buildroot or Yocto.
 
 As far as security is concerned, the main methodology of this thesis'
-research, QuERIES, proved to be an aqequate tool. It helped to improve
+research, QuERIES, proved to be an aqequate tool which helped to improve
 the security of the reference architecture. However, some issues were
 raised in chapter \ref{analysis} section \ref{usingtheresults}
 subsection \ref{issues}. These issues could be addressed in developing
-a new methodology, inspired by QuERIES, providing explicit insight on
-the weak points of the underlying system. This approach would be
-similar to this thesis' QuERIES inspired methodology.
+a new methodology inspired by QuERIES, providing explicit insight on
+the weak points of the underlying system.
 
 \section{Further research questions}
 
-
 Questions for further research include:
 \begin{enumerate}
-  \item{What kind of new methodology would be more better, reflecting
+  \item{What kind of new methodology would be better, reflecting
     the found issues in QuERIES for similar use-case as in this
     thesis?}
   \item What set of tools would be optimal in creating a true
-    cross-platform declarative package manager (e.g programming
-    languages, possible configuration languages etc.)
-      
-    \item How could the new system handle common system security and
-      administration problems better?
-      
+    cross-platform declarative package manager 
+  \item How could the new system handle common system security and
+    administration problems better?
+    
 \end{enumerate}
-
-These questions form ground for multiple separate studies.

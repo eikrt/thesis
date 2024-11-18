@@ -4,14 +4,10 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Terminal output from a Debian system when installing an Emacs package.}}{9}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Relations between different user environments and installed programs \blx@tocontentsinit {0}\cite {nixosUserEnvironment}.}}{12}{figure.2.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Relations between different user environments and installed programs \blx@tocontentsinit {0}\cite {nixosUserEnvironment}.}}{13}{figure.2.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces The CIA-triad, a way to demonstrate conflicting security measures \blx@tocontentsinit {0}\cite {hughes2013quantitative}.}}{21}{figure.3.1}%
 \addvspace {10\p@ }
@@ -21,7 +17,7 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The QuERIES methodology is used as a reference flowchart for evaluation of security. \blx@tocontentsinit {0}\cite {hughes2013quantitative}}}{40}{figure.5.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Probabilities to breach into the system.}}{48}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The most optimal time to stop the attack using open and closed loop algorithms. The black dots indicate the most optimal times to stop the attack.}}{49}{figure.6.2}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Cost benefits and reductions. The black dots indicate the most optimal times to stop the attack.}}{50}{figure.6.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 

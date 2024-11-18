@@ -78,9 +78,9 @@ research aims to measure with what outputs do the state transitions
 resolve to.
 
 To be attainable is relevant to this context for the reason that a
-thesis has different scope than e.g a huge organization, and the
-proposed setup has to go through a check: are the metrics' goals
-achievable. Relevance has to do with risk assessment: how important
+thesis has different scope than a big organization, and the
+proposed setup has to go through a check on the metrics' goals
+achievabilities. Relevance has to do with risk assessment: how important
 it's to measure something related to it's value. Risk assessment is
 gone through thoroughly in \ref{analysis} section
 \ref{modprob}. Time-bounding signifies the importance of time as a
@@ -107,11 +107,10 @@ Password vulnerabilities refer to situations where password can be
 computationally cracked. This is relatively simple to measure, as it
 can be estimated how much time it takes to crack a password, or with
 the use of statistical password guessability. Software vulnerability
-on the other hand is a very usual way for a cyber breach to take
+on the other hand is a very usual way for a breach to take
 place. This kind of vulnerabilities can be measured, thus also
-estimated with the help of exploitations in the past. Time is the
-essential element here, as the time to patch a software vulnerability
-is a central metric. \cite{pendleton2016survey}
+estimated with the help of exploitations in the past. The
+essential metric is the time to patch a software vulnerability. \cite{pendleton2016survey}
 
 \textbf{Defense} measures can be applied to strength of reactive,
 preventive proactive and overall defenses. Reactive measures include
@@ -121,14 +120,14 @@ botnet. For measuring defence, the reaction time is essential, and
 most importantly, the gained meter to measure preventive
 defense. Blacklisting can also be used as preventive and proactive
 measure, as a pre-filled blacklist can be used with desired
-parameters. \cite{pendleton2016survey, ramos2017model}
+parameters. \cite{pendleton2016survey ramos2017model}
 
 Overall defenses can be measured with the combination of all defensive
 measures and with the use of penetration testing in a red–blue team
 setup. Penetration testing aims to gain a result, also known as
 penetration resistance, which is a meter, indicating cost or time that
 the red team must spend in case of a successful system
-compromisal. \cite{pendleton2016survey, ramos2017model}
+compromisal. \cite{pendleton2016survey ramos2017model}
 
 \textbf{Threats}: zero-day vulnerabilities can be measured from two
 perspectives: lifetime of zero-day vulnerability and the number of
@@ -138,7 +137,7 @@ node per a time unit. Attack evasion is measured using either
 obfuscation prevalence metric, or structural complexity metric which
 provide information on obfuscating gained samples e.g by encrypting,
 or the target system's complexity measured by
-runtime. \cite{pendleton2016survey, ramos2017model}
+runtime. \cite{pendleton2016survey ramos2017model}
 
 \textbf{Situations}, which can relate to security state, security
 incidents and security investments. Security state has multiple
@@ -180,11 +179,11 @@ parameter. The problem, however is regarding the generality of the
 methodology, and something more \textbf{specific} would be a better
 fit for this thesis. \textbf{Relevance} also is an issue, as using
 presented Hidden Markov models would be mathematically challenging,
-and perhaps too demanding for the scope of this thesis.
+and perhaps too complex for the scope of this thesis.
 
 The last and the most fitting methodology would be one presented in
 papers by Carin et al and Hughes, Jeff and Cybenko
-\cite{carin2008cybersecurity} \cite{hughes2013quantitative}. The
+\cite{carin2008cybersecurity hughes2013quantitative}. The
 QuERIES methodology is delved deeper in section \ref{queries}, and
 it's \textbf{time-related}, \textbf{relevance} and \textbf{specific}
 axes are a near-perfect match for our goals as the model itself is
@@ -207,7 +206,7 @@ two research questions:
 
 The proposed architecture solution presented in chapter
 \ref{architecture} will go through a red and blue team inspection,
-complying with the QuERIES model \ref{analysis}.
+complying with the QuERIES model in chapter \ref{analysis}.
 
 \subsection{QuERIES} \label{queries}
 QuERIES model consists of number of steps that
@@ -234,10 +233,7 @@ repeated as many times as needed for the system to be secure.
 
 Modeling the possible attacks is a task for the red team – by
 constructing an attack graph, the opposing forces have a plan, which
-can be used as a template for analysis. By documenting all steps, we
-gain academical ground for conducting a thorough analysis.
-
-In this thesis, models are quantified with the use of time
+can be used as a template for analysis. In this thesis, the models are quantified with the use of time
 framing. Both teams have limited amount of time to conduct their
 tasks, and probability for succeeding a certain task is calculated
 with formula
@@ -277,19 +273,19 @@ operation \cite{hughes2013quantitative}. The strategy uses
 when to stop trying. Closed loop decision algorithm constantly
 evaluates when is the optimal time to stop trying and open loop means
 that the system has pre-defined goals for evaluation
-\cite{carin2008cybersecurity}.As as positive side-effect by gaining
+\cite{carin2008cybersecurity}. As as positive side-effect by gaining
 the probabilities through red-team evaluation, the system is
 thoroughly tested and improved. This is a valuable metric, providing
 insight on how does the value of the system transition in the worth of
 breaching it in certain time, thus reflecting the true cost of the
 attack. As stated by Hughes and Cybenko, if the value is high enough
-related to the value of the gained value, the will less probably
+related to the value of the gained value, they will less probably
 perform the attacks \cite{hughes2013quantitative}.
 
 In this thesis, the value of the whole system architecture is
-signified by symbol α, constituting a value of holded intellectual
+signified by symbol $\alpha$, constituting a value of holded intellectual
 property (IP). Costs are defined as fractions of the value, propulsing
-0.01α every hour. This is contrary to the original paper, where the
+0.1$\alpha$ every hour. This is contrary to the original paper, where the
 value of the intellectual property has a certain value of 30 000\$ and
 the value for the possible intruder is defined as 60\$ per hour
 \cite{carin2008cybersecurity}. This divergency is due to the fact

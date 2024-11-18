@@ -55,7 +55,7 @@ administrative traits contributing to a framework where the underlying
 system has \textbf{no traceability}: the implication that
 reproducibility is impossible, as changes to a system are not
 traced. Nix provides a solution for this problem with its Nix
-generation system. The second point contributes to the fact that with
+generation system. With
 imperative systems, upgrading is more error-prone than installing from
 scratch. This is due to the fact that imperative systems have
 \textbf{unpredictable} state, from where the system should migrate to
@@ -76,7 +76,7 @@ the following demonstration. Executing shell command
 \begin{lstlisting}
     apt install emacs
 \end{lstlisting}
-installs a text editor wrapped as a Linux package.  The package emacs
+installs a text editor wrapped as a .deb package.  The package emacs
 has a dependency, emacs-gtk, which can be removed with command
 \begin{lstlisting}
     apt remove emacs-gtk
@@ -113,11 +113,15 @@ imperatively? We would have a large number of devices that differ from
 each other, because as shown, the order of commands affect the state
 of the system. Time is also a factor that
 causes systems to diverge, as packages are not up-to-date by
-default. Invoking \begin{lstlisting} apt update
+default. Invoking 
+\begin{figure}[H]\label{aptupdate}
+\begin{lstlisting} 
+  apt update
 \end{lstlisting}
+\end{figure}
 updates the local repositories to match the download mirrors. If by
 technical reasons or possible user error this command is conducted in
-the wrong order there will be divergent systems.
+the wrong order, there will be divergent systems.
 
 Implementing a deployment model with only Debian would be a gruesome
 task, as the order of events which occur during the setup phase is
@@ -163,7 +167,7 @@ Bluemix or Chef, where common DevOps practices can be used
 Presented problems in chapter \ref{imperative} can be solved using
 package manager that is reproducible, reliable and atomic. Package
 installs in Nix are in isolation from each other so that they don't
-have conflicting effects. This results packages being predictable and
+have conflicting effects which results packages being predictable and
 assures they work coherently even if underlying install is
 different. As the packages are declared in a single set of
 configuration files, it's trivial to reproduce the system in a
@@ -190,13 +194,13 @@ One benefit from Nix is its lightweight tendency to enable system
 tests. Integrating system tests with a Debian system would require a
 considerable amount of work, as setting up such system needs a lot of
 configuration and executing commands in a correct order
-\cite{van2010automating}. The mentioned Linux distribution in the
+\cite{van2010automating}. The mentioned distribution in the
 previous subsection, Debian, definitely fits in an imperative
 deployment strategy but the requirement for explicit detail of every
 step would be error prone even for a seasoned administrator
 \cite{breitenbucher2017declarative}.
 
-It's also noteworthy that many imperative package mangers don't
+It's also noteworthy that many imperative package managers don't
 support rollback mechanisms. If the Nix configuration file is changed
 and the system is rebuilt with command
 \begin{lstlisting}
@@ -212,20 +216,14 @@ provide different configurations for different user environments as
 shown in figure \ref{userenvs} and provide atomic upgrades and
 rollbacks. \cite{nixosNixOSManual}
 
-\begin{figure}[t!]
-\centerline{\includesvg[width=1.0\columnwidth]{latex/kuvat/symlinks.drawio.svg}}
-\caption{Relations between different user environments and installed
-  programs \cite{nixosUserEnvironment}.}
-\label{userenvs}
-\end{figure}
 
 A fundamental component of the ecosystem is Nix, a domain-specific
-language designed for configurations, distinguished by its functional
+language designed for configurations distinguished by its functional
 nature and lazy evaluation. The concept of purity is central to Nix,
 where values remain unchanged throughout computation, and every
 function consistently yields the same output regardless of input
 \cite{dolstra2013charon}. The security implications of using Nix
-vs. an imperative system is discussed in chapter \ref{embedded}.
+vs. an imperative system is discussed in the next chapter.
 
 \subsection{Non-declarative components} \label{nondeclarative}
 
@@ -259,8 +257,7 @@ remain ''pure'', they can build the system by \begin{lstlisting}
 \end{lstlisting}
 This results the system having mutable components, which can be
 desirable from an accessibility point of view, but can result in
-unpredictable behaviour if the impure components are modified. In this
-context this means, that the built pure components are read-only and
+unpredictable behaviour if the impure components are modified. Purity means that the components are read-only and
 immutable \cite{dolstra2010nixos}.
 
 User environments (Nix profiles) can be used so that for different
@@ -274,6 +271,13 @@ that reside also in the Nix store hence referred packages are called
 structure, where files are separated to /bin/ /sbin/ etc. doesn't
 completely apply. Instead, the installed programs reside usually in
 /nix/store. \cite{dolstra2008nixos}
+
+\begin{figure}[t!]
+\centerline{\includesvg[width=1.0\columnwidth]{latex/kuvat/symlinks.drawio.svg}}
+\caption{Relations between different user environments and installed
+  programs \cite{nixosUserEnvironment}.}
+\label{userenvs}
+\end{figure}
 
 There are continuous build and integration services, such as Hydra,
 which include Nix-compatible support for handling runtime
@@ -290,14 +294,12 @@ handling environment difference, and inability to guarantee
 configuration compatibility with a machine. Disnix is a Nix derivative
 that can overcome these challenges by separating logical properties
 from physical, and by capturing the essential aspects which form a
-system. The result with Disnix is a system that can be reproduced
-anywhere initially, and upgrading it is a trivial
-task. \cite{van2013reference}
+system. \cite{van2013reference}
 
 \subsection{Home manager and flakes}
 
-NixOS environments can be build from a single configuration.nix file,
-but there are two significant configuration tools for managing NixOS
+Nix environments can be build from a single configuration.nix file,
+but there are two significant configuration tools for managing Nix
 systems: home manager and flakes. Home manager is an extension for
 managing user profiles with a declarative Nix syntax
 \cite{nixcommunityHomeManager}. Home manager has problems with atomic
@@ -310,7 +312,7 @@ reproducibility of Nix systems. A flake is defined as: ''... a
 file-system tree whose root directory contains the Nix file
 specification called flake.nix''. The usage of flakes is a good method
 for organising different environments within a Nix system, where it
-can consist of multiple flakes. Flakes, however are a experimental
+can consist of multiple flakes. Flakes are an experimental
 feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
 % referoi manuaalia
 \subsection{Ease of updates}
@@ -323,7 +325,7 @@ large/small. channels. Unstable channels (large and small) have the
 latest commits on a rolling basis, but include less conservatively
 checked functionalities. Stable channels are submitted through a
 version number (e.g. 23.11), where a new release is published every
-six months. Large channels on the other hand contain a full set of
+six months. Large channels contain a full set of
 Nixpkgs binaries, when small include a subset. If a system
 administrator decides to submit to small channel, they have more
 recent updates at their disposal, but have to resort to compiling some
@@ -341,7 +343,7 @@ repository of working Nix packages using a continuous integration
 service called Hydra. Hydra evaluates the needed Nix expression of a
 package, and ensures its functionality. \cite{nixosNixOSManual}
 
-It's apparent that purely functional declarative approaches aren't as popular
+It's apparent that purely functional, declarative approaches aren't as popular
 as imperative systems due to the need of steep learning curves and
 obscure syntax. This can be seen as historical payload: imperative
 models have been in use a much longer time than purely functional
@@ -351,12 +353,3 @@ In this chapter we revealed, that declarative systems have inherent
 strengths in both deployment strategies and system upgrading. The next
 section brings up the security viewpoint of declarative systems
 specifically in an embedded Linux setting.
-
-% lisää sidosteisuutta tähän chapteriin; spesifisti siten, että
-% imperatiiviset systeemit (debian) takaisinkytketään deklaratiivisiin
-% poista gentoo sektio% johdata kappaleisiin!!!
-% kandoi and hartke! liitä låähdeviitteet enemmään tekstiin
-% kappaleiden välille johdatusta
-% differnetiation between terms
-% kerro mikä on arkkitehtuuri
-% paljon perustellaan miksi subsetti queriestat
