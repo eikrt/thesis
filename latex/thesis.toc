@@ -16,18 +16,18 @@
 \contentsline {section}{\numberline {2.2}Declarative systems}{10}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Non-declarative components}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Home manager and flakes}{14}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Ease of updates}{14}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Ease of updates}{15}{subsection.2.2.3}%
 \contentsline {chapter}{\numberline {3}Embedded system security}{16}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Common embedded pitfalls}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}NixOS as an embedded solution}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Nix as an embedded solution}{19}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Imperative and declarative systems from CIA-triad approach}{20}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Proposed architecture solution}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Server}{23}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Client}{25}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}MQTT-client}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}MQTT-client}{26}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Weston/XWayland}{26}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Test device}{29}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Installing new devices}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Installing new devices}{31}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Security standpoints}{33}{chapter.5}%
 \contentsline {section}{\numberline {5.1}A brief history of security metrics}{33}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Choosing security metrics}{34}{section.5.2}%
@@ -41,13 +41,11 @@
 \contentsline {section}{\numberline {6.1}Modeling the problem and quantifying the models}{43}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Modeling the possible attacks}{44}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Using the results}{47}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Improving the system using Nix}{49}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.1}Improving the system using Nix}{50}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Issues with QuERIES}{51}{subsection.6.3.2}%
 \contentsline {section}{\numberline {6.4}Generalizing the results}{52}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Further research}{53}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Further research questions}{53}{section.7.1}%
 \contentsline {chapter}{\numberline {8}Conclusion}{55}{chapter.8}%
-\contentsline {chapter}{Lähdeluettelo}{57}{chapter*.5}%
+\contentsline {chapter}{References}{57}{chapter*.5}%
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Liitteet}{}\relax 
-\contentsline {chapter}{\numberline {A}Partially observable Markov decision process with R}{A-1}{appendix.A}%

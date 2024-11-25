@@ -20,17 +20,17 @@ increased benefits from reliability perspective.
 Embedded systems are distinct from other type of systems due to their
 varying nature ranging from programmable logic controllers (PLC) to
 larger systems, such as servers or
-routers. \cite{fysarakis2014embedded}. An usual embedded device
+routers \cite{fysarakis2014embedded}. An usual embedded device
 conducts a specific task and possibly demands networking
 capabilities. Working with embedded is typically working with a
 limited set of resources, demanding careful design when a multitude of
 features are needed. Even services such as SSH have
 had history of vulnerabilities, which prove that upgradability is a
 fundamental base of a secure system
-\cite{secopsolutionHistorySecOps}. I argue that the security aspect of
+\cite{secopsolutionHistorySecOps}. It can be argued that the security aspect of
 embedded devices could be improved significantly with the use of
 declarative systems as seen in chapter \ref{imperative} section
-\ref{declarativesystems} and in the following section
+\ref{declarativesystems} and in the section
 \ref{nixosassolution}.
 
 Embedded devices demand precision and security, as their function may
@@ -42,13 +42,13 @@ the time reliably is completely useless. While a declarative solution
 itself can't fulfill all security needs, it definitely could improve
 the \textit{reliability} of such systems.
 
-As stated by Fysarakis et al. defining access control is essential
+As stated by Fysarakis et al. implementing access control is essential
 for any system to prevent unauthorized access
-\cite{fysarakis2014embedded}. Implementing complex access control is
+\cite{fysarakis2014embedded}. Defining complex access control is
 trivial with Nix, as the configuration files denote completely which
 user has accesses to which resources. Access control in a modern day
 embedded environment could be hard to implement in traditional
-imperative systems, as scaling such system which spans
+imperative systems, as scaling such system that spans
 multiple devices and changing environments would require a lot of
 manual intervention. This is definitely one of strengths of
 declarative approaches: scalability is never an issue when a
@@ -74,7 +74,7 @@ needs a functional Linux kernel and a specific architecture to work.
 
 Common issues regarding embedded devices are their lack of updates,
 weak data integrity, and the multitude of features
-\cite{kemmerer2003cybersecurity fysarakis2014embedded}. For example,
+\cite{kemmerer2003cybersecurity, fysarakis2014embedded}. For example,
 a toy teddy bear may have a audio recorder, data transfer capabilities
 and ability to geolocate itself. These kind of devices may lack
 firmware or software updates, and the data-transfer may be insecure.
@@ -91,10 +91,10 @@ compliance. \cite{fysarakis2014embedded}
 Attack surface of embedded systems in general range from physical
 access to network and geolocation problems. One way of manipulating a
 device, apart from directly gaining access to the operating system,
-are side channel attacks. Analysing the power or electromagnetic
+are side channel attacks. Analyzing the power or electromagnetic
 properties of device input/output can be used to determine critical
 aspects of a device, e.g key lengths or algorithms of security
-measures \cite{fysarakis2014embedded serpanos2013security}. Attack
+measures \cite{fysarakis2014embedded, serpanos2013security}. Attack
 surface may used to gain access, or performing denial of service
 attacks. Geolocating is both a privacy and security issue, as location
 data may be used to trace identities of device users, which can lead
@@ -115,7 +115,7 @@ dedicated system administrators. This is where Nix comes to play, as
 updating any number of devices becomes trivial.
 
 
-\section{NixOS as an embedded solution} \label{nixosassolution}
+\section{Nix as an embedded solution} \label{nixosassolution}
 
 Declarative systems have advantages over imperative systems in
 reliability and safety aspects due to two facts: rollout and rollback
@@ -123,7 +123,7 @@ are equally trivial tasks and desired configuration can be tested in a
 sandbox environment. It's very accessible to manage a rollout strategy,
 as the rollout/rollback can be done multiple times or executed
 completely in a replicated sandbox environment. Simpler and more straight forward practical steps give space for
-easier strategical planning. \cite{kandoi2021operating}.
+easier strategical planning \cite{kandoi2021operating}.
 
 Kandoi et. al argue that with declarative systems, it should be nearly
 impossible to misconfigure in the first place the system and if faulty
@@ -142,20 +142,20 @@ products, however are out of this thesis' scope.
 
 Nix is a double edged sword for system administration tasks. On one
 hand, it has a steep learning curve, but on the other hand it can make
-tasks that could be very challenging with traditional systems,
+tasks that could be very challenging with traditional systems
 trivial. In a well built Nix ecosystem security actions such as
 updating or modifying user or kernel space can be used to enhance
 security and in such system, any changes could easily be replicated to
 multiple devices, without the need for manual intervention.
 
-Some other clear disadvantages for NixOS in embedded use is the fact
+Some other clear disadvantages for Nix in embedded use is the fact
 that a purely functional, declarative system inherently must use disk
 space more than it's imperative counterparts. In the worst case
 scenario, if one derivation of a system takes up 1Gb of space, when
-making changes, the resulting system will need 2Gbs of space. The
+making changes, the resulting system will need 2Gbs of space \cite{dolstra2007purely}. The
 worst case scenario rarely occurs, but due to Nix's indestructive
 nature, this formula of disk space demands has to be considered in an
-embedded setting. \cite{dolstra2007purely}
+embedded setting. 
 
 \section{Imperative and declarative systems from CIA-triad approach} \label{imperativeanddeclarative}
 
@@ -164,14 +164,14 @@ points of information security interests. It consists of three meters:
 confidentiality, integrity and availability as seen in the figure
 \ref{ciatriad}. Confidentiality can be seen as superset of
 privacy. Confidential data is classified with technologies such as
-data encryption and user privileges. Integrity means that the data has
+data encryption and user privileges \cite{pender2019parkerian}. Integrity means that the data has
 not been tampered with, and remains untouched by unauthorised parties
-while it's in transit or stored e.g in a server. A way of providing
+while it's in transit or stored e.g in a server \cite{pender2019parkerian}. A way of providing
 integrity is checking hashes of downloaded files. Availability is a
-user viewpoint to the accessibility of the system. When
+user viewpoint to the accessibility of the system \cite{pender2019parkerian}. When
 confidentiality and integrity are pushed to the extreme, availability
 aspect suffers, e.g when a service enforces multi-factor
-authentication. \cite{pender2019parkerian}
+authentication. 
 
 Systems with an imperative package manager are more accessible than
 declarative systems as learning a new programming language with
@@ -183,9 +183,9 @@ can be achieved via planting sufficient configuration files during
 device setup.
 
 Atomic systems such as Nix have great benefits towards integrity. As
-the "nix store", where every installation is located is read-only,
+the Nix store, where every installation is located is read-only,
 it's impossible for attackers to modify the store. That's not the
-case, in traditional approaches, where a user with root privileges can arbitrarily modify installed
+case in traditional approaches, where a user with root privileges can arbitrarily modify installed
 programs and files.
 
 \begin{figure}[t!]
@@ -199,13 +199,15 @@ According to Nix manual, it has three main strengths in relation with
 security. \textbf{Security by obscurity: }combined with the unusual
 file system and the usage of user-environments, some malware that rely
 on the usual locations of installed programs may fail
-\cite{nixosSecurityNixOS}. \textbf{Multi-user installations: }the
-requirement for root access nearly always widen the potential attack
-surface. NixOS provides a way for multiple users installing their
-programs through the use of user environments, hence mitigating the
-need for root access. This both lessens the availability aspect, as
-well as mitigates the programs root access. When file changes are made
-in user-specific scope, a thin layer of isolation is achieved
+\cite{nixosSecurityNixOS}. This is a very thin layer of security, as
+targeted malware has usually no problem navigating in an unfamiliar
+environment. \textbf{Multi-user installations: }the requirement for
+root access nearly always widen the potential attack surface. Nix
+provides a way for multiple users installing their programs through
+the use of user environments, hence mitigating the need for root
+access. This both lessens the availability aspect, as well as
+mitigates the programs root access. When file changes are made in
+user-specific scope, a thin layer of isolation is achieved
 \cite{nixosNixOSManual}. \textbf{Data integrity} is achieved both by
 installed programs residing in the read-only Nix store, but also them
 having been checked against SHA256 checksums. Moreover, the core

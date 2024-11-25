@@ -10,11 +10,11 @@ is chosen.
 
 In this chapter, selection process for meters, which in part are used
 for gaining quantified data, is presented.  When finally quantitative
-metrics are gained with the help of two paradigms, GQM and
+metrics are gained with the help of two paradigms, GQM (goal, question, metric) and
 specifically its superset SMART, a red–blue team layout is erected
 using QuERIES methodology. SMART is used in conjunction with the
 literature review to reveal the most suitable methodology for this
-thesis.
+thesis. SMART is opened more in the section \ref{choosingsecmet}.
 
 Using an exact metric system is important, as this this thesis'
 emphasis is on measuring the security of a declarative approach. The
@@ -30,7 +30,7 @@ which popularized many terms still in use today, such as
 identification, authentication and
 authorization. \cite{bayuk2013measuring}
 
-While US National Bureau of Standards (NBS), the organization later
+When US National Bureau of Standards (NBS), the organization later
 formed as the National Institute of Standards and Technology (NIST)
 tried to standardize security, in the 1990s it became evident that a
 system should adhere too strongly to the definitions of the Orange
@@ -50,7 +50,7 @@ As metrics can be used as a tool for decision making, the strategical
 approach of the mentioned publishes is important. It's noteworthy that
 the strategies (the Orange Book, SSE-CMM, etc.) begin to measure
 security by compliance to defined ratings. Later in 2000s more
-mathematical approaches were taken, which are taken into account in
+mathematical approaches were taken, one which is delved deeper in
 section \ref{whyqueries}. \cite{bayuk2013measuring}
 
 \section{Choosing security metrics} \label{choosingsecmet}
@@ -63,10 +63,10 @@ are then reflected to gain the desired metric. This strategical
 approach is perhaps too broad for this thesis' scope, but aligns well
 with an usual organisational strategy. \cite{papazov2019cybersecurity}
 
-A more appropriate tool for this task would be SMART - a set of inputs
+A more appropriate tool for this task would be SMART – a set of inputs
 to evaluate meter systems' suitability. These inputs describe how
 specific, measurable, attainable, relevant and timely the methodology
-is. \cite{payne2006guide}
+is \cite{payne2006guide}.
 
 In cyber security, being specific is very important and a common issue
 with security meters is that they either cover too many topics and are
@@ -120,14 +120,14 @@ botnet. For measuring defence, the reaction time is essential, and
 most importantly, the gained meter to measure preventive
 defense. Blacklisting can also be used as preventive and proactive
 measure, as a pre-filled blacklist can be used with desired
-parameters. \cite{pendleton2016survey ramos2017model}
+parameters. \cite{pendleton2016survey, ramos2017model}
 
 Overall defenses can be measured with the combination of all defensive
 measures and with the use of penetration testing in a red–blue team
 setup. Penetration testing aims to gain a result, also known as
 penetration resistance, which is a meter, indicating cost or time that
 the red team must spend in case of a successful system
-compromisal. \cite{pendleton2016survey ramos2017model}
+compromisal. \cite{pendleton2016survey, ramos2017model}
 
 \textbf{Threats}: zero-day vulnerabilities can be measured from two
 perspectives: lifetime of zero-day vulnerability and the number of
@@ -137,7 +137,7 @@ node per a time unit. Attack evasion is measured using either
 obfuscation prevalence metric, or structural complexity metric which
 provide information on obfuscating gained samples e.g by encrypting,
 or the target system's complexity measured by
-runtime. \cite{pendleton2016survey ramos2017model}
+runtime. \cite{pendleton2016survey, ramos2017model}
 
 \textbf{Situations}, which can relate to security state, security
 incidents and security investments. Security state has multiple
@@ -151,9 +151,7 @@ investment. \cite{pendleton2016survey}
 Today, there exists cybersecurity metrics based on quantified
 mathematical models, which are prevalent for this thesis. Three
 different methodologies are discussed, and one is picked for measuring
-the security of this thesis' architecture implementation. SMART is
-used to choose the metrics, and the fact that this thesis'
-architecture implementation is state-based. All the following metric
+the security of this thesis' architecture implementation. All the following metric
 systems are \textbf{measurable}, but some fit better especially
 according to \textbf{time-related} and \textbf{relevance} axes.
 
@@ -164,17 +162,16 @@ presented by Alshammari et al. are too broad
 methodology would fit better a wider cyber security setting.
 
 A methodology based on object-oriented thinking, followed by
-UML-graphs is adequate in many contexts, but as stated in the paper:
-"This measurement is a comparative one. It can be used to compare
-various alternative designs of the same class with respect to their
-security properties". As it has been stated, this thesis focus isn't
-comparative, as all the critical comparison has already done in
-chapter \ref{imperative}.
+UML-graphs is adequate in many contexts, but as stated in the paper
+this measurement the methodology is used to compare similar
+alternative designs. \cite{alshammari2009security}. As it has been
+stated, this thesis focus isn't comparative, as all the critical
+comparison has already done in chapter \ref{imperative}.
 
 Hidden Markov models presented by Wang et al. are close what is the
 end goal of the research is in this thesis
 \cite{wang2010framework}. The \textbf{time-related} aspect would be
-satisfactory, as the hidden Markov procests deals with a time
+satisfactory, as the hidden Markov model handles a time
 parameter. The problem, however is regarding the generality of the
 methodology, and something more \textbf{specific} would be a better
 fit for this thesis. \textbf{Relevance} also is an issue, as using
@@ -183,9 +180,9 @@ and perhaps too complex for the scope of this thesis.
 
 The last and the most fitting methodology would be one presented in
 papers by Carin et al and Hughes, Jeff and Cybenko
-\cite{carin2008cybersecurity hughes2013quantitative}. The
+\cite{carin2008cybersecurity, hughes2013quantitative}. The
 QuERIES methodology is delved deeper in section \ref{queries}, and
-it's \textbf{time-related}, \textbf{relevance} and \textbf{specific}
+its \textbf{time-related}, \textbf{relevance} and \textbf{specific}
 axes are a near-perfect match for our goals as the model itself is
 relatively simple and provides shifting probabilities from states,
 which serves this thesis' study design well.
@@ -196,8 +193,9 @@ Selecting carefully a metrics system includes asserting our goals and
 questions. Our goal is to discover this thesis' architecture proposals
 tenacity in a simulated setting. The main goals reside in this thesis'
 two research questions:
+
 \begin{itemize}
-\item How can a declarative system be used to improve the basic
+\item How can a declarative system be used to measurably improve the basic
   security needs of an embedded system used for displaying public
   media?
 \item What are the advantages and/or disadvantages of such system from
@@ -274,7 +272,7 @@ when to stop trying. Closed loop decision algorithm constantly
 evaluates when is the optimal time to stop trying and open loop means
 that the system has pre-defined goals for evaluation
 \cite{carin2008cybersecurity}. As as positive side-effect by gaining
-the probabilities through red-team evaluation, the system is
+the probabilities through red-team evaluation the system is
 thoroughly tested and improved. This is a valuable metric, providing
 insight on how does the value of the system transition in the worth of
 breaching it in certain time, thus reflecting the true cost of the
@@ -283,9 +281,9 @@ related to the value of the gained value, they will less probably
 perform the attacks \cite{hughes2013quantitative}.
 
 In this thesis, the value of the whole system architecture is
-signified by symbol $\alpha$, constituting a value of holded intellectual
-property (IP). Costs are defined as fractions of the value, propulsing
-0.1$\alpha$ every hour. This is contrary to the original paper, where the
+defined as 1, constituting a value of holded intellectual
+property (IP). Costs are defined as fractions of the value, deflating 
+0.1 every hour. This is contrary to the original paper, where the
 value of the intellectual property has a certain value of 30 000\$ and
 the value for the possible intruder is defined as 60\$ per hour
 \cite{carin2008cybersecurity}. This divergency is due to the fact
@@ -300,7 +298,7 @@ protection against the discovered problems. POMDP provides us data on
 two things: found security breaches and their security implications
 through the reward function \cite{carin2008cybersecurity}.  The models
 and attacks are quantified through a partially observable Markov
-decision process (POMDP) which contains these seven steps:
+decision process (POMDP) which contains these six steps:
 
 \begin{enumerate}
     \item Define possible states the system can be in

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  18 NOV 2024 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  25 NOV 2024 18:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -212,6 +212,21 @@ Package: babel 2024/01/07 v24.1 The Babel package
 \bbl@readstream=\read2
 \bbl@dirlevel=\count270
 
+
+! Package babel Error: Unknown option 'finnish'. Either you misspelled it
+(babel)                or the language definition file finnish.ldf
+(babel)                was not found.
+(babel)                There is a locale ini file for this language.
+(babel)                If it’s the main language, try adding `provide=*'
+(babel)                to the babel package options.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4291 \ProcessOptions*
+                       
+? 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'british' set to \l@english
@@ -224,9 +239,6 @@ Package babel Info: Hyphen rules for 'australian' set to \l@english
 (babel)             (\language0). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
@@ -1224,34 +1236,6 @@ l.42 ...G}{N}{U} {G}uix --- packages.guix.gnu.org}
 l.43     \endentry
                   
 ? 
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                carin2008cybersecurity hughes2013quantitative
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                fysarakis2014embedded serpanos2013security
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                kemmerer2003cybersecurity fysarakis2014embedded
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                pendleton2016survey ramos2017model
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
 )
 Package biblatex Info: Reference section=0 on input line 35.
 Package biblatex Info: Reference segment=0 on input line 35.
@@ -1281,22 +1265,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-] [2])
+])
 \tf@toc=\write9
 \openout9 = `thesis.toc'.
 
- [3]
+ [2]
 (./thesis.lof)
 \tf@lof=\write10
 \openout10 = `thesis.lof'.
 
- [4
+ [3
 
 ] (./thesis.lot)
 \tf@lot=\write11
 \openout11 = `thesis.lot'.
 
- (./thesis.nls) (./johdanto.tex [5
+ (./thesis.nls) (./johdanto.tex [4
 
 ]
 
@@ -1344,7 +1328,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<latex/kuvat/cropped_apt_output.jpg, id=422, 182.1204pt x 21.681pt>
+<latex/kuvat/cropped_apt_output.jpg, id=412, 182.1204pt x 21.681pt>
 File: latex/kuvat/cropped_apt_output.jpg Graphic file (type jpg)
 <use latex/kuvat/cropped_apt_output.jpg>
 Package pdftex.def Info: latex/kuvat/cropped_apt_output.jpg  used on input line
@@ -1356,54 +1340,31 @@ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.121 \end{figure}
-                   <./latex/kuvat/cropped_apt_output.jpg>] [10]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 209.
-
-
-Package Listings Warning: Text dropped after begin of listing on input line 209
-.
-
-[11]
+                   <./latex/kuvat/cropped_apt_output.jpg>] [10] [11]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 246.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=490, 594.72188pt x 324.46219pt>
+<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=479, 594.72188pt x 324.46219pt>
 
 File: ./svg-inkscape/symlinks.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/symlinks.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/symlinks.drawio_svg-raw.pdf  used on in
-put line 276.
+put line 285.
 (pdftex.def)             Requested size: 594.72043pt x 324.46138pt.
- [13
+ [13] [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.291 
-       <./svg-inkscape/symlinks.drawio_svg-raw.pdf>] [14]) (./embedded.tex
-[15]
+l.342 
+       <./svg-inkscape/symlinks.drawio_svg-raw.pdf>]) (./embedded.tex [15]
 \relax  3.
 [16
 
-]
-
-LaTeX Warning: Citation 'kemmerer2003cybersecurity fysarakis2014embedded' on pa
-ge 17 undefined on input line 77.
-
-
-Overfull \hbox (70.69397pt too wide) in paragraph at lines 75--81
-\T1/cmr/m/n/12 tegrity, and the mul-ti-tude of fea-tures [].
- []
-
-[17]
-
-LaTeX Warning: Citation 'fysarakis2014embedded serpanos2013security' on page 18
- undefined on input line 97.
-
-[18] [19]
+] [17] [18] [19]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1413,7 +1374,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
 [20]
-<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=631, 258.11884pt x 220.56555pt>
+<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=634, 258.11884pt x 220.56555pt>
 
 File: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ciatriad.drawio_svg-raw.pdf>
@@ -1449,48 +1410,53 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 \relax  4.
 [23
 
-] [24] [25] [26] [27]
-<latex/kuvat/testimage.jpeg, id=738, 1599.9775pt x 1080.035pt>
+] [24] [25] [26]
+Overfull \vbox (132.12604pt too high) has occurred while \output is active []
+
+
+[27]
+<latex/kuvat/testimage.jpeg, id=770, 1599.9775pt x 1080.035pt>
 File: latex/kuvat/testimage.jpeg Graphic file (type jpg)
 <use latex/kuvat/testimage.jpeg>
-Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 202.
+Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 224.
 (pdftex.def)             Requested size: 319.98984pt x 216.00317pt.
- [28
+<./svg-inkscape/architect_svg-raw.pdf, id=771, 445.28859pt x 530.54462pt>
+File: ./svg-inkscape/architect_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/architect_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/architect_svg-raw.pdf  used on input li
+ne 245.
+(pdftex.def)             Requested size: 445.2875pt x 530.54332pt.
+
+Overfull \hbox (18.49615pt too wide) in paragraph at lines 245--246
+[][]
+ []
+
+[28] [29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.212 \begin{lstlisting}
-                         <./latex/kuvat/testimage.jpeg>]
-<./svg-inkscape/architect_svg-raw.pdf, id=751, 445.28859pt x 530.54462pt>
-File: ./svg-inkscape/architect_svg-raw.pdf Graphic file (type pdf)
-<use ./svg-inkscape/architect_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/architect_svg-raw.pdf  used on input li
-ne 223.
-(pdftex.def)             Requested size: 445.2875pt x 530.54332pt.
-
-Overfull \hbox (18.49615pt too wide) in paragraph at lines 223--224
-[][]
- []
-
-[29] [30
+l.285 \section
+              {Installing new devices} \label{instnewdevices} <./latex/kuvat/te
+stimage.jpeg>] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.271 
-       <./svg-inkscape/architect_svg-raw.pdf>]
-Overfull \hbox (54.58112pt too wide) in paragraph at lines 288--292
+l.285 \section
+              {Installing new devices} \label{instnewdevices} <./svg-inkscape/a
+rchitect_svg-raw.pdf>]
+Overfull \hbox (54.58112pt too wide) in paragraph at lines 310--314
 []\T1/cmr/m/n/12 Run ''curl -L https://github.com/nix-community/nixos-images/re
 leases/download/nixos-
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.297     configuration>#
+l.319     configuration>#
                          <configuration name> root@<ip address>''
 ? 
 
-Overfull \hbox (23.64857pt too wide) in paragraph at lines 295--298
+Overfull \hbox (23.64857pt too wide) in paragraph at lines 317--320
 []\T1/cmr/m/n/12 Upload the flake from the server to the de-vice ''nix run gith
 ub:nix-community/nixos-
  []
@@ -1499,42 +1465,19 @@ ub:nix-community/nixos-
 \relax  5.
 [33
 
-] [34] [35]
-
-LaTeX Warning: Citation 'pendleton2016survey ramos2017model' on page 36 undefin
-ed on input line 123.
-
-
-LaTeX Warning: Citation 'pendleton2016survey ramos2017model' on page 36 undefin
-ed on input line 130.
-
-
-LaTeX Warning: Citation 'pendleton2016survey ramos2017model' on page 36 undefin
-ed on input line 140.
-
-[36]
-
-LaTeX Warning: Citation 'carin2008cybersecurity hughes2013quantitative' on page
- 37 undefined on input line 186.
-
-
-Overfull \hbox (65.17319pt too wide) in paragraph at lines 184--192
-\T1/cmr/m/n/12 Carin et al and Hughes, Jeff and Cy-benko [].
- []
-
-[37] [38]
-<./svg-inkscape/queries.drawio_svg-raw.pdf, id=892, 202.88297pt x 279.29344pt>
+] [34] [35] [36] [37] [38]
+<./svg-inkscape/queries.drawio_svg-raw.pdf, id=929, 202.88297pt x 279.29344pt>
 File: ./svg-inkscape/queries.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/queries.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/queries.drawio_svg-raw.pdf  used on inp
-ut line 247.
+ut line 245.
 (pdftex.def)             Requested size: 202.88246pt x 279.29276pt.
  [39] [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.284 
+l.282 
        <./svg-inkscape/queries.drawio_svg-raw.pdf>] [41]) (./analysis.tex
 [42]
 \relax  6.
@@ -1544,113 +1487,113 @@ l.284
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.78  \hline & & & &
+l.76  \hline & & & &
                      S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & & \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.78 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
+l.76 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
                                                    \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.79  & & & &
+l.77  & & & &
               Idle & Monitor system & Normal operation & Intercept MQTT
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.80  messaging \\ & & & &
+l.78  messaging \\ & & & &
                            \hline & & & & Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.80  messaging \\ & & & & \hline & & & &
+l.78  messaging \\ & & & & \hline & & & &
                                           Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  repository \\ & & & &
+l.80  repository \\ & & & &
                             \hline & & & & Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  repository \\ & & & & \hline & & & &
+l.80  repository \\ & & & & \hline & & & &
                                            Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.84  to device \\ & & & &
+l.82  to device \\ & & & &
                            \hline & & & & Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.84  to device \\ & & & & \hline & & & &
+l.82  to device \\ & & & & \hline & & & &
                                           Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86  \\ & & & &
+l.84  \\ & & & &
                  \hline & & & & Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86  \\ & & & & \hline & & & &
+l.84  \\ & & & & \hline & & & &
                                 Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  in SSH connections \\ & & & &
+l.85  in SSH connections \\ & & & &
                                     \hline & & & & Partial loss of system &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  in SSH connections \\ & & & & \hline & & & &
+l.85  in SSH connections \\ & & & & \hline & & & &
                                                    Partial loss of system &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.88  \ & \ & \\ & & & &
+l.86  \ & \ & \\ & & & &
                          \hline & & & & Complete loss of system & & & \\ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.88  \ & \ & \\ & & & & \hline & & & &
+l.86  \ & \ & \\ & & & & \hline & & & &
                                         Complete loss of system & & & \\ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.89  & & &
+l.87  & & &
             \hline & & & & & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.89  & & & \hline & & & &
+l.87  & & & \hline & & & &
                            & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.89  & & & \hline & & & & & & & \\ & & & &
+l.87  & & & \hline & & & & & & & \\ & & & &
                                             \hline
 ? 
 
-Overfull \hbox (21.94543pt too wide) in paragraph at lines 77--93
+Overfull \hbox (21.94543pt too wide) in paragraph at lines 75--91
  [][] 
  []
 
@@ -1659,7 +1602,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.96 \end{landscape}
+l.94 \end{landscape}
                     ] [47
 
 
@@ -1670,32 +1613,33 @@ as been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.142 
       ]
-<./svg-inkscape/barchart_svg-raw.pdf, id=994, 385.44pt x 385.44pt>
+<./svg-inkscape/barchart_svg-raw.pdf, id=1031, 385.44pt x 385.44pt>
 File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/barchart_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
-e 149.
+e 144.
 (pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
  [48
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.164 
+l.166 
        <./svg-inkscape/barchart_svg-raw.pdf>]
-<./svg-inkscape/cost_graph_svg-raw.pdf, id=1015, 385.44pt x 385.44pt>
+<./svg-inkscape/cost_graph_svg-raw.pdf, id=1050, 385.44pt x 385.44pt>
 File: ./svg-inkscape/cost_graph_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/cost_graph_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/cost_graph_svg-raw.pdf  used on input l
-ine 184.
+ine 168.
 (pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
- [49] [50
+ [49
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.224 
-       <./svg-inkscape/cost_graph_svg-raw.pdf>] [51]) (./further.tex [52]
+l.185 
+       <./svg-inkscape/cost_graph_svg-raw.pdf>] [50] [51]) (./further.tex
+[52]
 \relax  7.
 [53
 
@@ -1730,28 +1674,11 @@ avec gnu guix^^Q, \T1/cmr/m/it/12 GNU/Linux
 
 [57
 
-]
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
-
-[58]
+] [58]
 Overfull \hbox (32.40901pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/n/12 Canonical, \T1/cmr/m/it/12 Ubuntu Man-page: Apt - command-line
  in-ter-face --- man-pages.ubuntu.com\T1/cmr/m/n/12 ,
  []
-
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
 
 [59]
 Overfull \hbox (5.67918pt too wide) in paragraph at lines 82--82
@@ -1759,40 +1686,13 @@ Overfull \hbox (5.67918pt too wide) in paragraph at lines 82--82
 12 , []$\T1/cmtt/m/n/12 https : / / nix -[] community .
  []
 
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
-
 [60]
 Overfull \hbox (10.51329pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/it/12 GitHub - nix-community/nixos-anywhere: In-stall nixos ev-ery-
 where via ssh [main-
  []
 
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
-
 [61]
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.04742pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.04742pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.04742pt}.
-
-[62]
-Appendix A.
-
 Overfull \hbox (764.69269pt too wide) in paragraph at lines 99--99
 []    \T1/cmtt/m/n/12 states = c("Idle", "Receiving media through MQTT", "Setti
 ng up SystemD services", "Starting Weston", "Displaying media", "Error state", 
@@ -1814,11 +1714,7 @@ Overfull \hbox (585.6614pt too wide) in paragraph at lines 101--101
 d unauthorised access"),[] 
  []
 
-[1
-
-
-
-]
+[62]
 Overfull \hbox (153.51694pt too wide) in paragraph at lines 128--128
 []        \T1/cmtt/m/n/12 #"Detected system error " = matrix(c(0.85, 0.15, 0.15
 , 0.85), nrow = 2, byrow = TRUE),[] 
@@ -1836,7 +1732,7 @@ Overfull \hbox (184.3844pt too wide) in paragraph at lines 130--130
 , 0.15, 0.85), nrow = 2, byrow = TRUE)[] 
  []
 
-
+[63]
 Overfull \hbox (42.39407pt too wide) in paragraph at lines 134--134
 []        \T1/cmtt/m/n/12 R_("Monitor system",  "Receiving media through MQTT",
  "*", "*", 10),[] 
@@ -1861,14 +1757,6 @@ Overfull \hbox (11.52661pt too wide) in paragraph at lines 140--140
  []
 
 
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
-
-[2]
 Overfull \hbox (30.04709pt too wide) in paragraph at lines 143--143
 []        \T1/cmtt/m/n/12 R_("Reboot system", "Receiving media through MQTT", "
 *", "*", 10),[] 
@@ -1898,7 +1786,7 @@ Overfull \hbox (5.35312pt too wide) in paragraph at lines 158--158
 "*", 10),[] 
  []
 
-
+[64]
 Overfull \hbox (30.04709pt too wide) in paragraph at lines 161--161
 []        \T1/cmtt/m/n/12 R_("Display media", "Receiving media through MQTT", "
 *", "*", 10),[] 
@@ -1911,14 +1799,6 @@ Overfull \hbox (23.8736pt too wide) in paragraph at lines 162--162
  []
 
 
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
-
-[3]
 Overfull \hbox (60.91455pt too wide) in paragraph at lines 170--170
 []        \T1/cmtt/m/n/12 R_("Recover from error", "Receiving media through MQT
 T", "*", "*", 10),[] 
@@ -1978,7 +1858,7 @@ Overfull \hbox (73.26154pt too wide) in paragraph at lines 185--185
 m", "*", "*", -100),[] 
  []
 
-
+[65]
 Overfull \hbox (134.99646pt too wide) in paragraph at lines 188--188
 []        \T1/cmtt/m/n/12 R_("Compromise Github repository", "Receiving media t
 hrough MQTT", "*", "*", -100),[] 
@@ -2021,14 +1901,6 @@ system", "*", "*", -100),[]
  []
 
 
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
-
-[4]
 Overfull \hbox (23.8736pt too wide) in paragraph at lines 196--196
 []        \T1/cmtt/m/n/12 R_("Gain physical access to the device", "Idle", "*",
  "*", -100),[] 
@@ -2124,7 +1996,7 @@ Overfull \hbox (134.99646pt too wide) in paragraph at lines 212--212
 s of system", "*", "*", -100),[] 
  []
 
-
+[66]
 Overfull \hbox (141.16995pt too wide) in paragraph at lines 215--215
 []        \T1/cmtt/m/n/12 R_("Exploit vulnerabilities in SSH","Receiving media 
 through MQTT", "*", "*", -100),[] 
@@ -2166,24 +2038,7 @@ Overfull \hbox (104.129pt too wide) in paragraph at lines 221--221
  system", "*", "*", -100)[] 
  []
 
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
-
-[5]
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 27.11469pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.11469pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
-
-[6] (./thesis.aux)
+[67] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2201,8 +2056,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 0D82818CE4ACCBE87090BC04A23C21EE;3278
-(rerunfilecheck)             After:  97A2025219A4870C7867AC73EF4A07D5;3331.
+(rerunfilecheck)             Before: C23E6EA624F65B99E0011967DFE00C20;3170
+(rerunfilecheck)             After:  6D73B983427B16A60D1AA2B3FCC28E78;3217.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -2211,33 +2066,29 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37220 strings out of 476182
- 674730 string characters out of 5795596
- 2091975 words of memory out of 5000000
- 58322 multiletter control sequences out of 15000+600000
+ 37253 strings out of 476182
+ 675370 string characters out of 5795596
+ 2117975 words of memory out of 5000000
+ 58324 multiletter control sequences out of 15000+600000
  575878 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 125i,12n,121p,1055b,3970s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{\\relax\040} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx172
-8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (75 pages, 809653 bytes).
+ 125i,12n,121p,1055b,3969s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
+728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm08
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (73 pages, 807818 bytes).
 PDF statistics:
- 1295 PDF objects out of 1440 (max. 8388607)
- 1093 compressed objects within 11 object streams
- 293 named destinations out of 1000 (max. 500000)
- 409 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1342 PDF objects out of 1440 (max. 8388607)
+ 1141 compressed objects within 12 object streams
+ 326 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

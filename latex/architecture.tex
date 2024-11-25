@@ -2,7 +2,7 @@
 
 For gaining data points for the research, a test setup must be
 configured. This chapter presents a Nix ecosystem, which goes through
-a red–blue team testing in chapter \ref{analysis}. The proposed
+a red team testing in chapter \ref{analysis}. The proposed
 architecture solution uses a completely declarative approach
 introduced in section, where pros and cons of both approaches are
 discussed \ref{declarativesystems}.
@@ -25,13 +25,13 @@ presented in chapter \ref{analysis}.
 
 \section{Server}
 
-Some approaches, i.e by Van der Burg et al. provide a reference
-architecture with OpenSSH, Quake 3 server and Transmission services
+Van der Burg et al. provide a reference architecture with OpenSSH,
+Quake 3 server and Transmission services
 \cite{van2013reference}. Dolstra, Vermaas and Levy build a declarative
 system with simple web server \cite{dolstra2013charon}. This thesis'
-architecture is moderately complex in comparison with these approaches,
-as it contains multiple components and a functioning server–client
-implementation.
+architecture is moderately complex in comparison with these
+approaches, as it contains multiple components and a functioning
+server–client implementation.
 
 A proposed architecture can be viewed in figure
 \ref{parchitecture}. In simplicity, the NixOS server runs a
@@ -56,11 +56,18 @@ and client for this project is Mosquitto. The following snippet shows
 how the Mosquitto server is configured in the NixOS server.
 
 \begin{lstlisting}
-    services.mosquitto = { enable = true; listeners = [ { users.<user>
-          = { acl = [ "readwrite #" ]; }; settings = { cafile =
-            "<ssl-path>/ca.crt"; certfile =
-            "<ssl-path>/myhostname.crt"; keyfile =
-            "<ssl-path>/myhostname.key"; }; } ]; };
+  services.mosquitto = {
+    enable = true;
+    listeners = [
+      {
+        users.<user> = { acl = [ "readwrite #" ]; }; settings = {
+          cafile = "<ssl-path>/ca.crt";
+          certfile = "<ssl-path>/myhostname.crt";
+          keyfile = "<ssl-path>/myhostname.key";
+        };
+      }
+    ];
+  };
 \end{lstlisting}
 
 The ''services'' statement tells us that a SystemD service is being
@@ -77,8 +84,12 @@ images/test -m "$IMG_BASE64"
 
 Sending could be automatized with a service using SystemD timer:
 \begin{lstlisting}
-    systemd.timers.publish-image = { timerConfig.OnCalendar = "*-*-*
-      *:*:00"; wantedBy = [ "timers.target" ]; };
+systemd.timers.publish-image = {
+  timerConfig = {
+    OnCalendar = "*-*-* *:*:00";
+  };
+  wantedBy = [ "timers.target" ];
+};
 \end{lstlisting}
 
 which invokes a specified service.
@@ -94,11 +105,11 @@ connections requires manual intervention.
 Both server and client are running NixOS. The client has two main
 functions: subscribing to media receiving and displaying the gained
 media which can be arbitrary. Currently, the image refreshes every
-second and through configuration, even displaying
-animations with this setup could be possible. Media display happens
-with feh, an image showing tool, that works with X server. However,
-this example is using Wayland, so compability layer XWayland must be
-used \cite{waylandWayland}. Image data messaging functions through
+second and through configuration, even displaying animations with this
+setup could be possible. Media display happens with feh, an image
+showing tool, that works with X server. However, this example is using
+Wayland, so compability layer XWayland must be used
+\cite{waylandWayland}. Image data messaging functions through
 MQTT-protocol, which is explained more in the next subsection.
 
 \subsection{MQTT-client}
@@ -125,8 +136,7 @@ concern. \cite{waylandWayland} %% waylandmanual
 The example project displays an image from a directory via script:
 \begin{figure}[H]
 \begin{lstlisting} 
-    sleep 5 && /nix/store/qc9j6pm6ykyx531s4kb06084mczy2l6g-feh-3.10.1
-    /bin/feh -F -Z -R 1 <image-path>/latest.png
+    sleep 5 && /nix/store/qc9j6pm6ykyx531s4kb06084mczy2l6g-feh-3.10.1 /bin/feh -F -Z -R 1 <image-path>/latest.png
 \end{lstlisting}
 \label{fehscript}
 \end{figure}
@@ -134,26 +144,43 @@ As the programs must be found from an absolute path, the system must
 generate the scripts accordingly. This is done via a SystemD service,
 specified as:
 
-
-
 \begin{figure}[H]
 \begin{lstlisting} 
-    { config, pkgs, ... }: let fehLaunch = pkgs.writeText "feh.sh" ''
-    echo "sleep 5 && ${pkgs.feh}/bin/feh -F -Z -R 1 <image
-    directory>/latest.png" > /home/user/abzug-receiver/weston/img.sh
-    ''; initImg = pkgs.writeText "initImg.sh" '' echo
-    "${pkgs.gcc}/bin/gcc <source path> img.c -o <binary path>/img" >
-    /home/user/abzug-receiver/weston/init.sh '' in {
-      systemd.services."westonl" = { enable = true; unitConfig = {
-          Type = "oneshot"; }; serviceConfig = { Environment =
-          "XDG_RUNTIME_DIR=/var/run/user/1000"; ExecStartPre =
-          ["${pkgs.bash}/bin/bash ${initImg}" "${pkgs.bash}/bin/bash
-            <init.sh path>/init.sh" "${pkgs.bash}/bin/bash
-            ${fehLaunch}" "${pkgs.bash}/bin/bash <init.sh
-            path>/init.sh"]; ExecStart = "${pkgs.weston}/bin/weston
-          --config=<weston configuration directory>/weston.ini";
-          RestartOn = "failure"; }; wantedBy = [
-          "graphical-session.target" ]; }; }
+{ config, pkgs, ... }: let
+  # Create the feh.sh script to launch feh
+  fehLaunch = pkgs.writeText "feh.sh" ''
+    echo "sleep 5 && ${pkgs.feh}/bin/feh -F -Z -R 1 <image directory>/latest.png" > /home/user/abzug-receiver/weston/img.sh
+  '';
+
+  # Create the initImg.sh script to compile the C code
+  initImg = pkgs.writeText "initImg.sh" ''
+    echo "${pkgs.gcc}/bin/gcc <source path> img.c -o <binary path>/img" > /home/user/abzug-receiver/weston/init.sh
+  '';
+in {
+  systemd.services."westonl" = {
+    enable = true;
+    unitConfig = {
+      Type = "oneshot";
+    };
+    serviceConfig = {
+      # Set environment variables
+      Environment = "XDG_RUNTIME_DIR=/var/run/user/1000";
+
+      ExecStartPre = [
+        "${pkgs.bash}/bin/bash ${initImg}"
+        "${pkgs.bash}/bin/bash <init.sh path>/init.sh"
+        "${pkgs.bash}/bin/bash ${fehLaunch}"
+        "${pkgs.bash}/bin/bash <init.sh path>/init.sh"
+      ];
+
+      ExecStart = "${pkgs.weston}/bin/weston --config=<weston configuration directory>/weston.ini";
+
+      RestartOn = "failure";
+    };
+
+    wantedBy = [ "graphical-session.target" ];
+  };
+}
 \end{lstlisting}
 \label{systemd1}
 \end{figure}
@@ -177,13 +204,8 @@ with very basic kiosk configuration:
 
 \begin{figure}
 \begin{lstlisting} 
-  [core]
-  idle-time=0 xwayland=true
-  [shell]
-  panel-location=""
-  panel-position=none**
-  [autolaunch]
-  path=<feh launcher path>/img
+  [core] idle-time=0 xwayland=true [shell] panel-location=""
+  panel-position=none** [autolaunch] path=<feh launcher path>/img
 \end{lstlisting}
 \label{westonconf}
 \end{figure}
@@ -308,7 +330,7 @@ nixos-generate -f iso -c <configuration.nix path>
 would result in a ISO format image, ready for
 installation. \cite{githubGitHubNixcommunitynixosanywhere}
 
-The next chapter provides insight on how to measure security
-as a whole, transferring the necessary metric systems for this thesis'
-purposes. The architecture presented in this chapter then is gone through
-further analysis in chapter \ref{analysis}.
+The next chapter provides insight on how to measure security as a
+whole, transferring the necessary metric systems for this thesis'
+purposes. The architecture presented in this chapter then is gone
+through further analysis in chapter \ref{analysis}.

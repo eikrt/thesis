@@ -12,7 +12,7 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Ease\040of\040updates}{section.2.2}% 12
 \BOOKMARK [0][-]{chapter.3}{Embedded\040system\040security}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Common\040embedded\040pitfalls}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{NixOS\040as\040an\040embedded\040solution}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Nix\040as\040an\040embedded\040solution}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.3}{Imperative\040and\040declarative\040systems\040from\040CIA-triad\040approach}{chapter.3}% 16
 \BOOKMARK [0][-]{chapter.4}{Proposed\040architecture\040solution}{}% 17
 \BOOKMARK [1][-]{section.4.1}{Server}{chapter.4}% 18
@@ -40,5 +40,4 @@
 \BOOKMARK [0][-]{chapter.7}{Further\040research}{}% 40
 \BOOKMARK [1][-]{section.7.1}{Further\040research\040questions}{chapter.7}% 41
 \BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 42
-\BOOKMARK [0][-]{chapter*.5}{L\344hdeluettelo}{}% 43
-\BOOKMARK [0][-]{appendix.A}{Partially\040observable\040Markov\040decision\040process\040with\040R}{}% 44
+\BOOKMARK [0][-]{chapter*.5}{References}{}% 43

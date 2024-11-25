@@ -635,8 +635,8 @@
       \strng{authorbibnamehash}{51ff0cb7c11d6f9a975e628994f99881}
       \strng{authornamehash}{51ff0cb7c11d6f9a975e628994f99881}
       \strng{authorfullhash}{51ff0cb7c11d6f9a975e628994f99881}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computing in science \& engineering}
@@ -915,6 +915,33 @@
       \field{pages}{79\bibrangedash 92}
       \range{pages}{14}
     \endentry
+    \entry{kemmerer2003cybersecurity}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=c394ed29f50a1f81e479476e95af6752}{%
+           family={Kemmerer},
+           familyi={K\bibinitperiod},
+           given={Richard\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c394ed29f50a1f81e479476e95af6752}
+      \strng{fullhash}{c394ed29f50a1f81e479476e95af6752}
+      \strng{bibnamehash}{c394ed29f50a1f81e479476e95af6752}
+      \strng{authorbibnamehash}{c394ed29f50a1f81e479476e95af6752}
+      \strng{authornamehash}{c394ed29f50a1f81e479476e95af6752}
+      \strng{authorfullhash}{c394ed29f50a1f81e479476e95af6752}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{25th International Conference on Software Engineering, 2003. Proceedings.}
+      \field{title}{Cybersecurity}
+      \field{year}{2003}
+      \field{pages}{705\bibrangedash 715}
+      \range{pages}{11}
+    \endentry
     \entry{pender2019parkerian}{article}{}
       \name{author}{1}{}{%
         {{hash=90fb5b4c5b28e275e4aea03dd7f01c6c}{%
@@ -938,8 +965,8 @@
       \field{year}{2019}
     \endentry
     \entry{nixosSecurityNixOS}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/Security}}
       \field{note}{[Accessed 22-05-2024]}
@@ -1289,10 +1316,6 @@
       \range{pages}{12}
     \endentry
   \enddatalist
-  \missing{carin2008cybersecurity hughes2013quantitative}
-  \missing{fysarakis2014embedded serpanos2013security}
-  \missing{kemmerer2003cybersecurity fysarakis2014embedded}
-  \missing{pendleton2016survey ramos2017model}
 \endrefsection
 \endinput
 

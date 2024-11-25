@@ -27,7 +27,7 @@
 \DeclareStringOption[draft]{version}           % draft/final version
 \DeclareStringOption[a4paper]{paper}           % @see ctan/macros/latex/base/classes, 3.1 Setting Paper Size
 \DeclareStringOption[oneside]{sides}           % oneside/twoside
-\DeclareStringOption[english]{language}        % document's main language
+\DeclareStringOption[finnish]{language}        % document's main language
 \DeclareStringOption[ieee]{bibstyle}           % document's bibliography style
 \DeclareStringOption[-1]{pagecountdelta}       % workaround for bugs in the app page count
 \DeclareStringOption[a-2b,mathxmp]{pdfaconformance}  % PDF-A conformance level (a-1b, a-2b, a-2u, a-3b, a-3u, or 'none')
@@ -56,7 +56,7 @@
 %%  * \n@tivelang + english
 %%  * just \n@tivelang
 %%  * just english
-\def\n@tivelang{english}
+\def\n@tivelang{finnish}
 
 %% macros for conditional language blocks
 \newcommand{\l@nguage}{\utuftthesis@language}

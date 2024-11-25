@@ -12,12 +12,12 @@ literature review focus on distributing to cloud. Distributing to
 embedded clearly remains as a niche.
 
 Breitenbücher et al. focus on deploying into embedded and discusses
-the challenges an IoT user face when deploying a system. It's proven
+the challenges an IoT user face when deploying a system \cite{breitenbucher2017declarative}. It's proven
 that setting up devices with mandatory scripts and other actions is a
-challenging task, when a number of devices should be set up. Cloud is
+challenging task, when a number of devices should be set up \cite{breitenbucher2017declarative}. Cloud is
 something that is useful to be used in tandem with IoT but this thesis
 focuses on an \textit{in-premises} reference
-solution. \cite{breitenbucher2017declarative}
+solution. 
 
 In this chapter, we focus on comparing different declarative
 approaches to the more traditional imperative models, highlighting the
@@ -26,7 +26,7 @@ to illustrate the limitations often observed in imperative systems,
 particularly in terms of reproducibility, scalability and
 administration standpoints. Cloud-oriented approaches serve as a prime
 reference point for how declarative systems can be effectively
-distributed and automated. I argue that similiar approaches as those
+distributed and automated. I can be argued that similiar approaches as those
 taken in cloud should be taken in embedded and IoT to increase security through updatability and upgradability.
 
 \section{Imperative systems}
@@ -206,8 +206,9 @@ and the system is rebuilt with command
 \begin{lstlisting}
 nixos-rebuild switch
 \end{lstlisting}
-the previous state could be recovered by \begin{lstlisting} nix
-  profile rollback
+the previous state could be recovered by
+\begin{lstlisting}
+nix profile rollback
 \end{lstlisting}
 This is an important feature as the Nix configuration files control
 the whole system, they can also leave the system in an undesired
@@ -215,7 +216,6 @@ state. Nix switches between \textit{profiles}, which is a way to
 provide different configurations for different user environments as
 shown in figure \ref{userenvs} and provide atomic upgrades and
 rollbacks. \cite{nixosNixOSManual}
-
 
 A fundamental component of the ecosystem is Nix, a domain-specific
 language designed for configurations distinguished by its functional
@@ -252,7 +252,8 @@ following snippet:
 \end{lstlisting}
 Nix provides also provides ways to fetch content to the system from
 remote URLs, and if the administrator doesn't want the system to
-remain ''pure'', they can build the system by \begin{lstlisting}
+remain ''pure'', they can build the system by
+\begin{lstlisting}
   nixos-rebuild switch --impure
 \end{lstlisting}
 This results the system having mutable components, which can be
@@ -264,13 +265,21 @@ User environments (Nix profiles) can be used so that for different
 needs, or for different users there are multiple environments in which
 the user can operate as shown in figure \ref{userenvs}. User
 environments are a successor to the concept, where installed programs
-either reside in /usr/bin, /usr/sbin etc. or have a symbolic link to
+either reside in
+\begin{lstlisting}
+/usr/bin
+\end{lstlisting}
+or
+\begin{lstlisting}
+/usr/sbin
+\end{lstlisting}
+etc. or have a symbolic link to
 the said directories. They can be figured as trees of symbolic links
 that reside also in the Nix store hence referred packages are called
-''activated packages''. Remember, that the traditional Unix directory
-structure, where files are separated to /bin/ /sbin/ etc. doesn't
-completely apply. Instead, the installed programs reside usually in
-/nix/store. \cite{dolstra2008nixos}
+''activated packages''. The installed programs reside usually in
+\begin{lstlisting}
+  /nix/store
+\end{lstlisting}. \cite{dolstra2008nixos}
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{latex/kuvat/symlinks.drawio.svg}}
@@ -279,7 +288,7 @@ completely apply. Instead, the installed programs reside usually in
 \label{userenvs}
 \end{figure}
 
-There are continuous build and integration services, such as Hydra,
+There exists continuous build and integration services, such as Hydra,
 which include Nix-compatible support for handling runtime
 configuration and tools, such as Disnix and Charon \footnote{Charon is
 now called NixOps \cite{githubNixNixpkgsNixOS}}, which focus on
@@ -308,9 +317,9 @@ examples \cite{nixcommunityHomeManager}.
 
 Flakes are experimental feature of Nix, providing environments, where
 dependencies are pinned in a lock file, further improving
-reproducibility of Nix systems. A flake is defined as: ''... a
-file-system tree whose root directory contains the Nix file
-specification called flake.nix''. The usage of flakes is a good method
+reproducibility of Nix systems. A flake is a
+file system tree, which contains a root directory with the Nix file
+specification called flake.nix. The usage of flakes is a good method
 for organising different environments within a Nix system, where it
 can consist of multiple flakes. Flakes are an experimental
 feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
@@ -319,7 +328,7 @@ feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
 
 Updating is easy and riskless with NixOS due to atomic
 rollbacks. Nix handles software providing through something called
-"channels". Channel is a set of latest Git commits in a Nixpkgs
+channels. A channel is a set of latest Git commits in a Nixpkgs
 repository, where they are divided to stable/unstable and
 large/small. channels. Unstable channels (large and small) have the
 latest commits on a rolling basis, but include less conservatively
