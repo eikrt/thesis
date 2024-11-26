@@ -115,12 +115,11 @@ MQTT-protocol, which is explained more in the next subsection.
 \subsection{MQTT-client}
 The MQTT client subscribes to a topic from the following script. The
 image is received as base64 string, and is converted back to PNG
-format.
+format in the following script:
 \begin{lstlisting}
-IP="<server ip>" TOPIC="images/test" nix shell nixpkgs#mosquitto
---command mosquitto_sub -h $IP -t $TOPIC >" <image directory path>
-/image.base64" base64 -d "<image directory path>/image.base64"
->images/latest.png
+IP="<server ip>"
+TOPIC="images/test"
+nix shell nixpkgs#mosquitto --command mosquitto_sub -h $IP -t $TOPIC >" <image directory path>/image.base64" base64 -d "<image directory path>/image.base64" > images/latest.png
 \end{lstlisting}
 \subsection{Weston/XWayland}
 Wayland is a display protocol aiming to replace partially or fully the
@@ -151,7 +150,6 @@ specified as:
   fehLaunch = pkgs.writeText "feh.sh" ''
     echo "sleep 5 && ${pkgs.feh}/bin/feh -F -Z -R 1 <image directory>/latest.png" > /home/user/abzug-receiver/weston/img.sh
   '';
-
   # Create the initImg.sh script to compile the C code
   initImg = pkgs.writeText "initImg.sh" ''
     echo "${pkgs.gcc}/bin/gcc <source path> img.c -o <binary path>/img" > /home/user/abzug-receiver/weston/init.sh
@@ -165,19 +163,15 @@ in {
     serviceConfig = {
       # Set environment variables
       Environment = "XDG_RUNTIME_DIR=/var/run/user/1000";
-
       ExecStartPre = [
         "${pkgs.bash}/bin/bash ${initImg}"
         "${pkgs.bash}/bin/bash <init.sh path>/init.sh"
         "${pkgs.bash}/bin/bash ${fehLaunch}"
         "${pkgs.bash}/bin/bash <init.sh path>/init.sh"
       ];
-
       ExecStart = "${pkgs.weston}/bin/weston --config=<weston configuration directory>/weston.ini";
-
       RestartOn = "failure";
     };
-
     wantedBy = [ "graphical-session.target" ];
   };
 }
@@ -200,12 +194,18 @@ program locations are expanded from Nix package paths. Then, in the
 ''serviceconfig'' part of the configuration, the strings are forwarded
 to shell, which in part compiles sources and executes scripts. After
 the ''ExecStartPre'' section, in the ''ExecStart'', Weston is launched
-with very basic kiosk configuration:
+with a very basic kiosk configuration:
 
-\begin{figure}
+\begin{figure}[H]
 \begin{lstlisting} 
-  [core] idle-time=0 xwayland=true [shell] panel-location=""
-  panel-position=none** [autolaunch] path=<feh launcher path>/img
+  [core]
+  idle-time=0
+  xwayland=true
+  [shell]
+  panel-location=""
+  panel-position=none**
+  [autolaunch]
+  path=<feh launcher path>/img
 \end{lstlisting}
 \label{westonconf}
 \end{figure}
@@ -307,16 +307,20 @@ flake. \cite{githubGitHubNixcommunitynixosanywhere}
 %% cite nixos manual
 The installation would contain the following steps:
 \begin{enumerate}
-  \item Run ''curl -L
-    https://github.com/nix-community/nixos-images/releases/download/nixos-unstable/nixos-kexec-installer-noninteractive-x86\_64-linux.tar.gz
-    | tar -xzf- -C /root /root/kexec/run'' for booting separate kernel
-    for installation.
-  \item Generate a minimal configuration file: ''nixos-generate-config
-    --no-filesystems --root /mnt''
-  \item Add ssh-keys to the configuration
-  \item Upload the flake from the server to the device ''nix run
-    github:nix-community/nixos-anywhere -- --flake <path to
-    configuration>#<configuration name> root@<ip address>''
+\item Run
+\begin{lstlisting}
+curl -L https://github.com/nix-community/nixos-images/releases/download/nixos-unstable/nixos-kexec-installer-noninteractive-x86\_64-linux.tar.gz| tar -xzf- -C /root /root/kexec/run for booting separate kernel
+for installation.
+\end{lstlisting}
+\item Generate a minimal configuration file:
+\begin{lstlisting}
+nixos-generate-config --no-filesystems --root /mnt''
+\end{lstlisting}
+\item Add ssh-keys to the configuration
+\item Upload the flake from the server to the device:
+\begin{lstlisting}
+nix run github:nix-community/nixos-anywhere -- --flake <path to configuration>#<configuration name> root@<ip address>''
+\end{lstlisting}
 \end{enumerate}
 Another way would be setting up NixOS from the installation media and
 setting up manually or creating a installation media with Nixos

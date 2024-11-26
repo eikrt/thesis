@@ -155,8 +155,7 @@ the security of this thesis' architecture implementation. All the following metr
 systems are \textbf{measurable}, but some fit better especially
 according to \textbf{time-related} and \textbf{relevance} axes.
 
-The literature review provided three central methodologies from
-variably different perspectives. Complex mathematical models are
+The literature review provided three central methodologies from different perspectives. Complex mathematical models
 presented by Alshammari et al. are too broad
 \cite{alshammari2009security}. This thesis' scope is limited, and this
 methodology would fit better a wider cyber security setting.
@@ -170,19 +169,18 @@ comparison has already done in chapter \ref{imperative}.
 
 Hidden Markov models presented by Wang et al. are close what is the
 end goal of the research is in this thesis
-\cite{wang2010framework}. The \textbf{time-related} aspect would be
+\cite{wang2010framework}. The time-related aspect would be
 satisfactory, as the hidden Markov model handles a time
 parameter. The problem, however is regarding the generality of the
-methodology, and something more \textbf{specific} would be a better
-fit for this thesis. \textbf{Relevance} also is an issue, as using
-presented Hidden Markov models would be mathematically challenging,
-and perhaps too complex for the scope of this thesis.
+methodology, and something more specific would be a better
+fit for this thesis. We however use a similar approach as what Wang et
+al. use for calculating the POMDP parameters.
 
 The last and the most fitting methodology would be one presented in
 papers by Carin et al and Hughes, Jeff and Cybenko
 \cite{carin2008cybersecurity, hughes2013quantitative}. The
 QuERIES methodology is delved deeper in section \ref{queries}, and
-its \textbf{time-related}, \textbf{relevance} and \textbf{specific}
+its time-related, relevance and specific
 axes are a near-perfect match for our goals as the model itself is
 relatively simple and provides shifting probabilities from states,
 which serves this thesis' study design well.
@@ -294,11 +292,14 @@ estimates relate to the value of the intellectual property.
 \subsection{Partially observable Markov decision process}
 
 Lastly, using the results of the POMDP can be used to increase the
-protection against the discovered problems. POMDP provides us data on
-two things: found security breaches and their security implications
-through the reward function \cite{carin2008cybersecurity}.  The models
-and attacks are quantified through a partially observable Markov
-decision process (POMDP) which contains these six steps:
+protection against the discovered problems
+\cite{carin2008cybersecurity}. The original QuERIES methodology used
+economic models for estimating POMDP parameters, instead of
+calculating them manually \cite{carin2008cybersecurity}. We gain the
+parameters from POMDP by calculating state transitions with given
+observations. Attacks and defenses are quantified through a partially
+observable Markov decision process (POMDP) which contains these six
+steps:
 
 \begin{enumerate}
     \item Define possible states the system can be in

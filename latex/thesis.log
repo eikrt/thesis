@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  25 NOV 2024 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  26 NOV 2024 12:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1324,43 +1324,44 @@ l.52 28 000 packages \cite{gnuPackagesx2014}.
 
 ] [8]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-6.
+9.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<latex/kuvat/cropped_apt_output.jpg, id=412, 182.1204pt x 21.681pt>
+<latex/kuvat/cropped_apt_output.jpg, id=415, 182.1204pt x 21.681pt>
 File: latex/kuvat/cropped_apt_output.jpg Graphic file (type jpg)
 <use latex/kuvat/cropped_apt_output.jpg>
 Package pdftex.def Info: latex/kuvat/cropped_apt_output.jpg  used on input line
- 104.
+ 107.
 (pdftex.def)             Requested size: 364.2399pt x 43.36188pt.
  [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.121 \end{figure}
+l.124 \end{figure}
                    <./latex/kuvat/cropped_apt_output.jpg>] [10] [11]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-246.
+249.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=479, 594.72188pt x 324.46219pt>
+<./svg-inkscape/symlinks.drawio_svg-raw.pdf, id=480, 594.72188pt x 324.46219pt>
 
 File: ./svg-inkscape/symlinks.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/symlinks.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/symlinks.drawio_svg-raw.pdf  used on in
-put line 285.
+put line 288.
 (pdftex.def)             Requested size: 594.72043pt x 324.46138pt.
  [13] [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.342 
-       <./svg-inkscape/symlinks.drawio_svg-raw.pdf>]) (./embedded.tex [15]
+l.330 \subsection
+                 {Ease of updates} <./svg-inkscape/symlinks.drawio_svg-raw.pdf>
+]) (./embedded.tex [15]
 \relax  3.
 [16
 
@@ -1374,7 +1375,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.11469pt}.
 
 [20]
-<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=634, 258.11884pt x 220.56555pt>
+<./svg-inkscape/ciatriad.drawio_svg-raw.pdf, id=637, 258.11884pt x 220.56555pt>
 
 File: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ciatriad.drawio_svg-raw.pdf>
@@ -1411,16 +1412,17 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [23
 
 ] [24] [25] [26]
-Overfull \vbox (132.12604pt too high) has occurred while \output is active []
+Overfull \vbox (32.82611pt too high) has occurred while \output is active []
 
 
 [27]
-<latex/kuvat/testimage.jpeg, id=770, 1599.9775pt x 1080.035pt>
+<latex/kuvat/testimage.jpeg, id=767, 1599.9775pt x 1080.035pt>
 File: latex/kuvat/testimage.jpeg Graphic file (type jpg)
 <use latex/kuvat/testimage.jpeg>
 Package pdftex.def Info: latex/kuvat/testimage.jpeg  used on input line 224.
 (pdftex.def)             Requested size: 319.98984pt x 216.00317pt.
-<./svg-inkscape/architect_svg-raw.pdf, id=771, 445.28859pt x 530.54462pt>
+ [28]
+<./svg-inkscape/architect_svg-raw.pdf, id=781, 445.28859pt x 530.54462pt>
 File: ./svg-inkscape/architect_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/architect_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/architect_svg-raw.pdf  used on input li
@@ -1431,53 +1433,36 @@ Overfull \hbox (18.49615pt too wide) in paragraph at lines 245--246
 [][]
  []
 
-[28] [29
+[29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.285 \section
-              {Installing new devices} \label{instnewdevices} <./latex/kuvat/te
-stimage.jpeg>] [30
+l.277 
+       <./latex/kuvat/testimage.jpeg>] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.285 \section
-              {Installing new devices} \label{instnewdevices} <./svg-inkscape/a
-rchitect_svg-raw.pdf>]
-Overfull \hbox (54.58112pt too wide) in paragraph at lines 310--314
-[]\T1/cmr/m/n/12 Run ''curl -L https://github.com/nix-community/nixos-images/re
-leases/download/nixos-
- []
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.319     configuration>#
-                         <configuration name> root@<ip address>''
-? 
-
-Overfull \hbox (23.64857pt too wide) in paragraph at lines 317--320
-[]\T1/cmr/m/n/12 Upload the flake from the server to the de-vice ''nix run gith
-ub:nix-community/nixos-
- []
-
-[31]) (./securitystandpoints.tex [32]
+l.277 
+       <./svg-inkscape/architect_svg-raw.pdf>] [31]) (./securitystandpoints.tex
+[32]
 \relax  5.
 [33
 
 ] [34] [35] [36] [37] [38]
-<./svg-inkscape/queries.drawio_svg-raw.pdf, id=929, 202.88297pt x 279.29344pt>
+<./svg-inkscape/queries.drawio_svg-raw.pdf, id=940, 202.88297pt x 279.29344pt>
 File: ./svg-inkscape/queries.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/queries.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/queries.drawio_svg-raw.pdf  used on inp
-ut line 245.
+ut line 244.
 (pdftex.def)             Requested size: 202.88246pt x 279.29276pt.
  [39] [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.282 
+l.292 
        <./svg-inkscape/queries.drawio_svg-raw.pdf>] [41]) (./analysis.tex
 [42]
 \relax  6.
@@ -1487,113 +1472,113 @@ l.282
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.76  \hline & & & &
+l.81  \hline & & & &
                      S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & & \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.76 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
+l.81 ...& S0-S7 & D0-D4 & O0-O4 & A0-A4 \\ & & & &
                                                    \hline \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.77  & & & &
+l.82  & & & &
               Idle & Monitor system & Normal operation & Intercept MQTT
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.78  messaging \\ & & & &
+l.83  messaging \\ & & & &
                            \hline & & & & Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.78  messaging \\ & & & & \hline & & & &
+l.83  messaging \\ & & & & \hline & & & &
                                           Receive media through MQTT &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.80  repository \\ & & & &
+l.85  repository \\ & & & &
                             \hline & & & & Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.80  repository \\ & & & & \hline & & & &
+l.85  repository \\ & & & & \hline & & & &
                                            Set up SystemD services &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  to device \\ & & & &
+l.87  to device \\ & & & &
                            \hline & & & & Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.82  to device \\ & & & & \hline & & & &
+l.87  to device \\ & & & & \hline & & & &
                                           Start Weston & Isolate device &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.84  \\ & & & &
+l.89  \\ & & & &
                  \hline & & & & Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.84  \\ & & & & \hline & & & &
+l.89  \\ & & & & \hline & & & &
                                 Display media & & & Exploit vulnerabilities
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.85  in SSH connections \\ & & & &
+l.90  in SSH connections \\ & & & &
                                     \hline & & & & Partial loss of system &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.85  in SSH connections \\ & & & & \hline & & & &
+l.90  in SSH connections \\ & & & & \hline & & & &
                                                    Partial loss of system &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86  \ & \ & \\ & & & &
+l.91  \ & \ & \\ & & & &
                          \hline & & & & Complete loss of system & & & \\ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.86  \ & \ & \\ & & & & \hline & & & &
+l.91  \ & \ & \\ & & & & \hline & & & &
                                         Complete loss of system & & & \\ &
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  & & &
+l.92  & & &
             \hline & & & & & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  & & & \hline & & & &
+l.92  & & & \hline & & & &
                            & & & \\ & & & & \hline
 ? 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.87  & & & \hline & & & & & & & \\ & & & &
+l.92  & & & \hline & & & & & & & \\ & & & &
                                             \hline
 ? 
 
-Overfull \hbox (21.94543pt too wide) in paragraph at lines 75--91
+Overfull \hbox (21.94543pt too wide) in paragraph at lines 80--96
  [][] 
  []
 
@@ -1602,7 +1587,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.94 \end{landscape}
+l.99 \end{landscape}
                     ] [47
 
 
@@ -1611,43 +1596,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.142 
+l.147 
       ]
-<./svg-inkscape/barchart_svg-raw.pdf, id=1031, 385.44pt x 385.44pt>
+<./svg-inkscape/barchart_svg-raw.pdf, id=1043, 385.44pt x 385.44pt>
 File: ./svg-inkscape/barchart_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/barchart_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/barchart_svg-raw.pdf  used on input lin
-e 144.
+e 149.
 (pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
  [48
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.166 
+l.171 
        <./svg-inkscape/barchart_svg-raw.pdf>]
-<./svg-inkscape/cost_graph_svg-raw.pdf, id=1050, 385.44pt x 385.44pt>
+<./svg-inkscape/cost_graph_svg-raw.pdf, id=1062, 385.44pt x 385.44pt>
 File: ./svg-inkscape/cost_graph_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/cost_graph_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/cost_graph_svg-raw.pdf  used on input l
-ine 168.
+ine 173.
 (pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
  [49
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.185 
+l.190 
        <./svg-inkscape/cost_graph_svg-raw.pdf>] [50] [51]) (./further.tex
-[52]
+[52] [53]
 \relax  7.
-[53
+[54
 
-]) (./conclusion.tex [54]
+]) (./conclusion.tex [55]
 \relax  8.
-[55
+[56
 
-]) [56]
+]) [57]
 ! Illegal parameter number in definition of \abx@field@title.
 <to be read again> 
                    x
@@ -1672,27 +1657,27 @@ Overfull \hbox (23.62286pt too wide) in paragraph at lines 82--82
 avec gnu guix^^Q, \T1/cmr/m/it/12 GNU/Linux
  []
 
-[57
+[58
 
-] [58]
+] [59]
 Overfull \hbox (32.40901pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/n/12 Canonical, \T1/cmr/m/it/12 Ubuntu Man-page: Apt - command-line
  in-ter-face --- man-pages.ubuntu.com\T1/cmr/m/n/12 ,
  []
 
-[59]
+[60]
 Overfull \hbox (5.67918pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/it/12 Home Man-ager Man-ual --- nix-community.github.io\T1/cmr/m/n/
 12 , []$\T1/cmtt/m/n/12 https : / / nix -[] community .
  []
 
-[60]
+[61]
 Overfull \hbox (10.51329pt too wide) in paragraph at lines 82--82
 []\T1/cmr/m/it/12 GitHub - nix-community/nixos-anywhere: In-stall nixos ev-ery-
 where via ssh [main-
  []
 
-[61] [62] (./thesis.aux)
+[62] [63] (./thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1710,8 +1695,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: C23E6EA624F65B99E0011967DFE00C20;3170
-(rerunfilecheck)             After:  6D73B983427B16A60D1AA2B3FCC28E78;3217.
+(rerunfilecheck)             Before: 0A781B04A646D72CECD3FE8D72DC7C7B;3185
+(rerunfilecheck)             After:  E44373328F9C5006EB7FE3DDA7BD7835;3232.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1720,10 +1705,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37246 strings out of 476182
- 675275 string characters out of 5795596
- 2117975 words of memory out of 5000000
- 58322 multiletter control sequences out of 15000+600000
+ 37255 strings out of 476182
+ 675403 string characters out of 5795596
+ 2114975 words of memory out of 5000000
+ 58323 multiletter control sequences out of 15000+600000
  575878 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  125i,12n,121p,1055b,3969s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1739,10 +1724,10 @@ exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/te
 xmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (68 pages, 798310 bytes).
+Output written on thesis.pdf (69 pages, 800935 bytes).
 PDF statistics:
- 1317 PDF objects out of 1440 (max. 8388607)
- 1121 compressed objects within 12 object streams
- 321 named destinations out of 1000 (max. 500000)
+ 1337 PDF objects out of 1440 (max. 8388607)
+ 1140 compressed objects within 12 object streams
+ 329 named destinations out of 1000 (max. 500000)
  401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

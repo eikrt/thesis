@@ -2492,21 +2492,25 @@
     <bcf:citekey order="117" intorder="1">hughes2013quantitative</bcf:citekey>
     <bcf:citekey order="118" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="119" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">jerman2008economic</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">bars2006theory</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">bars2006theory</bcf:citekey>
-    <bcf:citekey order="131" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="132" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="133" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="134" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">jerman2008economic</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">bars2006theory</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">bars2006theory</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">wang2010framework</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">nixosNixOSManual</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">wang2010framework</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

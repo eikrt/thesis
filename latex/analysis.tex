@@ -1,10 +1,15 @@
 \chapter{Applying QuERIES} \label{analysis}
 
 As mentioned in the previous chapter section \ref{queries}, the
-QuERIES methodology is used in this chapters analysis. In
-table \ref{pomdbtable} is listed all the possible states (S), defender
+QuERIES methodology is used in this chapters analysis. In table
+\ref{pomdbtable} is listed all the possible states (S), defender
 actions (D), attacker actions (A) and observations (O). Then, every
-transition from state to another state is calculated as a probability.
+transition from state to another state is calculated as a
+probability. Carin et. al use an economic model to estimate POMDP
+parameters \cite{carin2008cybersecurity}. We deviate from the
+methodology, and calculate the parameters as transition probabilities
+from each state for given observation, as it provides us better
+construction of attack graph and gives more specific data.
 
 QuERIES as a model is described as multidisciplinary, as it takes
 inspiration from traditional red-blue team approaches, mathematical
@@ -193,7 +198,7 @@ much as it's important to be aware that an attacker who
 doesn't have economic interests, could have practically unlimited time
 to try to breach the system.
 
-\subsection{Improving the system using Nix}
+\subsection{Improving the system using Nix}\label{improvingwithnix}
 
 The following measures were taken in the first iteration: disable USB
 ports, change MQTT password to token based authentication and change
@@ -236,18 +241,25 @@ vectors, as there are many more ways for the attacker to leverage the
 access, e.g by replacing the whole device, depending on the resources
 of the attacker.
 
-\subsection{Issues with QuERIES} \label{issues}
+\subsection{Issues with applied methodology} \label{issues}
 
 One issue found using QuERIES with POMDP was that applying the reward
-functions is in our case rather arbitrary. We assumed, that for
+functions in our case is in rather arbitrary. We assumed, that for
 positive results, the reward function is defined as 1, and for the
-negative outcomes as -100. This is due to the negative results deemed as
-catastrophic and the positive results being slightly positive. The
+negative outcomes as -100. This is due to the negative results deemed
+as catastrophic and the positive results being slightly positive. The
 choice for both parameters could have been any integer, but the issue
 is that it demands ''gut-feeling'' of the author to select the
-appropriate parameters. This could be mitigated with some study on
-selecting the parameters, but it's definitely a challenge to provide
-good foundation on such abstract numbers.
+appropriate parameters. This is due to the deviation from the QuERIES,
+where the POMDP parameters were applied from the economic model,
+working as an estimate. In our case, a trade-off to obtain
+specificity, forced us to rely on set reward and discount
+values. Using another model, for example the one presented by Wang
+et. al using hidden Markov models would in retrospective provide us a
+more specific layout of the attack graph, similar on how we applied
+the QuERIES methodology \cite{wang2010framework}. The
+combination of both hidden Markov models and QuERIES could possibly be a ''best
+of both worlds'' solution.
 
 One remark using POMDP is that it produces very generalized
 output. This is why we use methodologies such as QuERIES to improve
@@ -257,9 +269,7 @@ using the POMDP calculations may even be redundant. In POMDP, negative
 rewards signify that the system has issues, and positive meaning that
 the system is more secure \cite{mcabeeMarkov}. More ergonomic approach
 would be calculating rewards without positive outcomes, due to them
-possibly shadowing the most critical issues. Developing a pessimistic
-model that highlights explicitly the weak points of a system would be
-a topic for further research.
+possibly shadowing the most critical issues.
 
 \section{Generalizing the results}
 
@@ -280,4 +290,3 @@ mathematics, which can be hard to achieve in a real organizational
 setting. This is why I propose in the next chapter that a simpler,
 pessimistic and more concise model would be easier to reach for an
 organization.
-
