@@ -48,16 +48,16 @@ for any system to prevent unauthorized access
 trivial with Nix, as the configuration files denote completely which
 user has accesses to which resources. Access control in a modern day
 embedded environment could be hard to implement in traditional
-imperative systems, as scaling such system that spans
-multiple devices and changing environments would require a lot of
-manual intervention. This is definitely one of strengths of
-declarative approaches: scalability is never an issue when a
-centralized configuration defines the systems. A declarative approach
-is often taken in the cloud as stated in section chapter
-\ref{imperative} section \ref{declarativesystems}, but implementing
-declarative overlays definitely needs work in the embedded field.
+imperative systems, as scaling such system that spans multiple devices
+and changing environments would require a lot of manual
+intervention. This is definitely one of strengths of declarative
+approaches: scalability is never an issue when a centralized
+configuration defines the systems. A declarative approach is often
+adopted in the cloud, as discussed in chapter \ref{imperative}
+section \ref{declarativesystems}, but its implementation still
+requires significant effort in the embedded field.
 
-Implementing policies information security perspectives using a policy
+Improving information security aspects using a policy
 modeling standard, CIA-triad is discussed in section
 \ref{imperativeanddeclarative}, and Nix is reflected with the use of
 the triads axes. Dolstra states that Nix is policy-free meaning that
@@ -126,19 +126,19 @@ completely in a replicated sandbox environment. Simpler and more straight forwar
 easier strategical planning \cite{kandoi2021operating}.
 
 Kandoi et. al argue that with declarative systems, it should be nearly
-impossible to misconfigure in the first place the system and if faulty
-state is achived, a simple rollback could undo the changes
+impossible to misconfigure the system in the first place and if faulty
+state was achieved, a simple rollback could undo the changes
 \cite{kandoi2021operating}. As stated in chapter \ref{imperative}
 section \ref{declarativesystems}, it's definitely possible to achieve
-faulty systems with Nix. I argue that these problems can be mitigated
-with a well thought rollout/rollback strategy.
+faulty systems with Nix. It can be argued that these problems can be mitigated
+with a well thought rollout/rollback strategy with a dedicated test environment.
 
 Updatability is possible with many different platforms, but it's a
 problem when updating is a sole duty of a consumer, who may or may not
 have the adequate knowledge how or why they should update their
 systems. Lightweight updatability comes out-of-the-box with Nix, and
 that is something that inherently should make it more secure. Consumer
-products, however are out of this thesis' scope.
+products however are out of this thesis' scope.
 
 Nix is a double edged sword for system administration tasks. On one
 hand, it has a steep learning curve, but on the other hand it can make
@@ -170,7 +170,7 @@ while it's in transit or stored e.g in a server \cite{pender2019parkerian}. A wa
 integrity is checking hashes of downloaded files. Availability is a
 user viewpoint to the accessibility of the system \cite{pender2019parkerian}. When
 confidentiality and integrity are pushed to the extreme, availability
-aspect suffers, e.g when a service enforces multi-factor
+aspect suffers, e.g when a service enforces a strict multi-factor
 authentication. 
 
 Systems with an imperative package manager are more accessible than
@@ -220,5 +220,5 @@ solution can improve the rollout/rollback capabilities, testing
 pipelines and provides features such as read-only Nix store. The next
 chapter proposes an architecture solution which works as an example of
 a Nix ecosystem. The main purpose of the architecture solutions is to
-demonstrate the security implications of declarative systems, provided
+demonstrate the security implications of declarative systems which are then discussed 
 in chapter \ref{analysis}. 

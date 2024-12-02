@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber thesis"] 1732618680.48376 "thesis.bcf" "thesis.bbl" "thesis" 1732618689.21003 0
+["biber thesis"] 1733177252.2265 "thesis.bcf" "thesis.bbl" "thesis" 1733177258.55343 0
   "Bibliografia.bib" 1731861107.40368 21532 b9c987bf86bf64e09b21a6606b4396d0 ""
-  "thesis.bcf" 1732618688.83607 118170 3c8cb4a1a04b3543bf3bf68872128dcb "pdflatex"
+  "thesis.bcf" 1733177258.37274 118096 31fee493606ed5a88139bc56c92c0613 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["cusdep nlo nls thesis"] 1732618680.39736 "thesis.nlo" "thesis.nls" "thesis" 1732618689.20266 0
-  "thesis.nlo" 1732618683.84307 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep nlo nls thesis"] 1733177252.14171 "thesis.nlo" "thesis.nls" "thesis" 1733177258.54949 0
+  "thesis.nlo" 1733177254.81773 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "thesis.nls"
   (rewritten before read)
-["pdflatex"] 1732618682.18478 "thesis.tex" "thesis.pdf" "thesis" 1732618689.20282 2
+["pdflatex"] 1733177253.89069 "thesis.tex" "thesis.pdf" "thesis" 1733177258.54958 2
   "../graph/barchart.svg" 1731673288.05668 11268 7cb858dc1124af11f1ad0ae70510bc11 ""
   "../graph/cost_graph.svg" 1731681353.62669 49873 81f5d045ec34d567daf825b9643f0309 ""
   "/etc/texmf/web2c/texmf.cnf" 1721910959.87586 475 c0e671620eb5563b2130f56340a5fde8 ""
@@ -254,13 +254,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1727780587.98337 5312232 f3296911be9cc021788f3f879cf0a47d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1725270903 6800790 bbb0de450ea9f40be69c072f1c80f2b7 ""
-  "abstract.tex" 1732106605.32246 1600 05bcfe93655870309e810ff5d26390ee ""
-  "analysis.tex" 1732617823.84355 14531 59ef0cb4f1f7510090745ccc00505787 ""
+  "abstract.tex" 1732618834.09917 1465 ac8513f3da27aff7c31d836ae8b21c64 ""
+  "analysis.tex" 1733174486.98079 14538 a74734e217717ad4c538bcd69248c0b6 ""
   "architecture.tex" 1732618671.45106 14368 37db79cc0c63a4c4d1d55f504df66092 ""
-  "conclusion.tex" 1731931268.20186 2633 eb0e05058c952d1945f58cea59222785 ""
-  "embedded.tex" 1732024021.32326 12597 c29599be71decd4580fa340f2f088653 ""
-  "further.tex" 1732617401.58796 1765 0089af446d49eef05a1f43eb15f6f02b ""
-  "imperative.tex" 1732616444.82169 17517 1634c013c68def45440c95e1a6fcbe70 ""
+  "conclusion.tex" 1732619209.5134 2645 f2c69bbdc01a999b775c096c093cee05 ""
+  "embedded.tex" 1733170864.13202 12644 e936314a8768cac4812ecec21559bb36 ""
+  "further.tex" 1732619288.2067 1733 948e9f5bdcae398f362dadde4a161a4d ""
+  "imperative.tex" 1733169908.0936 17496 6543bd051594366bc3cee00222837418 ""
   "johdanto.tex" 1732020701.97474 11589 9b6dfcd5838c1bead4d6aa7a8d7ffc58 ""
   "latex/kuvat/architect.svg" 1731070322 224067 4b1fd4b4b5122fe8a2e8c567e9ec55c6 ""
   "latex/kuvat/ciatriad.drawio.svg" 1731156890.83071 4647 d44c5e92e68a135b9393f89b66322742 ""
@@ -268,25 +268,25 @@
   "latex/kuvat/queries.drawio.svg" 1731155653.95058 58185 976b471043505f0742f1e9a5471bd7f0 ""
   "latex/kuvat/symlinks.drawio.svg" 1731158632.49145 155402 b65303c83b955994f0e4d82349cef21e ""
   "latex/kuvat/testimage.jpeg" 1731070322 144793 cc529b23c6821e8651f6e9ebfbe0c896 ""
-  "pdfa.xmpi" 1732618683.54107 5752 a496e9dffbc3b8037286999ae02ced6e "pdflatex"
+  "pdfa.xmpi" 1733177254.67973 5752 cd5fba707cd41e23fc9f46927eebfadc "pdflatex"
   "puenc-greek.def" 0 -1 0 ""
   "research.tex" 1731070322 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "securitystandpoints.tex" 1732617204.27051 17070 ba9c3b6de77380bd5686d2d787566db2 ""
+  "securitystandpoints.tex" 1732618930.17919 17007 2a3c11ddffb894b5ddf6c5f116a872df ""
   "svg-inkscape/architect_svg-raw.pdf" 1731154441.73599 71156 3e72356eabcd0a55a0911cc9f7338de1 ""
   "svg-inkscape/barchart_svg-raw.pdf" 1731673314.83673 8800 80f80f37d2650338ca1420c3fe2305b1 ""
   "svg-inkscape/ciatriad.drawio_svg-raw.pdf" 1731156934.25877 12989 bf755ffc9068a05edf24888c250aff2c ""
   "svg-inkscape/cost_graph_svg-raw.pdf" 1731682585.87105 11245 e4bfc82df76effda353a9ae99a87f0e1 ""
   "svg-inkscape/queries.drawio_svg-raw.pdf" 1731155697.7685 19338 eb7a860fce6129b8596b10fcce75778a ""
   "svg-inkscape/symlinks.drawio_svg-raw.pdf" 1731158817.70754 49738 d242cf07d55a10c4455584ecabe9ee05 ""
-  "thesis.aux" 1732618688.77707 28050 c937ecc5beb1ef1916b35f67588c1716 "pdflatex"
-  "thesis.bbl" 1732618682.13907 55641 0ab7609d4e2371941a0bc8ec30394bca "biber thesis"
-  "thesis.lof" 1732618688.83807 1664 8dbb66382920747c36170706e626a3b0 "pdflatex"
-  "thesis.lot" 1732618688.83807 639 ab01d886c04acb992630f5483ed6fa0e "pdflatex"
-  "thesis.nls" 1732618680.48107 0 d41d8cd98f00b204e9800998ecf8427e "cusdep nlo nls thesis"
-  "thesis.out" 1732618688.83007 3232 e44373328f9c5006eb7fe3dda7bd7835 "pdflatex"
-  "thesis.run.xml" 1732618688.83807 2418 58e128a2e67a8768efc4f05ac4b62763 "pdflatex"
+  "thesis.aux" 1733177258.34474 27975 ba4e4e0f1f1eb722716b1b4c8e985ea6 "pdflatex"
+  "thesis.bbl" 1733177253.85372 55641 0ab7609d4e2371941a0bc8ec30394bca "biber thesis"
+  "thesis.lof" 1733177258.37374 1664 8dbb66382920747c36170706e626a3b0 "pdflatex"
+  "thesis.lot" 1733177258.37374 639 ab01d886c04acb992630f5483ed6fa0e "pdflatex"
+  "thesis.nls" 1733177252.22272 0 d41d8cd98f00b204e9800998ecf8427e "cusdep nlo nls thesis"
+  "thesis.out" 1733177258.36674 3232 e44373328f9c5006eb7fe3dda7bd7835 "pdflatex"
+  "thesis.run.xml" 1733177258.37374 2418 58e128a2e67a8768efc4f05ac4b62763 "pdflatex"
   "thesis.tex" 1732562320.86318 11316 1731b5c8f3651384d26d6c42524bbb00 ""
-  "thesis.toc" 1732618688.83807 3953 e3df57dac49ba9b1df3ce20a03358fd0 "pdflatex"
+  "thesis.toc" 1733177258.37374 3953 e3df57dac49ba9b1df3ce20a03358fd0 "pdflatex"
   "thesis.xmpdata" 1732106896.71176 310 3f49e52de909295790a7b6c4ee2275f5 ""
   "utuftthesis.cls" 1732106540.51892 22179 12c8c98e9a7ab93e85a05d22e1e04ee5 ""
   (generated)

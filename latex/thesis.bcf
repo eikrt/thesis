@@ -2510,7 +2510,6 @@
     <bcf:citekey order="135" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="136" intorder="1">nixosNixOSManual</bcf:citekey>
     <bcf:citekey order="137" intorder="1">fysarakis2014embedded</bcf:citekey>
-    <bcf:citekey order="138" intorder="1">wang2010framework</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

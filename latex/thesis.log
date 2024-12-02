@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  26 NOV 2024 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.2)  3 DEC 2024 00:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1246,7 +1246,7 @@ Package caption Info: End \AtBeginDocument code.
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 (./abstract.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
@@ -1324,7 +1324,7 @@ l.52 28 000 packages \cite{gnuPackagesx2014}.
 
 ] [8]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-9.
+8.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1332,17 +1332,17 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 File: latex/kuvat/cropped_apt_output.jpg Graphic file (type jpg)
 <use latex/kuvat/cropped_apt_output.jpg>
 Package pdftex.def Info: latex/kuvat/cropped_apt_output.jpg  used on input line
- 107.
+ 106.
 (pdftex.def)             Requested size: 364.2399pt x 43.36188pt.
  [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.124 \end{figure}
+l.123 \end{figure}
                    <./latex/kuvat/cropped_apt_output.jpg>] [10] [11]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-249.
+248.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -1352,14 +1352,14 @@ File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 File: ./svg-inkscape/symlinks.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/symlinks.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/symlinks.drawio_svg-raw.pdf  used on in
-put line 288.
+put line 287.
 (pdftex.def)             Requested size: 594.72043pt x 324.46138pt.
  [13] [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.330 \subsection
+l.329 \subsection
                  {Ease of updates} <./svg-inkscape/symlinks.drawio_svg-raw.pdf>
 ]) (./embedded.tex [15]
 \relax  3.
@@ -1382,7 +1382,7 @@ File: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/ciatriad.drawio_svg-raw.pdf  used on in
 put line 192.
 (pdftex.def)             Requested size: 258.1182pt x 220.565pt.
-) (./architecture.tex
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1396,9 +1396,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1 \chapter
-            {Proposed architecture solution} \label{architecture} <./svg-inksca
-pe/ciatriad.drawio_svg-raw.pdf>]
+l.217 I
+       t's apparent that Nix can be used to improve embedded device security <.
+/svg-inkscape/ciatriad.drawio_svg-raw.pdf>]) (./architecture.tex
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 27.11469pt, for example:
@@ -1455,14 +1455,14 @@ l.277
 File: ./svg-inkscape/queries.drawio_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/queries.drawio_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/queries.drawio_svg-raw.pdf  used on inp
-ut line 244.
+ut line 243.
 (pdftex.def)             Requested size: 202.88246pt x 279.29276pt.
  [39] [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 
+l.291 
        <./svg-inkscape/queries.drawio_svg-raw.pdf>] [41]) (./analysis.tex
 [42]
 \relax  6.
@@ -1724,10 +1724,10 @@ exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/te
 xmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (69 pages, 800935 bytes).
+Output written on thesis.pdf (69 pages, 800430 bytes).
 PDF statistics:
- 1337 PDF objects out of 1440 (max. 8388607)
- 1140 compressed objects within 12 object streams
+ 1336 PDF objects out of 1440 (max. 8388607)
+ 1139 compressed objects within 12 object streams
  329 named destinations out of 1000 (max. 500000)
  401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

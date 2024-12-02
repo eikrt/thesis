@@ -1,15 +1,15 @@
 \chapter{Declarative vs. Imperative systems} \label{imperative}
 
-There have been different approaches to declarative modeling of
-systems design. Endres et al. compares declarative and imperative
-systems from a cloud computing standpoint, and collects systematic
+There exists different approaches to declarative modeling of
+systems design. Endres et al. compare declarative and imperative
+standpoints in a cloud computing context and collects systematic
 information on what are the strengths and weaknesses of TOSCA, IBM
 Bluemix, Chef, Juju, and OpenTOSCA \cite{endres2017declarative}. Van
 der Burg and Eelco Dostra use NixOS as a solution for declaratively
 distributing into cloud, executing integration and system tests
 \cite{van2010declarative}. Most approaches researched through
 literature review focus on distributing to cloud. Distributing to
-embedded clearly remains as a niche.
+embedded clearly remains a niche.
 
 Breitenbücher et al. focus on deploying into embedded and discusses
 the challenges an IoT user face when deploying a system \cite{breitenbucher2017declarative}. It's proven
@@ -24,20 +24,20 @@ approaches to the more traditional imperative models, highlighting the
 strengths and weaknesses of both. Specifically, examples are provided
 to illustrate the limitations often observed in imperative systems,
 particularly in terms of reproducibility, scalability and
-administration standpoints. Cloud-oriented approaches serve as a prime
-reference point for how declarative systems can be effectively
-distributed and automated. It can be argued that similiar approaches
-as those taken in cloud should be taken in embedded and IoT to
-increase security through updatability and upgradability. This
-argument is proven in chapter \ref{analysis} section \ref{usingtheresults}
-subsection \ref{improvingwithnix}.
+administration standpoints. Cloud-oriented approaches serve as a key
+reference point for the effective distribution and automation of
+declarative systems. It can be argued that similiar approaches as
+those taken in cloud should be taken in embedded and IoT to increase
+security through updatability and upgradability. This argument backed up
+in chapter \ref{analysis} section \ref{usingtheresults}
+subsection \ref{improvingwithnix}, where a concrete use case is demonstrated.
 
 \section{Imperative systems}
 
 Imperative deployment models base their functionalities through a
 process in which the order of events have a critical significance to
-the output \cite{breitenbucher2017declarative}. In context of
-virtualization, imperative tooling can be used to form a all
+the output \cite{breitenbucher2017declarative}. In the context of
+virtualization, imperative tooling can be used to form all
 activities to be executed, the control flow, their execution order,
 and the data flow between them \cite{endres2017declarative}. This kind
 of process is best to be used in conjunction with a formalized
@@ -47,13 +47,12 @@ these models formalize the processes in the configuration files
 \cite{endres2017declarative}.
 
 An imperative system provides updatability and modification through a
-destructive instrument. Popular imperative package managers, e.g can
-remove and overwrite existing files, which leaves the system in an
+destructive instrument. Imperative package managers remove and overwrite existing files, which can leave the system in an
 inconsistent state \cite{dolstra2008nixos}. Different installs have by
 nature different states, which causes many problems discussed in this
 thesis.
 
-Imperative systems, while popular, have inherent problems regarding
+Imperative systems have inherent problems regarding
 administrative traits contributing to a framework where the underlying
 system has \textbf{no traceability}: the implication that
 reproducibility is impossible, as changes to a system are not
@@ -95,7 +94,7 @@ to avoid breaking the application. The package manager warns:
 requested" as shown in figure \ref{deb_remove}. It's also noteworthy,
 that the manual page for apt, doesn't say anything about a possible
 installation side-effect of a package removal command
-\cite{ubuntuUbuntuManpage}.  We could forcibly remove the package by
+\cite{ubuntuUbuntuManpage}. We could forcibly remove the package by
 invoking
 \begin{figure}[H]\label{dpkgsnippet}
 \begin{lstlisting} 
@@ -107,8 +106,8 @@ invoking
 \includegraphics[scale=2.0]{latex/kuvat/cropped_apt_output.jpg}
 \caption{Terminal output from a Debian system when installing an Emacs package.}
 \end{figure}
-thus leaving the system in an unreliable state. Dpkg is a low-level
-tool associated with apt, and doesn't automatically handle dependency
+, leaving the system in an unreliable state. Dpkg is a low-level
+tool associated with apt, which doesn't automatically handle dependency
 resolutions or further package relations
 \cite{thiruvathukal2004gentoo}. What happens if we had a large number
 of devices, in-premises or cloud where all system commands are done
@@ -129,7 +128,7 @@ the wrong order, there will be divergent systems.
 Implementing a deployment model with only Debian would be a gruesome
 task, as the order of events which occur during the setup phase is
 critical. As presented by Endres et al. a formalized workflow graph
-would be needed to set up a reliable system. However, a Debian could
+would be needed to set up a reliable system. However, Debian could
 be used as a host to user-space application deployment, such as
 Bluemix or Chef, where common DevOps practices can be used
 \cite{endres2017declarative}.
@@ -186,7 +185,7 @@ program can reside side-by-side with varying versions
 As presented by Endres et al, systems can be declared, even if the
 underlying infrastructure is imperative by nature
 \cite{endres2017declarative}. This thesis focuses on purely functional
-methodologies which fix the most prevalent issues compared with
+methodologies which fix the most prevalent issues found in
 imperative models. Tools such as Chef focus on deploying on a
 imperative system, which causes an inherent problem with cohesion in a
 system that should work regardless of the underlying machine or
@@ -265,7 +264,7 @@ unpredictable behaviour if the impure components are modified. Purity means that
 immutable \cite{dolstra2010nixos}.
 
 User environments (Nix profiles) can be used so that for different
-needs, or for different users there are multiple environments in which
+needs or for different users there are multiple environments in which
 the user can operate as shown in figure \ref{userenvs}. User
 environments are a successor to the concept, where installed programs
 either reside in
@@ -321,12 +320,12 @@ examples \cite{nixcommunityHomeManager}.
 Flakes are experimental feature of Nix, providing environments, where
 dependencies are pinned in a lock file, further improving
 reproducibility of Nix systems. A flake is a
-file system tree, which contains a root directory with the Nix file
+file system tree, which contains a root directory with the Nix lock file
 specification called flake.nix. The usage of flakes is a good method
 for organising different environments within a Nix system, where it
 can consist of multiple flakes. Flakes are an experimental
 feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
-% referoi manuaalia
+
 \subsection{Ease of updates}
 
 Updating is easy and riskless with NixOS due to atomic
@@ -353,9 +352,9 @@ and, if stable release is chosen, updating the system.stateVersion
 from the configuration.nix file \cite{nixosNixOSManual}. Nixpkgs is a
 repository of working Nix packages using a continuous integration
 service called Hydra. Hydra evaluates the needed Nix expression of a
-package, and ensures its functionality. \cite{nixosNixOSManual}
+package, and ensures its functionality \cite{nixosNixOSManual}.
 
-It's apparent that purely functional, declarative approaches aren't as popular
+It's apparent that purely functional and declarative approaches aren't as popular
 as imperative systems due to the need of steep learning curves and
 obscure syntax. This can be seen as historical payload: imperative
 models have been in use a much longer time than purely functional
