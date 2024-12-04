@@ -33,8 +33,8 @@
       \strng{authorbibnamehash}{30675f35bd3b466dfdec6d640781dbd3}
       \strng{authornamehash}{30675f35bd3b466dfdec6d640781dbd3}
       \strng{authorfullhash}{30675f35bd3b466dfdec6d640781dbd3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://packages.guix.gnu.org/}}
@@ -60,8 +60,8 @@
       \strng{authorbibnamehash}{fbc46e2cece7a33a31cddb617af05dab}
       \strng{authornamehash}{fbc46e2cece7a33a31cddb617af05dab}
       \strng{authorfullhash}{fbc46e2cece7a33a31cddb617af05dab}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 13th ACM SIGPLAN international conference on Functional programming}
@@ -71,16 +71,16 @@
       \range{pages}{12}
     \endentry
     \entry{opensuseSystemRecovery}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://doc.opensuse.org/documentation/leap/archive/15.0/reference/html/book.opensuse.reference/cha.snapper.html}}
       \field{note}{[Accessed 16-09-2024]}
       \field{title}{{S}ystem {R}ecovery and {S}napshot {M}anagement with {S}napper | {R}eference | open{S}{U}{S}{E} {L}eap 15.0 --- doc.opensuse.org}
     \endentry
     \entry{githubGitHubNixosbsdnixbsd}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/nixos-bsd/nixbsd}}
       \field{note}{[Accessed 09-11-2024]}
@@ -105,16 +105,16 @@
       \strng{authorbibnamehash}{c4f37b199c66c33cf623be8d21e97c5f}
       \strng{authornamehash}{c4f37b199c66c33cf623be8d21e97c5f}
       \strng{authorfullhash}{c4f37b199c66c33cf623be8d21e97c5f}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Reference Architecture for Distributed Software Deployment.}
       \field{year}{2013}
     \endentry
     \entry{nixosNixOSSearch}{misc}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://search.nixos.org/packages}}
       \field{note}{[Accessed 24-09-2024]}
@@ -491,8 +491,8 @@
       \strng{authorbibnamehash}{ac5957b4803395526a3ae74a6b9894ff}
       \strng{authornamehash}{ac5957b4803395526a3ae74a6b9894ff}
       \strng{authorfullhash}{ac5957b4803395526a3ae74a6b9894ff}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computer}
@@ -522,8 +522,8 @@
       \strng{authorbibnamehash}{9f2da498adc6a6a22aaee2a29872b488}
       \strng{authornamehash}{9f2da498adc6a6a22aaee2a29872b488}
       \strng{authorfullhash}{9f2da498adc6a6a22aaee2a29872b488}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Technology Innovation Management Review}
@@ -590,8 +590,8 @@
       \strng{authorbibnamehash}{306010d2b96f255c5a2b3b438561d594}
       \strng{authornamehash}{306010d2b96f255c5a2b3b438561d594}
       \strng{authorfullhash}{306010d2b96f255c5a2b3b438561d594}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{HotOS}
@@ -610,8 +610,8 @@
       \strng{authorbibnamehash}{c2e70fbae5f95506396162dab6617978}
       \strng{authornamehash}{c2e70fbae5f95506396162dab6617978}
       \strng{authorfullhash}{c2e70fbae5f95506396162dab6617978}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://manpages.ubuntu.com/manpages/bionic/man8/apt.8.html}}
@@ -714,8 +714,8 @@
       \strng{authorbibnamehash}{a1c4b481ddf24bc67c37a0df912104ca}
       \strng{authornamehash}{a1c4b481ddf24bc67c37a0df912104ca}
       \strng{authorfullhash}{a1c4b481ddf24bc67c37a0df912104ca}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2013 1st International Workshop on Release Engineering (RELENG)}
@@ -751,8 +751,8 @@
       \strng{authorbibnamehash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authornamehash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authorfullhash}{e94601a3d5f3025f11604a2085a0bcb1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Functional Programming}
@@ -788,16 +788,16 @@
       \field{title}{{H}ome {M}anager {M}anual --- nix-community.github.io}
     \endentry
     \entry{nixosFlakesNixOS}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/Flakes}}
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{F}lakes - {N}ix{O}{S} {W}iki --- nixos.wiki}
     \endentry
     \entry{nixosChannelsNixOS}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/Nix_channels}}
       \field{note}{[Accessed 22-05-2024]}
@@ -904,8 +904,8 @@
       \strng{authorbibnamehash}{eb41b57c9692b02d52ec682552d16f68}
       \strng{authornamehash}{eb41b57c9692b02d52ec682552d16f68}
       \strng{authorfullhash}{eb41b57c9692b02d52ec682552d16f68}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{LISA}
@@ -932,8 +932,8 @@
       \strng{authorbibnamehash}{c394ed29f50a1f81e479476e95af6752}
       \strng{authornamehash}{c394ed29f50a1f81e479476e95af6752}
       \strng{authorfullhash}{c394ed29f50a1f81e479476e95af6752}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{25th International Conference on Software Engineering, 2003. Proceedings.}
@@ -981,8 +981,8 @@
       \field{title}{{M}{Q}{T}{T} {V}ersion 3.1.1 --- docs.oasis-open.org}
     \endentry
     \entry{waylandWayland}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://wayland.freedesktop.org/docs/html/}}
       \field{note}{[Accessed 18-09-2024]}
@@ -1018,8 +1018,8 @@
       \strng{authorbibnamehash}{fbc18405d383991e4676e37b8d5c8272}
       \strng{authornamehash}{fbc18405d383991e4676e37b8d5c8272}
       \strng{authorfullhash}{fbc18405d383991e4676e37b8d5c8272}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Systems Engineering}
@@ -1108,8 +1108,8 @@
       \strng{authorbibnamehash}{a1ce8b8a22338aa61f9d4b66b30fdec3}
       \strng{authornamehash}{661bf643f0ece1276e0fe9bc76abaf3e}
       \strng{authorfullhash}{a1ce8b8a22338aa61f9d4b66b30fdec3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Computing Surveys (CSUR)}

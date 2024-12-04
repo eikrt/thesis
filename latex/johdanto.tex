@@ -1,36 +1,36 @@
 \chapter{Introduction} \label{johdanto}
 
 A Linux distribution is a bundle of the Linux kernel and a set of
-software products called packages \cite{gnuPackagesx2014}. A package
-manager is an instrument that handles building packages from either
+software products called packages \cite{gnuPackagesx2014}.  A package
+manager is an instrument that handles building packages either
 from source or pre-built binaries, resolving build-time and run-time
-dependencies of packages and installing, removing, and upgrading
+dependencies of packages and installing, removing and upgrading
 packages in user environments \cite{gnuPackagesx2014}. Every Linux
 device must handle its installed programs with their dependencies and
 configurations either imperatively or declaratively. Overwhelmingly
-large portion of Linux distributions fall in to the first category
+large portion of Linux distributions fall in the first category
 \cite{dolstra2008nixos}. Both imperative and declarative distributions
 have their strengths and weaknesses from administrative and security
 standpoints.
 
 An imperative distribution provides updatability and modification through a
-destructive instrument. Popular imperative package managers are apt,
-apk, dnf and zypper \cite{dolstra2008nixos}. Imperative package
+destructive instrument. Apt,
+apk, dnf and zypper are some of the popular package managers \cite{dolstra2008nixos}. Imperative package
 managers can remove and overwrite existing files which leaves the
-system in an inconsistent state. Different installs have by nature
-different states which causes many problems discussed in this
+system in an inconsistent state. Different installs have
+different states by nature which causes many problems discussed in this
 thesis. As files are cross-modified through packages with package
 managers such as apt, upgrading can be disastrous as such distributions
 don't support atomic rollback capabilities \footnote{Some Linux
 distributions using btrfs filesystem can perform a snapshot and
 rollback \cite{opensuseSystemRecovery}}. Due to the unpredictability,
-often the result can be a partially or completely broken system
+the result can be a partially or completely broken system
 \cite{dolstra2008nixos}.
 
 The reference imperative Linux distribution in this thesis is Debian
 with its default package manager apt, due to it's popularity and
 relative simplicity. The reference declarative distribution is NixOS
-with it's partial namesake package manager Nix which provides
+with its partial namesake package manager Nix which provides
 declarative configuration of the whole system including the Linux
 kernel\footnote{There exists an experimental project that has
 succeeded with BSD interoperability
@@ -39,21 +39,20 @@ programming language which is inspired by purely functional languages
 such as Haskell. \cite{van2013reference}
 
 The reference architecture depicted in chapter \ref{architecture} is
-based on Nix as it is the most popular purely functional, declarative
+based on Nix as it is the most popular purely functional and declarative
 Linux distribution with over 100 000 packages
-\cite{nixosNixOSSearch}. Architecture in this context refers to the
-set containing clients and server and the used hardware. The term
+\cite{nixosNixOSSearch}. Architecture in this context refers to a 
+set containing clients, server and the used hardware. The term
 system means the implementation of the architecture, especially
 referred in chapter \ref{analysis}. Depending on the context, system
-can also mean a set of procedures, e.g a Linux system. For the term
-Linux distribution usually only the word distribution is used.
+can also mean a set of procedures, e.g a Linux system. 
 
-Another good distribution for the architecture would have been Guix, which has over
+Another good distribution for the architecture would have been Guix, with over
 28 000 packages \cite{gnuPackagesx2014}. Guix has some improvements
 over Nix, including richer and more extensible programming environment
 with a Lisp-dialect configuration language, Scheme
 \cite{courtes2021deploiements}. NixOS remains as the distribution of
-choice, as the number of packages is greater, and general support is
+choice, as the number of packages is greater and general support is
 found to be better.
 
 This thesis focuses on the systems and information security of a
@@ -63,14 +62,14 @@ most critical functionalities of an architecture designed for image displaying.
 
 This thesis discusses how declarative distributions can be used as an
 improvement over imperative distributions. In chapter \ref{imperative} both approaches to package
-management is compared, which is followed by an introduction to
+management are compared followed by an introduction to
 embedded security in chapter \ref{securitystandpoints}. In chapters
-\ref{architecture} and \ref{analysis} a quantitative research is
+\ref{architecture} and \ref{analysis}, a quantitative research is
 carried out revealing strengths and weaknesses of the reference Nix
-environment setup. The selected methodology, QuERIES provide
-quantitative results which can be used to improve the security of
+environment setup. The selected methodology, QuERIES provides
+quantitative results that can be used to improve the security of
 declarative architectures. Propositions for further research are
-gone through in chapter \ref{further} and finally, chapter
+covered in chapter \ref{further} and finally, chapter
 \ref{conclusion} concludes the thesis.
 
 \section{Research methodologies and questions}
@@ -94,16 +93,16 @@ chapter \ref{analysis} section \ref{whyqueries} QuERIES is compared
 with other metrics which are explained in subsection \ref{resquest}.
 
 Quantitative methodologies are oftentimes used in conjunction with
-qualitative methodologies, both approaches having their strengths and
+qualitative methodologies, with both approaches having their strengths and
 weaknesses. One drawback of using qualitative methods in security
 framework is their inherent subjectivity. For example the Delphi
 technique, where a set of opinions is gathered and compared from a
-working group provides subjective substance for a study instead of
+working group, provides subjective substance for a study instead of
 objective perspectives \cite{wang2005information}.
 
 The study design in this thesis is \textit{state based}, which refers
 to the fact that the research methods focus on different state
-transitions, e.g how probable it's for an intruder to gain from
+transitions, e.g how probable it is  for an intruder to gain from
 partial leverage to a full control of the system. Qualitative research
 wouldn't alone satisfy the requirements, as investigating different
 state transitions without quantitative methodologies would be absurd
@@ -114,7 +113,7 @@ state transitions without quantitative methodologies would be absurd
 This thesis has bibliography from 49 sources, most of it gathered with
 a carefully prepared search statement. Other sources include manuals,
 material for research methods and other relevant material. The search
-statements results presented in next subsection, provide good base
+statements results presented in next subsection, provide a quality base
 for action research and analysis.
 
 The literature focuses on four main concepts: embedded systems
@@ -124,19 +123,18 @@ combines these concepts to gain platform for comparing different
 approaches to support the action research.
 
 Central literature revolves around Nix and multiple texts by Eelco
-Dostra are cited for illustrating the nuances of a Nix
-ecosystem. Other declarative approaches are discussed, by Endres
-et. al and Van der Burg \cite{van2010declarative,
-  endres2017declarative}. These approaches also contains comparison to
-imperative systems, which is the central approach in chapter
+Dolstra are cited for illustrating the nuances of a Nix
+ecosystem. Other declarative approaches are discussed by Endres
+et. al and Van der Burg \cite{van2010declarative, endres2017declarative}. These approaches also contain comparison to
+imperative systems, which is the central viewpoint in chapter
 \ref{imperative}. Combining cyber security with declarative approaches
 were discussed by Specht et. al and Kandoi and Artke
 \cite{specht2007analysis, kandoi2021operating}.
 
-Discussion from Ravi et. al and Fysarakis et. al discuss embedded security
+Discussion from Ravi et. al and Fysarakis et. al handle embedded security
 extensively \cite{ravi2004security, fysarakis2014embedded}. The
-approach is itself too broad for this thesis' scope, so
-only the most fitting approaches were selected for use.
+approaches itself  are too broad for this thesis' scope, so
+only the most fitting were selected for use.
 
 The most important literature to measure the security of a system is
 by Carin et al. and Hughes and Cybenko \cite{carin2008cybersecurity,
@@ -157,9 +155,8 @@ AND system*) was chosen to broaden the search to include articles
 which compare declarative and interactive systems.
 
 As security is a central theme in this thesis, the term "security" was
-included. Search was done on Google Scholar, and other useful material
-was handpicked, such as Nix manuals and wiki pages. Systems security
-and cyber security material is also included in the bibliography using
+included. Systems security
+and cyber security materials are also included in the bibliography using
 search statement ''systems security OR cyber security''. Separate search
 ''cia-triad'' and ''partial observable Markov chain'' AND
 ''cybersecurity'' were used to provide tangible meters for measuring
@@ -168,9 +165,7 @@ different metrics, term ''cyber security metric methodology'' was
 searched.
 
 For searching specific material about embedded systems, the search
-statement ''embedded AND security'' was used. As the need for embedded
-toolchains was needed, statement ''yocto AND buildroot'' was
-searched. All searches were done on Google Scholar platform.
+statement ''embedded AND security'' was used. All searches were done on Google Scholar platform.
 
 \subsection{Research questions} \label{resquest}
 
@@ -187,18 +182,18 @@ The research questions for this thesis are:
 
 Research question 1 is the most important and it traverses through
 themes of the whole thesis. The hypothesis is that traditional
-imperative embedded device fleets have problems which can be solved
-with the use of modern declarative systems. First, we aim to gain
-information from a specific scenario, presented in chapter
-\ref{architecture}, then in chapter \ref{analysis} the gained
+imperative embedded device fleets have problems that can be solved
+with the use of modern declarative systems. First we aim to gain
+information from a specific scenario presented in chapter
+\ref{architecture}. Then in chapter \ref{analysis} the gained
 information is analyzed and generalized as suitably as possible.
 
 Research question 2 brings up the human element; how can a system
-administrator use a new palette of features adequately to provide more
-secure system and research question 3 handles a situation where
-existing system should be replaced with a NixOS system. How this could
+administrator use a new palette of features adequately to provide a more
+secure system. Research question 3 handles a situation where
+an existing system should be replaced with a NixOS system. How this could
 be done securely without risks and preferably easily with existing
-tooling is answered in chapter \ref{architecture} section
+tooling, is answered in chapter \ref{architecture} section
 \ref{instnewdevices}. The next chapter compares imperative approaches
 to declarative approaches and provides insight for understanding the
 central differences, the emphasis being on how declarative systems can be
@@ -206,12 +201,12 @@ used to solve problems better than with imperative systems.
 
 \subsection{Data collection and analysis}
 
-Data collection is done with simulated red–blue team setup, where
-either team has a time frame where they must conduct a series of
+Data collection is done with simulated red–blue team setup, where both
+teams are provided by a time frame where they must conduct a series of
 tasks. These tasks are formalized as partially observable Markov chain
-parameters, and analysed with QuERIES methodology. This methodology is
+parameters, and analyzed with QuERIES methodology. This methodology is
 used to gain knowledge and make the system more reliant and better
 with multiple iterations. Chapter \ref{analysis} answers research
-question 1 and 2 and provides analysis for the reference
+questions 1 and 2 and provides analysis for the reference
 system. Research question 3 is answered in chapter \ref{architecture}
 section \ref{instnewdevices}.

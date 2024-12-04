@@ -61,7 +61,6 @@
 \renewcommand{\algorithmname}{\listingscaption}
 
 % The thesis starts here.
-
 \begin{comment}
 To better organize things, create a new tex file for each chapter
 and input it below.
@@ -71,161 +70,19 @@ underscores \_ in file names (may break hyperref).
 
 Good luck!
 \end{comment}
-
-\input{johdanto.tex}\input{research.tex}\input{imperative.tex}\input{embedded.tex}\input{architecture.tex} \input{securitystandpoints.tex} \input{analysis.tex} \input{further} \input{conclusion}
-
-%\input{file_name_of_chapter_x}
-%\input{file_name_of_chapter_y}
-
-% The thesis main content ends here.
-
+\input{johdanto.tex}
+\input{research.tex}
+\input{imperative.tex}
+\input{embedded.tex}
+\input{architecture.tex}
+\input{securitystandpoints.tex}
+\input{analysis.tex}
+\input{further}
+\input{conclusion}
 \printbibliography
-
 \begin{comment}
 Important! Create the appendix chapters with command \textbackslash appchapter\{some
 name\} instead of \textbackslash chapter\{some name\} for the automagic
 page counting to work!
 \end{comment}
-
-
-%\appchapter{Partially observable Markov decision process with R} \label{pomdpappenix}
-
-%% The following R code calculates the result score from the study in \ref{analysis}.
-
-%% \begin{verbatim}
-%% library("pomdp")
-
-%% CYBSEC_POMDP <- POMDP(
-%%     states = c("Idle", "Receiving media through MQTT", "Setting up SystemD services", "Starting Weston", "Displaying media", "Error state", "Partial loss of system", "Complete loss of system"),
-%%     actions = c("Monitor system", "Reboot system", "Update system", "Display media", "Recover from error", "Intercept MQTT messaging", "Compromise Github repository" ,"Gain physical access to the device", "Exploit vulnerabilities in display","Exploit vulnerabilities in SSH"),
-%%     observations = c("Normal operation", "Detected suspicious activity", "Detected system error", "Detected unusual media display", "Detected unauthorised access"),
-%%     transition_prob = list(
-%%         "Monitor system" = "uniform",
-%%         "Reboot system" = "uniform",
-%%         "Update system" = "uniform",
-%%         "Display media" = "uniform",
-%%         "Recover from error" = "uniform",
-%%         "Intercept MQTT messaging" = "uniform",
-%%         "Compromise Github repository" = "uniform",
-%%         "Gain physical access to the device" = "uniform",
-%%         "Exploit vulnerabilities in display" = "uniform",
-%%         "Exploit vulnerabilities in SSH" = "uniform"
-%%     ),
-%%     observation_prob = list(
-
-%%         "Monitor system" = "uniform",
-%%         "Reboot system" = "uniform",
-%%         "Update system" = "uniform",
-%%         "Display media" = "uniform",
-%%         "Recover from error" = "uniform",
-%%         "Intercept MQTT messaging" = "uniform",
-%%         "Compromise Github repository" = "uniform",
-%%         "Gain physical access to the device" = "uniform",
-%%         "Exploit vulnerabilities in display" = "uniform",
-%%         "Exploit vulnerabilities in SSH" = "uniform"
-%%         #"Normal operation" = "uniform",
-%%         #"Detected suspicious activity" = "uniform",
-%%         #"Detected system error " = matrix(c(0.85, 0.15, 0.15, 0.85), nrow = 2, byrow = TRUE),
-%%         #"Detected unusual media display" = matrix(c(0.85, 0.15, 0.15, 0.85), nrow = 2, byrow = TRUE),
-%%         #"Detected unauthorised access" = matrix(c(0.85, 0.15, 0.15, 0.85), nrow = 2, byrow = TRUE)
-%%     ),
-%%     reward = rbind(
-%%         R_("Monitor system",  "Idle", "*", "*", 10),
-%%         R_("Monitor system",  "Receiving media through MQTT", "*", "*", 10),
-%%         R_("Monitor system",  "Setting up SystemD services",  "*", "*", 10),
-%%         R_("Monitor system",  "Starting Weston", "*", "*", 10),
-%%         R_("Monitor system",  "Displaying media", "*", "*", 10),
-%%         R_("Monitor system",  "Error state", "*", "*", 10),
-%%         R_("Monitor system",  "Partial loss of system", "*", "*", 10),
-%%         R_("Monitor system",  "Complete loss of system", "*", "*", 10),
-
-%%         R_("Reboot system",  "Idle",  "*", "*", 10),
-%%         R_("Reboot system", "Receiving media through MQTT", "*", "*", 10),
-%%         R_("Reboot system", "Setting up SystemD services",  "*", "*", 10),
-%%         R_("Reboot system", "Starting Weston", "*", "*", 10),
-%%         R_("Reboot system", "Displaying media", "*", "*", 10),
-%%         R_("Reboot system", "Error state", "*", "*", 10),
-%%         R_("Reboot system", "Partial loss of system", "*", "*", 10),
-%%         R_("Reboot system", "Complete loss of system", "*", "*", 10),
-
-%%         R_("Update system",  "Idle",  "*", "*", 10),
-%%         R_("Update system",  "Receiving media through MQTT", "*", "*", 10),
-%%         R_("Update system", "Setting up SystemD services",  "*", "*", 10),
-%%         R_("Update system",  "Starting Weston", "*", "*", 10),
-%%         R_("Update system",  "Displaying media", "*", "*", 10),
-%%         R_("Update system",  "Error state", "*", "*", 10),
-%%         R_("Update system",  "Partial loss of system", "*", "*", 10),
-%%         R_("Update system",  "Complete loss of system", "*", "*", 10),
-
-%%         R_("Display media", "Idle", "*", "*", 10),
-%%         R_("Display media", "Receiving media through MQTT", "*", "*", 10),
-%%         R_("Display media","Setting up SystemD services",  "*", "*", 10),
-%%         R_("Display media","Starting Weston", "*", "*", 10),
-%%         R_("Display media","Displaying media", "*", "*", 10),
-%%         R_("Display media","Error state", "*", "*", 10),
-%%         R_("Display media","Partial loss of system", "*", "*", 10),
-%%         R_("Display media","Complete loss of system", "*", "*", 10),
-
-%%         R_("Recover from error",  "Idle", "*", "*", 10),
-%%         R_("Recover from error", "Receiving media through MQTT", "*", "*", 10),
-%%         R_("Recover from error", "Setting up SystemD services",  "*", "*", 10),
-%%         R_("Recover from error", "Starting Weston", "*", "*", 10),
-%%         R_("Recover from error", "Displaying media", "*", "*", 10),
-%%         R_("Recover from error", "Error state", "*", "*", 10),
-%%         R_("Recover from error", "Partial loss of system", "*", "*", 10),
-%%         R_("Recover from error", "Complete loss of system", "*", "*", 10),
-
-%%         R_("Intercept MQTT messaging", "Idle", "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Receiving media through MQTT", "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Setting up SystemD services",  "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Starting Weston", "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Displaying media", "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Error state", "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Partial loss of system", "*", "*", -100),
-%%         R_("Intercept MQTT messaging","Complete loss of system", "*", "*", -100),
-
-%%         R_("Compromise Github repository", "Idle", "*", "*", -100),
-%%         R_("Compromise Github repository", "Receiving media through MQTT", "*", "*", -100),
-%%         R_("Compromise Github repository", "Setting up SystemD services",  "*", "*", -100),
-%%         R_("Compromise Github repository", "Starting Weston", "*", "*", -100),
-%%         R_("Compromise Github repository", "Displaying media", "*", "*", -100),
-%%         R_("Compromise Github repository", "Error state", "*", "*", -100),
-%%         R_("Compromise Github repository", "Partial loss of system", "*", "*", -100),
-%%         R_("Compromise Github repository", "Complete loss of system", "*", "*", -100),
-
-%%         R_("Gain physical access to the device", "Idle", "*", "*", -100),
-%%         R_("Gain physical access to the device", "Receiving media through MQTT", "*", "*", -100),
-%%         R_("Gain physical access to the device", "Setting up SystemD services",  "*", "*", -100),
-%%         R_("Gain physical access to the device", "Starting Weston", "*", "*", -100),
-%%         R_("Gain physical access to the device", "Displaying media", "*", "*", -100),
-%%         R_("Gain physical access to the device", "Error state", "*", "*", -100),
-%%         R_("Gain physical access to the device", "Partial loss of system", "*", "*", -100),
-%%         R_("Gain physical access to the device", "Complete loss of system", "*", "*", -100),
-
-%%         R_("Exploit vulnerabilities in display", "Idle", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Receiving media through MQTT", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Setting up SystemD services",  "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Starting Weston", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Displaying media", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Error state", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Partial loss of system", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in display","Complete loss of system", "*", "*", -100),
-
-%%         R_("Exploit vulnerabilities in SSH", "Idle", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Receiving media through MQTT", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Setting up SystemD services",  "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Starting Weston", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Displaying media", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Error state", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Partial loss of system", "*", "*", -100),
-%%         R_("Exploit vulnerabilities in SSH","Complete loss of system", "*", "*", -100)
-%%     ),
-%%     start = "uniform",
-%%     discount = 1.0,
-%%     name = "CYBSEC Problem POMDP"
-%% )
-%% sol <- solve_POMDP(CYBSEC_POMDP)
-%% sol
-%% \end{verbatim}
-
 \end{document}
