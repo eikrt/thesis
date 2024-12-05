@@ -1,41 +1,40 @@
 \chapter{Applying QuERIES} \label{analysis}
 
 As mentioned in the previous chapter section \ref{queries}, the
-QuERIES methodology is used in this chapters analysis. In table
-\ref{pomdbtable} is listed all the possible states (S), defender
+QuERIES methodology is used in this chapter's analysis. Table
+\ref{pomdbtable} consists of all the possible states (S), defender
 actions (D), attacker actions (A) and observations (O). Then, every
 transition from state to another state is calculated as a
 probability. Carin et. al use an economic model to estimate POMDP
 parameters \cite{carin2008cybersecurity}. We deviate from the
-methodology, and calculate the parameters as transition probabilities
+methodology and calculate the parameters as transition probabilities
 from each state for given observation, as it provides us better
 construction of attack graph and gives more specific data.
 
-QuERIES as a model is described as multidisciplinary, as it takes
+QuERIES as a model is described as multidisciplinary as it takes
 inspiration from traditional red-blue team approaches and mathematical
 models to economic models \cite{hughes2013quantitative}. In other
-literature, particularly by Bojanc and Jerman-Blažič, it's argued that
+literature, particularly by Bojanc and Jerman-Blažič, it is argued that
 modeling cybersecurity with economic models can provide substance for
 minimizing risks organization-wide \cite{jerman2008economic}. In this
 chapter, we will apply the model and discuss the implications in both
-security and economic standpoints. The main focus however is on how
-using QuERIES, we can improve the security of the architecture.
+security and economic standpoints. However, the main focus is on how we can improve the security of the architecture by using QuERIES. 
 
 \section{Modeling the problem and quantifying the models} \label{modprob}
 
-The example project of this thesis is an image showing architecture that
-could be used e.g for advertisement, public transport timetables or
-practically anywhere where static media should be presented. The
-results if an an intruder should gain unauthorised access, would be
+The project example of this thesis is an image showing architecture
+that could be used e.g for advertisement, public transport timetables
+or practically anywhere where static media should be presented. If an
+intruder should gain unauthorised access, the results would be
 anywhere from displaying explicit imagery to succeeding in displaying
 propaganda or other unwanted content. Unauthorised access would have a
 negative economic effect for the service provider, as every
-organisation displaying media want to remain credible among
+organisation displaying media wants to remain credible among
 stakeholders.
 
-The attack surface of the example project focuses on physical access
+The attack surface of the example focuses on physical access
 and vulnerabilities in remote connections. With MQTT-messaging, SSH
-and display protocols, internal and external messaging takes place.
+and display protocols, internal and external messaging, takes place.
 
 As mentioned in chapter \ref{securitystandpoints} section
 \ref{measuringsecurity} subsection \ref{queriesasmethodology}, the
@@ -47,22 +46,22 @@ appropriately for the scenario.
 \section{Modeling the possible attacks}
 
 In this section, the possible attacks are modeled using an attack
-graph, depicted as a POMDP, which is a modeling tool presented
-earlier. In the original paper where QuERIES is presented, an
-important parameter is the time to reverse-engineer the system without
-prior information about the protection scheme
+graph, depicted as a POMDP which is a modeling tool presented
+earlier. In the original paper where QuERIES is presented, the time to
+reverse-engineer the system without prior information about the
+protection sceme is an important parameter
 \cite{carin2008cybersecurity}. Our approach is different; the attacks
 are considered as successful, if they gain further leverage in the
-attack graph, e.g transitioning state ''idle'' to ''partial loss of
-system''. This is to maintain cohesion in the study, as we don't need
-to define what it means to ''reverse engineer'' the system. In our 
-case, system configurations are publicly available as an open
-source project, thus the information of the system being available
-also to the attacker.
+attack graph e.g transitioning from state ''idle'' to ''partial loss of
+system''. This is to maintain cohesion in the study, for we don't need
+to define what it means to ''reverse engineer'' the system. In our
+case, the system configurations are publicly available as an open source
+project, thus the information of the system being available also to
+the attacker.
 
 In table \ref{pomdbtable}, the first column describes states the
-system can be in. The second and the third column state defensive
-actions, and observations of the system. The fourth column contains
+system can be in. The second and the third columns state defensive
+actions and observations of the system. The fourth column contains a
 template of the attacks that could be conducted. After forming the
 attack graph depicted in the table, the attacker tries to breach the
 system, leveraging through the A0-A4 column. The probabilities are
@@ -98,14 +97,14 @@ script with library ''pomdp'' was used.
 \end{table}
 \end{landscape}
 
-A weight of 1 was used for positive results, and -100, if something
+A weight of 1 was used for positive results and -100 was used if something
 was to be compromised. This weight distribution is due to the fact
-that even if blue team succeeds most of time, the results of failure
-are much worse than a succeeding result from the blue team. The
+that even if blue team succeeds most of time, the effect of failure
+is more drastic than a succeeding result. The
 discount constant influences the priority of immediate
 vs. future rewards \cite{mcabeeMarkov}. Our case signifies the
 importance of both, so value of 0.75 was used. Note that the maximum
-reward value is 4, and the minimum is -400.
+reward value is 4 and the minimum is -400.
 
 \section{Using the results} \label{usingtheresults}
 
@@ -113,14 +112,14 @@ The reward score is taken in account on how
 successful or unsuccessful the setup is from a security perspective. The
 score itself is rather abstract; its main function is to demonstrate
 the \textit{overall security} of the system. In short, negative
-numbers imply there are flaws in security, and positive numbers mean
+numbers imply that there are flaws in security and positive numbers mean,
 that the system is more secure
 \cite{mcabeeMarkov}.
 
-As stated by Hughes and Cybenko, using the results means evaluating
-the gained results to decide if proposed protections are adequate for
+As stated by Hughes et al. using the results means evaluating
+the gained results to decide, if proposed protections are adequate for
 our means \cite{hughes2013quantitative}. The QuERIES model was
-iterated 2 times, and the results were placed in the table \ref{iterationtable}.
+iterated 2 times and the results were placed in the table \ref{iterationtable}.
 
 \begin{table}[b!]
 \centering
@@ -133,16 +132,16 @@ iterated 2 times, and the results were placed in the table \ref{iterationtable}.
 \end{table}
 
 The reward function in the first iteration is calculated with the
-mentioned script. The second value is calculated
-as the maximum accumulated points; the highest value is 4 points
-without any discount, as the red team failed to provide any results
-for the second iteration. This is partially due to time limit, as in
-the test set up there was only one attacker with very limited time. It
-can be argued that with more time, it would have been possible for the
-attacker to breach.
+mentioned script. The second value is calculated as the maximum
+accumulated points; the highest value is 4 points without any
+discount, as the red team failed to provide any results for the second
+iteration. This is partially due to time limit, as there was only one
+attacker with very limited time in the test setup. It can be argued,
+that with more time, it would have been possible for the attacker to
+breach.
 
 As seen, the reward function is growing as the proposed protections
-are applied in both iterations. In the figure \ref{timetobreach} we can see that the time to breach peaks in the
+are applied in both iterations. In the figure \ref{timetobreach} we can see, that the time to breach peaks in the
 first hour.
 
 \begin{figure}[t!]
@@ -151,23 +150,23 @@ first hour.
 \label{timetobreach}
 \end{figure}
 
-The figure \ref{timetobreach} has similar
+The figure \ref{timetobreach} has a similar
 shape as the figure in the paper by Carin et. al, meaning that attacks
 in their initial phase succeed more frequently \cite{carin2008cybersecurity}. The figure \ref{openandclosed} is
 used to decide, when is the optimal time to stop the attacks from the
-attacker perspective. We use this also to reflect the cost estimate of
+attacker's perspective. We use this as well to reflect the cost estimate of
 the blue team.
 
-This economic model can be used to generalize risk in this kind of
-situations. In the graph \ref{openandclosed} we can see that
-the cost for the attacker peaks at about 6 hours using closed algorithm, and
-at 3 hours using open algorithm. Open loop algorithm means that the cost
+This economic model can be used to generalize risk in these kinds of
+situations. In the graph \ref{openandclosed} we can see, that the cost
+for the attacker peaks at about 6 hours using closed algorithm and at
+3 hours using open algorithm. Open loop algorithm means, that the cost
 estimate never evaluates feedback from a system
 \cite{bars2006theory}. Closed loop behaves in an opposite manner; it
 constantly modifies its behaviour based on the feedback it gets
-\cite{bars2006theory}. In our case, the values of cost using open
-algorithm are the values as is, and using the closed algorithm, the
-value deflate by 0.1 every hour. 
+\cite{bars2006theory}. In our case, the cost values using the open
+algorithm remain unchanged, while with the closed algorithm, the value
+decreases by 0.1 every hour.
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{../graph/cost_graph.svg}}
@@ -180,23 +179,22 @@ The blue team should be aware that in the first QuERIES iteration,
 most of the breaches appeared in the first half of the time
 segment. The blue team can use this information to estimate the future
 distribution of breaches. In our case, the second iteration provided
-no breaches, but it can be argued that in different experimental
-design, the attacker could have succeeded. The results don't mean
-that the system is completely secure; instead we can use the first
-iterations' estimates to decide, how could the blue team measures be
-improved in such systems' future. The blue team measures depicted in
-figure \ref{pomdbtable} didn't have the planned effect to protect the
-system. 
+no breaches, but it can be argued, that in different experimental
+design, the attacker could have succeeded. The results don't mean that
+the system is completely secure; instead we can use the first
+iteration's estimates to decide on how could the blue team be improved
+in the future. The blue team measures depicted in figure
+\ref{pomdbtable} didn't have the planned effect to protect the system.
 
 We can see that with closed loop algorithm, the attacker can gain more
 results with worse cost tradeoff, but with open loop, it gets
-immediate results with cheap cost. This could be important for the
-holder of the intellectual property, as it must protect itself against
-attackers using both algorithms. In our case, where the potential
-threats are e.g hacktivist groups, the cost estimate doesn't matter as
-much, as it's important to be aware that an attacker who 
-doesn't have economic interests, could have practically unlimited time
-to try to breach the system.
+immediate results with a cheap cost. This could be important for the
+holder of the intellectual property as it must protect itself against
+attackers using both algorithms. In our case, where potential threats
+include hacktivist groups, the cost estimate is less significant. What
+matters more is the understanding that an attacker with no economic
+interests could have virtually unlimited time to attempt a system
+breach.
 
 \subsection{Improving the system using Nix}\label{improvingwithnix}
 
@@ -206,9 +204,8 @@ SSH to key based authentication. As we can see, the QuERIES output
 provided concrete results on what are the weak points of the system.
 
 As an example, the exposed USB-ports of the system were found to be a
-problem, due to the possibility of infecting the system with direct
-control to the system. This can be mitigated easily by modifying the
-client devices configuration.nix, with the following changes:
+problem due to the possibility of infecting the system. This can be mitigated easily by modifying the
+client devices' configuration.nix with the following changes:
 
 \begin{figure}[H]
 \begin{lstlisting} 
@@ -232,10 +229,10 @@ that Nix could be used to rapidly address arising security
 issues. This supports the argument presented in chapter
 \ref{imperative}, that through updatability the security could be
 improved. This highlights the scalability of Nix systems; it doesn't
-matter if we have one or thousands of devices, updating them is
+matter if we have one or thousands of devices – updating them is
 equally simple. A huge contrast between imperative and declarative
 systems is found, as imperative systems would need linear
-administration time in relation with the number of devices. The
+administration time in relation with the number of devices in the worst case. The
 configuration is only an example to mitigate hardware access attack
 vectors, as there are many more ways for the attacker to leverage the
 access, e.g by replacing the whole device, depending on the resources
@@ -243,19 +240,18 @@ of the attacker.
 
 \subsection{Issues with applied methodology} \label{issues}
 
-One issue found using QuERIES with POMDP was that applying the reward
+One issue found using QuERIES with POMDP was, that applying the reward
 functions in our case is in rather arbitrary. We assumed, that for
-positive results, the reward function is defined as 1, and for the
+positive results the reward function is defined as 1 and for the
 negative outcomes as -100. This is due to the negative results deemed
 as catastrophic and the positive results being slightly positive. The
 choice for both parameters could have been any integer, but the issue
-is that it demands ''gut-feeling'' of the author to select the
+is, that it demands a ''gut-feeling'' of the author to select the
 appropriate parameters. This is due to the deviation from the QuERIES,
-where the POMDP parameters were applied from the economic model,
-working as an estimate. In our case, a trade-off to obtain
-specificity, forced us to rely on set reward and discount
+where the POMDP parameters weren't applied from the economic model. In our case, a trade-off to obtain
+specificity forced us to rely on the set reward and discount
 values. Using another model, for example the one presented by Wang
-et. al using hidden Markov models would in retrospective provide us a
+et. al using hidden Markov models, would in retrospective provide us a
 more specific layout of the attack graph, similar on how we applied
 the QuERIES methodology \cite{wang2010framework}. The
 combination of both hidden Markov models and QuERIES could possibly be a ''best
@@ -264,29 +260,29 @@ of both worlds'' solution.
 One remark using POMDP is that it produces very generalized
 output. This is why we use methodologies such as QuERIES to improve
 the system, POMDP being just one component. Other benefit from using
-POMDP is that it provides us concise attack graph, and it can be argued that
+POMDP is that it provides us a concise attack graph and it can be argued, that
 using the POMDP calculations may even be redundant. In POMDP, negative
 rewards signify that the system has issues, and positive meaning that
-the system is more secure \cite{mcabeeMarkov}. More ergonomic approach
+the system is more secure \cite{mcabeeMarkov}. A more ergonomic approach
 would be calculating rewards without positive outcomes, due to them
 possibly shadowing the most critical issues.
 
 \section{Generalizing the results}
 
 The results of this chapter could be generalized to a more complex
-setting, using a similar methodology. The POMDP model scales well, if
-more parameters would be supplied. This study proves that while
-measuring cybersecurity is difficult, remaining in tight constraints
-we can get adequate estimates for applying economic models for the red
-team, further projecting the risk vs. reward.
-
-Carin et. al \cite{carin2008cybersecurity} argue that QuERIES can be
-applied in both public and private sectors to help to improve the
-security of both software and hardware. I argue that a hand-tailored
+setting, using a similar methodology. The POMDP would scale well, if
+more parameters were supplied. This study demonstrates that although
+measuring cybersecurity is challenging, staying within strict
+constraints allows for adequate estimates that can be used to apply
+economic models for the red team, further analyzing the risk versus
+reward.
+ 
+Carin et. al argue that QuERIES can be
+applied in both public and private sectors to help improve the
+security of both the software and hardware \cite{carin2008cybersecurity}. I argue, that a hand-tailored
 application of QuERIES can be used as a powerful model that is
 ergonomic to use in the right hands. However, the use of complex
-applied mathematic models require proficency in both cybersecurity and
+applied mathematic models requires proficency in both cybersecurity and
 mathematics, which can be hard to achieve in a real organizational
-setting. This is why I propose in the next chapter that a simpler,
-pessimistic and more concise model would be easier to reach for an
+setting. This is why I propose in the next chapter, that a simpler, more pessimistic and more concise model would be easier to reach for an
 organization.

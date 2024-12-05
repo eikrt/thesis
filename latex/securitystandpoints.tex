@@ -1,14 +1,14 @@
 \chapter{Security standpoints} \label{securitystandpoints}
 
-Security is inherently challenging to measure adequately, due to its
+Security is inherently challenging to measure adequately due to its
 complex and chaotic nature. Qualitative analysis may also result in
 subjective output. As such, no unambiguous standard of measuring
 security can be provided \cite{wang2005information}. To overcome these
-challenges, several metric systems are compared, and the one that
+challenges, several metric systems are compared and the one that
 provides the most precise answers specifically for this thesis' cause
 is chosen.
 
-In this chapter, selection process for meters, which in part are used
+In this chapter, a selection process for meters which in part are used
 for gaining quantified data, is presented.  When finally quantitative
 metrics are gained with the help of two paradigms, GQM (goal, question, metric) and
 specifically its superset SMART, a red–blue team layout is erected
@@ -18,36 +18,35 @@ thesis. SMART is opened more in the section \ref{choosingsecmet}.
 
 Using an exact metric system is important, as this this thesis'
 emphasis is on measuring the security of a declarative approach. The
-presented architecture in the previous chapter works as a example on
+presented architecture in the previous chapter works as an example on
 how a declarative system can be improved by reconfiguration, utilizing
 a red-blue team setup.
 
 \section{A brief history of security metrics}
 
 The history of security metrics begin from Trusted Computer System
-Evaluation Criteria (TCSEC), also known as the Orange Book from 1983
-which popularized many terms still in use today, such as
+Evaluation Criteria (TCSEC) also known as the Orange Book from 1983,
+which popularized many terms still in use today such as
 identification, authentication and
 authorization. \cite{bayuk2013measuring}
 
-When US National Bureau of Standards (NBS), the organization later
-formed as the National Institute of Standards and Technology (NIST)
-tried to standardize security, in the 1990s it became evident that a
-system should adhere too strongly to the definitions of the Orange
-Book and the follow up project, Common Criteria to be used
-accordingly. Later, multiple standards became popularized, e.g System
-Security Engineering Capability Maturing Model (SSE-CMM), which can be
-used as a sort of checklist from system design from the ground
-up. \cite{bayuk2013measuring}
+In the 1990s, when the US National Bureau of Standards (NBS), later
+known as the National Institute of Standards and Technology (NIST),
+tried to standardize security, it became clear that systems needed to
+adhere closely to the definitions outlined in the Orange Book and the
+subsequent Common Criteria project. Over time, various other standards
+gained popularity, such as the System Security Engineering Capability
+Maturity Model (SSE-CMM), which serves as a checklist for system
+design from the ground up. \cite{bayuk2013measuring}
 
-Later it was observed that systems design is only a part of a
-successful security strategy, and operational practices played a
-bigger role than expected, something to be addressed in 1995 NIST
-Computer Security Handbook, which has evolved to provide ground to
+Later it was observed, that systems design is only a part of a
+successful security strategy and operational practices played a
+bigger role than expected. This was something to be addressed in 1995 NIST
+Computer Security Handbook which evolved to provide ground to
 combat modern issues. \cite{bayuk2013measuring}
 
 As metrics can be used as a tool for decision making, the strategical
-approach of the mentioned publishes is important. It's noteworthy that
+approach of the mentioned publishes is important. It is noteworthy, that
 the strategies (the Orange Book, SSE-CMM, etc.) begin to measure
 security by compliance to defined ratings. Later in 2000s more
 mathematical approaches were taken, one which is delved deeper in
@@ -55,37 +54,37 @@ section \ref{whyqueries}. \cite{bayuk2013measuring}
 
 \section{Choosing security metrics} \label{choosingsecmet}
 
-Security is something that is challenging to measure due to it's
+Security is something that is challenging to measure due to its
 complex nature. A GQM (Goal, question, metric) paradigm helps to
-choose appropriate metrics: first there must be a set goal to a
+choose appropriate metrics: first there must be a set goal to an
 organisation, then a formulated question for each goal. These answers
 are then reflected to gain the desired metric. This strategical
-approach is perhaps too broad for this thesis' scope, but aligns well
-with an usual organisational strategy. \cite{papazov2019cybersecurity}
+approach is perhaps too broad for this thesis' scope, but it aligns well
+with a usual organisational strategy. \cite{papazov2019cybersecurity}
 
 A more appropriate tool for this task would be SMART – a set of inputs
 to evaluate meter systems' suitability. These inputs describe how
 specific, measurable, attainable, relevant and timely the methodology
 is \cite{payne2006guide}.
 
-In cyber security, being specific is very important and a common issue
-with security meters is that they either cover too many topics and are
-without precise definitions, or they are too specific to be
-generalized to broader scope of situations
-\cite{wang2005information}. This thesis' results are important to be
-measurable, as the research orbits around system states, and the
-research aims to measure with what outputs do the state transitions
-resolve to.
+In cyber security, being specific is very important. A common issue
+with security meters is, that they either cover too many topics and
+are without precise definitions or they are too specific to be
+generalized to a broader scope of situations
+\cite{wang2005information}. The results of this thesis are crucial to
+measure, as the research focuses on system states and aims to assess
+the outputs produced by state transitions.
 
-To be attainable is relevant to this context for the reason that a
-thesis has different scope than a big organization, and the
-proposed setup has to go through a check on the metrics' goals
-achievabilities. Relevance has to do with risk assessment: how important
-it's to measure something related to it's value. Risk assessment is
-gone through thoroughly in \ref{analysis} section
-\ref{modprob}. Time-bounding signifies the importance of time as a
-meter; a system that can be penetrated in a minute can definitely be
-seen as weaker than a system that takes years to be compromised.
+The concept of attainability is important in this context because this
+thesis has a narrower scope compared to a large
+organization. Therefore, the proposed setup must be evaluated to
+ensure that the metrics' goals are achievable. Relevance has to do
+with risk assessment and how important it is to measure something related
+to it's value. Risk assessment is explored in detail  in chapter
+\ref{analysis} section \ref{modprob}. Time-bounding signifies the
+importance of time as a meter; a system that can be penetrated in a
+minute can certainly be seen as weaker than a system that takes years
+to be compromised.
 
 \section{Measuring security} \label{measuringsecurity}
 
@@ -94,38 +93,37 @@ through literature review for cybersecurity are discussed, and
 potential methodologies are compared to gain the most adequate metric
 system for usage through SMART process \cite{payne2006guide}.
 
-Security metrics can be divided to address four separate themes:
-\textbf{System vulnerabilities}; measuring vulnerabilities can be
-applied to user, interface-induced, password, and software
-vulnerabilities. Users are always susceptible to e.g phishing attacks
-or malware infection, where a user of an arbitrary system is the
-definitive attack vector. Interface-induced vulnerabilities refer to
-attack vectors related to open ports and
-endpoints. \cite{pendleton2016survey}
+Security metrics can be categorized into four themes:
+\textbf{system vulnerabilities}; measuring vulnerabilities can be
+applied to user-related, interface-induced, password, and software
+vulnerabilities. Users are constantly at risk of threats such as
+phishing attacks or malware infections, where the user of any system
+becomes the primary attack vector. Interface-induced vulnerabilities refer to attack vectors associated with open ports
+and endpoints. \cite{pendleton2016survey}
 
-Password vulnerabilities refer to situations where password can be
-computationally cracked. This is relatively simple to measure, as it
-can be estimated how much time it takes to crack a password, or with
-the use of statistical password guessability. Software vulnerability
-on the other hand is a very usual way for a breach to take
-place. This kind of vulnerabilities can be measured, thus also
-estimated with the help of exploitations in the past. The
-essential metric is the time to patch a software vulnerability. \cite{pendleton2016survey}
+Password vulnerabilities refer to instances where a password can be
+cracked through computational methods. This is fairly easy to measure,
+as it is possible to estimate the time required to crack a password or
+assess its vulnerability using statistical password
+guessability. Software vulnerabilities are a common cause of security
+breaches. These vulnerabilities can be measured and estimated based on
+past exploitations. A key metric in this context is the time taken to
+patch a software vulnerability. \cite{pendleton2016survey}
 
-\textbf{Defense} measures can be applied to strength of reactive,
-preventive proactive and overall defenses. Reactive measures include
-blacklisting, a lightweight mechanism to prevent e.g a botnet to harm
+\textbf{Defense} measures can be applied to strengthen reactive,
+preventive, proactive and overall defenses. Reactive measures include
+blacklisting which is a lightweight mechanism to prevent e.g for preventing botnet to harm
 the protected system by blacklisting IP-addresses related to the
-botnet. For measuring defence, the reaction time is essential, and
-most importantly, the gained meter to measure preventive
-defense. Blacklisting can also be used as preventive and proactive
+botnet. For measuring defence, the reaction time is essential and
+most importantly, it is a gained meter to measure preventive
+defense. Blacklisting can also be used as a preventive and a proactive
 measure, as a pre-filled blacklist can be used with desired
 parameters. \cite{pendleton2016survey, ramos2017model}
 
 Overall defenses can be measured with the combination of all defensive
 measures and with the use of penetration testing in a red–blue team
 setup. Penetration testing aims to gain a result, also known as
-penetration resistance, which is a meter, indicating cost or time that
+penetration resistance, which is a meter indicating cost or time that
 the red team must spend in case of a successful system
 compromisal. \cite{pendleton2016survey, ramos2017model}
 
@@ -133,62 +131,60 @@ compromisal. \cite{pendleton2016survey, ramos2017model}
 perspectives: lifetime of zero-day vulnerability and the number of
 nodes that are compromised as a result. Malware spreading can be
 traced with the parameter infection rate, which is defined as infected
-node per a time unit. Attack evasion is measured using either
-obfuscation prevalence metric, or structural complexity metric which
-provide information on obfuscating gained samples e.g by encrypting,
-or the target system's complexity measured by
-runtime. \cite{pendleton2016survey, ramos2017model}
+node per a time unit. Attack evasion is assessed using either the
+obfuscation prevalence metric or the structural complexity
+metric. These metrics offer insights into the obfuscation of acquired
+samples, such as through encryption, or the complexity of the target
+system, which is measured by its runtime. \cite{pendleton2016survey,  ramos2017model}
 
-\textbf{Situations}, which can relate to security state, security
-incidents and security investments. Security state has multiple
-parameters, including incident rate and blocking rate. Security
-investments on the other hand measure the budget percentage funneled
-towards security, and the return of such
-investment. \cite{pendleton2016survey}
+\textbf{Situations} can refer to the security state, security
+incidents, and security investments. The security state encompasses
+various parameters, such as the incident rate and the blocking
+rate. Security investments,  measure the percentage
+of the budget allocated to security and the return on those
+investments. \cite{pendleton2016survey}
 
 \section{Methodologies in comparison} \label{whyqueries}
 
-Today, there exists cybersecurity metrics based on quantified
-mathematical models, which are prevalent for this thesis. Three
+Cybersecurity metrics based on quantified
+mathematical models, which are prevalent for this thesis exist today. Three
 different methodologies are discussed, and one is picked for measuring
 the security of this thesis' architecture implementation. All the following metric
-systems are \textbf{measurable}, but some fit better especially
-according to \textbf{time-related} and \textbf{relevance} axes.
+systems are \textbf{measurable}. However, some fit better in relation with \textbf{time-related} and \textbf{relevance} axes.
 
 The literature review provided three central methodologies from different perspectives. Complex mathematical models
 presented by Alshammari et al. are too broad
-\cite{alshammari2009security}. This thesis' scope is limited, and this
-methodology would fit better a wider cyber security setting.
+\cite{alshammari2009security}. This thesis' scope is limited and this
+methodology would fit better in a wider cyber security setting.
 
-A methodology based on object-oriented thinking, followed by
-UML-graphs is adequate in many contexts, but as stated in the paper
-this measurement the methodology is used to compare similar
-alternative designs. \cite{alshammari2009security}. As it has been
-stated, this thesis focus isn't comparative, as all the critical
-comparison has already done in chapter \ref{imperative}.
+A methodology based on object-oriented thinking and UML diagrams is
+suitable in many contexts. However, as mentioned in the paper, this
+measurement methodology is used to compare similar alternative designs
+\cite{alshammari2009security}. As noted, the focus of this thesis is
+not comparative, since all critical comparisons have already been made
+in chapter \ref{imperative}.
 
-Hidden Markov models presented by Wang et al. are close what is the
-end goal of the research is in this thesis
-\cite{wang2010framework}. The time-related aspect would be
-satisfactory, as the hidden Markov model handles a time
-parameter. The problem, however is regarding the generality of the
-methodology, and something more specific would be a better
-fit for this thesis. We however use a similar approach as what Wang et
-al. use for calculating the POMDP parameters.
+The Hidden Markov models presented by Wang et al. are closely aligned
+with the end goal of this thesis \cite{wang2010framework}. The
+time-related aspect is suitable, as the Hidden Markov model
+incorporates a time parameter. However, the issue lies in the
+generality of the methodology, and a more specific approach would be
+better suited for this thesis. Nevertheless, we apply a similar
+approach to that of Wang et al. for calculating the POMDP parameters.
 
-The last and the most fitting methodology would be one presented in
-papers by Carin et al and Hughes, Jeff and Cybenko
-\cite{carin2008cybersecurity, hughes2013quantitative}. The
-QuERIES methodology is delved deeper in section \ref{queries}, and
-its time-related, relevance and specific
-axes are a near-perfect match for our goals as the model itself is
-relatively simple and provides shifting probabilities from states,
-which serves this thesis' study design well.
+The last and the most fitting methodology would be the one presented
+in papers by Carin et al. and Hughes et al.
+\cite{carin2008cybersecurity, hughes2013quantitative}. The QuERIES
+methodology is delved deeper in section \ref{querieschapter} and its
+time-related, relevance and specific axes are a near-perfect match for
+our goals as the model itself is relatively simple and provides
+shifting probabilities from states, which serves this thesis' study
+design well.
 
 \section{Quantitative metrics} \label{quantitativemetrics}
 
-Selecting carefully a metrics system includes asserting our goals and
-questions. Our goal is to discover this thesis' architecture proposals
+Carefully selecting a metrics system includes asserting our goals and
+questions. Our goal is to discover this thesis' architecture proposals'
 tenacity in a simulated setting. The main goals reside in this thesis'
 two research questions:
 
@@ -204,7 +200,7 @@ The proposed architecture solution presented in chapter
 \ref{architecture} will go through a red and blue team inspection,
 complying with the QuERIES model in chapter \ref{analysis}.
 
-\subsection{QuERIES} \label{queries}
+\subsection{QuERIES} \label{querieschapter}
 QuERIES model consists of number of steps that
 
 \begin{enumerate}
@@ -219,20 +215,20 @@ QuERIES model consists of number of steps that
   
 \end{enumerate}
 
-First, risks are assessed of the attack surface due as a blue team
-task. It's very important for blue team to know what are the most
-critical points of the attack surface, and it's also used as the base
-for quantitative analysis. Value of the intrusion can also be used for
-the reward model for analysis. As seen in figure \ref{queries}, the
-methodology is applied \textit{iteratively}, i.e the steps are
-repeated as many times as needed for the system to be secure.
+First, the blue teams' task contains the risk assessment of the attack
+surface. It is particularly important for the blue team to acknowledge
+the most crucial points of the attack surface, that is also used as
+the base for quantitative analysis. As seen in figure
+\ref{queries}, the methodology is applied \textit{iteratively}, i.e
+the steps are repeated as many times as needed for the system to be
+secure.
 
 Modeling the possible attacks is a task for the red team – by
-constructing an attack graph, the opposing forces have a plan, which
+constructing an attack graph, the opposing forces have a plan which
 can be used as a template for analysis. In this thesis, the models are quantified with the use of time
-framing. Both teams have limited amount of time to conduct their
-tasks, and probability for succeeding a certain task is calculated
-with formula
+framing. Both teams have a limited amount of time to conduct their
+tasks and the probability for succeeding a certain task is calculated
+with the following formula
 
 \[ \frac{t_e}{t_t} \]
 
@@ -248,57 +244,57 @@ that can be used which is the same for all tasks.
 \subsection{QuERIES as a central methodology} \label{queriesasmethodology}
 
 QuERIES draws inspiration from computer science, game theory, control
-theory, and economics, thus is a complex answer to a complex
-question. It is stated that it can be used as an alternative to
-popular methodologies such as red teaming or black-hat analysis used
+theory and economics, thus is a complex answer to a complex
+question. It is stated, that it can be used as an alternative to
+popular methodologies such as red teaming or black-hat analysis, used
 commonly in risk-assessment. \cite{carin2008cybersecurity}
 
 QuERIES is proposed to have potentially significant usage in DoD
-(Department of Defense) and in private sector
+(Department of Defense) and in the private sector
 \cite{carin2008cybersecurity}. Initial testing of QuERIES in
-small-scale, realistic scenarios presented by Carin et al. suggest
-that the methodology can in fact be used as to improve risk-assessment
+small-scale and realistic scenarios presented by Carin et al. suggest
+that the methodology can in fact be used as to improve risk-assessment of
 more complex settings \cite{carin2008cybersecurity}. This thesis
 follows similar steps: first the QuERIES methodology is used to assess
-risks and then they are generalized with strict constraints in mind.
+risks followed by generalization with strict constraints in mind.
 
-As stated by Hughes and Cybenko the result of QuERIES isn't binary:
-the attacker must think about the most optimal timeframe to stop the
+As stated by Hughes et al. the result of QuERIES isn't binary: the
+attacker must think about the most optimal timeframe to stop the
 operation \cite{hughes2013quantitative}. The strategy uses
-\textbf{open} and \textbf{closed} loop decision algorithm for deciding
-when to stop trying. Closed loop decision algorithm constantly
-evaluates when is the optimal time to stop trying and open loop means
-that the system has pre-defined goals for evaluation
-\cite{carin2008cybersecurity}. As as positive side-effect by gaining
-the probabilities through red-team evaluation the system is
-thoroughly tested and improved. This is a valuable metric, providing
-insight on how does the value of the system transition in the worth of
-breaching it in certain time, thus reflecting the true cost of the
+\textbf{open} and \textbf{closed} loop decision algorithms for
+deciding when to stop trying. Closed loop decision algorithm
+constantly evaluates when is the optimal time to stop trying and open
+loop means that the system has pre-defined goals for evaluation
+\cite{carin2008cybersecurity}. As a positive side-effect, by gaining
+the probabilities through red-team evaluation, the system is
+thoroughly tested and improved. This is a valuable metric, offering
+insight into how the value of the system changes over time in terms of
+the cost of breaching it, thereby reflecting the true cost of the
 attack. As stated by Hughes and Cybenko, if the value is high enough
-related to the value of the gained value, they will less probably
-perform the attacks \cite{hughes2013quantitative}.
+related to the value of the gained value, they will
+perform the attacks less likely \cite{hughes2013quantitative}.
 
 In this thesis, the value of the whole system architecture is
 defined as 1, constituting a value of holded intellectual
 property (IP). Costs are defined as fractions of the value, deflating 
-0.1 every hour. This is contrary to the original paper, where the
-value of the intellectual property has a certain value of 30 000\$ and
+0.1 every hour. This is contrary to the original paper where the
+value of the intellectual property has a certain value of 30 000\$, and
 the value for the possible intruder is defined as 60\$ per hour
 \cite{carin2008cybersecurity}. This divergency is due to the fact
-that it's impossible to define a certain value for our system,
-and it also provides clarity, as it's ergonomic to see how attack
-estimates relate to the value of the intellectual property. 
+that it is impossible to define a certain value for our system.
+It also provides clarity as it is ergonomic to see how an attack
+estimates the relation to the value of the intellectual property. 
 
 \subsection{Partially observable Markov decision process}
 
 Lastly, using the results of the POMDP can be used to increase the
 protection against the discovered problems
 \cite{carin2008cybersecurity}. The original QuERIES methodology used
-economic models for estimating POMDP parameters, instead of
+economic models for estimating POMDP parameters instead of
 calculating them manually \cite{carin2008cybersecurity}. We gain the
 parameters from POMDP by calculating state transitions with given
 observations. Attacks and defenses are quantified through a partially
-observable Markov decision process (POMDP) which contains these six
+observable Markov decision process (POMDP) which contains the following six
 steps:
 
 \begin{enumerate}
@@ -311,18 +307,18 @@ steps:
       states.
 \end{enumerate} \cite{hughes2013quantitative}
 
-A POMDP is used widely in this kind of applications, as both blue and
-red team have only partial observations in relation to the system
+A POMDP is used widely in these kinds of applications, as both blue and
+red teams have only partial observations in relation to the system
 \cite{mcabeeMarkov}. The blue team can't be completely certain that
-the system is secure and the red team cannot perform fully reliably as
+the system is secure, and the red team cannot perform fully reliably as
 systems and environments differ from each other. As mentioned in the
 previous section, the focus of the QuERIES analysis is the time to
-reverse-engineer the system, thus emphasizing the importance of only
+reverse-engineer the system thus emphasizing the importance of only
 partial observations.
 
 In the next section the architecture presented in chapter
 \ref{architecture} is improved using the applied QuERIES methodology. An
 attack graph is constructed and POMDPs are utilized. The result will
-provide information about the architectures security, and it will
+provide information about the architecture's security, and it will
 undergo several iterations of the QuERIES pipeline with each improving
 the overall security of the system.
