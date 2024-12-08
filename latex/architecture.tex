@@ -54,7 +54,6 @@ protocol which can be used on virtually every platform including
 microcontrollers \cite{oasisopenMQTTVersion}. The chosen MQTT broker
 and client for this project is Mosquitto. The following snippet shows
 how the Mosquitto server is configured in the NixOS server.
-
 \begin{lstlisting}
   services.mosquitto = {
     enable = true;
@@ -66,8 +65,7 @@ how the Mosquitto server is configured in the NixOS server.
           keyfile = "<ssl-path>/myhostname.key";
         };
       }
-    ];
-  };
+    ];};
 \end{lstlisting}
 
 The ''services'' statement tells us that a SystemD service is being
@@ -290,14 +288,14 @@ requirement that the devices should be available in a public network
 production environments. However NixOS anywhere  only works with NixOS
 flakes. In that case, this thesis' configuration would need to be contained in a
 flake. \cite{githubGitHubNixcommunitynixosanywhere}
-%% cite nixos manual
+
 The installation would contain the following steps:
 \begin{enumerate}
 \item Run
 \begin{lstlisting}
 curl -L https://github.com/nix-community/nixos-images/releases/download/nixos-unstable/nixos-kexec-installer-noninteractive-x86\_64-linux.tar.gz| tar -xzf- -C /root /root/kexec/run for booting separate kernel
-for installation.
 \end{lstlisting}
+for installation.
 \item Generate a minimal configuration file:
 \begin{lstlisting}
 nixos-generate-config --no-filesystems --root /mnt''

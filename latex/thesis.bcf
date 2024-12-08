@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.10" bltxversion="3.19" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.20" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -100,7 +100,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -116,15 +116,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>mincitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minitems</bcf:key>
@@ -335,7 +335,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -351,15 +351,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>mincitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minitems</bcf:key>
@@ -502,6 +502,7 @@
     <bcf:option datatype="xml">inheritance</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">uniquenametemplate</bcf:option>
+    <bcf:option datatype="xml">namehashtemplate</bcf:option>
     <bcf:option datatype="xml">sortingnamekeytemplate</bcf:option>
     <bcf:option datatype="xml">sortingtemplate</bcf:option>
     <bcf:option datatype="xml">extradatespec</bcf:option>
@@ -751,9 +752,10 @@
   </bcf:optionscope>
   <bcf:optionscope type="ENTRY">
     <bcf:option datatype="string">noinherit</bcf:option>
-    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename,namehashtemplatename">nametemplates</bcf:option>
     <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">namehashtemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
     <bcf:option datatype="string" backendout="1">indexing</bcf:option>
@@ -831,9 +833,10 @@
     <bcf:option datatype="integer" backendout="1">minalphanames</bcf:option>
   </bcf:optionscope>
   <bcf:optionscope type="NAMELIST">
-    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename,namehashtemplatename">nametemplates</bcf:option>
     <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">namehashtemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">uniquelist</bcf:option>
     <bcf:option datatype="string">uniquename</bcf:option>
@@ -847,9 +850,10 @@
     <bcf:option datatype="boolean" backendout="1">useprefix</bcf:option>
   </bcf:optionscope>
   <bcf:optionscope type="NAME">
-    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename,namehashtemplatename">nametemplates</bcf:option>
     <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">namehashtemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">uniquename</bcf:option>
     <bcf:option datatype="boolean" backendout="1">familyinits</bcf:option>
@@ -1063,6 +1067,13 @@
     <bcf:namepart order="2" base="1">family</bcf:namepart>
     <bcf:namepart order="3">given</bcf:namepart>
   </bcf:uniquenametemplate>
+  <!-- NAME HASH TEMPLATES -->
+  <bcf:namehashtemplate name="global">
+    <bcf:namepart order="1" hashscope="full">family</bcf:namepart>
+    <bcf:namepart order="2" hashscope="full">given</bcf:namepart>
+    <bcf:namepart order="3" hashscope="full">prefix</bcf:namepart>
+    <bcf:namepart order="4" hashscope="full">suffix</bcf:namepart>
+  </bcf:namehashtemplate>
   <!-- SORTING NAME KEY TEMPLATES -->
   <bcf:sortingnamekeytemplate name="global" visibility="sort">
     <bcf:keypart order="1">
@@ -2394,122 +2405,121 @@
     <bcf:citekey order="26" intorder="1">endres2017declarative</bcf:citekey>
     <bcf:citekey order="27" intorder="1">endres2017declarative</bcf:citekey>
     <bcf:citekey order="28" intorder="1">endres2017declarative</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">dolstra2008nixos</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">dolstra2007purely</bcf:citekey>
     <bcf:citekey order="30" intorder="1">dolstra2007purely</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">dolstra2007purely</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">ubuntuUbuntuManpage</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">thiruvathukal2004gentoo</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">endres2017declarative</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">dolstra2008nixos</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">endres2017declarative</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">van2010automating</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">breitenbucher2017declarative</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">dolstra2013charon</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">van2013reference</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">dolstra2010nixos</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">dolstra2008nixos</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">ubuntuUbuntuManpage</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">thiruvathukal2004gentoo</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">endres2017declarative</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">dolstra2008nixos</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">endres2017declarative</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">van2010automating</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">breitenbucher2017declarative</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">nixosNixOSManual</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">dolstra2013charon</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">van2013reference</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">dolstra2010nixos</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">dolstra2008nixos</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">nixosUserEnvironment</bcf:citekey>
     <bcf:citekey order="44" intorder="1">nixosUserEnvironment</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">nixosUserEnvironment</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">githubNixNixpkgsNixOS</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">githubNixNixpkgsNixOS</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">van2013reference</bcf:citekey>
     <bcf:citekey order="47" intorder="1">van2013reference</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">van2013reference</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">nixcommunityHomeManager</bcf:citekey>
     <bcf:citekey order="49" intorder="1">nixcommunityHomeManager</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">nixcommunityHomeManager</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">nixosFlakesNixOS</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">nixosChannelsNixOS</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">nixosFlakesNixOS</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">nixosChannelsNixOS</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">nixosNixOSManual</bcf:citekey>
     <bcf:citekey order="53" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">serpanos2013security</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">fysarakis2014embedded</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">secopsolutionHistorySecOps</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">turab2019secure</bcf:citekey>
-    <bcf:citekey order="58" intorder="2">fysarakis2014embedded</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">fysarakis2014embedded</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">dolstra2004nix</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">kemmerer2003cybersecurity</bcf:citekey>
-    <bcf:citekey order="61" intorder="2">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">serpanos2013security</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">secopsolutionHistorySecOps</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">turab2019secure</bcf:citekey>
+    <bcf:citekey order="57" intorder="2">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">dolstra2004nix</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">kemmerer2003cybersecurity</bcf:citekey>
+    <bcf:citekey order="60" intorder="2">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">fysarakis2014embedded</bcf:citekey>
     <bcf:citekey order="62" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="62" intorder="2">serpanos2013security</bcf:citekey>
     <bcf:citekey order="63" intorder="1">fysarakis2014embedded</bcf:citekey>
-    <bcf:citekey order="63" intorder="2">serpanos2013security</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">kandoi2021operating</bcf:citekey>
     <bcf:citekey order="65" intorder="1">kandoi2021operating</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">kandoi2021operating</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">dolstra2007purely</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">dolstra2007purely</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">pender2019parkerian</bcf:citekey>
     <bcf:citekey order="68" intorder="1">pender2019parkerian</bcf:citekey>
     <bcf:citekey order="69" intorder="1">pender2019parkerian</bcf:citekey>
-    <bcf:citekey order="70" intorder="1">pender2019parkerian</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">hughes2013quantitative</bcf:citekey>
     <bcf:citekey order="71" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">nixosSecurityNixOS</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">nixosSecurityNixOS</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">kandoi2021operating</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">van2013reference</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">dolstra2013charon</bcf:citekey>
-    <bcf:citekey order="79" intorder="1">oasisopenMQTTVersion</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">kandoi2021operating</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">nixosSecurityNixOS</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">nixosNixOSManual</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">nixosSecurityNixOS</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">kandoi2021operating</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">van2013reference</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">dolstra2013charon</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">oasisopenMQTTVersion</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">kandoi2021operating</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">waylandWayland</bcf:citekey>
     <bcf:citekey order="81" intorder="1">waylandWayland</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">waylandWayland</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">dolstra2010nixos</bcf:citekey>
     <bcf:citekey order="83" intorder="1">dolstra2010nixos</bcf:citekey>
-    <bcf:citekey order="84" intorder="1">dolstra2010nixos</bcf:citekey>
-    <bcf:citekey order="85" intorder="1">van2010automating</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">van2010automating</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">nixosNixOSManual</bcf:citekey>
     <bcf:citekey order="86" intorder="1">nixosNixOSManual</bcf:citekey>
     <bcf:citekey order="87" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="88" intorder="1">nixosNixOSManual</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">githubGitHubNixcommunitynixosanywhere</bcf:citekey>
     <bcf:citekey order="89" intorder="1">githubGitHubNixcommunitynixosanywhere</bcf:citekey>
-    <bcf:citekey order="90" intorder="1">githubGitHubNixcommunitynixosanywhere</bcf:citekey>
-    <bcf:citekey order="91" intorder="1">wang2005information</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">wang2005information</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">bayuk2013measuring</bcf:citekey>
     <bcf:citekey order="92" intorder="1">bayuk2013measuring</bcf:citekey>
     <bcf:citekey order="93" intorder="1">bayuk2013measuring</bcf:citekey>
     <bcf:citekey order="94" intorder="1">bayuk2013measuring</bcf:citekey>
-    <bcf:citekey order="95" intorder="1">bayuk2013measuring</bcf:citekey>
-    <bcf:citekey order="96" intorder="1">papazov2019cybersecurity</bcf:citekey>
-    <bcf:citekey order="97" intorder="1">payne2006guide</bcf:citekey>
-    <bcf:citekey order="98" intorder="1">wang2005information</bcf:citekey>
-    <bcf:citekey order="99" intorder="1">payne2006guide</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">papazov2019cybersecurity</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">payne2006guide</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">wang2005information</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">payne2006guide</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">pendleton2016survey</bcf:citekey>
     <bcf:citekey order="100" intorder="1">pendleton2016survey</bcf:citekey>
     <bcf:citekey order="101" intorder="1">pendleton2016survey</bcf:citekey>
+    <bcf:citekey order="101" intorder="2">ramos2017model</bcf:citekey>
     <bcf:citekey order="102" intorder="1">pendleton2016survey</bcf:citekey>
     <bcf:citekey order="102" intorder="2">ramos2017model</bcf:citekey>
     <bcf:citekey order="103" intorder="1">pendleton2016survey</bcf:citekey>
     <bcf:citekey order="103" intorder="2">ramos2017model</bcf:citekey>
     <bcf:citekey order="104" intorder="1">pendleton2016survey</bcf:citekey>
-    <bcf:citekey order="104" intorder="2">ramos2017model</bcf:citekey>
-    <bcf:citekey order="105" intorder="1">pendleton2016survey</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">alshammari2009security</bcf:citekey>
     <bcf:citekey order="106" intorder="1">alshammari2009security</bcf:citekey>
-    <bcf:citekey order="107" intorder="1">alshammari2009security</bcf:citekey>
-    <bcf:citekey order="108" intorder="1">wang2010framework</bcf:citekey>
-    <bcf:citekey order="109" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="109" intorder="2">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">wang2010framework</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="108" intorder="2">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">hughes2013quantitative</bcf:citekey>
     <bcf:citekey order="110" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="112" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="113" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="115" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="117" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="118" intorder="1">carin2008cybersecurity</bcf:citekey>
     <bcf:citekey order="119" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">jerman2008economic</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">jerman2008economic</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">mcabeeMarkov</bcf:citekey>
     <bcf:citekey order="127" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">hughes2013quantitative</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">hughes2013quantitative</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">bars2006theory</bcf:citekey>
     <bcf:citekey order="131" intorder="1">bars2006theory</bcf:citekey>
-    <bcf:citekey order="132" intorder="1">bars2006theory</bcf:citekey>
-    <bcf:citekey order="133" intorder="1">wang2010framework</bcf:citekey>
-    <bcf:citekey order="134" intorder="1">mcabeeMarkov</bcf:citekey>
-    <bcf:citekey order="135" intorder="1">carin2008cybersecurity</bcf:citekey>
-    <bcf:citekey order="136" intorder="1">nixosNixOSManual</bcf:citekey>
-    <bcf:citekey order="137" intorder="1">fysarakis2014embedded</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">wang2010framework</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">mcabeeMarkov</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">carin2008cybersecurity</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">nixosNixOSManual</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">fysarakis2014embedded</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
@@ -2522,12 +2532,13 @@
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="none/global//global/global"
+                name="none/global//global/global/global"
                 type="entry"
                 sortingtemplatename="none"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
-                labelalphanametemplatename="global">
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
   </bcf:datalist>
 </bcf:controlfile>
