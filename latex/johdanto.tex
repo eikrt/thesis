@@ -13,8 +13,7 @@ large portion of Linux distributions fall in the first category
 have their strengths and weaknesses from administrative and security
 standpoints.
 
-An imperative distribution provides updatability and modification through a
-destructive instrument. Apt,
+An imperative distribution updates and modifies packages destructively. Apt,
 apk, dnf and zypper are some of the popular package managers \cite{dolstra2008nixos}. Imperative package
 managers can remove and overwrite existing files which leaves the
 system in an inconsistent state. Different installs have
@@ -23,12 +22,12 @@ thesis. As files are cross-modified through packages with package
 managers such as apt, upgrading can be disastrous as such distributions
 don't support atomic rollback capabilities \footnote{Some Linux
 distributions using btrfs filesystem can perform a snapshot and
-rollback \cite{opensuseSystemRecovery}}. Due to the unpredictability,
+rollback, meaning that a previous state of a system can be recovered without issues \cite{opensuseSystemRecovery}}. Due to the unpredictability,
 the result can be a partially or completely broken system
 \cite{dolstra2008nixos}.
 
 The reference imperative Linux distribution in this thesis is Debian
-with its default package manager apt, due to it's popularity and
+with its default package manager apt, due to its popularity and
 relative simplicity. The reference declarative distribution is NixOS
 with its partial namesake package manager Nix which provides
 declarative configuration of the whole system including the Linux
@@ -36,7 +35,7 @@ kernel\footnote{There exists an experimental project that has
 succeeded with BSD interoperability
 \cite{githubGitHubNixosbsdnixbsd}}. Nix is configured by the Nix
 programming language which is inspired by purely functional languages
-such as Haskell. \cite{van2013reference}
+such as Haskell. Declarative systems are those whose operation is based on a set of configuration files that define the system. \cite{van2013reference}
 
 The reference architecture depicted in chapter \ref{architecture} is
 based on Nix as it is the most popular purely functional and declarative
@@ -45,7 +44,7 @@ Linux distribution with over 100 000 packages
 set containing clients, server and the used hardware. The term
 system means the implementation of the architecture, especially
 referred in chapter \ref{analysis}. Depending on the context, system
-can also mean a set of procedures, e.g a Linux system. 
+can also mean a set of procedures, e.g. a Linux system. 
 
 Another good distribution for the architecture would have been Guix, with over
 28 000 packages \cite{gnuPackagesx2014}. Guix has some improvements
@@ -55,22 +54,18 @@ with a Lisp-dialect configuration language, Scheme
 choice, as the number of packages is greater and general support is
 found to be better.
 
-This thesis focuses on the systems and information security of a
-reference architecture created with NixOS. Chapter \ref{architecture}
-goes through a reference architecture of a solution that handles the
-most critical functionalities of an architecture designed for image displaying.
-
 This thesis discusses how declarative distributions can be used as an
-improvement over imperative distributions. In chapter \ref{imperative} both approaches to package
-management are compared followed by an introduction to
-embedded security in chapter \ref{securitystandpoints}. In chapters
-\ref{architecture} and \ref{analysis}, a quantitative research is
-carried out revealing strengths and weaknesses of the reference Nix
+improvement over imperative distributions. In chapter \ref{imperative}
+both approaches to package management are compared followed by an
+introduction to embedded security in chapter \ref{embedded}. Chapter
+\ref{architecture} presents an example architecture created with
+NixOS. In chapter \ref{analysis}, a quantitative research is carried
+out revealing strengths and weaknesses of the reference Nix
 environment setup. The selected methodology, QuERIES provides
 quantitative results that can be used to improve the security of
 declarative architectures. Propositions for further research are
-covered in chapter \ref{further} and finally, chapter
-\ref{conclusion} concludes the thesis.
+covered in chapter \ref{further} and finally, chapter \ref{conclusion}
+concludes the thesis.
 
 \section{Research methodologies and questions}
 
@@ -102,7 +97,7 @@ objective perspectives \cite{wang2005information}.
 
 The study design in this thesis is \textit{state based}, which refers
 to the fact that the research methods focus on different state
-transitions, e.g how probable it is  for an intruder to gain from
+transitions, e.g. how probable it is  for an intruder to gain from
 partial leverage to a full control of the system. Qualitative research
 wouldn't alone satisfy the requirements, as investigating different
 state transitions without quantitative methodologies would be absurd
@@ -125,13 +120,13 @@ approaches to support the action research.
 Central literature revolves around Nix and multiple texts by Eelco
 Dolstra are cited for illustrating the nuances of a Nix
 ecosystem. Other declarative approaches are discussed by Endres
-et. al and Van der Burg \cite{van2010declarative, endres2017declarative}. These approaches also contain comparison to
+et al. and Van der Burg \cite{van2010declarative, endres2017declarative}. These approaches also contain comparison to
 imperative systems, which is the central viewpoint in chapter
 \ref{imperative}. Combining cyber security with declarative approaches
-were discussed by Specht et. al and Kandoi and Artke
+were discussed by Specht et al. and Kandoi and Artke
 \cite{specht2007analysis, kandoi2021operating}.
 
-Discussion from Ravi et. al and Fysarakis et. al handle embedded security
+Discussion from Ravi et al. and Fysarakis et al. handle embedded security
 extensively \cite{ravi2004security, fysarakis2014embedded}. The
 approaches itself  are too broad for this thesis' scope, so
 only the most fitting were selected for use.
@@ -176,8 +171,7 @@ The research questions for this thesis are:
   security of an embedded system used for displaying public media?
 \item What are the advantages and/or disadvantages of such system from
   a system administrator standpoint?
-\item How can a declarative system be updated from different Linux
-  distribution securely and seamlessly?
+\item How can a system using different Linux distribution switched to use NixOS securely and seamlessly?
 \end{enumerate}
 
 Research question 1 is the most important and it traverses through

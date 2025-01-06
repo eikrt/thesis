@@ -2,8 +2,8 @@
 
 In the previous chapter, the core differences between imperative and
 declarative approaches were gone through. This chapter first discusses
-the embedded security field in general, following up on how Nix can be
-used to improve embedded security, reflecting the CIA-triad in section
+the embedded Linux security in general, following up on how Nix can be
+used to improve embedded systems' security, reflecting the CIA-triad in section
 \ref{nixosassolution}.
 
 According to Serpanos et al. the use of embedded devices can be
@@ -22,7 +22,7 @@ varying nature ranging from programmable logic controllers (PLC) to
 larger systems such as servers or
 routers \cite{fysarakis2014embedded}. A usual embedded device
 conducts a specific task and possibly demands networking
-capabilities. Working with embedded is typically working with a
+capabilities. Working with embedded systems is typically working with a
 limited set of resources, demanding careful design when a multitude of
 features are needed. Even services such as SSH have
 had history of vulnerabilities, which prove that upgradability is a
@@ -34,7 +34,7 @@ declarative systems as seen in chapter \ref{imperative} section
 \ref{nixosassolution}.
 
 Embedded devices demand precision and security as their function may
-be very critical for variety of safety reasons, e.g in automotive
+be very critical for variety of safety reasons, e.g. in automotive
 industry or healthcare applications \cite{turab2019secure,
   fysarakis2014embedded}. Reliability is a defining requirement for
 number of embedded applications; a pacemaker that doesn't function reliably all
@@ -55,7 +55,7 @@ approaches: scalability is never an issue when a centralized
 configuration defines the systems. A declarative approach is often
 adopted in the cloud as discussed in chapter \ref{imperative}
 section \ref{declarativesystems}, but its implementation still
-requires significant effort in the embedded field.
+requires significant effort in the embedded Linux field.
 
 Improving information security aspects using a policy
 modeling standard, CIA-triad is discussed in section
@@ -64,13 +64,13 @@ the triads axes. Dolstra states, that Nix is policy-free meaning that
 it contains a set of mechanisms which allow policies to be constructed
 with configuration files \cite{dolstra2004nix}.
 
-Embedded being a broad field,  devices are limited to
+Embedded systems being a broad field,  devices are limited to
 those which can run Linux kernel and provide the most basic networking
 capabilities. These cover architectures i686, x86\_64 and arm64 supported
 by NixOS. PLCs and microcontrollers are outside of scope as NixOS
 needs a functional Linux kernel and a specific architecture to work.
 
-\section{Common embedded pitfalls}
+\section{Common embedded systems pitfalls}
 
 Common issues regarding embedded devices are their lack of updates,
 weak data integrity and the multitude of features
@@ -93,12 +93,12 @@ access to network and geolocation problems. One way of manipulating a
 device, apart from directly gaining access to the operating system,
 is side channel attacks. Analyzing the power or electromagnetic
 properties of device input/output can be used to determine critical
-aspects of a device, e.g key lengths or algorithms of security
+aspects of a device, e.g. key lengths or algorithms of security
 measures \cite{fysarakis2014embedded, serpanos2013security}. Attack
 surface may used to gain access or performing denial of service
 attacks. Geolocating is both a privacy and security issue as location
 data may be used to trace identities of device users, which can lead
-to e.g blackmailing, physical intrusion or other methods 
+to e.g. blackmailing, physical intrusion or other methods 
 \cite{fysarakis2014embedded}. This means that the principals of this
 thesis' reference architecture could theoretically be targeted with such malicious
 intents.
@@ -108,7 +108,7 @@ administration. It's very different to have home automation system
 with less than 20 nodes than to have public transport embedded fleet
 in a big city with 2000 nodes. As the number of devices grows, so does
 the challenge of monitoring and administrative tasks. Home automation
-has usually one person dedicated to the task: the home owner. Monitoring should be trivial to automatize (e.g by using
+has usually one person dedicated to the task: the home owner. Monitoring should be trivial to automatize (e.g. by using
 tools like Prometheus), but administrative tasks are harder to
 automatize due to tasks being potentially very challenging, even for
 dedicated system administrators. This is where Nix comes to play as
@@ -125,7 +125,7 @@ as the rollout/rollback can be done multiple times or executed
 completely in a replicated sandbox environment. Simpler and more straight forward practical steps give space for
 easier strategical planning \cite{kandoi2021operating}.
 
-Kandoi et. al argue that with declarative systems, it should be nearly
+Kandoi et al. argue that with declarative systems, it should be nearly
 impossible to misconfigure the system in the first place and if a faulty
 state was achieved, a simple rollback could undo the changes
 \cite{kandoi2021operating}. As stated in chapter \ref{imperative}
@@ -148,13 +148,13 @@ updating or modifying user or kernel space can be used to enhance
 security and in such system, any changes could easily be replicated to
 multiple devices without the need for manual intervention.
 
-Some other clear disadvantages for Nix in embedded use is the fact
+Some other clear disadvantages for Nix in embedded Linux is the fact
 that a purely functional and declarative system inherently must use disk
 space more than its imperative counterparts. In the worst case
 scenario, if one derivation of a system takes up 1Gb of space, the changes could result in the system needing 2Gbs of space \cite{dolstra2007purely}. The
 worst case scenario rarely occurs, but due to Nix's indestructive
 nature, this formula of disk space demand has to be considered in an
-embedded setting. 
+embedded Linux setting. 
 
 \section{Imperative and declarative systems from CIA-triad approach} \label{imperativeanddeclarative}
 
@@ -165,11 +165,11 @@ confidentiality, integrity and availability as seen in the figure
 privacy. Confidential data is classified with technologies such as
 data encryption and user privileges \cite{pender2019parkerian}. Integrity means that the data has
 not been tampered with and remains untouched by unauthorised parties
-while it is in transit or stored e.g in a server \cite{pender2019parkerian}. A way of providing
+while it is in transit or stored e.g. in a server \cite{pender2019parkerian}. A way of providing
 integrity is checking hashes of downloaded files. Availability is a
 user viewpoint to the accessibility of the system \cite{pender2019parkerian}. When
 confidentiality and integrity are pushed to the extreme, availability
-aspect suffers, e.g when a service enforces a strict multi-factor
+aspect suffers, e.g. when a service enforces a strict multi-factor
 authentication. 
 
 Systems with an imperative package manager are more accessible than
@@ -213,7 +213,7 @@ having been checked against SHA256 checksums. Moreover, the core
 installation resources for NixOS are GPG-signed by an administrative
 Nix team \cite{nixosSecurityNixOS}.
 
-It is apparent that Nix can be used to improve embedded device security
+It is apparent that Nix can be used to improve embedded Linux security
 with some hardware constraints. A purely functional declarative
 solution can improve the rollout/rollback capabilities, testing
 pipelines and provides features such as read-only Nix store. The next

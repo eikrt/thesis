@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber thesis"] 1733672703.60304 "thesis.bcf" "thesis.bbl" "thesis" 1733672713.16291 0
+["biber thesis"] 1736167062.13318 "thesis.bcf" "thesis.bbl" "thesis" 1736167075.20676 0
   "Bibliografia.bib" 1733247505.59995 21532 b9c987bf86bf64e09b21a6606b4396d0 ""
-  "thesis.bcf" 1733672712.83667 118812 ce3db2544bbe3e5e3737e76fb6448df3 "pdflatex"
+  "thesis.bcf" 1736167074.80949 118812 ce3db2544bbe3e5e3737e76fb6448df3 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["cusdep nlo nls thesis"] 1733672697.99809 "thesis.nlo" "thesis.nls" "thesis" 1733672713.16274 0
-  "thesis.nlo" 1733672709.87371 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep nlo nls thesis"] 1736167053.87975 "thesis.nlo" "thesis.nls" "thesis" 1736167075.20659 0
+  "thesis.nlo" 1736167070.66348 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "thesis.nls"
   (rewritten before read)
-["pdflatex"] 1733672709.08531 "thesis.tex" "thesis.pdf" "thesis" 1733672713.16316 2
+["pdflatex"] 1736167069.69633 "thesis.tex" "thesis.pdf" "thesis" 1736167075.20717 2
   "../graph/barchart.svg" 1733247505.59895 11268 7cb858dc1124af11f1ad0ae70510bc11 ""
   "../graph/cost_graph.svg" 1733247505.59895 49873 81f5d045ec34d567daf825b9643f0309 ""
   "/nix/store/1pg4s9si8c2a7afl5z5zpvbq3nfr1pdw-texlive-combined-2024-texmfdist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -277,7 +277,7 @@
   "latex/kuvat/queries.drawio.svg" 1733247505.61195 58185 976b471043505f0742f1e9a5471bd7f0 ""
   "latex/kuvat/symlinks.drawio.svg" 1733247505.61595 155402 b65303c83b955994f0e4d82349cef21e ""
   "latex/kuvat/testimage.jpeg" 1733247505.61695 144793 cc529b23c6821e8651f6e9ebfbe0c896 ""
-  "pdfa.xmpi" 1733672709.72571 5752 0465b4d38cf556f8d9bcb569cc9c6785 "pdflatex"
+  "pdfa.xmpi" 1736167070.50048 5752 0465b4d38cf556f8d9bcb569cc9c6785 "pdflatex"
   "research.tex" 1733247505.62195 0 d41d8cd98f00b204e9800998ecf8427e ""
   "securitystandpoints.tex" 1733409257.18806 17025 bdc301103788f86038d296fe7be7c41b ""
   "svg-inkscape/architect_svg-raw.pdf" 1733247505.62295 71156 3e72356eabcd0a55a0911cc9f7338de1 ""
@@ -286,15 +286,15 @@
   "svg-inkscape/cost_graph_svg-raw.pdf" 1733247505.62395 11245 e4bfc82df76effda353a9ae99a87f0e1 ""
   "svg-inkscape/queries.drawio_svg-raw.pdf" 1733247505.62395 19338 eb7a860fce6129b8596b10fcce75778a ""
   "svg-inkscape/symlinks.drawio_svg-raw.pdf" 1733247505.62395 49738 d242cf07d55a10c4455584ecabe9ee05 ""
-  "thesis.aux" 1733672712.80767 28328 becf07015c0ac8015cf46508a7f315f8 "pdflatex"
-  "thesis.bbl" 1733672704.90978 60237 cf24e30a11f9150b6046fde68f53c7ef "biber thesis"
-  "thesis.lof" 1733672712.83867 1667 6bab09ba0cee76bab4953b0e2b2b0885 "pdflatex"
-  "thesis.lot" 1733672712.83867 639 ab01d886c04acb992630f5483ed6fa0e "pdflatex"
-  "thesis.nls" 1733672698.07187 0 d41d8cd98f00b204e9800998ecf8427e "cusdep nlo nls thesis"
-  "thesis.out" 1733672712.83267 7472 86f9f792da12905b0921823335aacf38 "pdflatex"
-  "thesis.run.xml" 1733672712.83767 2449 10821d9f73a0b92e8d52ca703639d74f "pdflatex"
+  "thesis.aux" 1736167074.76749 28328 becf07015c0ac8015cf46508a7f315f8 "pdflatex"
+  "thesis.bbl" 1736167064.13647 60237 cf24e30a11f9150b6046fde68f53c7ef "biber thesis"
+  "thesis.lof" 1736167074.81049 1667 6bab09ba0cee76bab4953b0e2b2b0885 "pdflatex"
+  "thesis.lot" 1736167074.81049 639 ab01d886c04acb992630f5483ed6fa0e "pdflatex"
+  "thesis.nls" 1736167054.03146 0 d41d8cd98f00b204e9800998ecf8427e "cusdep nlo nls thesis"
+  "thesis.out" 1736167074.80349 7472 86f9f792da12905b0921823335aacf38 "pdflatex"
+  "thesis.run.xml" 1736167074.81049 2449 10821d9f73a0b92e8d52ca703639d74f "pdflatex"
   "thesis.tex" 1733669411.19997 2401 c8569ef446c48081825ad23e796e2ccc ""
-  "thesis.toc" 1733672712.83867 3953 7d3cc61382f8c4a9a404179e4e22895e "pdflatex"
+  "thesis.toc" 1736167074.81049 3953 7d3cc61382f8c4a9a404179e4e22895e "pdflatex"
   "thesis.xmpdata" 1733247505.63795 310 3f49e52de909295790a7b6c4ee2275f5 ""
   "utuftthesis.cls" 1733313669.19386 22179 12c8c98e9a7ab93e85a05d22e1e04ee5 ""
   (generated)

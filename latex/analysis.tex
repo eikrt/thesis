@@ -5,7 +5,7 @@ QuERIES methodology is used in this chapter's analysis. Table
 \ref{pomdbtable} consists of all the possible states (S), defender
 actions (D), attacker actions (A) and observations (O). Then, every
 transition from state to another state is calculated as a
-probability. Carin et. al use an economic model to estimate POMDP
+probability. Carin et al. use an economic model to estimate POMDP
 parameters \cite{carin2008cybersecurity}. We deviate from the
 methodology and calculate the parameters as transition probabilities
 from each state for given observation, as it provides us better
@@ -23,7 +23,7 @@ security and economic standpoints. However, the main focus is on how we can impr
 \section{Modeling the problem and quantifying the models} \label{modprob}
 
 The project example of this thesis is an image showing architecture
-that could be used e.g for advertisement, public transport timetables
+that could be used e.g. for advertisement, public transport timetables
 or practically anywhere where static media should be presented. If an
 intruder should gain unauthorised access, the results would be
 anywhere from displaying explicit imagery to succeeding in displaying
@@ -52,7 +52,7 @@ reverse-engineer the system without prior information about the
 protection sceme is an important parameter
 \cite{carin2008cybersecurity}. Our approach is different; the attacks
 are considered as successful, if they gain further leverage in the
-attack graph e.g transitioning from state ''idle'' to ''partial loss of
+attack graph e.g. transitioning from state ''idle'' to ''partial loss of
 system''. This is to maintain cohesion in the study, for we don't need
 to define what it means to ''reverse engineer'' the system. In our
 case, the system configurations are publicly available as an open source
@@ -151,7 +151,7 @@ first hour.
 \end{figure}
 
 The figure \ref{timetobreach} has a similar
-shape as the figure in the paper by Carin et. al, meaning that attacks
+shape as the figure in the paper by Carin et al. meaning that attacks
 in their initial phase succeed more frequently \cite{carin2008cybersecurity}. The figure \ref{openandclosed} is
 used to decide, when is the optimal time to stop the attacks from the
 attacker's perspective. We use this as well to reflect the cost estimate of
@@ -235,7 +235,7 @@ systems is found, as imperative systems would need linear
 administration time in relation with the number of devices in the worst case. The
 configuration is only an example to mitigate hardware access attack
 vectors, as there are many more ways for the attacker to leverage the
-access, e.g by replacing the whole device, depending on the resources
+access, e.g. by replacing the whole device, depending on the resources
 of the attacker.
 
 \subsection{Issues with applied methodology} \label{issues}
@@ -251,7 +251,7 @@ appropriate parameters. This is due to the deviation from the QuERIES,
 where the POMDP parameters weren't applied from the economic model. In our case, a trade-off to obtain
 specificity forced us to rely on the set reward and discount
 values. Using another model, for example the one presented by Wang
-et. al using hidden Markov models, would in retrospective provide us a
+et al. using hidden Markov models, would in retrospective provide us a
 more specific layout of the attack graph, similar on how we applied
 the QuERIES methodology \cite{wang2010framework}. The
 combination of both hidden Markov models and QuERIES could possibly be a ''best
@@ -277,12 +277,12 @@ constraints allows for adequate estimates that can be used to apply
 economic models for the red team, further analyzing the risk versus
 reward.
  
-Carin et. al argue that QuERIES can be
+Carin et al. argue that QuERIES can be
 applied in both public and private sectors to help improve the
 security of both the software and hardware \cite{carin2008cybersecurity}. I argue, that a hand-tailored
 application of QuERIES can be used as a powerful model that is
 ergonomic to use in the right hands. However, the use of complex
 applied mathematic models requires proficency in both cybersecurity and
 mathematics, which can be hard to achieve in a real organizational
-setting. This is why it's proposed in the next chapter, that a simpler, more pessimistic and more concise model would be easier to reach for an
+setting. This is why it is proposed in the next chapter, that a simpler, more pessimistic and more concise model would be easier to reach for an
 organization.

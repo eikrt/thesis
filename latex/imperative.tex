@@ -38,7 +38,7 @@ Imperative deployment models base their functionalities through a
 process in which the order of events have a critical significance to
 the output \cite{breitenbucher2017declarative}. In the context of
 virtualization, imperative tooling can be used to form all
-activities to be executed: the control flow, their execution order
+activities to be executed: the control flow, execution order
 and the data flow between them \cite{endres2017declarative}. This kind
 of process is best to be used in conjunction with a formalized
 workflow or standard such as BPEL \cite{endres2017declarative}. In
@@ -65,7 +65,7 @@ can exist side by side, as the system is defined only by the
 configuration, not with the state as a
 component. \cite{dolstra2007purely}
 
-\subsection{Debian/Apt}
+\subsection{Debian/Apt} \label{debian/apt}
 
 An example of imperative systems' problematic nature is provided with
 the following demonstration. Executing shell command
@@ -85,7 +85,7 @@ Another dependency, emacs-lucid can be removed with command
 we can see that after removing, apt automatically installs emacs-gtk
 to avoid breaking the application. The package manager warns:
 "emacs-lucid has dependency problems, but removing anyway as you
-requested" as shown in figure \ref{deb_remove}. It's also noteworthy,
+requested" as shown in figure \ref{deb_remove}. It is also noteworthy,
 that the manual page for apt doesn't say anything about a possible
 installation side-effect of a package removal command
 \cite{ubuntuUbuntuManpage}. We could forcibly remove the package by
@@ -160,13 +160,12 @@ Bluemix or Chef, where common DevOps practices can be used
 
 \section{Declarative systems} \label{declarativesystems}
 
-Presented problems in chapter \ref{imperative} can be solved using a
-reproducible, reliable and atomic package manager. Package
-installs in Nix are in isolation from each other so that they don't
-have conflicting effects which results that packages predictable and
-assures they work coherently even if underlying install is
-different. As the packages are declared in a single set of
-configuration files, it's trivial to reproduce the system in a
+Presented problems in section \ref{debian/apt} can be solved using a
+reproducible, reliable and atomic package manager. In Nix, package
+installations are isolated from one another to prevent conflicts,
+ensuring they function consistently even if the underlying
+installations differ. As the packages are declared in a single set of
+configuration files, it is trivial to reproduce the system in a
 different environment. The demonstrated effect in snippet
 \ref{dpkgsnippet} was a problem due to lack of isolation. When
 dependencies are scattered in the system instead of declared
@@ -176,7 +175,7 @@ question. A result of this is that in a Nix system installs of same
 program can reside side-by-side with varying versions
 \cite{dolstra2008nixos}.
 
-As presented by Endres et al systems can be declared, even if the
+As presented by Endres et al. systems can be declared, even if the
 underlying infrastructure is imperative by nature
 \cite{endres2017declarative}. This thesis focuses on purely functional
 methodologies which fix the most prevalent issues found in
@@ -345,7 +344,7 @@ repository of working Nix packages using a continuous integration
 service called Hydra. Hydra evaluates the needed Nix expression of a
 package and ensures its functionality \cite{nixosNixOSManual}.
 
-It's apparent that purely functional and declarative approaches aren't as popular
+It is apparent that purely functional and declarative approaches aren't as popular
 as imperative systems due to the need of steep learning curves and
 obscure syntax. This can be seen as historical payload: imperative
 models have been in use a longer time than purely functional
