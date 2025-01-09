@@ -2,25 +2,46 @@
 \keywordsen{declarative, nix, nixos, pomdp, security, queries}
 \begin{abstract}
 
-Embedded devices are an integral part of our everyday lives; household
-machines, automotives, and thermal sensors make use of embedded
-devices. They are subject to the global, developing
-worlds security problems. This thesis focuses on those found in
-public information screens. Embedded devices are particularly
-vulnerable to security problems as they have challenges receiving
-constant, reliable updates. This thesis' focal point is maintaining,
-updating and upgrading embedded devices in a public setting. A
-proposed architecture of a public media screen system is provided with example snippets to cover most of common
-security issues found in similar setups. The architecture with its
-content is then evaluated through with QuERIES methodology. The
-central theme of this thesis is NixOS, which is a Linux distribution
-that forms itself from a set of configuration files, supporting
-features like atomic rollbacks and reliable dependency handling. Most
-definitive academic sources in this particular subject by Eelco Dolstra
-are used extensively, as well as papers regarding both embedded
-security and measuring security. Ideas for further study are
-presented, as security problems may arise in our everyday lives due to
-the more mainstream paradigms and could be avoided with the use of
-declarative ones.
+Embedded devices are an integral part of our daily lives; household
+machines, automobiles, and thermal sensors make use of embedded
+devices. They are subject to the global, developing worlds' security
+problems. This thesis focuses on those found on public information
+screens. Embedded devices are particularly vulnerable to security
+problems as they face issues in receiving constant, reliable
+updates. This thesis' focal point is maintaining, updating, and
+upgrading embedded devices. A proposed
+architecture of a public media screen system is provided with example
+program snippets to cover most common security issues found in similar
+setups. The architecture and its content are evaluated through
+the QuERIES methodology. The central theme of this thesis is NixOS,
+which is a Linux distribution that forms itself from a set of
+configuration files, supporting features like atomic rollbacks and
+reliable dependency handling. The most definitive academic sources in this
+particular subject are used extensively, as well as papers regarding
+both embedded security and measuring security.
+
+A quantitative research methodology, QuERIES is used to measure the
+security of a novel architecture using NixOS. QuERIES contains a
+number of steps that evaluate the security of a system. The steps are
+iterated two times, each iteration providing a partially
+observable Markov decision process (POMDP) output, which is used as a
+benchmark of the overall security of the reference architecture.
+
+The result of this thesis is that with the use of QuERIES, the overall
+security of the architecture can be improved methodically with the use
+of POMDP as a defined attack graph. An economic model of cost
+estimation to the attacker is gained via the red-blue team setup,
+which is then used as a tool for revealing the weak spots of the
+architecture from a chronological standpoint. The output of QuERIES
+can be generalized with tight constraints; as QuERIES provided
+tangible improvements in small scale, it could serve well a more
+complex setting. This is due to the nature of QuERIES in tandem with
+POMDP being able to handle a number of parameters, which is essential
+in a larger setting.
+
+Ideas for further work are presented for studying the possibilities of
+purely functional and declarative solutions in the embedded
+field. The issues in QuERIES are also highlighted, and the development of more
+accessible tools for measuring cybersecurity is discussed.
 
 \end{abstract}

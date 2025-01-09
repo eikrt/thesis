@@ -1,34 +1,34 @@
 \chapter{Applying QuERIES} \label{analysis}
 
 As mentioned in the previous chapter section \ref{queries}, the
-QuERIES methodology is used in this chapter's analysis. Table
+QuERIES methodology is used for the analysis of this chapter. Table
 \ref{pomdbtable} consists of all the possible states (S), defender
-actions (D), attacker actions (A) and observations (O). Then, every
-transition from state to another state is calculated as a
-probability. Carin et al. use an economic model to estimate POMDP
-parameters \cite{carin2008cybersecurity}. We deviate from the
+actions (D), attacker actions (A), and observations (O). Then, each
+transition from one state to another state is calculated as a
+probability. Carin et al. \cite{carin2008cybersecurity} use an economic model to estimate POMDP
+parameters. We deviate from this 
 methodology and calculate the parameters as transition probabilities
-from each state for given observation, as it provides us better
-construction of attack graph and gives more specific data.
+from each state for a given observation, as it provides a better
+construction of attack graph and yields more specific data.
 
 QuERIES as a model is described as multidisciplinary as it takes
 inspiration from traditional red-blue team approaches and mathematical
 models to economic models \cite{hughes2013quantitative}. In other
-literature, particularly by Bojanc and Jerman-Blažič, it is argued that
+literature, particularly that of Bojanc and Jerman-Blažič, it is argued that
 modeling cybersecurity with economic models can provide substance for
-minimizing risks organization-wide \cite{jerman2008economic}. In this
-chapter, we will apply the model and discuss the implications in both
-security and economic standpoints. However, the main focus is on how we can improve the security of the architecture by using QuERIES. 
+minimising risks organisation-wide \cite{jerman2008economic}. In this
+chapter, we will apply the model and discuss its implications in both
+security and economic standpoints. However, the main focus is on how we can improve the security of the architecture using QuERIES. 
 
 \section{Modeling the problem and quantifying the models} \label{modprob}
 
 The project example of this thesis is an image showing architecture
-that could be used e.g. for advertisement, public transport timetables
-or practically anywhere where static media should be presented. If an
-intruder should gain unauthorised access, the results would be
+that could be used e.g. for advertisements, public transport timetables
+or practically anywhere static media should be presented. If an
+intruder gains unauthorised access, the results could range from
 anywhere from displaying explicit imagery to succeeding in displaying
-propaganda or other unwanted content. Unauthorised access would have a
-negative economic effect for the service provider, as every
+propaganda or other unwanted content. Unauthorised access would negatively impact 
+service provider's economic standing, as every
 organisation displaying media wants to remain credible among
 stakeholders.
 
@@ -36,8 +36,7 @@ The attack surface of the example focuses on physical access
 and vulnerabilities in remote connections. With MQTT-messaging, SSH
 and display protocols, internal and external messaging, takes place.
 
-As mentioned in chapter \ref{securitystandpoints} section
-\ref{measuringsecurity} subsection \ref{queriesasmethodology}, the
+As mentioned in section \ref{queriesasmethodology}, the
 value of intellectual property is capped at 1, for which other
 parameters refer to as fractions of it. If this was applied to a real
 setting, the value of intellectual property would be calculated
@@ -65,9 +64,7 @@ actions and observations of the system. The fourth column contains a
 template of the attacks that could be conducted. After forming the
 attack graph depicted in the table, the attacker tries to breach the
 system, leveraging through the A0-A4 column. The probabilities are
-then calculated with the model presented in chapter
-\ref{securitystandpoints} section \ref{quantitativemetrics} subsection
-\ref{queries}.
+then calculated with the model presented in section \ref{queries}.
 
 The algorithm produces a reward value for each QuERIES iteration,
 which is used to improve the setup. For calculating reward values, R
@@ -91,7 +88,7 @@ script with library ''pomdp'' was used.
  & & & \hline & & & & & & & \\ & & & & \hline
 
 \end{tabular}
-\caption{Different states, defensive measures, observations and attack
+\caption[POMDP attack graph.]{Different states, defensive measures, observations and attack
   measures for the system.}
 \label{pomdbtable}
 \end{table}
@@ -127,7 +124,7 @@ iterated 2 times and the results were placed in the table \ref{iterationtable}.
   \hline Iteration & Reward function & Proposed protections \\ \hline
   1 & -25 & Multiple \\ \hline 2 & 4 & None \\ \hline
 \end{tabular}
-\caption{Protections applied in each iteration}
+\caption{Protections applied in each POMDP iteration}
 \label{iterationtable}
 \end{table}
 
@@ -146,18 +143,18 @@ first hour.
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{../graph/barchart.svg}}
-\caption{Probabilities to breach into the system.}
+\caption[Probabilities to breach into the system.]{Probabilities to breach into the system.}
 \label{timetobreach}
 \end{figure}
 
 The figure \ref{timetobreach} has a similar
-shape as the figure in the paper by Carin et al. meaning that attacks
-in their initial phase succeed more frequently \cite{carin2008cybersecurity}. The figure \ref{openandclosed} is
+shape as the figure in the paper by Carin et al. \cite{carin2008cybersecurity} meaning that attacks
+in their initial phase succeed more frequently. The figure \ref{openandclosed} is
 used to decide, when is the optimal time to stop the attacks from the
 attacker's perspective. We use this as well to reflect the cost estimate of
 the blue team.
 
-This economic model can be used to generalize risk in these kinds of
+This economic model can be used to generalise risk in these kinds of
 situations. In the graph \ref{openandclosed} we can see, that the cost
 for the attacker peaks at about 6 hours using closed algorithm and at
 3 hours using open algorithm. Open loop algorithm means, that the cost
@@ -170,7 +167,7 @@ decreases by 0.1 every hour.
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{../graph/cost_graph.svg}}
-\caption{Cost benefits and reductions. The black dots indicate the
+\caption[Cost benefits of applied economic model.]{Cost benefits and reductions. The black dots indicate the
   most optimal times to stop the attack.}
 \label{openandclosed}
 \end{figure}
@@ -180,11 +177,11 @@ most of the breaches appeared in the first half of the time
 segment. The blue team can use this information to estimate the future
 distribution of breaches. In our case, the second iteration provided
 no breaches, but it can be argued, that in different experimental
-design, the attacker could have succeeded. The results don't mean that
+design, the attacker could have succeeded. The results do not mean that
 the system is completely secure; instead we can use the first
 iteration's estimates to decide on how could the blue team be improved
 in the future. The blue team measures depicted in figure
-\ref{pomdbtable} didn't have the planned effect to protect the system.
+\ref{pomdbtable} did not have the planned effect to protect the system.
 
 We can see that with closed loop algorithm, the attacker can gain more
 results with worse cost tradeoff, but with open loop, it gets
@@ -228,7 +225,7 @@ The configuration could be applied to any number of clients, proving
 that Nix could be used to rapidly address arising security
 issues. This supports the argument presented in chapter
 \ref{imperative}, that through updatability the security could be
-improved. This highlights the scalability of Nix systems; it doesn't
+improved. This highlights the scalability of Nix systems; it does not
 matter if we have one or thousands of devices – updating them is
 equally simple. A huge contrast between imperative and declarative
 systems is found, as imperative systems would need linear
@@ -248,7 +245,7 @@ as catastrophic and the positive results being slightly positive. The
 choice for both parameters could have been any integer, but the issue
 is, that it demands a ''gut-feeling'' of the author to select the
 appropriate parameters. This is due to the deviation from the QuERIES,
-where the POMDP parameters weren't applied from the economic model. In our case, a trade-off to obtain
+where the POMDP parameters were not applied from the economic model. In our case, a trade-off to obtain
 specificity forced us to rely on the set reward and discount
 values. Using another model, for example the one presented by Wang
 et al. using hidden Markov models, would in retrospective provide us a
@@ -257,7 +254,7 @@ the QuERIES methodology \cite{wang2010framework}. The
 combination of both hidden Markov models and QuERIES could possibly be a ''best
 of both worlds'' solution.
 
-One remark using POMDP is that it produces very generalized
+One remark using POMDP is that it produces very generalised
 output. This is why we use methodologies such as QuERIES to improve
 the system, POMDP being just one component. Other benefit from using
 POMDP is that it provides us a concise attack graph and it can be argued, that
@@ -267,22 +264,22 @@ the system is more secure \cite{mcabeeMarkov}. A more ergonomic approach
 would be calculating rewards without positive outcomes, due to them
 possibly shadowing the most critical issues.
 
-\section{Generalizing the results}
+\section{Generalising the results}
 
-The results of this chapter could be generalized to a more complex
+The results of this chapter could be generalised to a more complex
 setting, using a similar methodology. The POMDP would scale well, if
 more parameters were supplied. This study demonstrates that although
 measuring cybersecurity is challenging, staying within strict
 constraints allows for adequate estimates that can be used to apply
-economic models for the red team, further analyzing the risk versus
+economic models for the red team, further analysing the risk vs. 
 reward.
  
-Carin et al. argue that QuERIES can be
+Carin et al. \cite{carin2008cybersecurity} argue that QuERIES can be
 applied in both public and private sectors to help improve the
-security of both the software and hardware \cite{carin2008cybersecurity}. I argue, that a hand-tailored
+security of both the software and hardware. I argue, that a hand-tailored
 application of QuERIES can be used as a powerful model that is
 ergonomic to use in the right hands. However, the use of complex
-applied mathematic models requires proficency in both cybersecurity and
-mathematics, which can be hard to achieve in a real organizational
+applied mathematics models requires proficency in both cybersecurity and
+mathematics, which can be difficult to achieve in a real organisational
 setting. This is why it is proposed in the next chapter, that a simpler, more pessimistic and more concise model would be easier to reach for an
-organization.
+organisation.

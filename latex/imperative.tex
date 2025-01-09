@@ -29,21 +29,20 @@ reference point for the effective distribution and automation of
 declarative systems. It can be argued that similiar approaches as
 those taken in cloud, should be taken in embedded and IoT to increase
 security through updatability and upgradability. This argument is backed up
-in chapter \ref{analysis} section \ref{usingtheresults}
-subsection \ref{improvingwithnix}, where a concrete use case is demonstrated.
+in section \ref{improvingwithnix}, where a concrete use case is demonstrated.
 
 \section{Imperative systems}
 
 Imperative deployment models base their functionalities through a
 process in which the order of events have a critical significance to
 the output \cite{breitenbucher2017declarative}. In the context of
-virtualization, imperative tooling can be used to form all
+virtualisation, imperative tooling can be used to form all
 activities to be executed: the control flow, execution order
 and the data flow between them \cite{endres2017declarative}. This kind
-of process is best to be used in conjunction with a formalized
+of process is best to be used in conjunction with a formalised
 workflow or standard such as BPEL \cite{endres2017declarative}. In
 contrast, declarative models don't have such specific requirements, as
-these models formalize the processes in the configuration files
+these models formalise the processes in the configuration files
 \cite{endres2017declarative}.
 
 Imperative systems have inherent problems regarding
@@ -51,19 +50,19 @@ administrative traits contributing to a framework where the underlying
 system has \textbf{no traceability}: the implication that
 reproducibility is impossible, as changes to a system are not
 traced. Nix provides a solution for this problem with its Nix
-generation system. With
+generation system \cite{dolstra2007purely}. With
 imperative systems, upgrading is more error-prone than installing from
 scratch. This is due to the fact that imperative systems have
 \textbf{unpredictable} state, from where the system should migrate to
 a predictable state. This causes major issues regarding
-upgradability. \cite{dolstra2007purely}
+upgradability. 
 
 \textbf{The inability to run multiple configurations side-by-side} is
-an inherent side effect of a \textit{stateful} system. Declarative
+an inherent side effect of a \textit{stateful} system \cite{dolstra2007purely}. Declarative
 systems don't have this problem: an arbitrary number of configurations
 can exist side by side, as the system is defined only by the
 configuration, not with the state as a
-component. \cite{dolstra2007purely}
+component. 
 
 \subsection{Debian/Apt} \label{debian/apt}
 
@@ -98,7 +97,7 @@ invoking
 % kuva distribuutioiden distribuutioista
 \begin{figure}\label{deb_remove}
 \includegraphics[scale=2.0]{latex/kuvat/cropped_apt_output.jpg}
-\caption{Terminal output from a Debian system when installing an Emacs package.}
+\caption[Terminal output from Emacs installation.]{Terminal output from a Debian system when installing an Emacs package.}
 \end{figure}
 leaving the system in an unreliable state. Dpkg is a low-level
 tool associated with apt, which doesn't automatically handle dependency
@@ -121,42 +120,11 @@ the wrong order, this will lead to divergent systems.
 
 Implementing a deployment model with only Debian would be a gruesome
 task as the order of events, which occur during the setup phase, is
-critical. As presented by Endres et al. a formalized workflow graph
+critical. As presented by Endres et al. a formalised workflow graph
 would be needed to set up a reliable system. However, Debian could
 be used as a host to user-space application deployment such as
 Bluemix or Chef, where common DevOps practices can be used
 \cite{endres2017declarative}.
-
-
-%% \subsection{Gentoo/Portage} \label{gentoo}
-
-%% Gentoo Linux is bundled with the package manager Portage, which
-%% consists of two components: ebuild and emerge, which have similar
-%% relation as dpkg and apt. Portage is primarily source-based package
-%% manager; ebuild builds and installs packages from source and emerge
-%% resolves dependencies and handles other related issues. Portage's
-%% flagship feature is its ''USE-flags'', a mechanism that enables
-%% compiling source files with or without specific features. For example,
-%% a make.conf file in /etc/portage could have USE-flags specified as:
-%% \begin{figure}[H] \label {gentoosnippet1}
-%% \begin{lstlisting}
-%% USE=''-X wayland''
-%% \end{lstlisting}
-%% \end{figure}
-%% and the sources wouldn't, if possible, compile with X11 support, but
-%% would with Wayland. This results in smaller binary sizes, increased
-%% performance and enhanced security through package minimalism. When
-%% there's less dependencies and installed programs, there's also less
-%% attack surface \cite{wang2017network}.
-
-%% Gentoo's portage system allows sharing binaries and sources with
-%% rsync, which would be a useful feature in a server-client model,
-%% similar to architecture proposed in chapter \ref{architecture}, where updates are centralised
-%% \cite{thiruvathukal2004gentoo}. An architecture with imperative
-%% components isn't proposed in this thesis, but if it would be, a
-%% suitable candidate would be something that uses Gentoo Linux as it's
-%% foundation.
-
 
 \section{Declarative systems} \label{declarativesystems}
 
@@ -164,12 +132,12 @@ Presented problems in section \ref{debian/apt} can be solved using a
 reproducible, reliable and atomic package manager. In Nix, package
 installations are isolated from one another to prevent conflicts,
 ensuring they function consistently even if the underlying
-installations differ. As the packages are declared in a single set of
+installations differ. As packages are declared in a single set of
 configuration files, it is trivial to reproduce the system in a
 different environment. The demonstrated effect in snippet
 \ref{dpkgsnippet} was a problem due to lack of isolation. When
 dependencies are scattered in the system instead of declared
-explicitly in a installed package, a faulty state could be
+explicitly in an installed package, a faulty state could be
 achieved. Nix assures, that these kinds of problems are out of the
 question. A result of this is that in a Nix system installs of same
 program can reside side-by-side with varying versions
@@ -221,9 +189,9 @@ vs. an imperative system are discussed in the next chapter.
 
 \subsection{Non-declarative components} \label{nondeclarative}
 
-Declarative distributions such as Nix can't do everything in the
+Declarative distributions such as Nix cannot do everything in the
 system in stateless manner. Some components of the system such as
-databases must have a distinct state, which can't be practically
+databases must have a distinct state, which cannot be practically
 declared with package manager apart from initial configurations
 \cite{van2013reference}. Home directories can vary as much as the
 system administrator desires. For example, a configuration file for
@@ -245,7 +213,7 @@ following snippet:
 }
 \end{lstlisting}
 Nix also provides ways to fetch content to the system from
-remote URLs. If the administrator doesn't want the system to
+remote URLs. If the administrator does not want the system to
 remain ''pure'', they can also build the system by
 \begin{lstlisting}
   nixos-rebuild switch --impure
@@ -275,7 +243,7 @@ that reside also in the Nix store hence referred packages are called
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{latex/kuvat/symlinks.drawio.svg}}
-\caption{Relations between different user environments and installed
+\caption[Relation graph in Nix environment.]{Relations between different user environments and installed
   programs \cite{nixosUserEnvironment}.}
 \label{userenvs}
 \end{figure}
@@ -295,7 +263,7 @@ handling environment difference and inability to guarantee
 configuration compatibility with a machine. Disnix is a Nix derivative
 that can overcome these challenges by separating logical properties
 from physical and capturing the essential aspects which form a
-system. \cite{van2013reference}
+system \cite{van2013reference}.
 
 \subsection{Home manager and flakes}
 
@@ -309,26 +277,28 @@ examples \cite{nixcommunityHomeManager}.
 
 Flakes is an experimental feature of Nix, which provides environments, where
 dependencies are pinned in a lock file, further improving
-reproducibility of Nix systems. A flake is a
+reproducibility of Nix systems \cite{nixosFlakesNixOS}. A flake is a
 file system tree which contains a root directory with the Nix lock file
 specification called flake.nix. The usage of flakes is a favorable method
 for organising different environments within a Nix system where it
 can consist of multiple flakes. Flakes is an experimental
-feature, thus out of this thesis' scope. \cite{nixosFlakesNixOS}
+feature, thus out of this thesis' scope. 
 
 \subsection{Ease of updates}
 
-Due to atomic rollbacks, updating with Nix is easy and riskless. Nix handles software providing through  channels. A channel is a set of latest Git commits in a Nixpkgs
-repository, where they are divided to stable/unstable and
-large/small channels. Unstable channels (large and small) have the
-latest commits on a rolling basis, but include less conservatively
+Due to atomic rollbacks, updating with Nix is easy and riskless. Nix
+handles software providing through channels. A channel is a set of
+latest Git commits in a Nixpkgs repository, where they are divided to
+stable/unstable and large/small channels
+\cite{nixosChannelsNixOS}. Unstable channels (large and small) have
+the latest commits on a rolling basis, but include less conservatively
 checked functionalities. Stable channels are submitted through a
 version number (e.g. 23.11), where a new release is published every
-six months. Large channels contain a full set of
-Nixpkgs binaries, when small ones include a subset. If a system
-administrator decides to submit to a small channel, they have more
-recent updates at their disposal, but have to resort to compiling some
-needed packages from source. \cite{nixosChannelsNixOS}
+six months. Large channels contain a full set of Nixpkgs binaries,
+when small ones include a subset. If a system administrator decides to
+submit to a small channel, they have more recent updates at their
+disposal, but have to resort to compiling some needed packages from
+source.
 
 Updating a Nix system is just a manner of invoking command
 
@@ -344,7 +314,7 @@ repository of working Nix packages using a continuous integration
 service called Hydra. Hydra evaluates the needed Nix expression of a
 package and ensures its functionality \cite{nixosNixOSManual}.
 
-It is apparent that purely functional and declarative approaches aren't as popular
+It is apparent that purely functional and declarative approaches are not as popular
 as imperative systems due to the need of steep learning curves and
 obscure syntax. This can be seen as historical payload: imperative
 models have been in use a longer time than purely functional

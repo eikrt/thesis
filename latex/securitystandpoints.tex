@@ -19,48 +19,48 @@ thesis. SMART is opened more in the section \ref{choosingsecmet}.
 Using an exact metric system is important, as this this thesis'
 emphasis is on measuring the security of a declarative approach. The
 presented architecture in the previous chapter works as an example on
-how a declarative system can be improved by reconfiguration, utilizing
+how a declarative system can be improved by reconfiguration, utilising
 a red-blue team setup.
 
 \section{A brief history of security metrics}
 
 The history of security metrics begin from Trusted Computer System
 Evaluation Criteria (TCSEC) also known as the Orange Book from 1983,
-which popularized many terms still in use today such as
+which popularised many terms still in use today, such as
 identification, authentication and
-authorization. \cite{bayuk2013measuring}
+authorisation \cite{bayuk2013measuring}.
 
 In the 1990s, when the US National Bureau of Standards (NBS), later
 known as the National Institute of Standards and Technology (NIST),
-tried to standardize security, it became clear that systems needed to
+tried to standardise security, it became clear that systems needed to
 adhere closely to the definitions outlined in the Orange Book and the
-subsequent Common Criteria project. Over time, various other standards
+subsequent Common Criteria project \cite{bayuk2013measuring}. Over time, various other standards
 gained popularity, such as the System Security Engineering Capability
 Maturity Model (SSE-CMM), which serves as a checklist for system
-design from the ground up. \cite{bayuk2013measuring}
+design from the ground up. 
 
 Later it was observed, that systems design is only a part of a
 successful security strategy and operational practices played a
 bigger role than expected. This was something to be addressed in 1995 NIST
 Computer Security Handbook which evolved to provide ground to
-combat modern issues. \cite{bayuk2013measuring}
+combat modern issues \cite{bayuk2013measuring}.
 
 As metrics can be used as a tool for decision making, the strategical
 approach of the mentioned publishes is important. It is noteworthy, that
 the strategies (the Orange Book, SSE-CMM, etc.) begin to measure
-security by compliance to defined ratings. Later in 2000s more
+security by compliance to defined ratings \cite{bayuk2013measuring}. Later in 2000s more
 mathematical approaches were taken, one which is delved deeper in
-section \ref{whyqueries}. \cite{bayuk2013measuring}
+section \ref{whyqueries}. 
 
 \section{Choosing security metrics} \label{choosingsecmet}
 
 Security is something that is challenging to measure due to its
 complex nature. A GQM (Goal, question, metric) paradigm helps to
 choose appropriate metrics: first there must be a set goal to an
-organisation, then a formulated question for each goal. These answers
+organisation, then a formulated question for each goal \cite{papazov2019cybersecurity}. These answers
 are then reflected to gain the desired metric. This strategical
 approach is perhaps too broad for this thesis' scope, but it aligns well
-with a usual organisational strategy. \cite{papazov2019cybersecurity}
+with a usual organisational strategy. 
 
 A more appropriate tool for this task would be SMART – a set of inputs
 to evaluate meter systems' suitability. These inputs describe how
@@ -70,17 +70,17 @@ is \cite{payne2006guide}.
 In cyber security, being specific is very important. A common issue
 with security meters is, that they either cover too many topics and
 are without precise definitions or they are too specific to be
-generalized to a broader scope of situations
+generalised to a broader scope of situations
 \cite{wang2005information}. The results of this thesis are crucial to
 measure, as the research focuses on system states and aims to assess
 the outputs produced by state transitions.
 
 The concept of attainability is important in this context because this
 thesis has a narrower scope compared to a large
-organization. Therefore, the proposed setup must be evaluated to
+organisation. Therefore, the proposed setup must be evaluated to
 ensure that the metrics' goals are achievable. Relevance has to do
 with risk assessment and how important it is to measure something related
-to its value. Risk assessment is explored in detail  in chapter
+to its value. Risk assessment is explored in detail in chapter
 \ref{analysis} section \ref{modprob}. Time-bounding signifies the
 importance of time as a meter; a system that can be penetrated in a
 minute can certainly be seen as weaker than a system that takes years
@@ -93,22 +93,22 @@ through literature review for cybersecurity are discussed, and
 potential methodologies are compared to gain the most adequate metric
 system for usage through SMART process \cite{payne2006guide}.
 
-Security metrics can be categorized into four themes:
+Security metrics can be categorised into four themes:
 \textbf{system vulnerabilities}; measuring vulnerabilities can be
 applied to user-related, interface-induced, password, and software
-vulnerabilities. Users are constantly at risk of threats such as
+vulnerabilities \cite{pendleton2016survey}. Users are constantly at risk of threats such as
 phishing attacks or malware infections, where the user of any system
 becomes the primary attack vector. Interface-induced vulnerabilities refer to attack vectors associated with open ports
-and endpoints. \cite{pendleton2016survey}
+and endpoints.
 
 Password vulnerabilities refer to instances where a password can be
-cracked through computational methods. This is fairly easy to measure,
+cracked through computational methods \cite{pendleton2016survey}. This is fairly easy to measure,
 as it is possible to estimate the time required to crack a password or
 assess its vulnerability using statistical password
 guessability. Software vulnerabilities are a common cause of security
 breaches. These vulnerabilities can be measured and estimated based on
 past exploitations. A key metric in this context is the time taken to
-patch a software vulnerability. \cite{pendleton2016survey}
+patch a software vulnerability. 
 
 \textbf{Defense} measures can be applied to strengthen reactive,
 preventive, proactive and overall defenses. Reactive measures include
@@ -118,14 +118,14 @@ botnet. For measuring defence, the reaction time is essential and
 most importantly, it is a gained meter to measure preventive
 defense. Blacklisting can also be used as a preventive and a proactive
 measure, as a pre-filled blacklist can be used with desired
-parameters. \cite{pendleton2016survey, ramos2017model}
+parameters \cite{pendleton2016survey, ramos2017model}.
 
 Overall defenses can be measured with the combination of all defensive
 measures and with the use of penetration testing in a red–blue team
 setup. Penetration testing aims to gain a result, also known as
 penetration resistance, which is a meter indicating cost or time that
 the red team must spend in case of a successful system
-compromisal. \cite{pendleton2016survey, ramos2017model}
+compromisal \cite{pendleton2016survey, ramos2017model}.
 
 \textbf{Threats}: zero-day vulnerabilities can be measured from two
 perspectives: lifetime of zero-day vulnerability and the number of
@@ -135,14 +135,14 @@ node per a time unit. Attack evasion is assessed using either the
 obfuscation prevalence metric or the structural complexity
 metric. These metrics offer insights into the obfuscation of acquired
 samples, such as through encryption, or the complexity of the target
-system, which is measured by its runtime. \cite{pendleton2016survey,  ramos2017model}
+system, which is measured by its runtime \cite{pendleton2016survey,  ramos2017model}.
 
 \textbf{Situations} can refer to the security state, security
 incidents, and security investments. The security state encompasses
 various parameters, such as the incident rate and the blocking
-rate. Security investments,  measure the percentage
+rate. Security investments measure the percentage
 of the budget allocated to security and the return on those
-investments. \cite{pendleton2016survey}
+investments \cite{pendleton2016survey}. 
 
 \section{Methodologies in comparison} \label{whyqueries}
 
@@ -237,7 +237,7 @@ that can be used which is the same for all tasks.
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=0.50\columnwidth]{latex/kuvat/queries.drawio.svg}}
-\caption{The QuERIES methodology is used as a reference flowchart for
+\caption[QuERIES as a flowchart]{The QuERIES methodology is used as a reference flowchart for
   evaluation of security. \cite{hughes2013quantitative}}
 \label{queries}
 \end{figure}
@@ -245,9 +245,9 @@ that can be used which is the same for all tasks.
 
 QuERIES draws inspiration from computer science, game theory, control
 theory and economics, thus is a complex answer to a complex
-question. It is stated, that it can be used as an alternative to
+question. It has been stated, that it can be used as an alternative to
 popular methodologies such as red teaming or black-hat analysis, used
-commonly in risk-assessment. \cite{carin2008cybersecurity}
+commonly in risk-assessment \cite{carin2008cybersecurity}.
 
 QuERIES is proposed to have potentially significant usage in DoD
 (Department of Defense) and in the private sector
@@ -256,11 +256,11 @@ small-scale and realistic scenarios presented by Carin et al. suggest
 that the methodology can in fact be used as to improve risk-assessment of
 more complex settings \cite{carin2008cybersecurity}. This thesis
 follows similar steps: first the QuERIES methodology is used to assess
-risks followed by generalization with strict constraints in mind.
+risks followed by generalisation with strict constraints in mind.
 
-As stated by Hughes et al. the result of QuERIES isn't binary: the
+As stated by Hughes et al. \cite{hughes2013quantitative} the result of QuERIES is not binary: the
 attacker must think about the most optimal timeframe to stop the
-operation \cite{hughes2013quantitative}. The strategy uses
+operation. The strategy uses
 \textbf{open} and \textbf{closed} loop decision algorithms for
 deciding when to stop trying. Closed loop decision algorithm
 constantly evaluates when is the optimal time to stop trying and open
@@ -270,9 +270,9 @@ the probabilities through red-team evaluation, the system is
 thoroughly tested and improved. This is a valuable metric, offering
 insight into how the value of the system changes over time in terms of
 the cost of breaching it, thereby reflecting the true cost of the
-attack. As stated by Hughes and Cybenko, if the value is high enough
+attack. As stated by Hughes and Cybenko \cite{hughes2013quantitative}, if the value is high enough
 related to the value of the gained value, they will
-perform the attacks less likely \cite{hughes2013quantitative}.
+perform the attacks less likely.
 
 In this thesis, the value of the whole system architecture is
 defined as 1, constituting a value of holded intellectual
@@ -309,16 +309,16 @@ steps:
 
 A POMDP is used widely in these kinds of applications, as both blue and
 red teams have only partial observations in relation to the system
-\cite{mcabeeMarkov}. The blue team can't be completely certain that
+\cite{mcabeeMarkov}. The blue team cannot be completely certain that
 the system is secure, and the red team cannot perform fully reliably as
 systems and environments differ from each other. As mentioned in the
 previous section, the focus of the QuERIES analysis is the time to
-reverse-engineer the system thus emphasizing the importance of only
+reverse-engineer the system thus emphasising the importance of only
 partial observations.
 
 In the next section the architecture presented in chapter
 \ref{architecture} is improved using the applied QuERIES methodology. An
-attack graph is constructed and POMDPs are utilized. The result will
+attack graph is constructed and POMDPs are utilised. The result will
 provide information about the architecture's security, and it will
 undergo several iterations of the QuERIES pipeline with each improving
 the overall security of the system.

@@ -21,22 +21,20 @@
   \datalist[entry]{none/global//global/global/global}
     \entry{gnuPackagesx2014}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=30675f35bd3b466dfdec6d640781dbd3}{%
-           family={contributors},
-           familyi={c\bibinitperiod},
-           given={GNU\bibnamedelima Guix},
-           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=7d098611872b0edf190612a90823682b}{%
+           family={{GNU Guix contributors}},
+           familyi={G\bibinitperiod}}}%
       }
-      \strng{namehash}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{fullhash}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{fullhashraw}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{bibnamehash}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{authorbibnamehash}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{authornamehash}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{authorfullhash}{30675f35bd3b466dfdec6d640781dbd3}
-      \strng{authorfullhashraw}{30675f35bd3b466dfdec6d640781dbd3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \strng{namehash}{7d098611872b0edf190612a90823682b}
+      \strng{fullhash}{7d098611872b0edf190612a90823682b}
+      \strng{fullhashraw}{7d098611872b0edf190612a90823682b}
+      \strng{bibnamehash}{7d098611872b0edf190612a90823682b}
+      \strng{authorbibnamehash}{7d098611872b0edf190612a90823682b}
+      \strng{authornamehash}{7d098611872b0edf190612a90823682b}
+      \strng{authorfullhash}{7d098611872b0edf190612a90823682b}
+      \strng{authorfullhashraw}{7d098611872b0edf190612a90823682b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://packages.guix.gnu.org/}}
@@ -56,6 +54,9 @@
            given={Andres},
            giveni={A\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Delft, The Netherlands}%
+      }
       \strng{namehash}{fbc46e2cece7a33a31cddb617af05dab}
       \strng{fullhash}{fbc46e2cece7a33a31cddb617af05dab}
       \strng{fullhashraw}{fbc46e2cece7a33a31cddb617af05dab}
@@ -64,8 +65,8 @@
       \strng{authornamehash}{fbc46e2cece7a33a31cddb617af05dab}
       \strng{authorfullhash}{fbc46e2cece7a33a31cddb617af05dab}
       \strng{authorfullhashraw}{fbc46e2cece7a33a31cddb617af05dab}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 13th ACM SIGPLAN international conference on Functional programming}
@@ -75,16 +76,46 @@
       \range{pages}{12}
     \endentry
     \entry{opensuseSystemRecovery}{misc}{}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \name{author}{1}{}{%
+        {{hash=044003688ca43e24fe0b5f0a22a37d4d}{%
+           family={{OpenSUSE community}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{fullhash}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{fullhashraw}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{bibnamehash}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{authorbibnamehash}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{authornamehash}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{authorfullhash}{044003688ca43e24fe0b5f0a22a37d4d}
+      \strng{authorfullhashraw}{044003688ca43e24fe0b5f0a22a37d4d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://doc.opensuse.org/documentation/leap/archive/15.0/reference/html/book.opensuse.reference/cha.snapper.html}}
       \field{note}{[Accessed 16-09-2024]}
       \field{title}{{S}ystem {R}ecovery and {S}napshot {M}anagement with {S}napper | {R}eference | open{S}{U}{S}{E} {L}eap 15.0 --- doc.opensuse.org}
     \endentry
     \entry{githubGitHubNixosbsdnixbsd}{misc}{}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \name{author}{1}{}{%
+        {{hash=f09f077cf2c0e700416ffbb33f7d6f88}{%
+           family={Tosini},
+           familyi={T\bibinitperiod},
+           given={Artemis},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{fullhash}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{fullhashraw}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{bibnamehash}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{authorbibnamehash}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{authornamehash}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{authorfullhash}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \strng{authorfullhashraw}{f09f077cf2c0e700416ffbb33f7d6f88}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/nixos-bsd/nixbsd}}
       \field{note}{[Accessed 09-11-2024]}
@@ -100,6 +131,9 @@
            prefix={van\bibnamedelima der},
            prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Delft, The Netherlands}%
+      }
       \list{publisher}{1}{%
         {Citeseer}%
       }
@@ -111,16 +145,31 @@
       \strng{authornamehash}{c4f37b199c66c33cf623be8d21e97c5f}
       \strng{authorfullhash}{c4f37b199c66c33cf623be8d21e97c5f}
       \strng{authorfullhashraw}{c4f37b199c66c33cf623be8d21e97c5f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Reference Architecture for Distributed Software Deployment.}
       \field{year}{2013}
     \endentry
     \entry{nixosNixOSSearch}{misc}{}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://search.nixos.org/packages}}
       \field{note}{[Accessed 24-09-2024]}
@@ -133,6 +182,9 @@
            familyi={C\bibinitperiod},
            given={Ludovic},
            giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris, France}%
       }
       \strng{namehash}{5aaa688392b76c06143bec95a3a653ad}
       \strng{fullhash}{5aaa688392b76c06143bec95a3a653ad}
@@ -157,6 +209,9 @@
            familyi={W\bibinitperiod},
            given={Andy\bibnamedelimb Ju\bibnamedelima An},
            giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Marietta, GA, USA}%
       }
       \strng{namehash}{3f969fb9caa125be6974a6acb4720544}
       \strng{fullhash}{3f969fb9caa125be6974a6acb4720544}
@@ -199,6 +254,9 @@
            given={Joel\bibnamedelima JPC},
            giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Fortaleza, Brazil}%
+      }
       \list{publisher}{1}{%
         {IEEE}%
       }
@@ -222,39 +280,123 @@
       \field{pages}{2704\bibrangedash 2734}
       \range{pages}{31}
     \endentry
-    \entry{van2010declarative}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=c4f37b199c66c33cf623be8d21e97c5f}{%
-           family={Burg},
-           familyi={B\bibinitperiod},
-           given={Sander},
-           giveni={S\bibinitperiod},
-           prefix={van\bibnamedelima der},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+    \entry{dolstra2013charon}{inproceedings}{}{}
+      \name{author}{3}{}{%
         {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
            family={Dolstra},
            familyi={D\bibinitperiod},
            given={Eelco},
            giveni={E\bibinitperiod}}}%
+        {{hash=b716d767cf0c329bb983e573c564fb40}{%
+           family={Vermaas},
+           familyi={V\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=442b7d6bd2327ede49576f79efae18f8}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Shea},
+           giveni={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Citeseer}%
+      \list{location}{1}{%
+        {Atlanta, Georgia, USA}%
       }
-      \strng{namehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{fullhash}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{fullhashraw}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{bibnamehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{authorbibnamehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{authornamehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{authorfullhash}{d8d4653240d7e4e55229d4fc33ec3f8f}
-      \strng{authorfullhashraw}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0c755623e194cf33e6be296b96091cfe}
+      \strng{fullhash}{a1c4b481ddf24bc67c37a0df912104ca}
+      \strng{fullhashraw}{a1c4b481ddf24bc67c37a0df912104ca}
+      \strng{bibnamehash}{a1c4b481ddf24bc67c37a0df912104ca}
+      \strng{authorbibnamehash}{a1c4b481ddf24bc67c37a0df912104ca}
+      \strng{authornamehash}{0c755623e194cf33e6be296b96091cfe}
+      \strng{authorfullhash}{a1c4b481ddf24bc67c37a0df912104ca}
+      \strng{authorfullhashraw}{a1c4b481ddf24bc67c37a0df912104ca}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Technical Report Series TUD-SERG-2006-020}
-      \field{title}{Declarative testing and deployment of distributed systems}
-      \field{year}{2010}
+      \field{booktitle}{2013 1st International Workshop on Release Engineering (RELENG)}
+      \field{title}{Charon: Declarative provisioning and deployment}
+      \field{year}{2013}
+      \field{pages}{17\bibrangedash 20}
+      \range{pages}{4}
+    \endentry
+    \entry{dolstra2007purely}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
+           family={Dolstra},
+           familyi={D\bibinitperiod},
+           given={Eelco},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ec43622a9ae8ce3ab9d0e5e64526874f}{%
+           family={Hemel},
+           familyi={H\bibinitperiod},
+           given={Armijn},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Utrecht, The Netherlands}%
+      }
+      \strng{namehash}{306010d2b96f255c5a2b3b438561d594}
+      \strng{fullhash}{306010d2b96f255c5a2b3b438561d594}
+      \strng{fullhashraw}{306010d2b96f255c5a2b3b438561d594}
+      \strng{bibnamehash}{306010d2b96f255c5a2b3b438561d594}
+      \strng{authorbibnamehash}{306010d2b96f255c5a2b3b438561d594}
+      \strng{authornamehash}{306010d2b96f255c5a2b3b438561d594}
+      \strng{authorfullhash}{306010d2b96f255c5a2b3b438561d594}
+      \strng{authorfullhashraw}{306010d2b96f255c5a2b3b438561d594}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{HotOS}
+      \field{title}{Purely Functional System Configuration Management.}
+      \field{year}{2007}
+    \endentry
+    \entry{dolstra2004nix}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
+           family={Dolstra},
+           familyi={D\bibinitperiod},
+           given={Eelco},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9d00fdfaa90141fbd55d29c1384767cf}{%
+           family={De\bibnamedelima Jonge},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Merijn},
+           giveni={M\bibinitperiod}}}%
+        {{hash=05c571c161af3b68085a0f3a9cb29efa}{%
+           family={Visser},
+           familyi={V\bibinitperiod},
+           given={Eelco},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Utrecth, The Netherlands}%
+      }
+      \strng{namehash}{0c755623e194cf33e6be296b96091cfe}
+      \strng{fullhash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{fullhashraw}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{bibnamehash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{authorbibnamehash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{authornamehash}{0c755623e194cf33e6be296b96091cfe}
+      \strng{authorfullhash}{eb41b57c9692b02d52ec682552d16f68}
+      \strng{authorfullhashraw}{eb41b57c9692b02d52ec682552d16f68}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{LISA}
+      \field{title}{Nix: A Safe and Policy-Free System for Software Deployment.}
+      \field{volume}{4}
+      \field{year}{2004}
+      \field{pages}{79\bibrangedash 92}
+      \range{pages}{14}
     \endentry
     \entry{endres2017declarative}{inproceedings}{}{}
       \name{author}{6}{}{%
@@ -289,6 +431,9 @@
            given={Johannes},
            giveni={J\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Stuttgart, Germany}%
+      }
       \list{organization}{1}{%
         {Xpert Publishing Services (XPS)}%
       }
@@ -309,6 +454,43 @@
       \field{year}{2017}
       \field{pages}{22\bibrangedash 27}
       \range{pages}{6}
+    \endentry
+    \entry{van2010declarative}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c4f37b199c66c33cf623be8d21e97c5f}{%
+           family={Burg},
+           familyi={B\bibinitperiod},
+           given={Sander},
+           giveni={S\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
+           family={Dolstra},
+           familyi={D\bibinitperiod},
+           given={Eelco},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Delft, The Netherlands}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{fullhash}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{fullhashraw}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{bibnamehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{authorbibnamehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{authornamehash}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{authorfullhash}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \strng{authorfullhashraw}{d8d4653240d7e4e55229d4fc33ec3f8f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technical Report Series TUD-SERG-2006-020}
+      \field{title}{Declarative testing and deployment of distributed systems}
+      \field{year}{2010}
     \endentry
     \entry{specht2007analysis}{inproceedings}{}{}
       \name{author}{6}{}{%
@@ -343,6 +525,9 @@
            given={Flávio\bibnamedelima Rech},
            giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Porto Alegre, Brazil}%
+      }
       \strng{namehash}{6e6bfe27804b41f063ba42d368453c12}
       \strng{fullhash}{6cabc6e3349368a947e8d19ba9a35352}
       \strng{fullhashraw}{6cabc6e3349368a947e8d19ba9a35352}
@@ -373,6 +558,9 @@
            familyi={H\bibinitperiod},
            given={Klaus},
            giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, United States}%
       }
       \strng{namehash}{91947f6cd2bcbd7449c40dff748acf12}
       \strng{fullhash}{91947f6cd2bcbd7449c40dff748acf12}
@@ -414,6 +602,9 @@
            familyi={H\bibinitperiod},
            given={Sunil},
            giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
       }
       \list{publisher}{1}{%
         {ACM New York, NY, USA}%
@@ -466,6 +657,9 @@
            given={Charalampos},
            giveni={C\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Chania, Greece}%
+      }
       \list{organization}{1}{%
         {SCITEPRESS}%
       }
@@ -477,8 +671,8 @@
       \strng{authornamehash}{3b6de51c8c277b47e1f2a8cbe0c54e7d}
       \strng{authorfullhash}{e9a745c41466079f5325349863916cbc}
       \strng{authorfullhashraw}{e9a745c41466079f5325349863916cbc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Measurable security for Embedded Computing and Communication Systems}
@@ -505,6 +699,9 @@
            familyi={H\bibinitperiod},
            given={Jeff},
            giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Diego, CA, USA}%
       }
       \list{publisher}{1}{%
         {IEEE}%
@@ -541,6 +738,9 @@
            familyi={C\bibinitperiod},
            given={George},
            giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ottawa, ON, Canada}%
       }
       \strng{namehash}{9f2da498adc6a6a22aaee2a29872b488}
       \strng{fullhash}{9f2da498adc6a6a22aaee2a29872b488}
@@ -583,6 +783,9 @@
            given={Michael},
            giveni={M\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Stuttgart, Germany}%
+      }
       \strng{namehash}{e1ce734afe5fbadb055691b017fc9f58}
       \strng{fullhash}{94ca1d0010985a66be1f2b778343af6d}
       \strng{fullhashraw}{94ca1d0010985a66be1f2b778343af6d}
@@ -600,35 +803,6 @@
       \field{year}{2017}
       \field{pages}{18\bibrangedash 27}
       \range{pages}{10}
-    \endentry
-    \entry{dolstra2007purely}{inproceedings}{}{}
-      \name{author}{2}{}{%
-        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
-           family={Dolstra},
-           familyi={D\bibinitperiod},
-           given={Eelco},
-           giveni={E\bibinitperiod}}}%
-        {{hash=ec43622a9ae8ce3ab9d0e5e64526874f}{%
-           family={Hemel},
-           familyi={H\bibinitperiod},
-           given={Armijn},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{306010d2b96f255c5a2b3b438561d594}
-      \strng{fullhash}{306010d2b96f255c5a2b3b438561d594}
-      \strng{fullhashraw}{306010d2b96f255c5a2b3b438561d594}
-      \strng{bibnamehash}{306010d2b96f255c5a2b3b438561d594}
-      \strng{authorbibnamehash}{306010d2b96f255c5a2b3b438561d594}
-      \strng{authornamehash}{306010d2b96f255c5a2b3b438561d594}
-      \strng{authorfullhash}{306010d2b96f255c5a2b3b438561d594}
-      \strng{authorfullhashraw}{306010d2b96f255c5a2b3b438561d594}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{HotOS}
-      \field{title}{Purely Functional System Configuration Management.}
-      \field{year}{2007}
     \endentry
     \entry{ubuntuUbuntuManpage}{misc}{}{}
       \name{author}{1}{}{%
@@ -659,6 +833,9 @@
            familyi={T\bibinitperiod},
            given={George\bibnamedelima K},
            giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Diego, CA, USA}%
       }
       \list{publisher}{1}{%
         {IEEE}%
@@ -696,6 +873,9 @@
            given={Eelco},
            giveni={E\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Delft, The Netherlands}%
+      }
       \list{organization}{1}{%
         {IEEE}%
       }
@@ -718,52 +898,27 @@
       \range{pages}{10}
     \endentry
     \entry{nixosNixOSManual}{misc}{}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.org/manual/nixos/stable/}}
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{N}ix{O}{S} {M}anual --- nixos.org}
-    \endentry
-    \entry{dolstra2013charon}{inproceedings}{}{}
-      \name{author}{3}{}{%
-        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
-           family={Dolstra},
-           familyi={D\bibinitperiod},
-           given={Eelco},
-           giveni={E\bibinitperiod}}}%
-        {{hash=b716d767cf0c329bb983e573c564fb40}{%
-           family={Vermaas},
-           familyi={V\bibinitperiod},
-           given={Rob},
-           giveni={R\bibinitperiod}}}%
-        {{hash=442b7d6bd2327ede49576f79efae18f8}{%
-           family={Levy},
-           familyi={L\bibinitperiod},
-           given={Shea},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{0c755623e194cf33e6be296b96091cfe}
-      \strng{fullhash}{a1c4b481ddf24bc67c37a0df912104ca}
-      \strng{fullhashraw}{a1c4b481ddf24bc67c37a0df912104ca}
-      \strng{bibnamehash}{a1c4b481ddf24bc67c37a0df912104ca}
-      \strng{authorbibnamehash}{a1c4b481ddf24bc67c37a0df912104ca}
-      \strng{authornamehash}{0c755623e194cf33e6be296b96091cfe}
-      \strng{authorfullhash}{a1c4b481ddf24bc67c37a0df912104ca}
-      \strng{authorfullhashraw}{a1c4b481ddf24bc67c37a0df912104ca}
-      \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2013 1st International Workshop on Release Engineering (RELENG)}
-      \field{title}{Charon: Declarative provisioning and deployment}
-      \field{year}{2013}
-      \field{pages}{17\bibrangedash 20}
-      \range{pages}{4}
     \endentry
     \entry{dolstra2010nixos}{article}{}{}
       \name{author}{3}{}{%
@@ -783,6 +938,9 @@
            given={Nicolas},
            giveni={N\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Delft, The Netherlands}%
+      }
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
@@ -794,7 +952,7 @@
       \strng{authornamehash}{0c755623e194cf33e6be296b96091cfe}
       \strng{authorfullhash}{e94601a3d5f3025f11604a2085a0bcb1}
       \strng{authorfullhashraw}{e94601a3d5f3025f11604a2085a0bcb1}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -808,40 +966,115 @@
       \range{pages}{39}
     \endentry
     \entry{nixosUserEnvironment}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{3}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/User_Environment}}
       \field{note}{[Accessed 09-11-2024]}
       \field{title}{{U}ser {E}nvironment - {N}ix{O}{S} {W}iki --- nixos.wiki}
     \endentry
     \entry{githubNixNixpkgsNixOS}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{4}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/nixos}}
       \field{note}{[Accessed 08-11-2024]}
       \field{title}{{N}ix/{N}ixpkgs/{N}ix{O}{S} --- github.com}
     \endentry
     \entry{nixcommunityHomeManager}{misc}{}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nix-community.github.io/home-manager/}}
       \field{note}{[Accessed 24-05-2024]}
       \field{title}{{H}ome {M}anager {M}anual --- nix-community.github.io}
     \endentry
     \entry{nixosFlakesNixOS}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{6}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/Flakes}}
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{F}lakes - {N}ix{O}{S} {W}iki --- nixos.wiki}
     \endentry
     \entry{nixosChannelsNixOS}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{7}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/Nix_channels}}
       \field{note}{[Accessed 22-05-2024]}
@@ -859,6 +1092,9 @@
            familyi={V\bibinitperiod},
            given={Artemios\bibnamedelima G},
            giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Patras, Greece}%
       }
       \list{publisher}{1}{%
         {ACM New York, NY, USA}%
@@ -884,8 +1120,25 @@
       \range{pages}{10}
     \endentry
     \entry{secopsolutionHistorySecOps}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3486b06a9a4415891965553692cd9cd2}{%
+           family={{SecOpsSolution Inc.}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Middletown, DW, USA}%
+      }
+      \strng{namehash}{3486b06a9a4415891965553692cd9cd2}
+      \strng{fullhash}{3486b06a9a4415891965553692cd9cd2}
+      \strng{fullhashraw}{3486b06a9a4415891965553692cd9cd2}
+      \strng{bibnamehash}{3486b06a9a4415891965553692cd9cd2}
+      \strng{authorbibnamehash}{3486b06a9a4415891965553692cd9cd2}
+      \strng{authornamehash}{3486b06a9a4415891965553692cd9cd2}
+      \strng{authorfullhash}{3486b06a9a4415891965553692cd9cd2}
+      \strng{authorfullhashraw}{3486b06a9a4415891965553692cd9cd2}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.secopsolution.com/blog/history-of-ssh}}
       \field{note}{[Accessed 18-03-2024]}
@@ -903,6 +1156,9 @@
            familyi={K\bibinitperiod},
            given={Qasem},
            giveni={Q\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amman-Jordan, Jordan}%
       }
       \list{publisher}{2}{%
         {Science}%
@@ -926,46 +1182,6 @@
       \field{volume}{10}
       \field{year}{2019}
     \endentry
-    \entry{dolstra2004nix}{inproceedings}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{3}{}{%
-        {{hash=a3e96caa8e2128d249c9bae69079bc78}{%
-           family={Dolstra},
-           familyi={D\bibinitperiod},
-           given={Eelco},
-           giveni={E\bibinitperiod}}}%
-        {{hash=9d00fdfaa90141fbd55d29c1384767cf}{%
-           family={De\bibnamedelima Jonge},
-           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-           given={Merijn},
-           giveni={M\bibinitperiod}}}%
-        {{hash=05c571c161af3b68085a0f3a9cb29efa}{%
-           family={Visser},
-           familyi={V\bibinitperiod},
-           given={Eelco},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{0c755623e194cf33e6be296b96091cfe}
-      \strng{fullhash}{eb41b57c9692b02d52ec682552d16f68}
-      \strng{fullhashraw}{eb41b57c9692b02d52ec682552d16f68}
-      \strng{bibnamehash}{eb41b57c9692b02d52ec682552d16f68}
-      \strng{authorbibnamehash}{eb41b57c9692b02d52ec682552d16f68}
-      \strng{authornamehash}{0c755623e194cf33e6be296b96091cfe}
-      \strng{authorfullhash}{eb41b57c9692b02d52ec682552d16f68}
-      \strng{authorfullhashraw}{eb41b57c9692b02d52ec682552d16f68}
-      \field{extraname}{3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{LISA}
-      \field{title}{Nix: A Safe and Policy-Free System for Software Deployment.}
-      \field{volume}{4}
-      \field{year}{2004}
-      \field{pages}{79\bibrangedash 92}
-      \range{pages}{14}
-    \endentry
     \entry{kemmerer2003cybersecurity}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{hash=c394ed29f50a1f81e479476e95af6752}{%
@@ -973,6 +1189,9 @@
            familyi={K\bibinitperiod},
            given={Richard\bibnamedelima A},
            giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Santa Barbara, California, USA}%
       }
       \list{organization}{1}{%
         {IEEE}%
@@ -1003,6 +1222,9 @@
            given={Georgie},
            giveni={G\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Romeoville, IL, USA}%
+      }
       \strng{namehash}{90fb5b4c5b28e275e4aea03dd7f01c6c}
       \strng{fullhash}{90fb5b4c5b28e275e4aea03dd7f01c6c}
       \strng{fullhashraw}{90fb5b4c5b28e275e4aea03dd7f01c6c}
@@ -1020,32 +1242,90 @@
       \field{year}{2019}
     \endentry
     \entry{nixosSecurityNixOS}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{8}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nixos.wiki/wiki/Security}}
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{S}ecurity - {N}ix{O}{S} {W}iki --- nixos.wiki}
     \endentry
     \entry{oasisopenMQTTVersion}{misc}{}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \name{author}{1}{}{%
+        {{hash=ab0a7cf5deeda86b66467df64c3b6122}{%
+           family={MQTT},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{fullhash}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{fullhashraw}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{bibnamehash}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{authorbibnamehash}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{authornamehash}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{authorfullhash}{ab0a7cf5deeda86b66467df64c3b6122}
+      \strng{authorfullhashraw}{ab0a7cf5deeda86b66467df64c3b6122}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html}}
       \field{note}{[Accessed 22-05-2024]}
       \field{title}{{M}{Q}{T}{T} {V}ersion 3.1.1 --- docs.oasis-open.org}
     \endentry
     \entry{waylandWayland}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c2fee5e4f263907ab7ab9903f4838d07}{%
+           family={Freedesktop},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{fullhash}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{fullhashraw}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{bibnamehash}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{authorbibnamehash}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{authornamehash}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{authorfullhash}{c2fee5e4f263907ab7ab9903f4838d07}
+      \strng{authorfullhashraw}{c2fee5e4f263907ab7ab9903f4838d07}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://wayland.freedesktop.org/docs/html/}}
       \field{note}{[Accessed 18-09-2024]}
       \field{title}{{W}ayland --- wayland.freedesktop.org}
     \endentry
     \entry{githubGitHubNixcommunitynixosanywhere}{misc}{}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \name{author}{1}{}{%
+        {{hash=29da27f35544f4a34c81f65e60e19625}{%
+           family={{NixOS foundation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{fullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \strng{bibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorbibnamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authornamehash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
+      \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
+      \field{extraname}{9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/nix-community/nixos-anywhere}}
       \field{note}{[Accessed 01-10-2024]}
@@ -1063,6 +1343,9 @@
            familyi={M\bibinitperiod},
            given={Ali},
            giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ, USA}%
       }
       \list{publisher}{1}{%
         {Wiley Online Library}%
@@ -1095,6 +1378,9 @@
            given={Yavor\bibnamedelima Valentinov},
            giveni={Y\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Sofia, Bulgaria}%
+      }
       \strng{namehash}{768b813e562f41d9a0455501ef277c97}
       \strng{fullhash}{768b813e562f41d9a0455501ef277c97}
       \strng{fullhashraw}{768b813e562f41d9a0455501ef277c97}
@@ -1120,6 +1406,9 @@
            familyi={P\bibinitperiod},
            given={Shirley\bibnamedelima C},
            giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {North Bethesda, MD, USA}%
       }
       \strng{namehash}{02cd6b82c8ebcc6597f2dce26ecae23a}
       \strng{fullhash}{02cd6b82c8ebcc6597f2dce26ecae23a}
@@ -1160,6 +1449,9 @@
            given={Shouhuai},
            giveni={S\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {San Antonio, TX, USA}%
+      }
       \list{publisher}{1}{%
         {ACM New York, NY, USA}%
       }
@@ -1171,8 +1463,8 @@
       \strng{authornamehash}{227cda3f93bfb2e8aac97bad94e0f8f5}
       \strng{authorfullhash}{a1ce8b8a22338aa61f9d4b66b30fdec3}
       \strng{authorfullhashraw}{a1ce8b8a22338aa61f9d4b66b30fdec3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Computing Surveys (CSUR)}
@@ -1200,6 +1492,9 @@
            familyi={C\bibinitperiod},
            given={Diane},
            giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brisbane, Australia}%
       }
       \list{organization}{1}{%
         {IEEE}%
@@ -1245,6 +1540,9 @@
            given={Sanjoy},
            giveni={S\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Bangalore, India}%
+      }
       \list{organization}{1}{%
         {IEEE}%
       }
@@ -1276,6 +1574,9 @@
            suffix={Murali\bibnamedelima Tummala},
            suffixi={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Manoa, HI, USA}%
+      }
       \strng{namehash}{0fe8dc8b5584f4718d66554fff5cc32a}
       \strng{fullhash}{0fe8dc8b5584f4718d66554fff5cc32a}
       \strng{fullhashraw}{0fe8dc8b5584f4718d66554fff5cc32a}
@@ -1301,6 +1602,9 @@
            familyi={J\bibinithyphendelim B\bibinitperiod},
            given={Borka},
            giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ljubljana, Slovenia}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
@@ -1364,6 +1668,9 @@
            familyi={S\bibinitperiod},
            given={Carsten},
            giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Budapest, Hungary}%
       }
       \list{publisher}{1}{%
         {Elsevier}%

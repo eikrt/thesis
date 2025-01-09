@@ -20,7 +20,7 @@ system in an inconsistent state. Different installs have
 different states by nature which causes many problems discussed in this
 thesis. As files are cross-modified through packages with package
 managers such as apt, upgrading can be disastrous as such distributions
-don't support atomic rollback capabilities \footnote{Some Linux
+do not support atomic rollback capabilities \footnote{Some Linux
 distributions using btrfs filesystem can perform a snapshot and
 rollback, meaning that a previous state of a system can be recovered without issues \cite{opensuseSystemRecovery}}. Due to the unpredictability,
 the result can be a partially or completely broken system
@@ -33,9 +33,10 @@ with its partial namesake package manager Nix which provides
 declarative configuration of the whole system including the Linux
 kernel\footnote{There exists an experimental project that has
 succeeded with BSD interoperability
-\cite{githubGitHubNixosbsdnixbsd}}. Nix is configured by the Nix
+\cite{githubGitHubNixosbsdnixbsd}.}. Nix is configured by the Nix
 programming language which is inspired by purely functional languages
-such as Haskell. Declarative systems are those whose operation is based on a set of configuration files that define the system. \cite{van2013reference}
+such as Haskell \cite{van2013reference}. Declarative systems are those whose operation is
+based on a set of configuration files that define the system.
 
 The reference architecture depicted in chapter \ref{architecture} is
 based on Nix as it is the most popular purely functional and declarative
@@ -59,13 +60,15 @@ improvement over imperative distributions. In chapter \ref{imperative}
 both approaches to package management are compared followed by an
 introduction to embedded security in chapter \ref{embedded}. Chapter
 \ref{architecture} presents an example architecture created with
-NixOS. In chapter \ref{analysis}, a quantitative research is carried
-out revealing strengths and weaknesses of the reference Nix
-environment setup. The selected methodology, QuERIES provides
-quantitative results that can be used to improve the security of
-declarative architectures. Propositions for further research are
-covered in chapter \ref{further} and finally, chapter \ref{conclusion}
-concludes the thesis.
+NixOS, followed by chapter \ref{securitystandpoints}, which discusses
+the security metrics field in general and the decision process behind
+the chosen methodology for this thesis. In chapter \ref{analysis} a
+quantitative research is carried out, revealing strengths and
+weaknesses of the reference Nix environment setup. The selected
+methodology, QuERIES provides quantitative results that can be used to
+improve the security of declarative architectures. Propositions for
+further research are covered in chapter \ref{further} and finally,
+chapter \ref{conclusion} concludes the thesis.
 
 \section{Research methodologies and questions}
 
@@ -83,9 +86,8 @@ quantitative, the gathered data points will be addressed as variables
 that are compared with mathematical methods. Quantitative methods are
 broken down in chapter \ref{securitystandpoints} and
 \ref{analysis}. The central methodology is derived from QuERIES, and
-the information security aspect is investigated with CIA-triad. In
-chapter \ref{analysis} section \ref{whyqueries} QuERIES is compared
-with other metrics which are explained in subsection \ref{resquest}.
+the information security aspect is investigated with CIA-triad. In section \ref{whyqueries} QuERIES is compared
+with other metrics which are explained in section \ref{resquest}.
 
 Quantitative methodologies are oftentimes used in conjunction with
 qualitative methodologies, with both approaches having their strengths and
@@ -99,7 +101,7 @@ The study design in this thesis is \textit{state based}, which refers
 to the fact that the research methods focus on different state
 transitions, e.g. how probable it is  for an intruder to gain from
 partial leverage to a full control of the system. Qualitative research
-wouldn't alone satisfy the requirements, as investigating different
+would not alone satisfy the requirements, as investigating different
 state transitions without quantitative methodologies would be absurd
 \cite{ramos2017model}.
 
@@ -108,7 +110,7 @@ state transitions without quantitative methodologies would be absurd
 This thesis has bibliography from 49 sources, most of it gathered with
 a carefully prepared search statement. Other sources include manuals,
 material for research methods and other relevant material. The search
-statements results presented in next subsection, provide a quality base
+statements results presented in next section, provide a quality base
 for action research and analysis.
 
 The literature focuses on four main concepts: embedded systems
@@ -118,23 +120,23 @@ combines these concepts to gain platform for comparing different
 approaches to support the action research.
 
 Central literature revolves around Nix and multiple texts by Eelco
-Dolstra are cited for illustrating the nuances of a Nix
-ecosystem. Other declarative approaches are discussed by Endres
-et al. and Van der Burg \cite{van2010declarative, endres2017declarative}. These approaches also contain comparison to
+Dolstra \cite{dolstra2008nixos, dolstra2008nixos, dolstra2013charon, dolstra2007purely, dolstra2004nix} are cited for illustrating the
+nuances of a Nix ecosystem. Other declarative approaches are discussed
+by Endres et al. \cite{endres2017declarative} and Van der Burg \cite{van2010declarative}. These approaches also contain comparison to
 imperative systems, which is the central viewpoint in chapter
 \ref{imperative}. Combining cyber security with declarative approaches
-were discussed by Specht et al. and Kandoi and Artke
-\cite{specht2007analysis, kandoi2021operating}.
+were discussed by Specht et al. \cite{specht2007analysis} and Kandoi
+and Artke \cite{kandoi2021operating}.
 
-Discussion from Ravi et al. and Fysarakis et al. handle embedded security
-extensively \cite{ravi2004security, fysarakis2014embedded}. The
-approaches itself  are too broad for this thesis' scope, so
-only the most fitting were selected for use.
+Discussion from Ravi et al. \cite{ravi2004security} and Fysarakis et
+al. \cite{fysarakis2014embedded} handle embedded security
+extensively. The approaches itself are too broad for this thesis'
+scope, so only the most fitting were selected for use.
 
 The most important literature to measure the security of a system is
-by Carin et al. and Hughes and Cybenko \cite{carin2008cybersecurity,
-  hughes2013quantitative}. The topics from these papers revolve around
-QuERIES, an original approach for measurably improve security. 
+by Carin et al. \cite{carin2008cybersecurity} and Hughes and Cybenko
+\cite{hughes2013quantitative}. The topics from these papers revolve
+around QuERIES, an original approach for measurably improve security.
 
 \subsubsection{Search statement} \label{searchstatement}
 
@@ -180,7 +182,7 @@ imperative embedded device fleets have problems that can be solved
 with the use of modern declarative systems. First we aim to gain
 information from a specific scenario presented in chapter
 \ref{architecture}. Then in chapter \ref{analysis} the gained
-information is analyzed and generalized as suitably as possible.
+information is analysed and generalised as suitably as possible.
 
 Research question 2 brings up the human element; how can a system
 administrator use a new palette of features adequately to provide a more
@@ -197,8 +199,8 @@ used to solve problems better than with imperative systems.
 
 Data collection is done with simulated red–blue team setup, where both
 teams are provided by a time frame where they must conduct a series of
-tasks. These tasks are formalized as partially observable Markov chain
-parameters, and analyzed with QuERIES methodology. This methodology is
+tasks. These tasks are formalised as partially observable Markov chain
+parameters, and analysed with QuERIES methodology. This methodology is
 used to gain knowledge and make the system more reliant and better
 with multiple iterations. Chapter \ref{analysis} answers research
 questions 1 and 2 and provides analysis for the reference

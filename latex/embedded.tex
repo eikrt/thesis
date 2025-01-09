@@ -6,14 +6,13 @@ the embedded Linux security in general, following up on how Nix can be
 used to improve embedded systems' security, reflecting the CIA-triad in section
 \ref{nixosassolution}.
 
-According to Serpanos et al. the use of embedded devices can be
+According to Serpanos et al. \cite{serpanos2013security} the use of embedded devices can be
 divided into four fields: industrial systems, nomadic environments,
-private spaces and public infrastructure
-\cite{serpanos2013security}. This thesis focuses on public
+private spaces and public infrastructure. This thesis focuses on public
 infrastructure, specifically in information screens in a public
 environment. Implementing security mechanisms and policies is
 essential for information screens to function securely from both
-organizational and technical viewpoints. Implementing those policies
+organisational and technical viewpoints. Implementing those policies
 and assuring compliance is trivial with declarative approaches with
 increased benefits from reliability perspective.
 
@@ -37,13 +36,13 @@ Embedded devices demand precision and security as their function may
 be very critical for variety of safety reasons, e.g. in automotive
 industry or healthcare applications \cite{turab2019secure,
   fysarakis2014embedded}. Reliability is a defining requirement for
-number of embedded applications; a pacemaker that doesn't function reliably all
+number of embedded applications; a pacemaker that does not function reliably all
 the time is completely useless. While a declarative solution
-itself can't fulfill all security needs, it definitely could improve
+itself cannot fulfill all security needs, it definitely could improve
 the \textit{reliability} of such systems.
 
 As stated by Fysarakis et al. implementing access control is essential
-for any system to prevent unauthorized access
+for any system to prevent unauthorised access
 \cite{fysarakis2014embedded}. Defining complex access control is
 trivial with Nix, as the configuration files denote completely which
 user has access to which resources. Access control in a modern day
@@ -51,7 +50,7 @@ embedded environment could be hard to implement in traditional
 imperative systems, as scaling such system that spans multiple devices
 and changing environments would require a lot of manual
 intervention. This is definitely one of strengths of declarative
-approaches: scalability is never an issue when a centralized
+approaches: scalability is never an issue when a centralised
 configuration defines the systems. A declarative approach is often
 adopted in the cloud as discussed in chapter \ref{imperative}
 section \ref{declarativesystems}, but its implementation still
@@ -83,15 +82,15 @@ A solution for secure data transfer would be TLS-encrypted messaging
 between clients. This could be achieved with MQTT-protocol, but
 configuring certificates poses extra effort. Multitude of features is a
 definite security problem as the user may not be aware of them at all
-times. In an increasing global world, importing embedded devices from
+times \cite{fysarakis2014embedded}. In an increasing global world, importing embedded devices from
 unreliable sources can prove to be a security issue. The household
 items may or may not adhere to latest security
-compliance. \cite{fysarakis2014embedded}
+compliance. 
 
 Attack surface of embedded systems in general range from physical
 access to network and geolocation problems. One way of manipulating a
 device, apart from directly gaining access to the operating system,
-is side channel attacks. Analyzing the power or electromagnetic
+is side channel attacks. Analysing the power or electromagnetic
 properties of device input/output can be used to determine critical
 aspects of a device, e.g. key lengths or algorithms of security
 measures \cite{fysarakis2014embedded, serpanos2013security}. Attack
@@ -104,13 +103,13 @@ thesis' reference architecture could theoretically be targeted with such malicio
 intents.
 
 Embedded systems have problems regarding monitoring and system
-administration. It's very different to have home automation system
+administration. It is very different to have home automation system
 with less than 20 nodes than to have public transport embedded fleet
 in a big city with 2000 nodes. As the number of devices grows, so does
 the challenge of monitoring and administrative tasks. Home automation
-has usually one person dedicated to the task: the home owner. Monitoring should be trivial to automatize (e.g. by using
+has usually one person dedicated to the task: the home owner. Monitoring should be trivial to automatise (e.g. by using
 tools like Prometheus), but administrative tasks are harder to
-automatize due to tasks being potentially very challenging, even for
+automatise due to tasks being potentially very challenging, even for
 dedicated system administrators. This is where Nix comes to play as
 updating any number of devices becomes trivial.
 
@@ -125,10 +124,9 @@ as the rollout/rollback can be done multiple times or executed
 completely in a replicated sandbox environment. Simpler and more straight forward practical steps give space for
 easier strategical planning \cite{kandoi2021operating}.
 
-Kandoi et al. argue that with declarative systems, it should be nearly
+Kandoi et al. \cite{kandoi2021operating} argue that with declarative systems, it should be nearly
 impossible to misconfigure the system in the first place and if a faulty
-state was achieved, a simple rollback could undo the changes
-\cite{kandoi2021operating}. As stated in chapter \ref{imperative}
+state was achieved, a simple rollback could undo the changes. As stated in chapter \ref{imperative}
 section \ref{declarativesystems}, it is definitely possible to achieve
 faulty systems with Nix. It can be argued that these problems can be mitigated
 with a well thought rollout/rollback strategy with a dedicated test environment.
@@ -189,7 +187,7 @@ programs and files.
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=0.5\columnwidth]{latex/kuvat/ciatriad.drawio.svg}}
-\caption{The CIA-triad, a way to demonstrate conflicting security
+\caption[The CIA-triad.]{The CIA-triad, a way to demonstrate conflicting security
   measures \cite{hughes2013quantitative}.}
 \label{ciatriad}
 \end{figure}

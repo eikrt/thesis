@@ -4,8 +4,8 @@ For gaining data points for the research, a test setup must be
 configured. This chapter presents a Nix ecosystem which goes through
 a red team testing in chapter \ref{analysis}. The proposed
 architecture solution uses a completely declarative approach
-introduced in section \ref{declarativesystems}, where pros and cons of both approaches are
-discussed .
+introduced in section \ref{declarativesystems}, where strengths and weaknesses of both approaches are
+discussed.
 
 The proposed architecture is a referential framework for a Nix
 ecosystem and provides only a basis for a subset of features needed in
@@ -15,23 +15,22 @@ scalability could be improved with the use of tools referred in
 section \ref{nondeclarative}.
 
 The main purpose of the architecture is to construct a system that
-focuses on reliability and fluid deployment tasks. Kandoi and Hartke
+focuses on reliability and fluid deployment tasks. Kandoi and Hartke \cite{kandoi2021operating}
 discuss the operating large scale IoT solutions through declarative
 configuration APIs and conclude that it can solve multitude of
 scalability and extensibility challenges of IoT systems thus ensuring
-reliable and safe operations \cite{kandoi2021operating}. As embedded
+reliable and safe operations. As embedded
 security is the focal point of this thesis, a further analysis is
 presented in chapter \ref{analysis}.
 
 \section{Server}
 
-Van der Burg et al. provide a reference architecture with OpenSSH,
-Quake 3 server and Transmission services
-\cite{van2013reference}. Dolstra et al.  build a declarative
-system with simple web server \cite{dolstra2013charon}. This thesis'
-architecture is moderately complex in comparison with these
-approaches, as it contains multiple components and a functioning
-server–client implementation.
+Van der Burg et al. \cite{van2013reference} provide a reference
+architecture with OpenSSH, Quake 3 server and Transmission
+services. Dolstra et al. \cite{dolstra2013charon} build a declarative
+system with simple web server. This thesis' architecture is moderately
+complex in comparison with these approaches, as it contains multiple
+components and a functioning server–client implementation.
 
 A proposed architecture can be viewed in figure
 \ref{parchitecture}. In simplicity, the NixOS server runs a
@@ -46,7 +45,7 @@ clients. In production environment, the server would be the element
 located in a public network and the devices would be accessible
 locally (through a tunnel). SSH-connections to the machine would then
 be forwarded through the central server to the clients. The central
-server currently doesn't generate the imagery, but this could be
+server currently does not generate the imagery, but this could be
 achieved via headless browser or other graphical tools.
 
 MQTT is a an extremely lightweight machine-to-machine publish/subscribe
@@ -80,7 +79,7 @@ nix shell nixpkgs#mosquitto --command mosquitto_pub -h localhost -t
 images/test -m "$IMG_BASE64"
 \end{lstlisting}
 
-Sending could be automatized with a service using SystemD timer:
+Sending could be automatised with a service using SystemD timer:
 \begin{lstlisting}
 systemd.timers.publish-image = {
   timerConfig = {
@@ -121,14 +120,14 @@ nix shell nixpkgs#mosquitto --command mosquitto_sub -h $IP -t $TOPIC >" <image d
 \end{lstlisting}
 \subsection{Weston/XWayland}
 Wayland is a display protocol aiming to replace partially or fully the
-old X window system. Wayland functions through a "compositor"
+old X window system \cite{waylandWayland}. Wayland functions through a "compositor"
 (server) and that provides a surface for the device to draw
 graphics. Wayland was selected for this project due to increased
 security, as the X window system has support for network transparency
 which broadens the attack surface. Wayland has combined server and
 client rendering with the Wayland compositor, so that safety-critical
 throughput between display server and window manager is not a
-concern. \cite{waylandWayland}
+concern. 
 
 The example project displays an image from a directory via script:
 \begin{figure}[H]
@@ -177,7 +176,7 @@ in {
 \label{systemd1}
 \end{figure}
 
-This wouldn't be a problem in a traditional Linux distribution. However, program locations vary from machine to machine in NixOS \cite{dolstra2010nixos}. A program resides in Nix store with a
+This would not be a problem in a traditional Linux distribution. However, program locations vary from machine to machine in NixOS \cite{dolstra2010nixos}. A program resides in Nix store with a
 cryptographic hash of all build inputs in its directory
 path \cite{dolstra2010nixos}. For that reason, one way of proceeding
 is to write a SystemD service to generate the configuration
@@ -220,7 +219,7 @@ refreshed.
 
 \begin{figure}
     \centering \includegraphics[ scale=0.2]{latex/kuvat/testimage.jpeg}
-    \caption{Working example of a NixOS client displaying image with
+    \caption[Working example of NixOS client device.]{Working example of a NixOS client displaying image with
       Wayland and Feh.}
     \label{testimage}
 \end{figure}
@@ -234,14 +233,14 @@ ExecStart="${pkgs.git}/bin/git clone <git url> <installation path>";
 \end{lstlisting}
 \begin{figure}
 \includesvg{latex/kuvat/architect.svg}
-\caption{An architectural graph of the test setup.}
+\caption[An architectural graph of the test setup]{An architectural graph of the test setup.}
 \label{parchitecture}
 \end{figure}
 
 This part of the configuration is not purely functional, as the
 downloaded scripts and configuration can be arbitrarily changed with
-correct permissions. The SystemD services' impurity don't trigger the
-Nix language evaluation itself, thus ''--impure'' switch won't be mandatory.
+correct permissions. The SystemD services' impurity do not trigger the
+Nix language evaluation itself, thus ''--impure'' switch is not mandatory.
 
 \section{Test device}
 
@@ -284,7 +283,7 @@ support. Fortunately, most modern x86\_64 Linux systems have kexec
 support. By providing your own image you can also perform kexec for
 other architectures e.g. aarch64''. NixOS anywhere also has a
 requirement that the devices should be available in a public network
-(not only wireless LAN), which likely wouldn't be a problem in
+(not only wireless LAN), which likely would not be a problem in
 production environments. However NixOS anywhere  only works with NixOS
 flakes. In that case, this thesis' configuration would need to be contained in a
 flake. \cite{githubGitHubNixcommunitynixosanywhere}
@@ -316,7 +315,7 @@ development machine or server. Invoking
 nixos-generate -f iso -c <configuration.nix path>
 \end{lstlisting}
 would result in an ISO format image ready for
-installation. \cite{githubGitHubNixcommunitynixosanywhere}
+installation \cite{githubGitHubNixcommunitynixosanywhere}.
 
 The next chapter provides insight on how to measure security as a
 whole, transferring the necessary metric systems for this thesis'
