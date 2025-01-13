@@ -1,6 +1,6 @@
 \chapter{Applying QuERIES} \label{analysis}
 
-As mentioned in the previous chapter section \ref{queries}, the
+As mentioned in section \ref{queries}, the
 QuERIES methodology is used for the analysis of this chapter. Table
 \ref{pomdbtable} consists of all the possible states (S), defender
 actions (D), attacker actions (A), and observations (O). Then, each
@@ -14,9 +14,9 @@ construction of attack graph and yields more specific data.
 QuERIES as a model is described as multidisciplinary as it takes
 inspiration from traditional red-blue team approaches and mathematical
 models to economic models \cite{hughes2013quantitative}. In other
-literature, particularly that of Bojanc and Jerman-Blažič, it is argued that
+literature, particularly that of Bojanc and Jerman-Blažič \cite{jerman2008economic}, it is argued that
 modeling cybersecurity with economic models can provide substance for
-minimising risks organisation-wide \cite{jerman2008economic}. In this
+minimising risks organisation-wide. In this
 chapter, we will apply the model and discuss its implications in both
 security and economic standpoints. However, the main focus is on how we can improve the security of the architecture using QuERIES. 
 
@@ -34,7 +34,7 @@ stakeholders.
 
 The attack surface of the example focuses on physical access
 and vulnerabilities in remote connections. With MQTT-messaging, SSH
-and display protocols, internal and external messaging, takes place.
+and display protocols, internal and external messaging takes place.
 
 As mentioned in section \ref{queriesasmethodology}, the
 value of intellectual property is capped at 1, for which other
@@ -237,7 +237,7 @@ of the attacker.
 
 \subsection{Issues with applied methodology} \label{issues}
 
-One issue found using QuERIES with POMDP was, that applying the reward
+One issue found using QuERIES with POMDP was that applying the reward
 functions in our case is in rather arbitrary. We assumed, that for
 positive results the reward function is defined as 1 and for the
 negative outcomes as -100. This is due to the negative results deemed
@@ -248,9 +248,9 @@ appropriate parameters. This is due to the deviation from the QuERIES,
 where the POMDP parameters were not applied from the economic model. In our case, a trade-off to obtain
 specificity forced us to rely on the set reward and discount
 values. Using another model, for example the one presented by Wang
-et al. using hidden Markov models, would in retrospective provide us a
+et al. \cite{wang2010framework} using hidden Markov models, would in retrospective provide us a
 more specific layout of the attack graph, similar on how we applied
-the QuERIES methodology \cite{wang2010framework}. The
+the QuERIES methodology. The
 combination of both hidden Markov models and QuERIES could possibly be a ''best
 of both worlds'' solution.
 
@@ -276,7 +276,7 @@ reward.
  
 Carin et al. \cite{carin2008cybersecurity} argue that QuERIES can be
 applied in both public and private sectors to help improve the
-security of both the software and hardware. I argue, that a hand-tailored
+security of both the software and hardware. It can be argued that a hand-tailored
 application of QuERIES can be used as a powerful model that is
 ergonomic to use in the right hands. However, the use of complex
 applied mathematics models requires proficency in both cybersecurity and

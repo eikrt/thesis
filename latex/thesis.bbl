@@ -1278,8 +1278,8 @@
       \strng{authornamehash}{ab0a7cf5deeda86b66467df64c3b6122}
       \strng{authorfullhash}{ab0a7cf5deeda86b66467df64c3b6122}
       \strng{authorfullhashraw}{ab0a7cf5deeda86b66467df64c3b6122}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html}}
@@ -1323,8 +1323,8 @@
       \strng{authorfullhash}{29da27f35544f4a34c81f65e60e19625}
       \strng{authorfullhashraw}{29da27f35544f4a34c81f65e60e19625}
       \field{extraname}{9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/nix-community/nixos-anywhere}}

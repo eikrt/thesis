@@ -1,7 +1,7 @@
 \chapter{Embedded system security} \label{embedded}
 
 In the previous chapter, the core differences between imperative and
-declarative approaches were gone through. This chapter first discusses
+declarative approaches were examined. This chapter first discusses
 the embedded Linux security in general, following up on how Nix can be
 used to improve embedded systems' security, reflecting the CIA-triad in section
 \ref{nixosassolution}.
@@ -28,22 +28,20 @@ had history of vulnerabilities, which prove that upgradability is a
 fundamental base of a secure system
 \cite{secopsolutionHistorySecOps}. It can be argued that the security aspect of
 embedded devices could be improved significantly with the use of
-declarative systems as seen in chapter \ref{imperative} section
-\ref{declarativesystems} and in the chapter \ref{embedded} section
+declarative systems as seen in section
+\ref{declarativesystems} and in the section
 \ref{nixosassolution}.
 
 Embedded devices demand precision and security as their function may
 be very critical for variety of safety reasons, e.g. in automotive
-industry or healthcare applications \cite{turab2019secure,
-  fysarakis2014embedded}. Reliability is a defining requirement for
+industry or healthcare applications \cite{turab2019secure, fysarakis2014embedded}. Reliability is a defining requirement for
 number of embedded applications; a pacemaker that does not function reliably all
 the time is completely useless. While a declarative solution
 itself cannot fulfill all security needs, it definitely could improve
 the \textit{reliability} of such systems.
 
-As stated by Fysarakis et al. implementing access control is essential
-for any system to prevent unauthorised access
-\cite{fysarakis2014embedded}. Defining complex access control is
+As stated by Fysarakis et al. \cite{fysarakis2014embedded} implementing access control is essential
+for any system to prevent unauthorised access. Defining complex access control is
 trivial with Nix, as the configuration files denote completely which
 user has access to which resources. Access control in a modern day
 embedded environment could be hard to implement in traditional
@@ -52,16 +50,15 @@ and changing environments would require a lot of manual
 intervention. This is definitely one of strengths of declarative
 approaches: scalability is never an issue when a centralised
 configuration defines the systems. A declarative approach is often
-adopted in the cloud as discussed in chapter \ref{imperative}
-section \ref{declarativesystems}, but its implementation still
+adopted in the cloud as discussed in section \ref{declarativesystems}, but its implementation still
 requires significant effort in the embedded Linux field.
 
 Improving information security aspects using a policy
 modeling standard, CIA-triad is discussed in section
 \ref{imperativeanddeclarative} and Nix is reflected with the use of
-the triads axes. Dolstra states, that Nix is policy-free meaning that
+the triads axes. Dolstra et al. \cite{dolstra2004nix} states that Nix is policy-free meaning that
 it contains a set of mechanisms which allow policies to be constructed
-with configuration files \cite{dolstra2004nix}.
+with configuration files.
 
 Embedded systems being a broad field,  devices are limited to
 those which can run Linux kernel and provide the most basic networking
@@ -126,8 +123,7 @@ easier strategical planning \cite{kandoi2021operating}.
 
 Kandoi et al. \cite{kandoi2021operating} argue that with declarative systems, it should be nearly
 impossible to misconfigure the system in the first place and if a faulty
-state was achieved, a simple rollback could undo the changes. As stated in chapter \ref{imperative}
-section \ref{declarativesystems}, it is definitely possible to achieve
+state was achieved, a simple rollback could undo the changes. As stated in section \ref{declarativesystems}, it is definitely possible to achieve
 faulty systems with Nix. It can be argued that these problems can be mitigated
 with a well thought rollout/rollback strategy with a dedicated test environment.
 

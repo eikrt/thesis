@@ -1,18 +1,17 @@
 \chapter{Declarative vs. imperative systems} \label{imperative}
 
 Different approaches to declarative modeling of
-systems design are presented. Endres et al. compare declarative and imperative
+systems design are presented. Endres et al. \cite{endres2017declarative} compare declarative and imperative
 standpoints in a cloud computing context and collect systematic
 information on what are the strengths and weaknesses of TOSCA, IBM
-Bluemix, Chef, Juju, and OpenTOSCA \cite{endres2017declarative}. Van
-der Burg and Eelco Dolstra use NixOS as a solution for declaratively
-distributing into cloud, executing integration and system tests
-\cite{van2010declarative}. Most approaches researched through
+Bluemix, Chef, Juju, and OpenTOSCA. Van
+der Burg and Eelco Dolstra \cite{van2010declarative} use NixOS as a solution for declaratively
+distributing into cloud, executing integration and system tests. Most approaches researched through
 literature review focus on distributing to cloud. Distributing to
 embedded clearly remains a niche.
 
-Breitenbücher et al. focus on deploying into embedded and discuss
-the challenges an IoT user face when deploying a system \cite{breitenbucher2017declarative}. It is proven
+Breitenbücher et al. \cite{breitenbucher2017declarative} focus on deploying into embedded and discuss
+the challenges an IoT user face when deploying a system. It is proven
 that setting up devices with mandatory scripts and other actions is a
 challenging task, when a number of devices should be set up \cite{breitenbucher2017declarative}. Cloud is
 something that is practical to be used in tandem with IoT, but this thesis
@@ -83,9 +82,9 @@ Another dependency, emacs-lucid can be removed with command
 
 we can see that after removing, apt automatically installs emacs-gtk
 to avoid breaking the application. The package manager warns:
-"emacs-lucid has dependency problems, but removing anyway as you
-requested" as shown in figure \ref{deb_remove}. It is also noteworthy,
-that the manual page for apt doesn't say anything about a possible
+''emacs-lucid has dependency problems, but removing anyway as you
+requested'' as shown in figure \ref{deb_remove}. It is also noteworthy,
+that the manual page for apt does not tell anything about a possible
 installation side-effect of a package removal command
 \cite{ubuntuUbuntuManpage}. We could forcibly remove the package by
 invoking
@@ -95,12 +94,12 @@ invoking
 \end{lstlisting}
 \end{figure}
 % kuva distribuutioiden distribuutioista
-\begin{figure}\label{deb_remove}
+\begin{figure}[b]\label{deb_remove}
 \includegraphics[scale=2.0]{latex/kuvat/cropped_apt_output.jpg}
 \caption[Terminal output from Emacs installation.]{Terminal output from a Debian system when installing an Emacs package.}
 \end{figure}
 leaving the system in an unreliable state. Dpkg is a low-level
-tool associated with apt, which doesn't automatically handle dependency
+tool associated with apt, which does not automatically handle dependency
 resolutions or further package relations
 \cite{thiruvathukal2004gentoo}. What happens if we had a large number
 of devices, in-premises or cloud, where all system commands are done
@@ -120,11 +119,10 @@ the wrong order, this will lead to divergent systems.
 
 Implementing a deployment model with only Debian would be a gruesome
 task as the order of events, which occur during the setup phase, is
-critical. As presented by Endres et al. a formalised workflow graph
+critical. As presented by Endres et al. \cite{endres2017declarative} a formalised workflow graph
 would be needed to set up a reliable system. However, Debian could
 be used as a host to user-space application deployment such as
-Bluemix or Chef, where common DevOps practices can be used
-\cite{endres2017declarative}.
+Bluemix or Chef, where common DevOps practices can be used.
 
 \section{Declarative systems} \label{declarativesystems}
 
@@ -143,9 +141,8 @@ question. A result of this is that in a Nix system installs of same
 program can reside side-by-side with varying versions
 \cite{dolstra2008nixos}.
 
-As presented by Endres et al. systems can be declared, even if the
-underlying infrastructure is imperative by nature
-\cite{endres2017declarative}. This thesis focuses on purely functional
+As presented by Endres et al. \cite{endres2017declarative} systems can be declared, even if the
+underlying infrastructure is imperative by nature. This thesis focuses on purely functional
 methodologies which fix the most prevalent issues found in
 imperative models. Tools such as Chef focus on deploying on an
 imperative system, which causes an inherent problem with cohesion in a
@@ -162,7 +159,7 @@ deployment strategy but the requirement for explicit detail of every
 step would be prone to errors even for a seasoned administrator
 \cite{breitenbucher2017declarative}.
 
-It is also noteworthy that many imperative package managers don't
+It is also noteworthy that many imperative package managers do not 
 support rollback mechanisms. If the Nix configuration file is changed
 and the system is rebuilt with command
 \begin{lstlisting}
@@ -176,8 +173,8 @@ This is an important feature since the Nix configuration files control
 the whole system, they can also leave the system in an undesired
 state. Nix switches between \textit{profiles}, which is a way to
 provide different configurations for different user environments as
-shown in figure \ref{userenvs} and providing atomic upgrades and
-rollbacks. \cite{nixosNixOSManual}
+shown in figure \ref{userenvs}, providing atomic upgrades and
+rollbacks \cite{nixosNixOSManual}.
 
 A fundamental component of the ecosystem is Nix, a domain-specific
 language designed for configurations, distinguished by its functional
@@ -196,10 +193,13 @@ declared with package manager apart from initial configurations
 \cite{van2013reference}. Home directories can vary as much as the
 system administrator desires. For example, a configuration file for
 text editor vim is usually declared in the file
-/home/<user>/.vimrc. Nix provides multiple ways to perform the whole
+\begin{lstlisting}
+  /home/<user>/.vimrc.
+\end{lstlisting}
+Nix provides multiple ways to perform the whole
 configuration process from the Nix configuration files. One way is
 declaring the desired .vimrc in the Nix configuration, as in the
-following snippet:
+following program snippet:
 
 \begin{lstlisting}
 {
@@ -233,13 +233,13 @@ or
 \begin{lstlisting}
 /usr/sbin
 \end{lstlisting}
-etc. or have a symbolic link to
+or have a symbolic link to
 the said directories. They can be figured as trees of symbolic links
 that reside also in the Nix store hence referred packages are called
-''activated packages''. The installed programs reside usually in
+''activated packages'' \cite{dolstra2008nixos}. The installed programs reside usually in
 \begin{lstlisting}
   /nix/store
-\end{lstlisting} \cite{dolstra2008nixos}.
+\end{lstlisting}
 
 \begin{figure}[t!]
 \centerline{\includesvg[width=1.0\columnwidth]{latex/kuvat/symlinks.drawio.svg}}
@@ -250,13 +250,13 @@ that reside also in the Nix store hence referred packages are called
 
 Continuous build and integration services such as Hydra,
 which include Nix-compatible support for handling runtime
-configuration and tools such as Disnix and Charon \footnote{Charon is
+configuration and tools such as Disnix and Charon\footnote{Charon is
 now called NixOps \cite{githubNixNixpkgsNixOS}}, focus on
-setting up complementary infrastructure. Van Der Burg presents these
+setting up complementary infrastructure. Van Der Burg \cite{van2013reference} presents these
 new tools to replace Cfengine, Puppet and Chef, which execute
 operations in convergent manner, meaning that they capture what
 changes should be done to the machines in a specified
-network \cite{van2013reference}.
+network.
 
 These approaches have two central problems: imperative nature of
 handling environment difference and inability to guarantee
@@ -273,7 +273,7 @@ systems: home manager and flakes. Home manager is an extension for
 managing user profiles with a declarative Nix syntax
 \cite{nixcommunityHomeManager}. However home manager has issues with atomic
 rollbacks and for this reason they are not used in this thesis'
-examples \cite{nixcommunityHomeManager}.
+examples.
 
 Flakes is an experimental feature of Nix, which provides environments, where
 dependencies are pinned in a lock file, further improving

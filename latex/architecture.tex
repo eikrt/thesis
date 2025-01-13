@@ -51,7 +51,7 @@ achieved via headless browser or other graphical tools.
 MQTT is a an extremely lightweight machine-to-machine publish/subscribe
 protocol which can be used on virtually every platform including
 microcontrollers \cite{oasisopenMQTTVersion}. The chosen MQTT broker
-and client for this project is Mosquitto. The following snippet shows
+and client for this project is Mosquitto. The following program snippet shows
 how the Mosquitto server is configured in the NixOS server.
 \begin{lstlisting}
   services.mosquitto = {
@@ -63,8 +63,7 @@ how the Mosquitto server is configured in the NixOS server.
           certfile = "<ssl-path>/myhostname.crt";
           keyfile = "<ssl-path>/myhostname.key";
         };
-      }
-    ];};
+      }];};
 \end{lstlisting}
 
 The ''services'' statement tells us that a SystemD service is being
@@ -276,17 +275,17 @@ migrating from existing architectures.
 
 If the whole setup needs to be replicated to an existing device fleet,
 an open source project ''NixOS anywhere'' would be of great value. NixOS
-anywhere defines minimal specifications: ''Unless you're using the
+anywhere docuemntation defines minimal specifications: ''Unless you're using the
 option to boot from a NixOS installer image, or providing your own
 kexec image, it must be running x86\_64 Linux with kexec
 support. Fortunately, most modern x86\_64 Linux systems have kexec
 support. By providing your own image you can also perform kexec for
-other architectures e.g. aarch64''. NixOS anywhere also has a
+other architectures e.g. aarch64'' \cite{githubGitHubNixcommunitynixosanywhere}. NixOS anywhere also has a
 requirement that the devices should be available in a public network
 (not only wireless LAN), which likely would not be a problem in
 production environments. However NixOS anywhere  only works with NixOS
 flakes. In that case, this thesis' configuration would need to be contained in a
-flake. \cite{githubGitHubNixcommunitynixosanywhere}
+flake. 
 
 The installation would contain the following steps:
 \begin{enumerate}
@@ -306,9 +305,9 @@ nix run github:nix-community/nixos-anywhere -- --flake <path to configuration>#<
 \end{lstlisting}
 \end{enumerate}
 Another way would be setting up NixOS from the installation medium and
-manually setting up or creating an installation media with Nixos
+manually setting up or creating an installation media with NixOS
 generators project
-(https://github.com/nix-community/nixos-generators). Nixos generators
+(https://github.com/nix-community/nixos-generators). NixOS generators
 is available from Nixpkgs and can be installed to a NixOS
 development machine or server. Invoking
 \begin{lstlisting}

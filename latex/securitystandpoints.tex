@@ -80,8 +80,7 @@ thesis has a narrower scope compared to a large
 organisation. Therefore, the proposed setup must be evaluated to
 ensure that the metrics' goals are achievable. Relevance has to do
 with risk assessment and how important it is to measure something related
-to its value. Risk assessment is explored in detail in chapter
-\ref{analysis} section \ref{modprob}. Time-bounding signifies the
+to its value. Risk assessment is explored in detail in section \ref{modprob}. Time-bounding signifies the
 importance of time as a meter; a system that can be penetrated in a
 minute can certainly be seen as weaker than a system that takes years
 to be compromised.
@@ -146,15 +145,13 @@ investments \cite{pendleton2016survey}.
 
 \section{Methodologies in comparison} \label{whyqueries}
 
-Cybersecurity metrics based on quantified
-mathematical models, which are prevalent for this thesis exist today. Three
+Quantified mathematical models for cybersecurity metrics, which form the foundation of this thesis, are currently well-established. Three
 different methodologies are discussed, and one is picked for measuring
 the security of this thesis' architecture implementation. All the following metric
 systems are \textbf{measurable}. However, some fit better in relation with \textbf{time-related} and \textbf{relevance} axes.
 
 The literature review provided three central methodologies from different perspectives. Complex mathematical models
-presented by Alshammari et al. are too broad
-\cite{alshammari2009security}. This thesis' scope is limited and this
+presented by Alshammari et al. \cite{alshammari2009security} are too broad. This thesis' scope is limited and this
 methodology would fit better in a wider cyber security setting.
 
 A methodology based on object-oriented thinking and UML diagrams is
@@ -164,8 +161,8 @@ measurement methodology is used to compare similar alternative designs
 not comparative, since all critical comparisons have already been made
 in chapter \ref{imperative}.
 
-The Hidden Markov models presented by Wang et al. are closely aligned
-with the end goal of this thesis \cite{wang2010framework}. The
+The Hidden Markov models presented by Wang et al. \cite{wang2010framework} are closely aligned
+with the end goal of this thesis. The
 time-related aspect is suitable, as the Hidden Markov model
 incorporates a time parameter. However, the issue lies in the
 generality of the methodology, and a more specific approach would be
@@ -173,8 +170,8 @@ better suited for this thesis. Nevertheless, we apply a similar
 approach to that of Wang et al. for calculating the POMDP parameters.
 
 The last and the most fitting methodology would be the one presented
-in papers by Carin et al. and Hughes et al.
-\cite{carin2008cybersecurity, hughes2013quantitative}. The QuERIES
+in papers by Carin et al. \cite{carin2008cybersecurity} and Hughes et al.
+\cite{hughes2013quantitative}. The QuERIES
 methodology is delved deeper in section \ref{querieschapter} and its
 time-related, relevance and specific axes are a near-perfect match for
 our goals as the model itself is relatively simple and provides
@@ -228,7 +225,7 @@ constructing an attack graph, the opposing forces have a plan which
 can be used as a template for analysis. In this thesis, the models are quantified with the use of time
 framing. Both teams have a limited amount of time to conduct their
 tasks and the probability for succeeding a certain task is calculated
-with the following formula
+with the formula
 
 \[ \frac{t_e}{t_t} \]
 
@@ -252,9 +249,9 @@ commonly in risk-assessment \cite{carin2008cybersecurity}.
 QuERIES is proposed to have potentially significant usage in DoD
 (Department of Defense) and in the private sector
 \cite{carin2008cybersecurity}. Initial testing of QuERIES in
-small-scale and realistic scenarios presented by Carin et al. suggest
+small-scale and realistic scenarios presented by Carin et al. \cite{carin2008cybersecurity} suggest
 that the methodology can in fact be used as to improve risk-assessment of
-more complex settings \cite{carin2008cybersecurity}. This thesis
+more complex settings. This thesis
 follows similar steps: first the QuERIES methodology is used to assess
 risks followed by generalisation with strict constraints in mind.
 
@@ -305,8 +302,8 @@ steps:
     \item Define the observation probabilities of the system
     \item Rewards: guide the system towards the desirable actions and
       states.
-\end{enumerate} \cite{hughes2013quantitative}
-
+\end{enumerate} 
+% \cite{hughes2013quantitative}
 A POMDP is used widely in these kinds of applications, as both blue and
 red teams have only partial observations in relation to the system
 \cite{mcabeeMarkov}. The blue team cannot be completely certain that
